@@ -15,7 +15,7 @@ export default function Home() {
     {
       tourName: 'Tour 1',
       tourDescription: 'This is the first tour',
-      tourImage: '',
+      tourImage: '/tour-dec8.webp',
       tourId: 1,
       tourPrice: 100,
       tourSpots: 10,
@@ -23,7 +23,7 @@ export default function Home() {
     {
       tourName: 'Tour 2',
       tourDescription: 'This is the second tour',
-      tourImage: '',
+      tourImage: '/tour-dec8.webp',
       tourId: 2,
       tourPrice: 200,
       tourSpots: 20,
@@ -31,7 +31,7 @@ export default function Home() {
     {
       tourName: 'Tour 3',
       tourDescription: 'This is the third tour',
-      tourImage: '',
+      tourImage: '/tour-dec8.webp',
       tourId: 3,
       tourPrice: 300,
       tourSpots: 30,
@@ -39,12 +39,12 @@ export default function Home() {
   ])
 
   return (
-    <main className='bg-pink-300 w-[100vw] h-[100vh] overflow-x-hidden flex flex-col'>
+    <main className='bg-pink-300 w-full h-full flex flex-col'>
       <Header />
-      <div className='flex w-full justify-between h-full'>
+      <div className='flex w-full justify-between flex-grow border-t-4 border-pink-500'>
         <InfoSidebar />
-        <div className='bg-slate-200 h-full w-full'>
-          <h1>Content</h1>  
+        <div className=' h-full w-full'>
+          <h1></h1>  
         </div>
         <TourSidebar tours={tours}/>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function InfoSidebar() {
   return (
-    <div className='bg-slate-300 h-full w-60'>
+    <div className='bg-pink-200 h-[1000px] w-80'>
 
     </div>
   )
