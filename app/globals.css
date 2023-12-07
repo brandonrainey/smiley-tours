@@ -19,3 +19,7 @@ body {
     text-shadow: 1px 1px 3px rgb(186, 6, 102)
 }
 
+.textShadow2 {
+    text-shadow: -1px 0 rgb(186, 6, 102), 0 1px rgb(186, 6, 102), 1px 0 rgb(186, 6, 102), 0 -1px rgb(186, 6, 102);
+}
+
