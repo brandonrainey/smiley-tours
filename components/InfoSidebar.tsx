@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
-    <div className="bg-pink-200 h-auto w-80 p-4 font-Varela relative flex flex-col">
+    <div className="bg-pink-200 h-auto lg:w-80 p-4 font-Varela relative flex lg:flex-col flex-rol">
       <Image
         src="/ganko.png"
         width={100}

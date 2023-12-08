@@ -25,7 +25,9 @@ export default function Footer() {
           <i className="fab fa-youtube fa-5x text-red-500"></i>
         </a>
       </div>
-      <p className='text-white text-xl tracking-wide textShadow underline'>engelmaikichi@gmail.com</p>
+      <p className="text-white text-xl tracking-wide textShadow underline">
+        engelmaikichi@gmail.com
+      </p>
     </div>
   )
 }

@@ -5,10 +5,15 @@ import Header from '@/components/Header'
 import InfoSidebar from '@/components/InfoSidebar'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
+import MobileTourSidebar from '@/components/MobileTourSidebar'
+import MobileMainContent from '@/components/MobileMainContent'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function Home() {
+
+  const [windowWidth, setWindowWidth] = useState(0);
+
   const [tours, setTours] = useState([
     {
       tourName: 'Tour 1',
@@ -48,13 +53,24 @@ export default function Home() {
     },
   ])
 
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Update window width on mount, resize and return.
+    updateWindowWidth();
+    window.addEventListener('resize', updateWindowWidth);
+    return () => window.removeEventListener('resize', updateWindowWidth);
+  }, []);
+
   return (
     <main className=" bg-pink-300 w-full h-full flex flex-col ">
       <Header />
-      <div className="flex w-full justify-between flex-grow border-t-4 border-pink-500 bg-gradient-to-br from-pink-300 via-pink-400 to-pink-300 ">
+      <div className="flex flex-col lg:flex-row w-full justify-between flex-grow border-t-4 border-pink-500 bg-gradient-to-br from-pink-300 via-pink-400 to-pink-300 ">
         <InfoSidebar />
-        <MainContent />
-        <TourSidebar tours={tours} />
+        {windowWidth > 1000 ? <MainContent /> : <MobileMainContent />}
+        {windowWidth > 1000 ? <TourSidebar tours={tours} /> : <MobileTourSidebar tours={tours} />}
       </div>
       <Footer />
     </main>

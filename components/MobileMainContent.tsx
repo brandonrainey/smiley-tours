@@ -13,15 +13,15 @@ export default function MainContent() {
       </h2>
 
       <div className="flex flex-col gap-10">
-        <div className="flex w-full gap-6">
+        <div className="flex flex-col justify-center w-full gap-6">
           <Image
             src="/akiba.jpg"
             alt="akiba image"
-            width={400}
-            height={500}
-            className="mr-auto rounded shadow-lg"
+            width={300}
+            height={100}
+            className="mx-auto rounded shadow-lg "
           />
-          <p className="text-white text-xl textShadow font-medium">
+          <p className="text-white text-lg textShadow font-medium">
             ❤️ Let's stroll through the vibrant streets of Akihabara, and I'll
             share interesting insights with you along the way. Enjoy the lively
             atmosphere as I guide you through this tech and entertainment hub!
