@@ -21,7 +21,7 @@ export default function MainContent() {
             height={500}
             className="mr-auto rounded shadow-lg"
           />
-          <p></p>
+          <p className="text-white text-xl textShadow font-medium">Let's stroll through the vibrant streets of Akihabara, and I'll share interesting insights with you along the way. Enjoy the lively atmosphere as I guide you through this tech and entertainment hub! 🚶‍♂️🏙️</p>
         </div>
 
         <div className="flex">
@@ -33,11 +33,12 @@ export default function MainContent() {
               <br />
               Dive into the charm of these historical places, and don't forget
               to grab some cool videos to remember your fun-filled tour! 🌟
-              <br />
-              <br />
+              
               Asakusa is a city of comedians! Take photos at Comedian Street.
+              <br />
+              <br />
             </p>
-            <div className="flex py-2">
+            <div className="flex py-2 ">
               <Image
                 src="/karaoke.jpg"
                 width={200}
@@ -47,7 +48,7 @@ export default function MainContent() {
               />
               <p className="text-white text-xl textShadow font-medium p-2">
                 Tea time♡ Japan is the birthplace of karaoke Experience Japan's
-                high quality karaoke！ + free drink bar
+                high quality karaoke！+ free drink bar
               </p>
             </div>
           </div>
@@ -55,7 +56,7 @@ export default function MainContent() {
           <Image
             src="/asakusa.webp"
             alt="asakusa image"
-            width={400}
+            width={450}
             height={500}
             className="rounded shadow-lg ml-auto"
           />

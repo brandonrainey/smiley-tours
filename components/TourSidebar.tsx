@@ -13,9 +13,13 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
       <ul className='flex flex-col items-center space-y-32'>
         {tours.map((tour) => (
           <li key={tour.tourId} className="w-full h-36 flex flex-col items-center">
-            <Image src={tour.tourImage} alt={tour.tourName} width={288} height={288} className='rounded'/>
+            <a href={tour.tourLink}>
+              <Image src={tour.tourImage} alt={tour.tourName} width={288} height={288} className='rounded shadow-lg'/>
+            </a>
+            
+
             <h2 className='font-bold'>¥{tour.tourPrice}</h2>
-            <h3 className='font-semibold text-white textShadow'><span className='text-lg font-bold'>{tour.tourSpots}</span> Spots Left!</h3>
+            <h3 className='font-semibold text-white textShadow'>{tour.tourSpots === 0 ? (<p className='line-through'>Sold Out</p>) : (<p><span className='text-xl'>{tour.tourSpots}</span> spots left!</p>)}</h3>
           </li>
         ))}
       </ul>
