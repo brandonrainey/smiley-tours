@@ -1,33 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
-export default function Footer() {
+interface FooterProps {
+  windowWidth: number
+}
+
+export default function Footer({ windowWidth }: FooterProps) {
+
+  const [copySuccess, setCopySuccess] = useState('');
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopySuccess('Copied!');
+      setTimeout(() => setCopySuccess(''), 1500);
+    } catch (err) {
+      setCopySuccess('Failed to copy text');
+    }
+  };
+
   return (
-    <div className="bg-pink-300 min-h-[250px] w-full flex flex-col justify-around items-center">
+    <div
+      className={`bg-pink-200 min-h-[250px] w-full flex flex-col justify-around items-center ${
+        windowWidth < 1100 ? 'short-border' : ''
+      } `}
+    >
       <h1 className="text-5xl text-white textShadow pt-4">FOLLOW ME!</h1>
-      <div className="flex">
-        <a
-          href="https://twitter.com/mairie0828"
-          className="w-[200px] h-[100px] flex justify-center items-center "
-        >
-          <i className="fab fa-twitter fa-5x text-blue-500 "></i>
-        </a>
-        <a
-          href="https://www.instagram.com/mairie0828/"
-          className="w-[200px] h-[100px] flex justify-center items-center "
-        >
-          <i className="fab fa-instagram fa-5x text-pink-500"></i>
-        </a>
+      <div className="flex sm:gap-12 gap-8">
         <a
           href="https://www.youtube.com/channel/UC9x1Qh6JZxYgF4C2kBk3m3Q"
-          className="w-[200px] h-[100px] flex justify-center items-center"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-[#cb67dc23] rounded-xl"
         >
-          <i className="fab fa-youtube fa-5x text-red-500"></i>
+          <i className="fab fa-youtube sm:fa-5x fa-3x text-red-500"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/mairie0828/"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-[#cb67dc23] rounded-xl"
+        >
+          <i className="fab fa-instagram sm:fa-5x fa-3x text-pink-500"></i>
+        </a>
+        <a
+          href="https://twitter.com/mairie0828"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-[#cb67dc23] rounded-xl"
+        >
+          <i className="fab fa-twitter sm:fa-5x fa-3x text-blue-500 "></i>
         </a>
       </div>
-      <p className="text-white text-xl tracking-wide textShadow underline">
+      <p className="text-white text-xl tracking-wide textShadow underline" onClick={() => copyToClipboard('engelmaikichi@gmail.com')}>
         engelmaikichi@gmail.com
       </p>
+      {copySuccess && <div>{copySuccess}</div>}
     </div>
   )
 }

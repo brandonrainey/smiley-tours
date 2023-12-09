@@ -7,12 +7,12 @@ import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import MobileTourSidebar from '@/components/MobileTourSidebar'
 import MobileMainContent from '@/components/MobileMainContent'
+import MobileInfoSidebar from '@/components/MobileInfoSidebar'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 
 export default function Home() {
-
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0)
 
   const [tours, setTours] = useState([
     {
@@ -54,25 +54,37 @@ export default function Home() {
   ])
 
   const updateWindowWidth = () => {
-    setWindowWidth(window.innerWidth);
-  };
+    setWindowWidth(window.innerWidth)
+  }
 
   useEffect(() => {
     // Update window width on mount, resize and return.
-    updateWindowWidth();
-    window.addEventListener('resize', updateWindowWidth);
-    return () => window.removeEventListener('resize', updateWindowWidth);
-  }, []);
+    updateWindowWidth()
+    window.addEventListener('resize', updateWindowWidth)
+    return () => window.removeEventListener('resize', updateWindowWidth)
+  }, [])
 
   return (
     <main className=" bg-pink-300 w-full h-full flex flex-col ">
       <Header />
-      <div className="flex flex-col lg:flex-row w-full justify-between flex-grow border-t-4 border-pink-500 bg-gradient-to-br from-pink-300 via-pink-400 to-pink-300 ">
-        <InfoSidebar />
-        {windowWidth > 1000 ? <MainContent /> : <MobileMainContent />}
-        {windowWidth > 1000 ? <TourSidebar tours={tours} /> : <MobileTourSidebar tours={tours} />}
+      <div
+        className={`flex  ${
+          windowWidth < 1100 ? 'flex-col' : 'flex-row'
+        } w-full justify-between flex-grow   `}
+      >
+        {windowWidth > 1100 ? (
+          <InfoSidebar />
+        ) : (
+          <MobileTourSidebar tours={tours} />
+        )}
+        {windowWidth > 1100 ? <MainContent /> : <MobileMainContent />}
+        {windowWidth > 1100 ? (
+          <TourSidebar tours={tours} />
+        ) : (
+          <MobileInfoSidebar />
+        )}
       </div>
-      <Footer />
+      <Footer windowWidth={windowWidth} />
     </main>
   )
 }

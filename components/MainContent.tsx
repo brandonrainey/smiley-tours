@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <div className="h-full w-full flex flex-col px-10  mb-4">
+    <div className="h-full w-full flex flex-col px-10  mb-4  rounded-xl bg-pink-300 border-x-2 border-black border-b-2">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow">
         Tokyo Tour Guide
       </h1>
@@ -15,23 +15,25 @@ export default function MainContent() {
       <div className="flex flex-col gap-10">
         <div className="flex w-full gap-6">
           <Image
-            src="/akiba.jpg"
+            src="/akiba-2.webp"
             alt="akiba image"
             width={400}
             height={500}
             className="mr-auto rounded shadow-lg"
           />
-          <p className="text-white text-xl textShadow font-medium">
+          <p className="text-white text-xl textShadow font-medium my-auto">
             ❤️ Let's stroll through the vibrant streets of Akihabara, and I'll
-            share interesting insights with you along the way. Enjoy the lively
-            atmosphere as I guide you through this tech and entertainment hub!
-            🚶‍♂️🏙️
+            share interesting insights with you along the way.
+            <br />
+            <br />
+            Enjoy the lively atmosphere as I guide you through this tech and
+            entertainment hub! 🚶‍♂️🏙️
           </p>
         </div>
 
-        <div className="flex">
-          <div className="p-2">
-            <p className="text-white text-xl textShadow font-medium">
+        <div className="flex flex-col">
+          <div className="py-4 flex flex-row short-border">
+            <p className="text-white text-xl textShadow font-medium my-auto">
               ❤️ Discover the story behind Asakusa through two must-visit spots:
               Senso-ji Temple and Asakusa Shrine.
               <br />
@@ -42,39 +44,33 @@ export default function MainContent() {
               <br />
               <br />
             </p>
-            <div className="flex py-2 ">
-              <Image
-                src="/karaoke.jpg"
-                width={200}
-                height={500}
-                alt="karaoke image"
-                className="rounded shadow-lg mr-auto"
-              />
-              <p className="text-white text-xl textShadow font-medium p-2">
-                Tea time♡ Japan is the birthplace of karaoke Experience Japan's
-                high quality karaoke！+ free drink bar
-              </p>
-            </div>
+            <Image
+              src="/asakusa.webp"
+              alt="asakusa image"
+              width={350}
+              height={300}
+              className="rounded shadow-lg ml-auto"
+            />
           </div>
-
-          <Image
-            src="/asakusa.webp"
-            alt="asakusa image"
-            width={450}
-            height={500}
-            className="rounded shadow-lg ml-auto"
-          />
+          
         </div>
 
-        <div className="flex w-full gap-6">
-          <Image
-            src="/maid.avif"
-            alt="maid image"
-            width={400}
-            height={500}
-            className="mr-auto rounded shadow-lg"
-          />
-          <p className="text-white text-xl textShadow font-medium">
+
+        <div className="flex py-4 short-border">
+            <Image
+              src="/karaoke.jpg"
+              width={200}
+              height={500}
+              alt="karaoke image"
+              className="rounded shadow-lg mr-auto"
+            />
+            <p className="text-white text-xl textShadow font-medium p-2 my-auto">
+            ❤️ Japan is the birthplace of karaoke! Immerse yourself in high-quality karaoke, and to make it even better, enjoy a complimentary drink bar during your musical adventure. 🍵🎤✨
+            </p>
+          </div>
+
+        <div className="flex w-full gap-6 short-border py-4">
+          <p className="text-white text-xl textShadow font-medium my-auto">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
             by the maid. ➕ You can take a video of the maid's spell!
             <br />
@@ -84,11 +80,19 @@ export default function MainContent() {
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"
-              className="underline"
+              className="underline bg-[#d462b75b]"
             >
               https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l
             </a>
           </p>
+
+          <Image
+            src="/maid.avif"
+            alt="maid image"
+            width={300}
+            height={500}
+            className="mr-auto rounded shadow-lg"
+          />
         </div>
       </div>
     </div>

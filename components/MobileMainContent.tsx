@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <div className="h-full w-full flex flex-col px-10  mb-4">
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow">
+    <div className="h-auto py-12 w-full flex flex-col px-4  mb-4 bg-pink-300  border-black border-y-2 justify-center">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow ">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
@@ -13,15 +13,15 @@ export default function MainContent() {
       </h2>
 
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col justify-center w-full gap-6">
+        <div className="flex flex-col w-full gap-6 border-b-2 pb-4 border-black">
           <Image
-            src="/akiba.jpg"
+            src="/akiba-2.webp"
             alt="akiba image"
-            width={300}
-            height={100}
-            className="mx-auto rounded shadow-lg "
+            width={400}
+            height={500}
+            className="mx-auto rounded shadow-lg"
           />
-          <p className="text-white text-lg textShadow font-medium">
+          <p className="text-white text-xl textShadow font-medium">
             ❤️ Let's stroll through the vibrant streets of Akihabara, and I'll
             share interesting insights with you along the way. Enjoy the lively
             atmosphere as I guide you through this tech and entertainment hub!
@@ -29,9 +29,16 @@ export default function MainContent() {
           </p>
         </div>
 
-        <div className="flex">
-          <div className="p-2">
-            <p className="text-white text-xl textShadow font-medium">
+        <div className="flex flex-col">
+          <div className=" flex flex-col border-b-2 pb-4 border-black">
+            <Image
+              src="/asakusa.webp"
+              alt="asakusa image"
+              width={350}
+              height={300}
+              className="rounded shadow-lg mx-auto"
+            />
+            <p className="text-white text-xl textShadow font-medium my-auto pt-2">
               ❤️ Discover the story behind Asakusa through two must-visit spots:
               Senso-ji Temple and Asakusa Shrine.
               <br />
@@ -40,39 +47,30 @@ export default function MainContent() {
               to grab some cool videos to remember your fun-filled tour! 🌟
               Asakusa is a city of comedians! Take photos at Comedian Street.
               <br />
-              <br />
             </p>
-            <div className="flex py-2 ">
-              <Image
-                src="/karaoke.jpg"
-                width={200}
-                height={500}
-                alt="karaoke image"
-                className="rounded shadow-lg mr-auto"
-              />
-              <p className="text-white text-xl textShadow font-medium p-2">
-                Tea time♡ Japan is the birthplace of karaoke Experience Japan's
-                high quality karaoke！+ free drink bar
-              </p>
-            </div>
           </div>
-
-          <Image
-            src="/asakusa.webp"
-            alt="asakusa image"
-            width={450}
-            height={500}
-            className="rounded shadow-lg ml-auto"
-          />
+          <div className="flex py-2 border-b-2 pb-4 border-black">
+            <Image
+              src="/karaoke.jpg"
+              width={200}
+              height={500}
+              alt="karaoke image"
+              className="rounded shadow-lg mr-auto"
+            />
+            <p className="text-white text-xl textShadow font-medium p-2 my-auto">
+              Tea time♡ Japan is the birthplace of karaoke Experience Japan's
+              high quality karaoke！+ free drink bar
+            </p>
+          </div>
         </div>
 
-        <div className="flex w-full gap-6">
+        <div className="flex flex-col w-full gap-6">
           <Image
             src="/maid.avif"
             alt="maid image"
-            width={400}
+            width={300}
             height={500}
-            className="mr-auto rounded shadow-lg"
+            className="mx-auto rounded shadow-lg"
           />
           <p className="text-white text-xl textShadow font-medium">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing

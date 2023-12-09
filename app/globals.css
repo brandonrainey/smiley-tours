@@ -12,7 +12,7 @@ html {
 body {
     height: 100%;
     --tw-bg-opacity: 1;
-    background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+    background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .textShadow {
@@ -22,4 +22,17 @@ body {
 .textShadow2 {
     text-shadow: -1px 0 rgb(186, 6, 102), 0 1px rgb(186, 6, 102), 1px 0 rgb(186, 6, 102), 0 -1px rgb(186, 6, 102);
 }
+
+.short-border {
+    position: relative;
+  }
+  
+  .short-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%; /* Adjust this to control the length of the border */
+    border-top: 2px solid black;
+  }
 
