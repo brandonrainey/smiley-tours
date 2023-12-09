@@ -27,7 +27,7 @@ export default function Home() {
     {
       tourName: 'Tour 2',
       tourDescription: 'This is the second tour',
-      tourImage: '/tour-dec15.avif',
+      tourImage: '/tour-dec15.webp',
       tourId: 2,
       tourPrice: 20000,
       tourSpots: 2,
@@ -36,7 +36,7 @@ export default function Home() {
     {
       tourName: 'Tour 3',
       tourDescription: 'This is the third tour',
-      tourImage: '/tour-dec22.avif',
+      tourImage: '/tour-dec22.webp',
       tourId: 3,
       tourPrice: 20000,
       tourSpots: 4,

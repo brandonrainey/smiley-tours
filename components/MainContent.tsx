@@ -87,7 +87,7 @@ export default function MainContent() {
           </p>
 
           <Image
-            src="/maid.avif"
+            src="/maid.webp"
             alt="maid image"
             width={300}
             height={500}

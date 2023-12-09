@@ -67,7 +67,7 @@ export default function MainContent() {
 
         <div className="flex flex-col w-full gap-6">
           <Image
-            src="/maid.avif"
+            src="/maid.webp"
             alt="maid image"
             width={300}
             height={500}
