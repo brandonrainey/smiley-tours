@@ -65,7 +65,7 @@ export default function MainContent() {
           <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
             high-quality karaoke, and to make it even better, enjoy a
-            complimentary drink bar during your musical adventure. 🍵🎤✨
+            complimentary drink bar! 🍵🎤✨
           </p>
         </div>
 
