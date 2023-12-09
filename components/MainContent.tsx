@@ -34,8 +34,8 @@ export default function MainContent() {
         <div className="flex flex-col items-center">
           <div className="py-4 flex flex-row short-border max-w-[1000px]">
             <p className="text-white text-2xl textShadow font-medium my-auto">
-              ❤️ Discover the story behind Asakusa through two must-visit spots:
-              Senso-ji Temple and Asakusa Shrine.
+              ❤️ Discover the story behind Asakusa through two must-visit spots: Kaminarimon Gate and
+              Senso-ji Temple.
               <br />
               <br />
               Dive into the charm of these historical places, and don&apos;t
