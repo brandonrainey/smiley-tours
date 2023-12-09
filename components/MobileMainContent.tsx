@@ -22,10 +22,10 @@ export default function MainContent() {
             className="mx-auto rounded shadow-lg"
           />
           <p className="text-white text-xl textShadow font-medium">
-            ❤️ Let's stroll through the vibrant streets of Akihabara, and I'll
-            share interesting insights with you along the way. Enjoy the lively
-            atmosphere as I guide you through this tech and entertainment hub!
-            🚶‍♂️🏙️
+            ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
+            I&apos;ll share interesting insights with you along the way. Enjoy
+            the lively atmosphere as I guide you through this tech and
+            entertainment hub! 🚶‍♂️🏙️
           </p>
         </div>
 
@@ -43,9 +43,9 @@ export default function MainContent() {
               Senso-ji Temple and Asakusa Shrine.
               <br />
               <br />
-              Dive into the charm of these historical places, and don't forget
-              to grab some cool videos to remember your fun-filled tour! 🌟
-              Asakusa is a city of comedians! Take photos at Comedian Street.
+              Dive into the charm of these historical places, and don&apos;t
+              forget to grab some cool videos to remember your fun-filled tour!
+              🌟 Asakusa is a city of comedians! Take photos at Comedian Street.
               <br />
             </p>
           </div>
@@ -58,8 +58,9 @@ export default function MainContent() {
               className="rounded shadow-lg mr-auto"
             />
             <p className="text-white text-xl textShadow font-medium p-2 my-auto">
-              Tea time♡ Japan is the birthplace of karaoke Experience Japan's
-              high quality karaoke！+ free drink bar
+              ❤️ Japan is the birthplace of karaoke! Immerse yourself in
+              high-quality karaoke, and to make it even better, enjoy a
+              complimentary drink bar during your musical adventure. 🍵🎤✨
             </p>
           </div>
         </div>
@@ -74,11 +75,11 @@ export default function MainContent() {
           />
           <p className="text-white text-xl textShadow font-medium">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
-            by the maid. ➕ You can take a video of the maid's spell!
+            by the maid. ➕ You can take a video of the maid&apos;s spell!
             <br />
             <br />
             ⭐️If you watch this video before joining, the tour will be even
-            more fun! I'll take you this world↓
+            more fun! I&apos;ll take you this world↓
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"

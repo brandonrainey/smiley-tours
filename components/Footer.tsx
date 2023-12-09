@@ -6,18 +6,18 @@ interface FooterProps {
 }
 
 export default function Footer({ windowWidth }: FooterProps) {
-
-  const [copySuccess, setCopySuccess] = useState('');
+  const [copySuccess, setCopySuccess] = useState('')
 
   const copyToClipboard = async (text: string) => {
     try {
-      await navigator.clipboard.writeText(text);
-      setCopySuccess('Copied!');
-      setTimeout(() => setCopySuccess(''), 1500);
+      await navigator.clipboard.writeText(text)
+      setCopySuccess('Copied!')
+      setTimeout(() => setCopySuccess(''), 1500)
     } catch (err) {
-      setCopySuccess('Failed to copy text');
+      setCopySuccess('Failed to copy text')
+      setTimeout(() => setCopySuccess(''), 1500)
     }
-  };
+  }
 
   return (
     <div
@@ -47,7 +47,10 @@ export default function Footer({ windowWidth }: FooterProps) {
           <i className="fab fa-twitter sm:fa-5x fa-3x text-blue-500 "></i>
         </a>
       </div>
-      <p className="text-white text-xl tracking-wide textShadow underline" onClick={() => copyToClipboard('engelmaikichi@gmail.com')}>
+      <p
+        className="text-white text-xl tracking-wide textShadow underline"
+        onClick={() => copyToClipboard('engelmaikichi@gmail.com')}
+      >
         engelmaikichi@gmail.com
       </p>
       {copySuccess && <div>{copySuccess}</div>}

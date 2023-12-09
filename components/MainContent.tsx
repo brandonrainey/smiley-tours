@@ -22,8 +22,8 @@ export default function MainContent() {
             className="mr-auto rounded shadow-lg"
           />
           <p className="text-white text-xl textShadow font-medium my-auto">
-            ❤️ Let's stroll through the vibrant streets of Akihabara, and I'll
-            share interesting insights with you along the way.
+            ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
+            I&apos;ll share interesting insights with you along the way.
             <br />
             <br />
             Enjoy the lively atmosphere as I guide you through this tech and
@@ -38,9 +38,9 @@ export default function MainContent() {
               Senso-ji Temple and Asakusa Shrine.
               <br />
               <br />
-              Dive into the charm of these historical places, and don't forget
-              to grab some cool videos to remember your fun-filled tour! 🌟
-              Asakusa is a city of comedians! Take photos at Comedian Street.
+              Dive into the charm of these historical places, and don&apos;t
+              forget to grab some cool videos to remember your fun-filled tour!
+              🌟 Asakusa is a city of comedians! Take photos at Comedian Street.
               <br />
               <br />
             </p>
@@ -52,31 +52,31 @@ export default function MainContent() {
               className="rounded shadow-lg ml-auto"
             />
           </div>
-          
         </div>
 
-
         <div className="flex py-4 short-border">
-            <Image
-              src="/karaoke.jpg"
-              width={200}
-              height={500}
-              alt="karaoke image"
-              className="rounded shadow-lg mr-auto"
-            />
-            <p className="text-white text-xl textShadow font-medium p-2 my-auto">
-            ❤️ Japan is the birthplace of karaoke! Immerse yourself in high-quality karaoke, and to make it even better, enjoy a complimentary drink bar during your musical adventure. 🍵🎤✨
-            </p>
-          </div>
+          <Image
+            src="/karaoke.jpg"
+            width={200}
+            height={500}
+            alt="karaoke image"
+            className="rounded shadow-lg mr-auto"
+          />
+          <p className="text-white text-xl textShadow font-medium p-2 my-auto">
+            ❤️ Japan is the birthplace of karaoke! Immerse yourself in
+            high-quality karaoke, and to make it even better, enjoy a
+            complimentary drink bar during your musical adventure. 🍵🎤✨
+          </p>
+        </div>
 
         <div className="flex w-full gap-6 short-border py-4">
           <p className="text-white text-xl textShadow font-medium my-auto">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
-            by the maid. ➕ You can take a video of the maid's spell!
+            by the maid. ➕ You can take a video of the maid&apos;s spell!
             <br />
             <br />
             ⭐️If you watch this video before joining, the tour will be even
-            more fun! I'll take you this world↓
+            more fun! I&apos;ll take you this world↓
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"

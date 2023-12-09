@@ -20,7 +20,7 @@ export default function InfoSidebar() {
 
       <div className="text-center font-semibold ">
         <h2 className="text-center text-xl underline tracking-wide font-semibold text-white textShadow pb-2">
-          Miley's Bar
+          Miley&apos;s Bar
         </h2>
         <Image
           src="/ninja-bar.jpg"
