@@ -28,7 +28,7 @@ export default function Footer({ windowWidth }: FooterProps) {
       <h1 className="text-5xl text-white textShadow pt-4">FOLLOW ME!</h1>
       <div className="flex sm:gap-12 gap-8">
         <a
-          href="https://www.youtube.com/channel/UC9x1Qh6JZxYgF4C2kBk3m3Q"
+          href="https://www.youtube.com/@smileytime"
           className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-[#cb67dc23] rounded-xl"
         >
           <i className="fab fa-youtube sm:fa-5x fa-3x text-red-500"></i>
