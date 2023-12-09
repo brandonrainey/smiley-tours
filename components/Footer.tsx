@@ -25,7 +25,7 @@ export default function Footer({ windowWidth }: FooterProps) {
         windowWidth < 1100 ? 'short-border' : ''
       } `}
     >
-      <h1 className="text-5xl text-white textShadow pt-4">FOLLOW ME!</h1>
+      <h1 className="text-5xl text-white textShadow pt-4">Follow Me!</h1>
       <div className="flex sm:gap-12 gap-8">
         <a
           href="https://www.youtube.com/@smileytime"
