@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <div className="h-full w-full flex flex-col px-10  mb-4  rounded-xl bg-pink-300 border-x-2 border-black border-b-2">
+    <div className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-black border-b-2">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow">
         Tokyo Tour Guide
       </h1>
@@ -12,8 +12,8 @@ export default function MainContent() {
         <i className="fas fa-heart fa-sm text-pink-500"></i>
       </h2>
 
-      <div className="flex flex-col gap-10">
-        <div className="flex w-full gap-6">
+      <div className="flex flex-col gap-10 items-center">
+        <div className="flex w-full max-w-[1000px] gap-6">
           <Image
             src="/akiba-2.webp"
             alt="akiba image"
@@ -21,7 +21,7 @@ export default function MainContent() {
             height={500}
             className="mr-auto rounded shadow-lg"
           />
-          <p className="text-white text-xl textShadow font-medium my-auto">
+          <p className="text-white text-2xl textShadow font-medium my-auto">
             ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
             I&apos;ll share interesting insights with you along the way.
             <br />
@@ -31,9 +31,9 @@ export default function MainContent() {
           </p>
         </div>
 
-        <div className="flex flex-col">
-          <div className="py-4 flex flex-row short-border">
-            <p className="text-white text-xl textShadow font-medium my-auto">
+        <div className="flex flex-col items-center">
+          <div className="py-4 flex flex-row short-border max-w-[1000px]">
+            <p className="text-white text-2xl textShadow font-medium my-auto">
               ❤️ Discover the story behind Asakusa through two must-visit spots:
               Senso-ji Temple and Asakusa Shrine.
               <br />
@@ -54,7 +54,7 @@ export default function MainContent() {
           </div>
         </div>
 
-        <div className="flex py-4 short-border">
+        <div className="flex py-4 short-border max-w-[1000px]">
           <Image
             src="/karaoke.jpg"
             width={200}
@@ -62,15 +62,15 @@ export default function MainContent() {
             alt="karaoke image"
             className="rounded shadow-lg mr-auto"
           />
-          <p className="text-white text-xl textShadow font-medium p-2 my-auto">
+          <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
             high-quality karaoke, and to make it even better, enjoy a
             complimentary drink bar during your musical adventure. 🍵🎤✨
           </p>
         </div>
 
-        <div className="flex w-full gap-6 short-border py-4">
-          <p className="text-white text-xl textShadow font-medium my-auto">
+        <div className="flex w-full gap-6 short-border py-4 max-w-[1000px]">
+          <p className="text-white text-2xl textShadow font-medium my-auto">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
             by the maid. ➕ You can take a video of the maid&apos;s spell!
             <br />
