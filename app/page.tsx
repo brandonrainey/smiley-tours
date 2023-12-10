@@ -65,9 +65,7 @@ export default function Home() {
 
   return (
     <main className=" bg-pink-300 w-full h-full flex flex-col ">
-      <Head>
-        <link rel="icon" href="/new-favicon.jpg" />
-      </Head>
+      
       <Header />
       <div
         className={`flex  ${
