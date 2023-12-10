@@ -6,33 +6,33 @@
 @tailwind utilities;
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    --tw-bg-opacity: 1;
-    background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+  height: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .textShadow {
-    text-shadow: 1px 1px 3px rgb(186, 6, 102)
+  text-shadow: 1px 1px 3px rgb(186, 6, 102);
 }
 
 .textShadow2 {
-    text-shadow: -1px 0 rgb(186, 6, 102), 0 1px rgb(186, 6, 102), 1px 0 rgb(186, 6, 102), 0 -1px rgb(186, 6, 102);
+  text-shadow: -1px 0 rgb(186, 6, 102), 0 1px rgb(186, 6, 102),
+    1px 0 rgb(186, 6, 102), 0 -1px rgb(186, 6, 102);
 }
 
 .short-border {
-    position: relative;
-  }
-  
-  .short-border::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 80%; /* Adjust this to control the length of the border */
-    border-top: 2px solid black;
-  }
+  position: relative;
+}
 
+.short-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  border-top: 2px solid black;
+}

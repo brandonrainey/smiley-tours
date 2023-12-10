@@ -1,8 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 
+interface Tour {
+  tourName: string
+  tourDescription: string
+  tourImage: string
+  tourId: number
+  tourPrice: number | string
+  tourSpots: number | string
+  tourLink: string
+}
+
 interface TourSidebarProps {
-  tours: any[]
+  tours: Tour[]
 }
 
 export default function TourSidebar({ tours }: TourSidebarProps) {

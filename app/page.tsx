@@ -8,7 +8,6 @@ import TourSidebar from '@/components/TourSidebar'
 import MobileTourSidebar from '@/components/MobileTourSidebar'
 import MobileMainContent from '@/components/MobileMainContent'
 import MobileInfoSidebar from '@/components/MobileInfoSidebar'
-import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 
 export default function Home() {
@@ -58,7 +57,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    // Update window width on mount, resize and return.
     updateWindowWidth()
     window.addEventListener('resize', updateWindowWidth)
     return () => window.removeEventListener('resize', updateWindowWidth)

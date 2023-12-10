@@ -8,7 +8,7 @@ export default function InfoSidebar() {
         src="/ganko.png"
         width={100}
         height={72}
-        alt="bulma image"
+        alt="ganko image"
         className="absolute -top-16 left-44"
       />
       <h1
@@ -26,7 +26,7 @@ export default function InfoSidebar() {
           src="/ninja-bar.jpg"
           width={288}
           height={288}
-          alt="asakusa image"
+          alt="ninja bar image"
           className="rounded shadow-lg"
         />
         <p>Open :18:00- 23:00</p>
@@ -41,7 +41,7 @@ export default function InfoSidebar() {
           src="/idol-concert.jpg"
           width={288}
           height={288}
-          alt="asakusa image"
+          alt="idol concert image"
           className="rounded shadow-lg"
         />
         <p>March 11th</p>

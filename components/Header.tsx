@@ -9,6 +9,7 @@ export default function Header() {
         width={800}
         height={200}
         alt="Banner image"
+        priority={true}
       />
     </header>
   )
