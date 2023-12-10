@@ -9,6 +9,7 @@ import MobileTourSidebar from '@/components/MobileTourSidebar'
 import MobileMainContent from '@/components/MobileMainContent'
 import MobileInfoSidebar from '@/components/MobileInfoSidebar'
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(0)
@@ -64,6 +65,9 @@ export default function Home() {
 
   return (
     <main className=" bg-pink-300 w-full h-full flex flex-col ">
+      <Head>
+        <link rel="icon" href="/new-favicon.jpg" />
+      </Head>
       <Header />
       <div
         className={`flex  ${
