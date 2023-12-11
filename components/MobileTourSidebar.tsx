@@ -25,7 +25,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
         alt="bulma image"
         className="absolute -top-8 right-10 "
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow2">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadowMobile">
         Upcoming Tours
       </h1>
       <ul className="flex flex-wrap  items-center">
@@ -43,8 +43,8 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
                 className="rounded shadow-lg"
               />
 
-              <h2 className="font-bold text-white textShadow tracking-wide text-lg">¥{tour.tourPrice}</h2>
-              <h3 className="font-semibold text-white textShadow">
+              <h2 className="font-bold text-white textShadowMobile2 tracking-wide text-lg">¥{tour.tourPrice}</h2>
+              <h3 className="font-semibold text-white textShadowMobile2">
                 {tour.tourSpots === 0 ? (
                   <p className="line-through">Sold Out</p>
                 ) : (

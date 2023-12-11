@@ -26,7 +26,7 @@ export default function InfoSidebar() {
           alt="ninja bar image"
           className="rounded shadow-lg"
         />
-        <div className="bg-[#f05ed331] rounded-b text-white textShadow">
+        <div className="bg-pink-300 rounded-b text-white textShadow">
           <p>Open :18:00- 23:00</p>
           <p>2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032</p>
         </div>
@@ -43,7 +43,7 @@ export default function InfoSidebar() {
           alt="idol concert image"
           className="rounded shadow-lg"
         />
-        <div className="bg-[#f05ed331] rounded-b text-white textShadow">
+        <div className="bg-pink-300 rounded-b text-white textShadow">
           <p>March 11th</p>
           <p>Akihabara</p>
         </div>
