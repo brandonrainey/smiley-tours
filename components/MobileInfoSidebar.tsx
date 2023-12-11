@@ -11,10 +11,7 @@ export default function InfoSidebar() {
         alt="ganko image"
         className="absolute -top-16 left-6"
       />
-      <h1
-        className="text-center text-4xl font-bold mb-6 mt-4 text-white"
-        style={{ textShadow: '4px 2px 8px rgba(243, 15, 133, 0.8)' }}
-      >
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow2">
         Events
       </h1>
 
@@ -29,8 +26,10 @@ export default function InfoSidebar() {
           alt="ninja bar image"
           className="rounded shadow-lg"
         />
-        <p>Open :18:00- 23:00</p>
-        <p>2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032</p>
+        <div className="bg-[#f05ed331] rounded text-white textShadow p-2 w-[288px]">
+          <p>Open :18:00- 23:00</p>
+          <p>2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032</p>
+        </div>
       </div>
 
       <div className="text-center font-semibold mt-8 flex flex-col items-center">
@@ -44,8 +43,10 @@ export default function InfoSidebar() {
           alt="idol concert image"
           className="rounded shadow-lg"
         />
-        <p>March 11th</p>
-        <p>Akihabara</p>
+        <div className="bg-[#f05ed331] rounded text-white textShadow p-2 w-[288px]">
+          <p> March 11th</p>
+          <p>Akihabara</p>
+        </div>
       </div>
     </div>
   )

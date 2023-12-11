@@ -17,7 +17,7 @@ export default function Home() {
   const [tours, setTours] = useState([
     {
       tourName: 'Tour 1',
-      tourDescription: 'This is the first tour',
+      tourDescription: 'Tour on December 8th',
       tourImage: '/tour-dec8.webp',
       tourId: 1,
       tourPrice: 20000,
@@ -26,7 +26,7 @@ export default function Home() {
     },
     {
       tourName: 'Tour 2',
-      tourDescription: 'This is the second tour',
+      tourDescription: 'Tour on December 15th',
       tourImage: '/tour-dec15.webp',
       tourId: 2,
       tourPrice: 20000,
@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       tourName: 'Tour 3',
-      tourDescription: 'This is the third tour',
+      tourDescription: 'Tour on December 22th',
       tourImage: '/tour-dec22.webp',
       tourId: 3,
       tourPrice: 20000,
@@ -43,10 +43,19 @@ export default function Home() {
       tourLink: 'https://smileytour.stores.jp/items/655c10d14e11f11fef524f15',
     },
     {
+      tourName: 'Tour 4',
+      tourDescription: 'Tour on December 29th',
+      tourImage: '/tour-dec29-square.webp',
+      tourId: 4,
+      tourPrice: 20000,
+      tourSpots: 4,
+      tourLink: 'https://smileytour.stores.jp/items/655c11154e11f11fef524f43',
+    },
+    {
       tourName: 'Private Tour',
       tourDescription: 'Private Tour for at least 2 people',
       tourImage: '/private-tour.webp',
-      tourId: 4,
+      tourId: 5,
       tourPrice: 'TBD',
       tourSpots: 'TBD',
       tourLink: 'https://smileytour.stores.jp/items/649e31d385e3630037cff96e',
@@ -65,7 +74,6 @@ export default function Home() {
 
   return (
     <main className=" bg-pink-300 w-full h-full flex flex-col ">
-      
       <Header />
       <div
         className={`flex  ${

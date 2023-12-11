@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className="w-full flex justify-center border-b-2 border-black">
+    <header className="w-full flex justify-center border-b-2 border-pink-700">
       <Image
         src="/smiley-banner-transparent.png"
         width={800}
