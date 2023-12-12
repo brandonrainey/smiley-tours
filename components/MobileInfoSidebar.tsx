@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
-    <div className="bg-pink-200 h-auto lg:w-80 p-4 font-Varela relative flex lg:flex-col flex-col">
+    <section className="bg-pink-200 h-auto lg:w-80 p-4 font-Varela relative flex lg:flex-col flex-col">
       <Image
         src="/ganko.png"
         width={100}
@@ -48,6 +48,6 @@ export default function InfoSidebar() {
           <p>Akihabara</p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
