@@ -46,7 +46,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
               <h2 className="font-bold text-white textShadow tracking-wide text-lg">¥{tour.tourPrice}</h2>
               <h3 className="font-semibold text-white textShadow">
                 {tour.tourSpots === 0 ? (
-                  <p className="line-through">Sold Out</p>
+                  <p className="line-through text-slate-300">Sold Out</p>
                 ) : (
                   <p>Book Now!</p>
                 )}

@@ -28,7 +28,10 @@ export default function InfoSidebar() {
         />
         <div className="bg-pink-300 rounded text-white textShadowMobile2 p-2 w-[288px]">
           <p>Open :18:00- 23:00</p>
-          <p>2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032</p>
+          <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
+            <p>2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032</p>
+          </a>
+          
         </div>
       </div>
 
