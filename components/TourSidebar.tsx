@@ -17,7 +17,7 @@ interface TourSidebarProps {
 
 export default function TourSidebar({ tours }: TourSidebarProps) {
   return (
-    <div className=" bg-pink-200 h-auto  min-w-80 relative p-4 font-Varela">
+    <div className=" bg-pink-200 h-auto relative p-4 font-Varela basis-1/4">
       <Image
         src="/bulma.png"
         width={100}
@@ -28,11 +28,12 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
       <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow2">
         Upcoming Tours
       </h1>
-      <ul className="flex flex-col items-center space-y-32">
+
+      <ul className="flex flex-col items-center ">
         {tours.map((tour) => (
           <li
             key={tour.tourId}
-            className="w-full h-36 flex flex-col items-center "
+            className="w-full  flex flex-col items-center py-4 group"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
               <Image
@@ -43,12 +44,18 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
                 className="rounded shadow-lg"
               />
 
-              <h2 className="font-bold text-white textShadow tracking-wide text-lg">¥{tour.tourPrice}</h2>
+              <h2 className="font-bold text-white textShadow tracking-wide text-lg">
+                ¥{tour.tourPrice}
+              </h2>
               <h3 className="font-semibold text-white textShadow">
                 {tour.tourSpots === 0 ? (
                   <p className="line-through text-slate-300">Sold Out</p>
                 ) : (
-                  <p>Book Now!</p>
+                  <div className="flex items-center gap-2 ">
+                    <i className="fas fa-heart fa-sm text-pink-500 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all ease-in-out"></i>
+                    <p className="">Book Now!</p>
+                    <i className="fas fa-heart fa-sm text-pink-500 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all ease-in-out"></i>
+                  </div>
                 )}
               </h3>
             </a>
