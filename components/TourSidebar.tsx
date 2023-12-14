@@ -41,7 +41,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
                 alt={tour.tourName}
                 width={288}
                 height={288}
-                className="rounded shadow-lg"
+                className="rounded newShadow"
               />
 
               <h2 className="font-bold text-white textShadow tracking-wide text-lg">

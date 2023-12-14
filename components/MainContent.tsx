@@ -19,7 +19,7 @@ export default function MainContent() {
             alt="akiba image"
             width={400}
             height={500}
-            className="mr-auto rounded shadow-lg"
+            className="mr-auto rounded shadow-lg  border-dashed border-4 border-pink-500 p-2"
           />
           <p className="text-white text-2xl textShadow font-medium my-auto">
             ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
@@ -49,7 +49,7 @@ export default function MainContent() {
               alt="asakusa image"
               width={350}
               height={300}
-              className="rounded shadow-lg ml-auto"
+              className="rounded shadow-lg ml-auto border-dashed border-4 border-pink-500 p-2"
             />
           </div>
         </div>
@@ -57,10 +57,10 @@ export default function MainContent() {
         <div className="flex py-4 short-border max-w-[1000px]">
           <Image
             src="/karaoke.jpg"
-            width={200}
+            width={220}
             height={500}
             alt="karaoke image"
-            className="rounded shadow-lg mr-auto"
+            className="rounded shadow-lg mr-auto border-dashed border-4 border-pink-500 p-2"
           />
           <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
@@ -91,7 +91,7 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className="mr-auto rounded shadow-lg"
+            className="mr-auto rounded shadow-lg border-dashed border-4 border-pink-500 p-2"
           />
         </div>
       </div>
