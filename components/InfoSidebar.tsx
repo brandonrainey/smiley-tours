@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
-    <div className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela relative flex lg:flex-col ">
+    <div className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <Image
         src="/ganko.png"
         width={100}
         height={72}
         alt="ganko image"
-        className="absolute -top-16 left-44"
+        className="absolute -top-14 -right-10"
       />
       <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow2">
         Events
@@ -20,7 +20,7 @@ export default function InfoSidebar() {
           Miley&apos;s Bar
         </h2>
 
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center ">
           <Image
             src="/ninja-bar.jpg"
             width={288}
