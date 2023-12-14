@@ -14,13 +14,16 @@ export default function MainContent() {
 
       <div className="flex flex-col gap-10 items-center">
         <div className="flex w-full max-w-[1000px] gap-6">
-          <Image
-            src="/akiba-2.webp"
-            alt="akiba image"
-            width={400}
-            height={500}
-            className="mr-auto rounded shadow-lg  border-dashed border-4 border-pink-500 p-2"
-          />
+          <div className="flex w-full max-w-[1000px] ">
+            <Image
+              src="/akiba-2.webp"
+              alt="akiba image"
+              width={400}
+              height={500}
+              className="mr-auto rounded  border-dashed border-4 border-pink-500 p-2 "
+            />
+          </div>
+
           <p className="text-white text-2xl textShadow font-medium my-auto">
             ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
             I&apos;ll share interesting insights with you along the way.
@@ -44,12 +47,13 @@ export default function MainContent() {
               <br />
               <br />
             </p>
+
             <Image
               src="/asakusa.webp"
               alt="asakusa image"
               width={350}
               height={300}
-              className="rounded shadow-lg ml-auto border-dashed border-4 border-pink-500 p-2"
+              className="rounded ml-auto border-dashed border-4 border-pink-500 p-2"
             />
           </div>
         </div>
@@ -60,7 +64,7 @@ export default function MainContent() {
             width={220}
             height={500}
             alt="karaoke image"
-            className="rounded shadow-lg mr-auto border-dashed border-4 border-pink-500 p-2"
+            className="rounded mr-auto border-dashed border-4 border-pink-500 p-2"
           />
           <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
@@ -91,7 +95,7 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className="mr-auto rounded shadow-lg border-dashed border-4 border-pink-500 p-2"
+            className="mr-auto rounded border-dashed border-4 border-pink-500 p-2"
           />
         </div>
       </div>
