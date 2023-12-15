@@ -13,7 +13,7 @@ export default function MainContent() {
       </h2>
 
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col w-full gap-6 border-b-2 pb-4 border-pink-700">
+        <div className="flex flex-col w-full gap-6 border-b-4 pb-4 border-pink-700">
           <Image
             src="/akiba-2.webp"
             alt="akiba image"
@@ -30,7 +30,7 @@ export default function MainContent() {
         </div>
 
         <div className="flex flex-col">
-          <div className=" flex flex-col border-b-2 pb-4 border-pink-700">
+          <div className=" flex flex-col border-b-4 pb-4 border-pink-700">
             <Image
               src="/asakusa.webp"
               alt="asakusa image"
@@ -49,7 +49,7 @@ export default function MainContent() {
               <br />
             </p>
           </div>
-          <div className="flex py-2 border-b-2 pb-4 border-pink-700">
+          <div className="flex py-2 border-b-4 pb-4 border-pink-700">
             <Image
               src="/karaoke.jpg"
               width={200}

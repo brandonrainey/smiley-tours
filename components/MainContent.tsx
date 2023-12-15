@@ -3,13 +3,14 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <div className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-pink-700 border-b-2">
+    <div className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-pink-600 border-b-2">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
-        <i className="fas fa-heart fa-sm text-pink-500"></i>Asakusa & Akihabara
-        <i className="fas fa-heart fa-sm text-pink-500"></i>
+        <i className="fas fa-heart fa-sm text-pink-500 pr-1"></i>
+        Asakusa & Akihabara
+        <i className="fas fa-heart fa-sm text-pink-500 pl-1"></i>
       </h2>
 
       <div className="flex flex-col gap-10 items-center">

@@ -47,29 +47,11 @@ body {
   top: 0;
   left: 10%;
   width: 80%;
-  border-top: 2px solid rgb(190 24 93);
+  border-top: 4px solid rgb(201, 68, 124);
+  border-radius: 50%;
 }
 
-.border-corner::before, .border-corner::after {
-  content: "";
-  position: absolute;
-  border: solid 2px; /* Adjust border size and style as needed */
-  border-color: #7b0d63; /* Adjust border color as needed */
-}
 
-.border-corner::before {
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  top: 0;
-  left: 0;
-}
-
-.border-corner::after {
-  border-top-color: transparent;
-  border-left-color: transparent;
-  bottom: 0;
-  right: 0;
-}
 
 .newShadow {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -81,6 +63,27 @@ body {
 
 .textShadow3 {
   text-shadow: 2px 4px 3px rgba(169, 24, 152, 0.59);
+}
+
+.darkTextShadow {
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.threedtext {
+  text-shadow:  1px 0 #c783c6, 
+               0 2px 0 #be7eb1,
+               0 3px 0 #bd82bd,
+               0 4px 0 #bd85bd,
+               0 5px 0 #b97eae,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 

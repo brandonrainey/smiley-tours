@@ -11,7 +11,7 @@ export default function InfoSidebar() {
         alt="ganko image"
         className="absolute -top-16 left-6"
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadowMobile">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white threedtext">
         Events
       </h1>
 
@@ -24,9 +24,9 @@ export default function InfoSidebar() {
           width={288}
           height={288}
           alt="ninja bar image"
-          className="rounded shadow-lg"
+          className="rounded   mb-2"
         />
-        <div className="bg-pink-300 rounded text-white textShadowMobile2 p-2 w-[288px]">
+        <div className="bg-pink-300 rounded text-white textShadowMobile2 p-2 w-[288px] newShadow">
           <p>Open :18:00- 23:00</p>
           <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
             <p className="hover:text-pink-700">
@@ -45,9 +45,9 @@ export default function InfoSidebar() {
           width={288}
           height={288}
           alt="idol concert image"
-          className="rounded shadow-lg"
+          className="rounded mb-2"
         />
-        <div className="bg-pink-300 rounded text-white textShadowMobile2 p-2 w-[288px]">
+        <div className="bg-pink-300 rounded text-white textShadowMobile2 p-2 w-[288px] newShadow">
           <p> March 11th</p>
           <p>Akihabara</p>
         </div>
