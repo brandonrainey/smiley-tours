@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-pink-600 border-b-2">
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow">
+    <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-pink-600 border-b-2 ">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow z-20">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
