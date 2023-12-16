@@ -19,12 +19,15 @@ export default function Footer({ windowWidth }: FooterProps) {
   }
 
   return (
-    <div
-      className={`bg-pink-200 min-h-[250px] w-full flex flex-col justify-around items-center ${
-        windowWidth < 1100 ? 'short-border' : ''
-      } `}
+    <footer
+      className={`bg-pink-200 min-h-[250px] w-full flex flex-col justify-around items-center  `}
     >
-      <h1 className="text-5xl text-white textShadow3 pt-4">Follow Me!</h1>
+      <div className="flex items-center justify-center gap-4">
+        <i className="fas fa-down-long fa-2x text-xl text-pink-500"></i>
+        <h1 className="text-5xl text-white textShadow3">Follow Me!</h1>
+        <i className="fas fa-down-long fa-2x text-pink-500"></i>
+      </div>
+
       <div className="flex sm:gap-12 gap-8">
         <a
           href="https://www.youtube.com/@smileytime"
@@ -53,6 +56,6 @@ export default function Footer({ windowWidth }: FooterProps) {
         engelmaikichi@gmail.com
       </p>
       {copySuccess && <div>{copySuccess}</div>}
-    </div>
+    </footer>
   )
 }

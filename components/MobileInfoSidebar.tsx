@@ -11,7 +11,7 @@ export default function InfoSidebar() {
         alt="ganko image"
         className="absolute -top-16 left-6"
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white threedtext">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3Mobile">
         Events
       </h1>
 

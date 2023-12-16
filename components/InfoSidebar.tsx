@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
-    <div className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
+    <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <Image
         src="/ganko.png"
         width={100}
@@ -11,7 +11,7 @@ export default function InfoSidebar() {
         alt="ganko image"
         className="absolute -top-14 -right-10"
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white threedtext">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3">
         Events
       </h1>
 
@@ -58,6 +58,6 @@ export default function InfoSidebar() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

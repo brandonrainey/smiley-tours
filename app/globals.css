@@ -62,7 +62,11 @@ body {
 }
 
 .textShadow3 {
-  text-shadow: 2px 4px 3px rgba(169, 24, 152, 0.59);
+  text-shadow: 2px 4px 3px rgba(186, 6, 102, 0.537);
+}
+
+.textShadow3Mobile {
+  text-shadow: 2px 4px 3px rgba(186, 6, 102, 0.282);
 }
 
 .darkTextShadow {
@@ -86,4 +90,7 @@ body {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.testShadow {
+  text-shadow: 2px 4px 3px rgba(169, 24, 152, 0.59);
+}
 

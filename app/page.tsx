@@ -9,7 +9,7 @@ import MobileTourSidebar from '@/components/MobileTourSidebar'
 import MobileMainContent from '@/components/MobileMainContent'
 import MobileInfoSidebar from '@/components/MobileInfoSidebar'
 import React, { useState, useEffect } from 'react'
-import Head from 'next/head'
+import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(0)
@@ -73,7 +73,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className=" bg-pink-300 w-full h-full flex flex-col ">
+    <div className=" bg-pink-300 w-full h-full flex flex-col ">
       <Header />
       <div
         className={`flex  ${
@@ -92,7 +92,8 @@ export default function Home() {
           <MobileInfoSidebar />
         )}
       </div>
+      <Testimonials windowWidth={windowWidth}/>
       <Footer windowWidth={windowWidth} />
-    </main>
+    </div>
   )
 }

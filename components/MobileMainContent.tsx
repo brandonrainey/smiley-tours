@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <div className="h-auto py-12 w-full flex flex-col px-4  mb-4 bg-pink-300  border-pink-700 border-y-2 justify-center">
+    <main className="h-auto py-12 w-full flex flex-col px-4  mb-4 bg-pink-300  border-pink-700 border-y-2 justify-center">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow ">
         Tokyo Tour Guide
       </h1>
@@ -13,7 +13,7 @@ export default function MainContent() {
       </h2>
 
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col w-full gap-6 border-b-4 pb-4 border-pink-700">
+        <div className="flex flex-col w-full gap-6 pb-4">
           <Image
             src="/akiba-2.webp"
             alt="akiba image"
@@ -30,7 +30,7 @@ export default function MainContent() {
         </div>
 
         <div className="flex flex-col">
-          <div className=" flex flex-col border-b-4 pb-4 border-pink-700">
+          <div className=" flex flex-col pb-4 short-border pt-10">
             <Image
               src="/asakusa.webp"
               alt="asakusa image"
@@ -49,7 +49,7 @@ export default function MainContent() {
               <br />
             </p>
           </div>
-          <div className="flex py-2 border-b-4 pb-4 border-pink-700">
+          <div className="flex py-2  pb-4 short-border pt-10">
             <Image
               src="/karaoke.jpg"
               width={200}
@@ -65,7 +65,7 @@ export default function MainContent() {
           </div>
         </div>
 
-        <div className="flex flex-col w-full gap-6">
+        <div className="flex flex-col w-full gap-6 short-border pt-10">
           <Image
             src="/maid.webp"
             alt="maid image"
@@ -83,13 +83,13 @@ export default function MainContent() {
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"
-              className="underline"
+              className="underline bg-[#d462b75b]"
             >
               https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l
             </a>
           </p>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

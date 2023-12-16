@@ -17,7 +17,7 @@ interface TourSidebarProps {
 
 export default function TourSidebar({ tours }: TourSidebarProps) {
   return (
-    <div className=" bg-pink-200 h-auto relative p-4 font-Varela basis-1/4">
+    <section className=" bg-pink-200 h-auto relative p-4 font-Varela basis-1/4">
       <Image
         src="/bulma.png"
         width={100}
@@ -25,7 +25,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
         alt="bulma image"
         className="absolute -top-12 -left-10 "
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white threedtext">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3">
         Upcoming Tours
       </h1>
 
@@ -49,7 +49,9 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
               </h2>
               <h3 className="font-semibold text-white textShadow">
                 {tour.tourSpots === 0 ? (
-                  <p className="line-through text-slate-300 text-lg">Sold Out</p>
+                  <p className="line-through text-slate-300 text-lg">
+                    Sold Out
+                  </p>
                 ) : (
                   <div className="flex items-center gap-2 ">
                     <i className="fas fa-heart fa-sm text-pink-500 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all ease-in-out"></i>
@@ -62,6 +64,6 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   )
 }

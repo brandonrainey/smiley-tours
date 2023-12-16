@@ -17,7 +17,7 @@ interface TourSidebarProps {
 
 export default function TourSidebar({ tours }: TourSidebarProps) {
   return (
-    <div className=" bg-pink-200 h-auto w-full relative p-4 font-Varela">
+    <section className=" bg-pink-200 h-auto w-full relative p-4 font-Varela">
       <Image
         src="/bulma.png"
         width={70}
@@ -25,7 +25,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
         alt="bulma image"
         className="absolute -top-8 right-10 "
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white threedtext">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3Mobile">
         Upcoming Tours
       </h1>
       <ul className="flex flex-wrap  items-center">
@@ -61,6 +61,6 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   )
 }
