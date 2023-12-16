@@ -22,11 +22,7 @@ export default function Footer({ windowWidth }: FooterProps) {
     <footer
       className={`bg-pink-200 min-h-[250px] w-full flex flex-col justify-around items-center  `}
     >
-      <div className="flex items-center justify-center gap-4">
-        <i className="fas fa-down-long fa-2x text-xl text-pink-500"></i>
-        <h1 className="text-5xl text-white textShadow3">Follow Me!</h1>
-        <i className="fas fa-down-long fa-2x text-pink-500"></i>
-      </div>
+      <h1 className="text-5xl text-white textShadow3">Follow Me!</h1>
 
       <div className="flex sm:gap-12 gap-8">
         <a
