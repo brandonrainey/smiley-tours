@@ -8,9 +8,9 @@ export default function MainContent() {
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
-        <i className="fas fa-heart fa-sm text-pink-500 pr-1"></i>
+        <i className="fas fa-heart fa-sm text-pink-300 pr-1"></i>
         Asakusa & Akihabara
-        <i className="fas fa-heart fa-sm text-pink-500 pl-1"></i>
+        <i className="fas fa-heart fa-sm text-pink-300 pl-1"></i>
       </h2>
 
       <div className="flex flex-col gap-10 items-center">

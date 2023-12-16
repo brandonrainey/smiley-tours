@@ -7,8 +7,7 @@
 
 /* make css variable for a color */
 
-.box{
-
+.box {
 }
 
 html {
@@ -51,8 +50,6 @@ body {
   border-radius: 50%;
 }
 
-
-
 .newShadow {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -70,36 +67,24 @@ body {
 }
 
 .darkTextShadow {
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.threedtext {
-  text-shadow:  1px 0 #c783c6, 
-               0 2px 0 #be7eb1,
-               0 3px 0 #bd82bd,
-               0 4px 0 #bd85bd,
-               0 5px 0 #b97eae,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-}
 
 .testShadow {
-  text-shadow: 2px 4px 3px rgba(169, 24, 152, 0.59);
+  text-shadow: 2px 4px 4px rgba(169, 24, 152, 0.59);
 }
 
 .textGradient {
-  background: #F8FFE8;
-background: linear-gradient(to bottom, #F8FFE8 0%, #E3F5AB 33%, #B7DF2D 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
-
+  background: #f8ffe8;
+  background: linear-gradient(to bottom, #f8ffe8 0%, #e3f5ab 33%, #b7df2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.followShadow {
+  text-shadow: 2px 4px 3px rgba(255, 47, 158, 0.792);
+}
+
 
