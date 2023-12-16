@@ -94,3 +94,12 @@ body {
   text-shadow: 2px 4px 3px rgba(169, 24, 152, 0.59);
 }
 
+.textGradient {
+  background: #F8FFE8;
+background: linear-gradient(to bottom, #F8FFE8 0%, #E3F5AB 33%, #B7DF2D 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+

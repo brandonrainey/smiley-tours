@@ -11,7 +11,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         windowWidth < 1100 ? 'short-border pt-10' : ''
       }`}
     >
-      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px]">
+      <div className=" text-center basis-1/3 bg-pink-400/50 rounded-xl newShadow max-w-[520px]">
         <figure className="max-w-screen-md p-2">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-800 "

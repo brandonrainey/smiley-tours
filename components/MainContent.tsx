@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-300 border-x-2 border-pink-600 border-b-2 ">
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow z-20">
+    <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-400 border-x-2 border-pink-600 border-b-2 ">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
@@ -21,7 +21,7 @@ export default function MainContent() {
               alt="akiba image"
               width={400}
               height={500}
-              className="mr-auto rounded  border-dashed border-4 border-pink-500 p-2 "
+              className="mr-auto rounded  border-dashed border-4 border-pink-200 p-2 "
             />
           </div>
 
@@ -54,7 +54,7 @@ export default function MainContent() {
               alt="asakusa image"
               width={350}
               height={300}
-              className="rounded ml-auto border-dashed border-4 border-pink-500 p-2"
+              className="rounded ml-auto border-dashed border-4 border-pink-200 p-2"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function MainContent() {
             width={220}
             height={500}
             alt="karaoke image"
-            className="rounded mr-auto border-dashed border-4 border-pink-500 p-2"
+            className="rounded mr-auto border-dashed border-4 border-pink-200 p-2"
           />
           <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
@@ -85,7 +85,7 @@ export default function MainContent() {
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"
-              className="underline bg-[#d462b75b]"
+              className="underline bg-[#e3a0d3b6]"
             >
               https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l
             </a>
@@ -96,7 +96,7 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className="mr-auto rounded border-dashed border-4 border-pink-500 p-2"
+            className="mr-auto rounded border-dashed border-4 border-pink-200 p-2"
           />
         </div>
       </div>

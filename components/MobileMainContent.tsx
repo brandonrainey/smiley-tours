@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function MainContent() {
   return (
-    <main className="h-auto py-12 w-full flex flex-col px-4  mb-4 bg-pink-300  border-pink-700 border-y-2 justify-center">
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white textShadow ">
+    <main className="h-auto py-12 w-full flex flex-col px-4  mb-4 bg-pink-400  border-pink-700 border-y-2 justify-center">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider text-white  textGradient">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
@@ -19,7 +19,7 @@ export default function MainContent() {
             alt="akiba image"
             width={400}
             height={500}
-            className="mx-auto rounded border-dashed border-4 border-pink-500 p-2"
+            className="mx-auto rounded border-dashed border-4 border-pink-200 p-2"
           />
           <p className="text-white text-xl textShadow font-medium">
             ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
@@ -36,7 +36,7 @@ export default function MainContent() {
               alt="asakusa image"
               width={350}
               height={300}
-              className="rounded mx-auto border-dashed border-4 border-pink-500 p-2"
+              className="rounded mx-auto border-dashed border-4 border-pink-200 p-2"
             />
             <p className="text-white text-xl textShadow font-medium my-auto pt-2">
               ❤️ Discover the story behind Asakusa through two must-visit spots:
@@ -55,7 +55,7 @@ export default function MainContent() {
               width={200}
               height={500}
               alt="karaoke image"
-              className="rounded mr-auto border-dashed border-4 border-pink-500 p-2"
+              className="rounded mr-auto border-dashed border-4 border-pink-200 p-2"
             />
             <p className="text-white text-xl textShadow font-medium p-2 my-auto">
               ❤️ Japan is the birthplace of karaoke! Immerse yourself in
@@ -71,7 +71,7 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className="mx-auto rounded border-dashed border-4 border-pink-500 p-2"
+            className="mx-auto rounded border-dashed border-4 border-pink-200 p-2"
           />
           <p className="text-white text-xl textShadow font-medium">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
@@ -83,7 +83,7 @@ export default function MainContent() {
             <br />
             <a
               href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"
-              className="underline bg-[#d462b75b]"
+              className="underline bg-[#e3a0d3b6]"
             >
               https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l
             </a>

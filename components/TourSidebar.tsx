@@ -25,7 +25,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
         alt="bulma image"
         className="absolute -top-12 -left-10 "
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3">
+      <h1 className="text-center text-4xl font-bold mb-6 mt-4  text-white textShadow3 ">
         Upcoming Tours
       </h1>
 
