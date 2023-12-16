@@ -28,7 +28,7 @@ export default function Footer({ windowWidth }: FooterProps) {
           src="/background-banner.png"
           fill
           alt="bulma image"
-          className="absolute z-0 border-t-4 border-pink-500/50 object-cover"
+          className="absolute z-0 border-t-4 border-pink-500/50 object-cover opacity-70"
         />
       </div>
 
@@ -65,7 +65,7 @@ export default function Footer({ windowWidth }: FooterProps) {
         </a>
       </div>
       <p
-        className="text-white text-xl tracking-wide textShadow underline cursor-copy"
+        className="text-white text-xl tracking-wide textShadow underline cursor-copy py-2 z-30"
         onClick={() => copyToClipboard('engelmaikichi@gmail.com')}
       >
         engelmaikichi@gmail.com
