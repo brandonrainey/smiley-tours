@@ -26,8 +26,8 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadow">
-              "I had a wonderful time at the Tour and will definitely be back in
-              tokyo again next year. Hopefully we'll meet again soon. Cheers!😊"
+            &quot;I had a wonderful time at the Tour and will definitely be back in
+              tokyo again next year. Hopefully we&apos;ll meet again soon. Cheers!😊&quot;
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3"></figcaption>
@@ -49,10 +49,10 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadow">
-              "The Karaoke segment is so wonderful because it allows Miley to
+            &quot;The Karaoke segment is so wonderful because it allows Miley to
               include HER top-notch professional Japanese singing and dancing
               performance within her tour. Her singing, alone, is worth the
-              price. Miley is such a wonderful person to spend time with."
+              price. Miley is such a wonderful person to spend time with.&quot;
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3"></figcaption>
@@ -74,10 +74,10 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadow">
-              "Experiencing Smiley's tour around Asakusa and Akihabara was a
-              true highlight! Miley's positive energy and the delightful moments
-              captured made the tour an absolute pleasure. Can't wait for the
-              next adventure! 😊🌟"
+            &quot;Experiencing Smiley&apos;s tour around Asakusa and Akihabara was a
+              true highlight! Miley&apos;s positive energy and the delightful moments
+              captured made the tour an absolute pleasure. Can&apos;t wait for the
+              next adventure! 😊🌟&quot;
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3"></figcaption>
