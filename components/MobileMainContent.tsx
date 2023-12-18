@@ -37,9 +37,9 @@ export default function MainContent() {
             alt="akiba image"
             width={400}
             height={500}
-            className={`mx-auto rounded border-dashed border-4 border-pink-200 p-2 ${
+            className={`mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView
-                ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out'
+                ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out opacity-100 '
                 : ''
             }`}
           />
@@ -59,9 +59,9 @@ export default function MainContent() {
               alt="asakusa image"
               width={350}
               height={300}
-              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 ${
+              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView2
-                  ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out'
+                  ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
               }`}
             />
@@ -83,9 +83,9 @@ export default function MainContent() {
               width={200}
               height={500}
               alt="karaoke image"
-              className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 ${
+              className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView3
-                  ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out'
+                  ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
               }`}
             />
@@ -104,9 +104,9 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className={`mx-auto rounded border-dashed border-4 border-pink-200 p-2 ${
+            className={`mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView4
-                ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out'
+                ? 'animate-fade-down animate-duration-[1200ms] animate-ease-in-out opacity-100'
                 : ''
             }`}
           />
