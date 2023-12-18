@@ -19,7 +19,7 @@ export default function TourSidebar({ tours }: TourSidebarProps) {
   return (
     <section className=" bg-pink-200 h-auto relative p-4 font-Varela basis-1/4">
       <Image
-        src="/bulma.png"
+        src="/bulma.webp"
         width={100}
         height={72}
         alt="bulma image"

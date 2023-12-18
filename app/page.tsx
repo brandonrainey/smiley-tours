@@ -12,7 +12,7 @@ import React, { useState, useEffect } from 'react'
 import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
-  const [windowWidth, setWindowWidth] = useState(0)
+  const [windowWidth, setWindowWidth] = useState(1101)
 
   const [tours, setTours] = useState([
     {
@@ -80,16 +80,16 @@ export default function Home() {
           windowWidth < 1100 ? 'flex-col' : 'flex-row'
         } w-full justify-between flex-grow   `}
       >
-        {windowWidth > 1100 ? (
-          <InfoSidebar />
-        ) : (
+        {windowWidth < 1100 ? (
           <MobileTourSidebar tours={tours} />
-        )}
-        {windowWidth > 1100 ? <MainContent /> : <MobileMainContent />}
-        {windowWidth > 1100 ? (
-          <TourSidebar tours={tours} />
         ) : (
+          <InfoSidebar />
+        )}
+        {windowWidth < 1100 ? <MobileMainContent /> : <MainContent />}
+        {windowWidth < 1100 ? (
           <MobileInfoSidebar />
+        ) : (
+          <TourSidebar tours={tours} />
         )}
       </div>
       <Testimonials windowWidth={windowWidth}/>

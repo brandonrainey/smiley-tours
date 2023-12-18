@@ -1,7 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import { useInView } from 'react-intersection-observer'
 
 export default function MainContent() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  })
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+  })
+
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+  })
+
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+  })
+
   return (
     <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-400 border-x-2 border-pink-600 border-b-2 ">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient ">
@@ -17,11 +34,16 @@ export default function MainContent() {
         <div className="flex w-full max-w-[1000px] gap-6">
           <div className="flex w-full max-w-[1000px] ">
             <Image
+              ref={ref}
               src="/akiba-2.webp"
               alt="akiba image"
               width={400}
               height={500}
-              className="mr-auto rounded  border-dashed border-4 border-pink-200 p-2 "
+              className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 ${
+                inView
+                  ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out'
+                  : ''
+              }`}
             />
           </div>
 
@@ -50,22 +72,32 @@ export default function MainContent() {
             </p>
 
             <Image
+              ref={ref2}
               src="/asakusa.webp"
               alt="asakusa image"
               width={350}
               height={300}
-              className="rounded ml-auto border-dashed border-4 border-pink-200 p-2"
+              className={`rounded ml-auto border-dashed border-4 border-pink-200 p-2 ${
+                inView2
+                  ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out'
+                  : ''
+              }`}
             />
           </div>
         </div>
 
         <div className="flex py-4 short-border max-w-[1000px]">
           <Image
-            src="/karaoke.jpg"
+            ref={ref3}
+            src="/karaoke.webp"
             width={220}
             height={500}
             alt="karaoke image"
-            className="rounded mr-auto border-dashed border-4 border-pink-200 p-2"
+            className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 ${
+              inView3
+                ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out'
+                : ''
+            }`}
           />
           <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
@@ -92,11 +124,16 @@ export default function MainContent() {
           </p>
 
           <Image
+            ref={ref4}
             src="/maid.webp"
             alt="maid image"
             width={300}
             height={500}
-            className="mr-auto rounded border-dashed border-4 border-pink-200 p-2"
+            className={`mr-auto rounded border-dashed border-4 border-pink-200 p-2 ${
+              inView4
+                ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out'
+                : ''
+            }`}
           />
         </div>
       </div>

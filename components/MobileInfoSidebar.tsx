@@ -5,7 +5,7 @@ export default function InfoSidebar() {
   return (
     <section className="bg-pink-200 h-auto lg:w-80 p-4 font-Varela relative flex lg:flex-col flex-col">
       <Image
-        src="/ganko.png"
+        src="/ganko.webp"
         width={100}
         height={72}
         alt="ganko image"
@@ -20,7 +20,7 @@ export default function InfoSidebar() {
           Miley&apos;s Bar
         </h2>
         <Image
-          src="/ninja-bar.jpg"
+          src="/ninja-bar.webp"
           width={288}
           height={288}
           alt="ninja bar image"
@@ -41,7 +41,7 @@ export default function InfoSidebar() {
           Idol Concert
         </h2>
         <Image
-          src="/idol-concert.jpg"
+          src="/idol-concert.webp"
           width={288}
           height={288}
           alt="idol concert image"

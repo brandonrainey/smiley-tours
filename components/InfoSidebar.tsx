@@ -5,7 +5,7 @@ export default function InfoSidebar() {
   return (
     <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <Image
-        src="/ganko.png"
+        src="/ganko.webp"
         width={100}
         height={72}
         alt="ganko image"
@@ -22,7 +22,7 @@ export default function InfoSidebar() {
 
         <div className="flex flex-col items-center ">
           <Image
-            src="/ninja-bar.jpg"
+            src="/ninja-bar.webp"
             width={288}
             height={288}
             alt="ninja bar image"
@@ -31,7 +31,7 @@ export default function InfoSidebar() {
           <div className="bg-pink-300 rounded text-white textShadow mt-2 max-w-[288px] newShadow">
             <p>Open :18:00- 23:00</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
-              <p className="hover:text-pink-700">
+              <p className="hover:text-pink-800">
                 2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032
               </p>
             </a>
@@ -46,7 +46,7 @@ export default function InfoSidebar() {
 
         <div>
           <Image
-            src="/idol-concert.jpg"
+            src="/idol-concert.webp"
             width={288}
             height={288}
             alt="idol concert image"
