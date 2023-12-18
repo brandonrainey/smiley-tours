@@ -25,7 +25,7 @@ export default function Footer({ windowWidth }: FooterProps) {
     >
       <div className="sm:w-full h-[250px]">
         <Image
-          src="/background-banner.png"
+          src="/background-banner.webp"
           fill
           alt="bulma image"
           className="absolute z-0 border-t-4 border-pink-500/50 object-cover opacity-70"
@@ -41,7 +41,7 @@ export default function Footer({ windowWidth }: FooterProps) {
           Follow Me!
         </h1>
         <Image
-          src="/miley.png"
+          src="/miley.webp"
           width={100}
           height={72}
           alt="miley image"
