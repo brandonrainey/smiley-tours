@@ -38,7 +38,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
         {tours.map((tour) => (
           <li
             key={tour.tourId}
-            className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 px-2 group"
+            className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
               <Image

@@ -24,7 +24,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
   })
 
   return (
-    <main className="custom:h-full h-auto custom:py-0 py-12 w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-700 custom:border-b-2 custom:border-t-0 border-y-2  justify-center">
+    <main className="custom:h-full h-auto py-12 w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-700 custom:border-b-2 custom:border-t-0 border-y-2 custom:justify-normal  justify-center">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
@@ -43,7 +43,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               alt="akiba image"
               width={400}
               height={500}
-              className={`rounded custom:mr-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
