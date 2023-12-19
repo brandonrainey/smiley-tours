@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'Varela': ['Varela Round', 'sans-serif'],
-      }
+        Varela: ['Varela Round', 'sans-serif'],
+      },
+      screens: {
+        custom: '1100px',
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
-  
+  plugins: [require('tailwindcss-animated')],
 }
 export default config

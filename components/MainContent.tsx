@@ -2,7 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
-export default function MainContent() {
+interface MainContentProps {
+  windowWidth: number
+}
+
+export default function MainContent({ windowWidth }: MainContentProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
   })
@@ -20,18 +24,18 @@ export default function MainContent() {
   })
 
   return (
-    <main className="h-full w-full flex flex-col px-10  mb-4  rounded-b-xl bg-pink-400 border-x-2 border-pink-600 border-b-2 ">
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient ">
+    <main className="custom:h-full h-auto custom:py-0 py-12 w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-700 custom:border-b-2 custom:border-t-0 border-y-2  justify-center">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
       <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
-        <i className="fas fa-heart fa-sm text-pink-300 pr-1"></i>
+        <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i>
         Asakusa & Akihabara
-        <i className="fas fa-heart fa-sm text-pink-300 pl-1"></i>
+        <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
       </h2>
 
-      <div className="flex flex-col gap-10 items-center">
-        <div className="flex w-full max-w-[1000px] gap-6">
+      <div className="flex flex-col gap-10 custom:items-center">
+        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] ">
             <Image
               ref={ref}
@@ -39,7 +43,7 @@ export default function MainContent() {
               alt="akiba image"
               width={400}
               height={500}
-              className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              className={`rounded custom:mr-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -47,7 +51,7 @@ export default function MainContent() {
             />
           </div>
 
-          <p className="text-white text-2xl textShadow font-medium my-auto">
+          <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
             ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
             I&apos;ll share interesting insights with you along the way.
             <br />
@@ -57,9 +61,9 @@ export default function MainContent() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center">
-          <div className="py-4 flex flex-row short-border max-w-[1000px]">
-            <p className="text-white text-2xl textShadow font-medium my-auto">
+        <div className="flex flex-col custom:items-center">
+          <div className="custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10">
+            <p className="text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 ">
               ❤️ Discover the story behind Asakusa through two must-visit spots:
               Kaminarimon Gate and Senso-ji Temple.
               <br />
@@ -67,8 +71,14 @@ export default function MainContent() {
               Dive into the charm of these historical places, and don&apos;t
               forget to grab some cool videos to remember your fun-filled tour!
               🌟 Asakusa is a city of comedians! Take photos at Comedian Street.
-              <br />
-              <br />
+              {windowWidth > 1100 ? (
+                <span>
+                  <br />
+                  <br />
+                </span>
+              ) : (
+                ''
+              )}
             </p>
 
             <Image
@@ -77,7 +87,7 @@ export default function MainContent() {
               alt="asakusa image"
               width={350}
               height={300}
-              className={`rounded ml-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView2
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -86,11 +96,11 @@ export default function MainContent() {
           </div>
         </div>
 
-        <div className="flex py-4 short-border max-w-[1000px]">
+        <div className="flex custom:py-4 py-0 short-border custom:max-w-[1000px]  pt-10">
           <Image
             ref={ref3}
             src="/karaoke.webp"
-            width={220}
+            width={windowWidth > 1100 ? 220 : 200}
             height={500}
             alt="karaoke image"
             className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
@@ -99,15 +109,15 @@ export default function MainContent() {
                 : ''
             }`}
           />
-          <p className="text-white text-2xl textShadow font-medium p-2 my-auto">
+          <p className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
             high-quality karaoke, and to make it even better, enjoy a
             complimentary drink bar! 🍵🎤✨
           </p>
         </div>
 
-        <div className="flex w-full gap-6 short-border py-4 max-w-[1000px]">
-          <p className="text-white text-2xl textShadow font-medium my-auto">
+        <div className="flex custom:flex-row flex-col-reverse w-full gap-6 short-border custom:py-4 custom:max-w-[1000px] pt-10">
+          <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
             ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
             by the maid. ➕ You can take a video of the maid&apos;s spell!
             <br />
@@ -129,7 +139,7 @@ export default function MainContent() {
             alt="maid image"
             width={300}
             height={500}
-            className={`mr-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+            className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView4
                 ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
                 : ''

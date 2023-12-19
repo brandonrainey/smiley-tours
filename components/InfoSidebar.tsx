@@ -1,7 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function InfoSidebar() {
+interface InfoSidebarProps {
+  windowWidth: number
+}
+
+export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
   return (
     <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <Image
@@ -9,14 +13,22 @@ export default function InfoSidebar() {
         width={100}
         height={72}
         alt="ganko image"
-        className="absolute -top-14 -right-10"
+        className="absolute custom:-top-14 custom:-right-10 -top-16 right-0"
       />
-      <h1 className="text-center text-4xl font-bold mb-6 mt-4 text-white textShadow3">
+      <h1
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white ${
+          windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+        } `}
+      >
         Events
       </h1>
 
       <div className="text-center font-semibold flex flex-col items-center">
-        <h2 className="text-center text-xl underline tracking-wide font-semibold text-white textShadow pb-2">
+        <h2
+          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
+            windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+          } pb-2`}
+        >
           Miley&apos;s Bar
         </h2>
 
@@ -28,7 +40,11 @@ export default function InfoSidebar() {
             alt="ninja bar image"
             className="rounded"
           />
-          <div className="bg-pink-300 rounded text-white textShadow mt-2 max-w-[288px] newShadow">
+          <div
+            className={`bg-pink-300 rounded text-white ${
+              windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
+            }   mt-2 max-w-[288px] newShadow`}
+          >
             <p>Open :18:00- 23:00</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
               <p className="hover:text-pink-800">
@@ -40,7 +56,11 @@ export default function InfoSidebar() {
       </div>
 
       <div className="text-center font-semibold mt-8 flex flex-col items-center">
-        <h2 className="text-center text-xl underline tracking-wide font-semibold text-white textShadow pb-2">
+        <h2
+          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
+            windowWidth > 1100 ? 'textShadow' : 'textShadow3Mobile'
+          }   pb-2`}
+        >
           Idol Concert
         </h2>
 
@@ -52,7 +72,11 @@ export default function InfoSidebar() {
             alt="idol concert image"
             className="rounded "
           />
-          <div className="bg-pink-300 rounded text-white textShadow mt-2 newShadow">
+          <div
+            className={`bg-pink-300 rounded text-white ${
+              windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
+            } mt-2 newShadow`}
+          >
             <p>March 11th</p>
             <p>Akihabara</p>
           </div>

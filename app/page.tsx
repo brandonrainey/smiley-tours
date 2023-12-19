@@ -5,9 +5,6 @@ import Header from '@/components/Header'
 import InfoSidebar from '@/components/InfoSidebar'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
-import MobileTourSidebar from '@/components/MobileTourSidebar'
-import MobileMainContent from '@/components/MobileMainContent'
-import MobileInfoSidebar from '@/components/MobileInfoSidebar'
 import React, { useState, useEffect } from 'react'
 import Testimonials from '@/components/Testimonials'
 
@@ -77,22 +74,16 @@ export default function Home() {
       <Header />
       <div
         className={`flex  ${
-          windowWidth < 1100 ? 'flex-col' : 'flex-row'
+          windowWidth < 1100 ? 'flex-col-reverse' : 'flex-row'
         } w-full justify-between flex-grow   `}
       >
-        {windowWidth < 1100 ? (
-          <MobileTourSidebar tours={tours} />
-        ) : (
-          <InfoSidebar />
-        )}
-        {windowWidth < 1100 ? <MobileMainContent /> : <MainContent />}
-        {windowWidth < 1100 ? (
-          <MobileInfoSidebar />
-        ) : (
-          <TourSidebar tours={tours} />
-        )}
+        <InfoSidebar windowWidth={windowWidth} />
+
+        <MainContent windowWidth={windowWidth} />
+
+        <TourSidebar tours={tours} windowWidth={windowWidth} />
       </div>
-      <Testimonials windowWidth={windowWidth}/>
+      <Testimonials windowWidth={windowWidth} />
       <Footer windowWidth={windowWidth} />
     </div>
   )
