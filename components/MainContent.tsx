@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
+import AboutMe from './AboutMe'
 
 interface MainContentProps {
   windowWidth: number
@@ -33,6 +34,8 @@ export default function MainContent({ windowWidth }: MainContentProps) {
         Asakusa & Akihabara
         <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
       </h2>
+
+     
 
       <div className="flex flex-col gap-10 custom:items-center">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
