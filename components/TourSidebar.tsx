@@ -18,7 +18,7 @@ interface TourSidebarProps {
 
 export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
   return (
-    <section className=" bg-pink-200 h-auto relative p-4 font-Varela custom:basis-1/4">
+    <section className=" bg-pink-200 h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4">
       <Image
         src="/bulma.webp"
         width={windowWidth > 1100 ? 100 : 70}
@@ -26,13 +26,17 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
         alt="bulma image"
         className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10`}
       />
+
+
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4  text-white  ${
+        className={`text-center text-4xl font-bold mb-6 mt-4  text-white z-20 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         }`}
       >
         Upcoming Tours
       </h1>
+
+      
 
       <ul className="flex custom:flex-col flex-wrap items-center ">
         {tours.map((tour) => (
