@@ -29,7 +29,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
-      <h2 className="text-center mb-10 text-3xl font-semibold tracking-wider text-white textShadow">
+      <h2 className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white ${windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'} `}>
         <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i>
         Asakusa & Akihabara
         <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>

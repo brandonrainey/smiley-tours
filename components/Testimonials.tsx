@@ -25,7 +25,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white textShadow">
+            <p className="text-xl font-medium text-white textShadowMobile2">
             &quot;I had a wonderful time at the Tour and will definitely be back in
               tokyo again next year. Hopefully we&apos;ll meet again soon. Cheers!😊&quot;
             </p>
@@ -48,7 +48,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white textShadow">
+            <p className="text-xl font-medium text-white textShadowMobile2">
             &quot;The Karaoke segment is so wonderful because it allows Miley to
               include HER top-notch professional Japanese singing and dancing
               performance within her tour. Her singing, alone, is worth the
@@ -73,7 +73,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white textShadow">
+            <p className="text-xl font-medium text-white textShadowMobile2">
             &quot;Experiencing Smiley&apos;s tour around Asakusa and Akihabara was a
               true highlight! Miley&apos;s positive energy and the delightful moments
               captured made the tour an absolute pleasure. Can&apos;t wait for the

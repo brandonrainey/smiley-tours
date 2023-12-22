@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function AboutMe() {
   return (
@@ -6,7 +7,8 @@ export default function AboutMe() {
       <h1 className="text-center p-1 text-2xl text-white font-semibold textShadow">
         About Me
       </h1>
-      <p className='text-white textShadow text-lg'>
+      <div>
+        <p className='text-white textShadow text-lg'>
         Hi I'm Miley I am a ninja apprentice! Former Japanese idol and voice
         actress. I've been working in the entertainment industry for over 10
         years, but my Work suddenly decreased due to corona. So just two years
@@ -22,6 +24,9 @@ export default function AboutMe() {
         is to make guides a popular profession and increase the number of young
         guides. I hope it can help realize sustainable tourism!
       </p>
+      <Image  src="/idol-concert.webp" width={100} height={72} alt="miley image" className="" />
+      </div>
+      
     </div>
   )
 }
