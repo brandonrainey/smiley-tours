@@ -9,8 +9,8 @@ export default function AboutMe() {
       </h1>
       <div>
         <p className='text-white textShadow text-lg'>
-        Hi I'm Miley I am a ninja apprentice! Former Japanese idol and voice
-        actress. I've been working in the entertainment industry for over 10
+        Hi I&apos;m Miley I am a ninja apprentice! Former Japanese idol and voice
+        actress. I&apos;ve been working in the entertainment industry for over 10
         years, but my Work suddenly decreased due to corona. So just two years
         ago, I started working in Asakusa. I heard a story from a local person
         while getting to know various people in the area. Asakusa is a popular
