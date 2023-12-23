@@ -9,11 +9,11 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
   return (
     <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <Image
-        src="/ganko2.webp"
-        width={70}
+        src="/ganko.webp"
+        width={76}
         height={72}
         alt="ganko image"
-        className="absolute custom:-top-14 custom:-right-10 -top-16 right-10"
+        className="absolute custom:-top-12 custom:-right-12 -top-16 right-10 z-30"
       />
       <h1
         className={`text-center text-4xl font-bold mb-6 mt-4 text-white ${
@@ -64,7 +64,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           New Year&apos;s Tour
         </h2>
 
-        <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-center ">
           <Image
             src="/new-years.webp"
             width={288}
@@ -75,13 +75,15 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           <div
             className={`bg-pink-300 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            } mt-2 max-w-[288px] newShadow`}
+            } mt-2 max-w-[288px] newShadow `}
           >
             <p>2024.1.1 4am JST</p>
-            <a href="https://www.youtube.com/watch?v=PTcD-rJ0z1E" className='hover:text-pink-800'>
+            <a
+              href="https://www.youtube.com/watch?v=PTcD-rJ0z1E"
+              className="hover:text-pink-800 break-all"
+            >
               <p>https://www.youtube.com/watch?v=PTcD-rJ0z1E</p>
             </a>
-            
           </div>
         </div>
       </div>
