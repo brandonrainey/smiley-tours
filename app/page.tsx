@@ -27,7 +27,7 @@ export default function Home() {
       tourImage: '/tour-dec15.webp',
       tourId: 2,
       tourPrice: 20000,
-      tourSpots: 2,
+      tourSpots: 0,
       tourLink: 'https://smileytour.stores.jp/items/655c100a7588610092ce7347',
     },
     {
