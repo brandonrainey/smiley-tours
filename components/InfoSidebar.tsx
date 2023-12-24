@@ -13,7 +13,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         width={76}
         height={72}
         alt="ganko image"
-        className="absolute custom:-top-12 custom:-right-12 -top-16 right-10 z-30"
+        className="absolute custom:-top-12 custom:-right-12 -top-16 right-26 z-30"
       />
       <h1
         className={`text-center text-4xl font-bold mb-6 mt-4 text-white ${
