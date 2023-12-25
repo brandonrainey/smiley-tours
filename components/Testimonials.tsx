@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 interface TestimonialsProps {
   windowWidth: number
@@ -11,8 +12,15 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         windowWidth < 1100 ? 'short-border pt-10' : ''
       }`}
     >
-      <div className=" text-center basis-1/3 bg-pink-400/50 rounded-xl newShadow max-w-[520px]">
-        <figure className="max-w-screen-md p-2">
+      <div className=" text-center basis-1/3 bg-pink-400/50 rounded-xl newShadow max-w-[520px] relative">
+        <Image
+          src="/low-background.webp"
+          fill
+          alt="smiley image"
+          className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
+        />
+
+        <figure className="max-w-screen-md p-2 ">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-800 "
             viewBox="0 0 24 27"
@@ -26,15 +34,23 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadowMobile2">
-            &quot;I had a wonderful time at the Tour and will definitely be back in
-              tokyo again next year. Hopefully we&apos;ll meet again soon. Cheers!😊&quot;
+              &quot;I had a wonderful time at the Tour and will definitely be
+              back in tokyo again next year. Hopefully we&apos;ll meet again
+              soon. Cheers!😊&quot;
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3"></figcaption>
         </figure>
       </div>
 
-      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px]">
+      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px] relative">
+        <Image
+          src="/low-background.webp"
+          fill
+          alt="smiley image"
+          className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
+        />
+
         <figure className="max-w-screen-md p-2">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-800"
@@ -49,8 +65,8 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadowMobile2">
-            &quot;The Karaoke segment is so wonderful because it allows Miley to
-              include HER top-notch professional Japanese singing and dancing
+              &quot;The Karaoke segment is so wonderful because it allows Miley
+              to include HER top-notch professional Japanese singing and dancing
               performance within her tour. Her singing, alone, is worth the
               price. Miley is such a wonderful person to spend time with.&quot;
             </p>
@@ -59,7 +75,14 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         </figure>
       </div>
 
-      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px]">
+      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px] relative">
+        <Image
+          src="/low-background.webp"
+          fill
+          alt="smiley image"
+          className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
+        />
+
         <figure className="max-w-screen-md p-2">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-800"
@@ -74,10 +97,10 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
           </svg>
           <blockquote>
             <p className="text-xl font-medium text-white textShadowMobile2">
-            &quot;Experiencing Smiley&apos;s tour around Asakusa and Akihabara was a
-              true highlight! Miley&apos;s positive energy and the delightful moments
-              captured made the tour an absolute pleasure. Can&apos;t wait for the
-              next adventure! 😊🌟&quot;
+              &quot;Experiencing Smiley&apos;s tour around Asakusa and Akihabara
+              was a true highlight! Miley&apos;s positive energy and the
+              delightful moments captured made the tour an absolute pleasure.
+              Can&apos;t wait for the next adventure! 😊🌟&quot;
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3"></figcaption>
