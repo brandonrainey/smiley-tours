@@ -7,6 +7,7 @@ import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import React, { useState, useEffect } from 'react'
 import Testimonials from '@/components/Testimonials'
+import Image from 'next/image'
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(1101)
@@ -70,7 +71,10 @@ export default function Home() {
   }, [])
 
   return (
-    <div className=" bg-pink-300 w-full h-full flex flex-col ">
+    <div className=" bg-pink-300 w-full h-full flex flex-col relative">
+
+
+
       <Header />
       <div
         className={`flex  ${
