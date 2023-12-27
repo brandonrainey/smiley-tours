@@ -100,7 +100,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
 
         <div className="flex flex-col items-center ">
           <Image
-            src="/ninja-bar.webp"
+            src="/bar.webp"
             width={288}
             height={288}
             alt="ninja bar image"

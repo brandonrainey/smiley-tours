@@ -25,7 +25,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
   })
 
   return (
-    <main className="custom:h-full h-auto py-12 w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative">
+    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
@@ -39,6 +39,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
         <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
       </h2>
 
+      {/* Asakusa History */}
       <div className="flex flex-col gap-10 custom:items-center">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] ">
@@ -66,6 +67,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           </p>
         </div>
 
+        {/* Sensoji and Kaminarimon */}
         <div className="flex flex-col custom:items-center">
           <div className="custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10">
             <p className="text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 ">
@@ -101,33 +103,41 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           </div>
         </div>
 
-        <div className="flex  custom:py-4 py-0 short-border custom:max-w-[1000px]  pt-10">
+        {/* Karaoke */}
+        <div className="flex flex-col custom:flex-row custom:py-4 py-0 short-border custom:max-w-[1000px]   pt-10">
           <Image
             ref={ref3}
-            src="/karaoke.webp"
-            width={windowWidth > 1100 ? 220 : 200}
+            src="/karaoke-crop.jpg"
+            width={windowWidth > 1100 ? 280 : 260}
             height={500}
             alt="karaoke image"
-            className={`rounded mr-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+            className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView3
                 ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                 : ''
             }`}
           />
           <p className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto custom:px-8">
-            ❤️ Japan is the birthplace of karaoke! Immerse yourself in
-            high-quality karaoke, and to make it even better, enjoy a
-            complimentary drink bar! 🍵🎤✨
+            ❤️ Dive into the ultimate karaoke experience in the birthplace of
+            this musical phenomenon, Japan!
+            <br />
+            <br />
+            Belt out your favorite tunes in high-quality karaoke rooms, and as
+            the notes soar, relish the added joy of a complimentary drink
+            bar—because in Japan, every karaoke session is a symphony of fun
+            with a refreshing twist! 🎤🎶
           </p>
         </div>
 
+        {/* Monja */}
         <div className="flex custom:flex-row flex-col-reverse w-full gap-6 short-border custom:py-4 custom:max-w-[1000px] pt-10">
           <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
             ❤️ Monja is a very unique food born in Asakusa! It looks like vomit,
             but it tastes so delicious!
             <br />
             <br />
-            ⭐️Guide will teach you how to make monja!
+            ⭐️I&apos;ll teach you how to make monja, turning this quirky
+            culinary experience into a flavorful adventure! 🍲✨
             <br />
           </p>
 

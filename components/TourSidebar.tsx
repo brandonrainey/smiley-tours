@@ -27,7 +27,6 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
         className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10`}
       />
 
-
       <h1
         className={`text-center text-4xl font-bold mb-6 mt-4  text-white z-20 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
@@ -35,8 +34,6 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
       >
         Upcoming Tours
       </h1>
-
-      
 
       <ul className="flex custom:flex-col flex-wrap items-center ">
         {tours.map((tour) => (
@@ -50,14 +47,14 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
                 alt={tour.tourName}
                 width={288}
                 height={288}
-                className="rounded newShadow"
+                className="rounded newShadow2"
               />
 
-              <h2 className="font-bold text-slate-800  tracking-wide text-xl custom:pt-2">
+              <h2 className="font-extrabold text-white pt-2  tracking-wide text-xl textGradient2">
                 ¥{tour.tourPrice}
               </h2>
               <h3
-                className={`font-semibold text-white ${
+                className={`font-semibold text-white pb-2 custom:pb-0 ${
                   windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
                 }  `}
               >
