@@ -14,34 +14,7 @@ export default function Home() {
 
   const [tours, setTours] = useState([
     {
-      tourName: 'Tour 1',
-      tourDescription: 'Tour on December 8th',
-      tourImage: '/tour-dec8.webp',
-      tourId: 1,
-      tourPrice: 20000,
-      tourSpots: 0,
-      tourLink: 'https://smileytour.stores.jp/items/655c0fabc52ca918d3a77bda',
-    },
-    {
-      tourName: 'Tour 2',
-      tourDescription: 'Tour on December 15th',
-      tourImage: '/tour-dec15.webp',
-      tourId: 2,
-      tourPrice: 20000,
-      tourSpots: 0,
-      tourLink: 'https://smileytour.stores.jp/items/655c100a7588610092ce7347',
-    },
-    {
-      tourName: 'Tour 3',
-      tourDescription: 'Tour on December 22th',
-      tourImage: '/tour-dec22.webp',
-      tourId: 3,
-      tourPrice: 20000,
-      tourSpots: 0,
-      tourLink: 'https://smileytour.stores.jp/items/655c10d14e11f11fef524f15',
-    },
-    {
-      tourName: 'Tour 4',
+      tourName: 'Dec 29 tour',
       tourDescription: 'Tour on December 29th',
       tourImage: '/tour-dec29-square.webp',
       tourId: 4,
@@ -49,6 +22,43 @@ export default function Home() {
       tourSpots: 4,
       tourLink: 'https://smileytour.stores.jp/items/655c11154e11f11fef524f43',
     },
+    {
+      tourName: 'jan 12 tour',
+      tourDescription: 'Tour on janurary 12th',
+      tourImage: '/tour-jan12.webp',
+      tourId: 1,
+      tourPrice: 20000,
+      tourSpots: 4,
+      tourLink: 'https://smileytour.stores.jp/items/658aa0a1b2c71d06168f2746',
+    },
+    {
+      tourName: 'jan 19 tour',
+      tourDescription: 'Tour on janurary 19th',
+      tourImage: '/tour-jan19.webp',
+      tourId: 2,
+      tourPrice: 20000,
+      tourSpots: 4,
+      tourLink: 'https://smileytour.stores.jp/items/658aa16827d5b205f1c153d6',
+    },
+    {
+      tourName: 'jan 26 tour',
+      tourDescription: 'Tour on janurary 26th',
+      tourImage: '/tour-jan26.webp',
+      tourId: 3,
+      tourPrice: 20000,
+      tourSpots: 4,
+      tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
+    },
+    {
+      tourName: 'jan 29 tour',
+      tourDescription: 'Tour on janurary 29th',
+      tourImage: '/tour-jan29.webp',
+      tourId: 3,
+      tourPrice: 30000,
+      tourSpots: 4,
+      tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
+    },
+
     {
       tourName: 'Private Tour',
       tourDescription: 'Private Tour for at least 2 people',
@@ -72,9 +82,6 @@ export default function Home() {
 
   return (
     <div className=" bg-pink-300 w-full h-full flex flex-col relative">
-
-
-
       <Header />
       <div
         className={`flex  ${

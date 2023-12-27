@@ -26,28 +26,27 @@ export default function MainContent({ windowWidth }: MainContentProps) {
 
   return (
     <main className="custom:h-full h-auto py-12 w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative">
-      
-      
-      
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
-      <h2 className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white ${windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'} `}>
+      <h2
+        className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white ${
+          windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+        } `}
+      >
         <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i>
-        Asakusa & Akihabara
+        Asakusa
         <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
       </h2>
-
-     
 
       <div className="flex flex-col gap-10 custom:items-center">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] ">
             <Image
               ref={ref}
-              src="/akiba-2.webp"
-              alt="akiba image"
-              width={400}
+              src="/asakusa-2.webp"
+              alt="asakusa image"
+              width={350}
               height={500}
               className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView
@@ -58,12 +57,12 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           </div>
 
           <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto ">
-            ❤️ Let&apos;s stroll through the vibrant streets of Akihabara, and
-            I&apos;ll share interesting insights with you along the way.
+            ❤️ Embark on a delightful journey along the Sumida River and
+            Komagata Street.
             <br />
             <br />
-            Enjoy the lively atmosphere as I guide you through this tech and
-            entertainment hub! 🚶‍♂️🏙️
+            Exploring the ancient roots of Asakusa dating back to the year 628,
+            where history unfolds like a captivating tale! 🚢🌸
           </p>
         </div>
 
@@ -74,9 +73,9 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               Kaminarimon Gate and Senso-ji Temple.
               <br />
               <br />
-              Dive into the charm of these historical places, and don&apos;t
-              forget to grab some cool videos to remember your fun-filled tour!
-              🌟 Asakusa is a city of comedians! Take photos at Comedian Street.
+              Dive into the charm of these historical places and the Asakusa
+              Yokocho, and take photogenic photos at a theme park based on the
+              concept of Japanese festivals! 🎡🎢🎠
               {windowWidth > 1100 ? (
                 <span>
                   <br />
@@ -102,7 +101,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           </div>
         </div>
 
-        <div className="flex custom:py-4 py-0 short-border custom:max-w-[1000px]  pt-10">
+        <div className="flex  custom:py-4 py-0 short-border custom:max-w-[1000px]  pt-10">
           <Image
             ref={ref3}
             src="/karaoke.webp"
@@ -115,7 +114,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
                 : ''
             }`}
           />
-          <p className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto">
+          <p className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto custom:px-8">
             ❤️ Japan is the birthplace of karaoke! Immerse yourself in
             high-quality karaoke, and to make it even better, enjoy a
             complimentary drink bar! 🍵🎤✨
@@ -124,25 +123,18 @@ export default function MainContent({ windowWidth }: MainContentProps) {
 
         <div className="flex custom:flex-row flex-col-reverse w-full gap-6 short-border custom:py-4 custom:max-w-[1000px] pt-10">
           <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
-            ❤️ Have a maid cafe experience! Lunch is omelet rice with a drawing
-            by the maid. ➕ You can take a video of the maid&apos;s spell!
+            ❤️ Monja is a very unique food born in Asakusa! It looks like vomit,
+            but it tastes so delicious!
             <br />
             <br />
-            ⭐️If you watch this video before joining, the tour will be even
-            more fun! I&apos;ll take you this world↓
+            ⭐️Guide will teach you how to make monja!
             <br />
-            <a
-              href="https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l"
-              className="underline bg-[#e3a0d3b6]"
-            >
-              https://youtu.be/5EKahCouIAU?si=Ms6R6WHCRHZmi02l
-            </a>
           </p>
 
           <Image
             ref={ref4}
-            src="/maid.webp"
-            alt="maid image"
+            src="/monja.webp"
+            alt="monja image"
             width={300}
             height={500}
             className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${

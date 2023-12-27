@@ -22,39 +22,40 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       >
         Events
       </h1>
-
-      <div className="text-center font-semibold flex flex-col items-center">
+      {/*  */}
+      <div className="text-center font-semibold mt-8 flex flex-col items-center ">
         <h2
           className={`text-center text-xl underline tracking-wide font-semibold text-white ${
-            windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
-          } pb-2`}
+            windowWidth > 1100 ? 'textShadow' : 'textShadow3Mobile'
+          }   pb-2`}
         >
-          Miley&apos;s Bar
+          Live Q&A!
         </h2>
 
         <div className="flex flex-col items-center ">
           <Image
-            src="/ninja-bar.webp"
+            src="/q&a.webp"
             width={288}
             height={288}
-            alt="ninja bar image"
-            className="rounded"
+            alt="new years tour image"
+            className="rounded "
           />
           <div
             className={`bg-pink-300 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            }   mt-2 max-w-[288px] newShadow`}
+            } mt-2 max-w-[288px] newShadow `}
           >
-            <p>Open :18:00- 23:00</p>
-            <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
-              <p className="hover:text-pink-800">
-                2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032
-              </p>
+            <p>December 30th 21:00~ JST</p>
+            <a
+              href="https://www.youtube.com/watch?v=NZyKQmo0F4A"
+              className="hover:text-pink-800 break-all"
+            >
+              <p>https://www.youtube.com/watch?v=NZyKQmo0F4A</p>
             </a>
           </div>
         </div>
       </div>
-
+      {/*  */}
       <div className="text-center font-semibold mt-8 flex flex-col items-center ">
         <h2
           className={`text-center text-xl underline tracking-wide font-semibold text-white ${
@@ -87,7 +88,40 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           </div>
         </div>
       </div>
+      {/*  */}
+      <div className="text-center font-semibold flex flex-col items-center mt-8">
+        <h2
+          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
+            windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+          } pb-2`}
+        >
+          Miley&apos;s Bar
+        </h2>
 
+        <div className="flex flex-col items-center ">
+          <Image
+            src="/ninja-bar.webp"
+            width={288}
+            height={288}
+            alt="ninja bar image"
+            className="rounded"
+          />
+          <div
+            className={`bg-pink-300 rounded text-white ${
+              windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
+            }   mt-2 max-w-[288px] newShadow`}
+          >
+            <p>Open :18:00- 23:00</p>
+            <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
+              <p className="hover:text-pink-800">
+                2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
       <div className="text-center font-semibold mt-8 flex flex-col items-center">
         <h2
           className={`text-center text-xl underline tracking-wide font-semibold text-white ${
