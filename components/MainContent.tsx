@@ -47,7 +47,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               ref={ref}
               src="/asakusa-2.webp"
               alt="asakusa image"
-              width={350}
+              width={330}
               height={500}
               className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView
@@ -143,9 +143,9 @@ export default function MainContent({ windowWidth }: MainContentProps) {
 
           <Image
             ref={ref4}
-            src="/monja.webp"
+            src="/monja-food.webp"
             alt="monja image"
-            width={300}
+            width={340}
             height={500}
             className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView4
