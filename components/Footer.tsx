@@ -52,20 +52,20 @@ export default function Footer({ windowWidth }: FooterProps) {
       <div className="flex sm:gap-24 gap-8 z-10">
         <a
           href="https://www.youtube.com/@smileytime"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-300/70 rounded-xl newShadow "
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-200 rounded-xl newShadow "
         >
           <i className="fab fa-youtube sm:fa-5x fa-3x text-red-500 hover:scale-110 duration-150 "></i>
         </a>
 
         <a
           href="https://www.instagram.com/mairie0828/"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-300/70 rounded-xl newShadow"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-200 rounded-xl newShadow"
         >
           <i className="fab fa-instagram sm:fa-5x fa-3x text-pink-500 hover:scale-110 duration-150"></i>
         </a>
         <a
           href="https://twitter.com/mairie0828"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-300/70 rounded-xl newShadow"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-200 rounded-xl newShadow"
         >
           <i className="fab fa-twitter sm:fa-5x fa-3x text-blue-500 hover:scale-110 duration-150"></i>
         </a>

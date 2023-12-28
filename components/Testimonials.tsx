@@ -12,12 +12,12 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         windowWidth < 1100 ? 'short-border pt-10' : ''
       }`}
     >
-      <div className=" text-center basis-1/3 bg-pink-400/50 rounded-xl newShadow max-w-[520px] relative">
+      <div className=" text-center basis-1/3 bg-pink-400/60 rounded-xl newShadow max-w-[520px] relative">
         <Image
           src="/low-background.webp"
           fill
           alt="smiley image"
-          className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
+          className="rounded-xl absolute top-0 left-0 opacity-70 object-cover -z-20"
         />
 
         <figure className="max-w-screen-md p-2 ">
@@ -43,7 +43,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         </figure>
       </div>
 
-      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px] relative">
+      <div className=" text-center basis-1/3 bg-pink-400/60 rounded-xl newShadow max-w-[520px] relative">
         <Image
           src="/low-background.webp"
           fill
@@ -75,7 +75,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         </figure>
       </div>
 
-      <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px] relative">
+      <div className=" text-center basis-1/3 bg-pink-400/60 rounded-xl newShadow max-w-[520px] relative">
         <Image
           src="/low-background.webp"
           fill

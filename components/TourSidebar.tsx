@@ -32,7 +32,10 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         }`}
       >
-        Upcoming Tours
+        
+          Upcoming Tours
+        
+        
       </h1>
 
       <ul className="flex custom:flex-col flex-wrap items-center ">

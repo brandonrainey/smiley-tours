@@ -25,12 +25,15 @@ export default function MainContent({ windowWidth }: MainContentProps) {
   })
 
   return (
-    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4  custom:rounded-b-xl bg-pink-400 custom:border-x-2 custom:border-pink-600 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
+    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-gradient-to-br from-pink-400 via-[#ee4db0] to-pink-400  custom:rounded-b-xl  custom:border-x-2 custom:border-pink-600 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
+      
+      {/* <Image src="/low-background.webp" fill alt="smiley image" className="rounded-xl absolute top-0 left-0 opacity-60 object-cover " /> */}
+      
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
         Tokyo Tour Guide
       </h1>
       <h2
-        className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white ${
+        className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white z-30 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         } `}
       >
@@ -57,7 +60,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
             />
           </div>
 
-          <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto ">
+          <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto z-30">
             ❤️ Embark on a delightful journey along the Sumida River and
             Komagata Street.
             <br />

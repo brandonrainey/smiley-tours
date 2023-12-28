@@ -32,10 +32,10 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           Live Q&A!
         </h2>
 
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center">
           <Image
             src="/q&a.webp"
-            width={288}
+            width={300}
             height={288}
             alt="new years tour image"
             className="rounded "
@@ -43,7 +43,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           <div
             className={`bg-pink-300 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            } mt-2 max-w-[288px] newShadow `}
+            } mt-2 custom:max-w-[288px] max-w-[300px] newShadow `}
           >
             <p>December 30th 21:00~ JST</p>
             <a
@@ -68,7 +68,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         <div className="flex flex-col items-center ">
           <Image
             src="/new-years.webp"
-            width={288}
+            width={300}
             height={288}
             alt="new years tour image"
             className="rounded "
@@ -76,7 +76,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           <div
             className={`bg-pink-300 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            } mt-2 max-w-[288px] newShadow `}
+            } mt-2 custom:max-w-[288px] max-w-[300px] newShadow `}
           >
             <p>2024.1.1 4am JST</p>
             <a
@@ -101,7 +101,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         <div className="flex flex-col items-center ">
           <Image
             src="/bar.webp"
-            width={288}
+            width={300}
             height={288}
             alt="ninja bar image"
             className="rounded"
@@ -109,7 +109,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           <div
             className={`bg-pink-300 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            }   mt-2 max-w-[288px] newShadow`}
+            }   mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
           >
             <p>Open :18:00- 23:00</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
@@ -134,7 +134,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         <div>
           <Image
             src="/idol-concert.webp"
-            width={288}
+            width={300}
             height={288}
             alt="idol concert image"
             className="rounded "
