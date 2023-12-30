@@ -13,15 +13,7 @@ export default function Home() {
   const [windowWidth, setWindowWidth] = useState(1101)
 
   const [tours, setTours] = useState([
-    {
-      tourName: 'Dec 29 tour',
-      tourDescription: 'Tour on December 29th',
-      tourImage: '/tour-dec29-square.webp',
-      tourId: 1,
-      tourPrice: 20000,
-      tourSpots: 4,
-      tourLink: 'https://smileytour.stores.jp/items/655c11154e11f11fef524f43',
-    },
+    
     {
       tourName: 'jan 12 tour',
       tourDescription: 'Tour on janurary 12th',

@@ -23,38 +23,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         Events
       </h1>
       {/*  */}
-      <div className="text-center font-semibold mt-8 flex flex-col items-center ">
-        <h2
-          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
-            windowWidth > 1100 ? 'textShadow' : 'textShadow3Mobile'
-          }   pb-2`}
-        >
-          Live Q&A!
-        </h2>
-
-        <div className="flex flex-col items-center">
-          <Image
-            src="/q&a.webp"
-            width={300}
-            height={288}
-            alt="new years tour image"
-            className="rounded "
-          />
-          <div
-            className={`bg-pink-300 rounded text-white ${
-              windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
-            } mt-2 custom:max-w-[288px] max-w-[300px] newShadow `}
-          >
-            <p>December 30th 21:00~ JST</p>
-            <a
-              href="https://www.youtube.com/watch?v=NZyKQmo0F4A"
-              className="hover:text-pink-800 break-all"
-            >
-              <p>https://www.youtube.com/watch?v=NZyKQmo0F4A</p>
-            </a>
-          </div>
-        </div>
-      </div>
+      
       {/*  */}
       <div className="text-center font-semibold mt-8 flex flex-col items-center ">
         <h2
