@@ -41,15 +41,7 @@ export default function Home() {
       tourSpots: 4,
       tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
     },
-    {
-      tourName: 'jan 29 tour',
-      tourDescription: 'Tour on janurary 29th',
-      tourImage: '/tour-jan29.webp',
-      tourId: 5,
-      tourPrice: 30000,
-      tourSpots: 4,
-      tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
-    },
+    
 
     {
       tourName: 'Private Tour',
