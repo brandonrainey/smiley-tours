@@ -7,7 +7,7 @@ import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import React, { useState, useEffect } from 'react'
 import Testimonials from '@/components/Testimonials'
-import Image from 'next/image'
+
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(1101)

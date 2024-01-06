@@ -11,6 +11,7 @@ export default function Header() {
         width={800}
         height={200}
         alt="Banner image"
+        style={ { width: 'auto'}}
         priority={true}
         className="z-30"
       />
