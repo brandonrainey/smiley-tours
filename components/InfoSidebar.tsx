@@ -13,10 +13,10 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         width={76}
         height={72}
         alt="ganko image"
-        className="absolute custom:-top-12 custom:-right-12 -top-16 right-26 z-30"
+        className="absolute custom:-top-14 custom:-right-10 -top-16 right-26 z-30"
       />
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white ${
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/60 rounded w-fit px-2 py-1 mx-auto ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         } `}
       >
@@ -26,8 +26,8 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       {/*  */}
       <div className="text-center font-semibold flex flex-col items-center mt-8">
         <h2
-          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
-            windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+          className={`text-center text-xl tracking-wide font-semibold text-white ${
+            windowWidth > 1100 ? 'textShadow' : 'textShadow3Mobile'
           } pb-2`}
         >
           Miley&apos;s Bar
@@ -42,7 +42,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
             className="rounded"
           />
           <div
-            className={`bg-pink-300 rounded text-white ${
+            className={`bg-pink-400/60 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
             }   mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
           >
@@ -59,7 +59,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       {/*  */}
       <div className="text-center font-semibold mt-8 flex flex-col items-center">
         <h2
-          className={`text-center text-xl underline tracking-wide font-semibold text-white ${
+          className={`text-center text-xl tracking-wide font-semibold text-white ${
             windowWidth > 1100 ? 'textShadow' : 'textShadow3Mobile'
           }   pb-2`}
         >
@@ -75,7 +75,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
             className="rounded "
           />
           <div
-            className={`bg-pink-300 rounded text-white ${
+            className={`bg-pink-400/60 rounded text-white ${
               windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
             } mt-2 newShadow`}
           >
