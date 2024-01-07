@@ -13,7 +13,6 @@ export default function Home() {
   const [windowWidth, setWindowWidth] = useState(1101)
 
   const [tours, setTours] = useState([
-    
     {
       tourName: 'jan 12 tour',
       tourDescription: 'Tour on janurary 12th',
@@ -63,7 +62,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className=" bg-pink-300 w-full h-full flex flex-col relative">
+    <div className=" bg-pink-400 w-full h-full flex flex-col relative">
       <Header />
       <div
         className='flex flex-col-reverse custom:flex-row w-full justify-between flex-grow'  
