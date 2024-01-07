@@ -11,8 +11,6 @@ html {
 
 body {
   height: 100%;
-  
-  
 }
 
 .textShadow {
@@ -41,7 +39,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.newShadow2 {
+.tourShadow {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -65,11 +63,9 @@ body {
   text-shadow: 2px 4px 3px rgba(255, 47, 158, 0.792);
 }
 
-
 .textGradient2 {
   background: #f8ffe8;
   background: linear-gradient(to bottom, #f9bffc 0%, #fc87f8 33%, #951e91 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }

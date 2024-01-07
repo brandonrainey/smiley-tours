@@ -18,7 +18,6 @@ export default function RootLayout({
         <link rel="preload" href="/smiley-banner-transparent.webp" />
       </Head>
       <body className={`font-Varela bg-pink-200`}>{children}</body>
-      
     </html>
   )
 }

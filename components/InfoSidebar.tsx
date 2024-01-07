@@ -23,7 +23,6 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         Events
       </h1>
       
-      
       {/*  */}
       <div className="text-center font-semibold flex flex-col items-center mt-8">
         <h2

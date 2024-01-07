@@ -41,8 +41,6 @@ export default function Home() {
       tourSpots: 4,
       tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
     },
-    
-
     {
       tourName: 'Private Tour',
       tourDescription: 'Private Tour for at least 2 people',
@@ -77,6 +75,7 @@ export default function Home() {
         <TourSidebar tours={tours} windowWidth={windowWidth} />
       </div>
       <Testimonials windowWidth={windowWidth} />
+
       <Footer windowWidth={windowWidth} />
     </div>
   )
