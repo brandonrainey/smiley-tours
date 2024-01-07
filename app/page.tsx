@@ -68,9 +68,7 @@ export default function Home() {
     <div className=" bg-pink-300 w-full h-full flex flex-col relative">
       <Header />
       <div
-        className={`flex  ${
-          windowWidth < 1100 ? 'flex-col-reverse' : 'flex-row'
-        } w-full justify-between flex-grow   `}
+        className='flex flex-col-reverse custom:flex-row w-full justify-between flex-grow'  
       >
         <InfoSidebar windowWidth={windowWidth} />
 
