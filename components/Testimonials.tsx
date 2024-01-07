@@ -16,6 +16,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         <Image
           src="/low-background.webp"
           fill
+          sizes='(max-width: 1100px) 100vw, 520px'
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-70 object-cover -z-20"
         />
@@ -47,6 +48,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         <Image
           src="/low-background.webp"
           fill
+          sizes='(max-width: 1100px) 100vw, 520px'
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
         />
@@ -79,6 +81,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         <Image
           src="/low-background.webp"
           fill
+          sizes='(max-width: 1100px) 100vw, 520px'
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
         />

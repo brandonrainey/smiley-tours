@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Smiley Tours',
@@ -13,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="/smiley-banner-transparent.webp" />
+      </Head>
       <body className={`font-Varela bg-pink-200`}>{children}</body>
       
     </html>
