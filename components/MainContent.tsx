@@ -25,12 +25,8 @@ export default function MainContent({ windowWidth }: MainContentProps) {
 
   return (
     <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-gradient-to-b from-pink-400 via-[#e85ab2] to-pink-400  custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
-      
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient ">
-        Tokyo Tour Guide
-      </h1>
       <h2
-        className={`text-center mb-10 text-3xl font-semibold tracking-wider text-white z-30 ${
+        className={`text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         } `}
       >
@@ -39,17 +35,21 @@ export default function MainContent({ windowWidth }: MainContentProps) {
         <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
       </h2>
 
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient  mb-10">
+        Tokyo Tour Guide
+      </h1>
+
       {/* Asakusa History */}
       <div className="flex flex-col gap-10 custom:items-center">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
-          <div className="flex w-full max-w-[1000px] ">
+          <div className="flex w-full max-w-[1000px] items-center">
             <Image
               ref={ref}
               src="/asakusa-2.webp"
               alt="asakusa image"
               width={330}
               height={500}
-              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] custom:max-h-[407px] ${
                 inView
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -57,13 +57,33 @@ export default function MainContent({ windowWidth }: MainContentProps) {
             />
           </div>
 
-          <p className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto z-30">
-            ❤️ Embark on a delightful journey along the Sumida River and
-            Komagata Street.
+          <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
+            Hi I&apos;m{' '}
+            <span className="font-semibold textShadowNone textGradient ">
+              Miley
+            </span>
+            , I am a ninja apprentice! Former Japanese idol and voice actress.
+            I&apos;ve been working in the entertainment industry for over 10
+            years, but my work suddenly decreased due to corona.
             <br />
             <br />
-            Exploring the ancient roots of Asakusa dating back to the year 628,
-            where history unfolds like a captivating tale! 🚢🌸
+            So just two years ago, I started working in{' '}
+            <span className="font-semibold textShadowNone textGradient">
+              Asakusa
+            </span>
+            . I heard a story from a local person while getting to know various
+            people in the area.{' '}
+            <span className="font-semibold textShadowNone textGradient">
+              Asakusa
+            </span>{' '}
+            is a popular tourist destination, but the guides are aging and there
+            are no young guides. So I decided to become a guide.
+            <br />
+            <br />I have been doing stage shows for a long time, so I would like
+            to offer a new type of tour that combines the skill of a guide with
+            the skill of entertainment. My dream is to make guides a popular
+            profession and increase the number of young guides. I hope it can
+            help realize sustainable tourism!
           </p>
         </div>
 
@@ -71,6 +91,11 @@ export default function MainContent({ windowWidth }: MainContentProps) {
         <div className="flex flex-col custom:items-center">
           <div className="custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10">
             <p className="text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 ">
+              Embark on a delightful journey along the Sumida River and Komagata
+              Street. Exploring the ancient roots of Asakusa dating back to the
+              year 628, where history unfolds like a captivating tale! 🚢🌸
+              <br />
+              <br />
               ❤️ Discover the story behind Asakusa through two must-visit spots:
               Kaminarimon Gate and Senso-ji Temple.
               <br />

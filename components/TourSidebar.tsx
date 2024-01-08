@@ -28,11 +28,11 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
       />
 
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4  text-white z-20 bg-pink-400/60 rounded w-fit px-2 py-1 mx-auto  ${
-          windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
+        className={`text-center text-4xl font-bold mb-6 mt-4  text-white z-20 bg-pink-400/60 rounded-xl w-fit px-2 py-1 mx-auto  ${
+          windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
         }`}
       >
-          Upcoming Tours
+        Upcoming Tours
       </h1>
 
       <ul className="flex custom:flex-col flex-wrap items-center ">
@@ -46,18 +46,19 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
               <Image
                 src={tour.tourImage}
                 alt={tour.tourName}
-                sizes='(max-width: 1100px) 100vw, 288px'
+                sizes="(max-width: 1100px) 100vw, 288px"
+                priority={windowWidth > 1100 ? false : true}
                 width={288}
                 height={288}
                 className="rounded tourShadow"
               />
 
-              <h2 className="font-extrabold text-white pt-2  tracking-wide text-xl textGradient2">
+              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">
                 ¥{tour.tourPrice}
               </h2>
               <h3
-                className={`font-semibold text-white pb-2 custom:pb-0 ${
-                  windowWidth > 1100 ? 'textShadow' : 'textShadowMobile2'
+                className={`font-semibold text-white pb-2 custom:pb-0  ${
+                  windowWidth > 1100 ? 'textShadow' : 'textShadowMobileTour'
                 }  `}
               >
                 {tour.tourSpots === 0 ? (
