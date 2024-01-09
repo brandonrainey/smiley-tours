@@ -24,15 +24,19 @@ export default function MainContent({ windowWidth }: MainContentProps) {
   })
 
   return (
-    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-gradient-to-b from-pink-400 via-[#e85ab2] to-pink-400  custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
+    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-pink-400 custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
+      
+      <img src='/hearts-shrink.webp' alt="background hearts" className='absolute object-cover w-full h-full opacity-40 left-0'/>
+      
+      
       <h2
         className={`text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         } `}
       >
-        <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i>
-        Asakusa
-        <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i>
+        {/* <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i> */}
+        ~Asakusa~
+        {/* <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i> */}
       </h2>
 
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient  mb-10">
@@ -40,7 +44,9 @@ export default function MainContent({ windowWidth }: MainContentProps) {
       </h1>
 
       {/* Asakusa History */}
-      <div className="flex flex-col gap-10 custom:items-center">
+      <div className="flex flex-col gap-10 custom:items-center relative">
+        
+      
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] items-center">
             <Image
