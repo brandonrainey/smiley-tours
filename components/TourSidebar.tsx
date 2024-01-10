@@ -28,7 +28,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
       />
 
       <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/60 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne ${
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
         }`}
       >

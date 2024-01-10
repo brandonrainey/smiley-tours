@@ -16,7 +16,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
         className="absolute custom:-top-14 custom:-right-10 -top-16 right-26 z-30"
       />
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/60 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne  ${
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne  ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
         } `}
       >

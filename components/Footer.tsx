@@ -28,7 +28,7 @@ export default function Footer({ windowWidth }: FooterProps) {
           src="/background-banner.webp"
           fill
           alt="bulma image"
-          className="absolute z-0 border-t-4 border-pink-500/50 object-cover opacity-70"
+          className="absolute z-0 border-t-2 border-pink-400/50 object-cover opacity-70"
         />
       </div>
 
