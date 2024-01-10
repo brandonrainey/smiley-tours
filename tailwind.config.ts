@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         Varela: ['Varela Round', 'sans-serif'],
+        CarterOne: ['Carter One', 'sans-serif'],
+        Acme: ['Acme', 'sans-serif'],
       },
       screens: {
         custom: '1100px',

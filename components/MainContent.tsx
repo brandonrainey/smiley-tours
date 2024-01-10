@@ -25,28 +25,27 @@ export default function MainContent({ windowWidth }: MainContentProps) {
 
   return (
     <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-pink-400 custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
-      
-      <img src='/hearts-shrink.webp' alt="background hearts" className='absolute object-cover w-full h-full opacity-40 left-0'/>
-      
-      
+      <img
+        src="/hearts-shrink.webp"
+        loading="lazy"
+        alt="background hearts"
+        className="absolute object-cover w-full h-full opacity-50 left-0"
+      />
+
       <h2
         className={`text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
         } `}
       >
-        {/* <i className="fas fa-heart fa-sm text-pink-300 custom:pr-1"></i> */}
         ~Asakusa~
-        {/* <i className="fas fa-heart fa-sm text-pink-300 custom:pl-1"></i> */}
       </h2>
 
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  custom:z-20 textGradient  mb-10">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  mb-10">
         Tokyo Tour Guide
       </h1>
 
-      {/* Asakusa History */}
+      {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">
-        
-      
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] items-center">
             <Image
@@ -78,22 +77,22 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               Asakusa
             </span>
             . I heard a story from a local person while getting to know various
-            people in the area.{' '}
-            <span className="font-semibold textShadowNone textGradient">
-              Asakusa
-            </span>{' '}
-            is a popular tourist destination, but the guides are aging and there
-            are no young guides. So I decided to become a guide.
+            people in the area. Asakusa is a popular tourist destination, but
+            the guides are aging and there are no young guides. So I decided to
+            become a guide.
             <br />
             <br />I have been doing stage shows for a long time, so I would like
             to offer a new type of tour that combines the skill of a guide with
-            the skill of entertainment. My dream is to make guides a popular
-            profession and increase the number of young guides. I hope it can
-            help realize sustainable tourism!
+            the skill of entertainment.{' '}
+            <span className="font-semibold textShadowNone textGradient ">
+              My dream
+            </span>{' '}
+            is to make guides a popular profession and increase the number of
+            young guides. I hope it can help realize sustainable tourism!
           </p>
         </div>
 
-        {/* Sensoji and Kaminarimon */}
+        {/* Asakusa */}
         <div className="flex flex-col custom:items-center">
           <div className="custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10">
             <p className="text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 ">

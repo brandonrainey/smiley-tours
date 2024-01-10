@@ -28,7 +28,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
       />
 
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4  text-white z-20 bg-pink-400/60 rounded-xl w-fit px-2 py-1 mx-auto  ${
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/60 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne ${
           windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
         }`}
       >
@@ -47,7 +47,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
                 src={tour.tourImage}
                 alt={tour.tourName}
                 sizes="(max-width: 1100px) 100vw, 288px"
-                priority={windowWidth > 1100 ? false : true}
+                priority={true}
                 width={288}
                 height={288}
                 className="rounded tourShadow"
