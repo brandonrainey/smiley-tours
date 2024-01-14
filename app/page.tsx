@@ -19,7 +19,7 @@ export default function Home() {
       tourImage: '/tour-jan12.webp',
       tourId: 2,
       tourPrice: 20000,
-      tourSpots: 4,
+      tourSpots: 0,
       tourLink: 'https://smileytour.stores.jp/items/658aa0a1b2c71d06168f2746',
     },
     {
