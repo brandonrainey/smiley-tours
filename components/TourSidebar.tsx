@@ -42,8 +42,8 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
             className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
-              {/* <img src={tour.tourImage} alt={`${tour.tourName} image`} className='rounded tourShadow'/> */}
-              <Image
+              <img src={tour.tourImage} alt={`${tour.tourName} image `} className='rounded tourShadow max-w-[400px] w-full'/>
+              {/* <Image
                 src={tour.tourImage}
                 alt={tour.tourName}
                 sizes="(max-width: 1100px) 100vw, 288px"
@@ -51,7 +51,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
                 width={288}
                 height={288}
                 className="rounded tourShadow"
-              />
+              /> */}
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">
                 ¥{tour.tourPrice}
