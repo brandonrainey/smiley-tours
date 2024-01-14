@@ -16,7 +16,7 @@ export default function Home() {
     {
       tourName: 'jan 12 tour',
       tourDescription: 'Tour on janurary 12th',
-      tourImage: '/tour-jan12.webp',
+      tourImage: '/tour-jan12-small.webp',
       tourId: 2,
       tourPrice: 20000,
       tourSpots: 0,
@@ -25,7 +25,7 @@ export default function Home() {
     {
       tourName: 'jan 19 tour',
       tourDescription: 'Tour on janurary 19th',
-      tourImage: '/tour-jan19.webp',
+      tourImage: '/tour-jan19-small.webp',
       tourId: 3,
       tourPrice: 20000,
       tourSpots: 4,
@@ -34,7 +34,7 @@ export default function Home() {
     {
       tourName: 'jan 26 tour',
       tourDescription: 'Tour on janurary 26th',
-      tourImage: '/tour-jan26.webp',
+      tourImage: '/tour-jan26-small.webp',
       tourId: 4,
       tourPrice: 20000,
       tourSpots: 4,
@@ -43,7 +43,7 @@ export default function Home() {
     {
       tourName: 'jan 29 tour',
       tourDescription: 'Tour on janurary 29th',
-      tourImage: '/tour-jan29.webp',
+      tourImage: '/tour-jan29-small.webp',
       tourId: 5,
       tourPrice: 30000,
       tourSpots: 4,
