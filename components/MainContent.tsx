@@ -47,7 +47,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
       {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
-          <div className="flex w-full max-w-[1000px] items-center">
+          <div className="flex w-full max-w-[1000px] ">
             <Image
               ref={ref}
               src="/asakusa-2.webp"

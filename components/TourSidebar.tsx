@@ -19,18 +19,21 @@ interface TourSidebarProps {
 export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
   return (
     <section className=" bg-pink-200 h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4">
-      <Image
+      <img
+        src="/bulma.webp"
+        alt="bulma image"
+        className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10 custom:w-[100px] w-[70px] h-auto`}
+      />
+      {/* <Image
         src="/bulma.webp"
         width={windowWidth > 1100 ? 100 : 70}
         height={72}
         alt="bulma image"
         className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10`}
-      />
+      /> */}
 
       <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne ${
-          windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
-        }`}
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4`}
       >
         Upcoming Tours
       </h1>
@@ -42,7 +45,11 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
             className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
-              <img src={tour.tourImage} alt={`${tour.tourName} image `} className='rounded tourShadow max-w-[400px] w-full'/>
+              <img
+                src={tour.tourImage}
+                alt={`${tour.tourName} image `}
+                className="rounded tourShadow max-w-[400px] w-full"
+              />
               {/* <Image
                 src={tour.tourImage}
                 alt={tour.tourName}
@@ -57,10 +64,9 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
                 ¥{tour.tourPrice}
               </h2>
               <h3
-                className={`font-semibold text-white pb-2 custom:pb-0  ${
-                  windowWidth > 1100 ? 'textShadow' : 'textShadowMobileTour'
-                }  `}
+                className={`font-semibold text-white pb-2 custom:pb-0  custom:text-shadow-1 text-shadow-2 `}
               >
+                {/* custom:textShadow textShadowMobileTour */}
                 {tour.tourSpots === 0 ? (
                   <p className="line-through text-slate-300 custom:text-lg">
                     Sold Out
