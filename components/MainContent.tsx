@@ -196,7 +196,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
             ) : (
               <p>
                 Step into the enchanting Ueno Toushogu Shrine and immerse
-                yourself in the grandeur of the Shogun's sanctuary. Marvel at
+                yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel at
                 the intricate gold fortune papers that add a touch of magic to
                 your spiritual journey!
                 <br />
