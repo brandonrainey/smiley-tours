@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 interface Tour {
   tourName: string
@@ -24,13 +23,6 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
         alt="bulma image"
         className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10 custom:w-[100px] w-[70px] h-auto`}
       />
-      {/* <Image
-        src="/bulma.webp"
-        width={windowWidth > 1100 ? 100 : 70}
-        height={72}
-        alt="bulma image"
-        className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10`}
-      /> */}
 
       <h1
         className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4`}
@@ -50,15 +42,6 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
                 alt={`${tour.tourName} image `}
                 className="rounded tourShadow max-w-[400px] w-full"
               />
-              {/* <Image
-                src={tour.tourImage}
-                alt={tour.tourName}
-                sizes="(max-width: 1100px) 100vw, 288px"
-                priority={true}
-                width={288}
-                height={288}
-                className="rounded tourShadow"
-              /> */}
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">
                 ¥{tour.tourPrice}
@@ -66,7 +49,6 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
               <h3
                 className={`font-semibold text-white pb-2 custom:pb-0  custom:text-shadow-1 text-shadow-2 `}
               >
-                {/* custom:textShadow textShadowMobileTour */}
                 {tour.tourSpots === 0 ? (
                   <p className="line-through text-slate-300 custom:text-lg">
                     Sold Out
