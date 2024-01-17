@@ -29,7 +29,7 @@ export default function MainContent() {
         src="/hearts-shrink-small.webp"
         loading="lazy"
         alt="background hearts"
-        className="absolute custom:object-fill object-cover w-full h-full opacity-50 left-0"
+        className="absolute custom:object-fill object-cover w-full h-full opacity-50 left-0 "
       />
 
       <h2
@@ -41,12 +41,12 @@ export default function MainContent() {
           } cursor-pointer transition-all duration-150 ease-in-out`}
           onClick={() => setArea('asakusa')}
         >
-          {area === 'asakusa' ? (<i className="fa-solid fa-heart text-pink-200"></i>) : (<i className="fa-regular fa-heart"></i>)}
+          {area === 'asakusa' ? (<i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>) : (<i className="fa-regular fa-heart"></i>)}
           
           Asakusa
         </p> 
-          
-        ~
+          {area === 'asakusa' ? (<i className={`fa-solid fa-arrow-right `}></i>) : (<i className="fa-solid fa-arrow-left"></i>)}
+        
         
         <p
           className={`${
@@ -55,7 +55,7 @@ export default function MainContent() {
           onClick={() => setArea('ueno')}
         >
           Ueno
-          {area === 'ueno' ? (<i className="fa-solid fa-heart text-pink-200"></i>) : (<i className="fa-regular fa-heart"></i>)}
+          {area === 'ueno' ? (<i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>) : (<i className="fa-regular fa-heart"></i>)}
         </p>
       </h2>
 
