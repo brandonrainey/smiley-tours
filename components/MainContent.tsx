@@ -227,7 +227,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               <p>
                 Indulge in the ultimate relaxation with our footbath cafe
                 experience. Savor tea time while pampering your feet, complete
-                with a blissful 5-minute massage and a refreshing drink. It's a
+                with a blissful 5-minute massage and a refreshing drink. It&apos;s a
                 treat for your senses!
                 <br />
                 <br />
