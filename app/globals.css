@@ -14,6 +14,7 @@ body {
   height: 100%;
 }
 
+/* text-shadow-1 */
 .textShadow {
   text-shadow: 1px 1px 3px rgb(186, 6, 102);
 }
@@ -44,23 +45,27 @@ body {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.textShadow3 {
+/* text-shadow-3 */
+/* .text-shadow-3 {
   text-shadow: 2px 3px 3px rgba(186, 6, 102, 0.671);
-}
+} */
 
-/* text shadow  */
+/* text-shadow-7  */
 .textShadow3Mobile {
   text-shadow: 2px 2px 3px rgba(186, 6, 102, 0.282);
 }
 
+/* text-shadow-4 */
 .textShadowMainHeaderMobile {
   text-shadow: 2px 2px 3px rgba(239, 76, 163, 0.269);
 }
 
+/* text-shadow-5 */
 .textShadowHeaderMobile {
   text-shadow: 1px 1px 3px rgba(240, 11, 133, 0.282);
 }
 
+/* text-shadow-2 */
 .textShadowMobileTour {
   text-shadow: 2px 2px 10px rgba(241, 82, 167, 0.401);
 }
@@ -76,6 +81,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* text-shadow-6 */
 .followShadowMobile {
   text-shadow: 2px 2px 6px rgba(255, 47, 158, 0.315);
 }

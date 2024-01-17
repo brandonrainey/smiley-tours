@@ -1,22 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 
-interface TestimonialsProps {
-  windowWidth: number
-}
-
-export default function Testimonials({ windowWidth }: TestimonialsProps) {
+export default function Testimonials() {
   return (
     <article
-      className={`w-full lg:min-h-[400px] flex lg:flex-row flex-col items-center justify-around gap-8 px-4 lg:my-0 my-4 ${
-        windowWidth < 1100 ? 'short-border pt-10' : ''
-      }`}
+      className={`w-full lg:min-h-[400px] flex lg:flex-row flex-col items-center justify-around gap-8 px-4 lg:my-0 my-4 custom:pt-0 custom:before:border-none short-border pt-10`}
     >
       <div className=" text-center basis-1/3 bg-pink-400/40 rounded-xl newShadow max-w-[520px] relative">
         <Image
           src="/low-background.webp"
           fill
-          sizes='(max-width: 1100px) 100vw, 520px'
+          sizes="(max-width: 1100px) 100vw, 520px"
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-70 object-cover -z-20"
         />
@@ -48,7 +42,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         <Image
           src="/low-background.webp"
           fill
-          sizes='(max-width: 1100px) 100vw, 520px'
+          sizes="(max-width: 1100px) 100vw, 520px"
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
         />
@@ -81,7 +75,7 @@ export default function Testimonials({ windowWidth }: TestimonialsProps) {
         <Image
           src="/low-background.webp"
           fill
-          sizes='(max-width: 1100px) 100vw, 520px'
+          sizes="(max-width: 1100px) 100vw, 520px"
           alt="smiley image"
           className="rounded-xl absolute top-0 left-0 opacity-80 object-cover -z-20"
         />

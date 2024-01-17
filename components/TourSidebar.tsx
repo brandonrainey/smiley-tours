@@ -1,21 +1,81 @@
 import React from 'react'
 
-interface Tour {
-  tourName: string
-  tourDescription: string
-  tourImage: string
-  tourId: number
-  tourPrice: number | string
-  tourSpots: number | string
-  tourLink: string
-}
+const tours = [
+  {
+    tourName: 'jan 19 tour',
+    tourDescription: 'Tour on janurary 19th',
+    tourImage: '/tour-jan19-small.webp',
+    tourId: 1,
+    tourPrice: 20000,
+    tourSpots: 0,
+    tourLink: 'https://smileytour.stores.jp/items/658aa16827d5b205f1c153d6',
+  },
+  {
+    tourName: 'jan 26 tour',
+    tourDescription: 'Tour on janurary 26th',
+    tourImage: '/tour-jan26-small.webp',
+    tourId: 2,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
+  },
+  {
+    tourName: 'jan 29 tour',
+    tourDescription: 'Tour on janurary 29th',
+    tourImage: '/tour-jan29-small.webp',
+    tourId: 3,
+    tourPrice: 30000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
+  },
+  {
+    tourName: 'feb 2 tour',
+    tourDescription: 'Tour on febuary 2th',
+    tourImage: '/tour-feb2.webp',
+    tourId: 4,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65a5456f1ebb490ecf2b9360',
+  },
+  {
+    tourName: 'feb 9 tour',
+    tourDescription: 'Tour on febuary 9th',
+    tourImage: '/tour-feb9.webp',
+    tourId: 5,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65a54780b14f58002a4d0b96',
+  },
+  {
+    tourName: 'feb 16 tour',
+    tourDescription: 'Tour on febuary 16th',
+    tourImage: '/tour-feb16.webp',
+    tourId: 6,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65a5498776f1c9002ada2c26',
+  },
+  {
+    tourName: 'feb 27 tour',
+    tourDescription: 'Tour on febuary 27th',
+    tourImage: '/tour-feb27.webp',
+    tourId: 7,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65a549d5e2dc7a00301255b3',
+  },
+  {
+    tourName: 'Private Tour',
+    tourDescription: 'Private Tour for at least 2 people',
+    tourImage: '/private-tour.webp',
+    tourId: 8,
+    tourPrice: 'TBD',
+    tourSpots: 'TBD',
+    tourLink: 'https://smileytour.stores.jp/items/649e31d385e3630037cff96e',
+  },
+]
 
-interface TourSidebarProps {
-  tours: Tour[]
-  windowWidth: number
-}
-
-export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
+export default function TourSidebar() {
   return (
     <section className=" bg-pink-200 h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4">
       <img
@@ -30,7 +90,7 @@ export default function TourSidebar({ tours, windowWidth }: TourSidebarProps) {
         Upcoming Tours
       </h1>
 
-      <ul className="flex custom:flex-col flex-wrap items-center ">
+      <ul className="flex custom:flex-col flex-wrap items-center transition-all duration-150 ease-in-out">
         {tours.map((tour) => (
           <li
             key={tour.tourId}

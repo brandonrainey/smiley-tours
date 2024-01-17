@@ -1,11 +1,9 @@
+'use client'
+
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-interface FooterProps {
-  windowWidth: number
-}
-
-export default function Footer({ windowWidth }: FooterProps) {
+export default function Footer() {
   const [copySuccess, setCopySuccess] = useState('')
 
   const copyToClipboard = async (text: string) => {
@@ -34,9 +32,7 @@ export default function Footer({ windowWidth }: FooterProps) {
 
       <div className="flex items-center gap-2 z-10 font-bold font-CarterOne  ">
         <h1
-          className={`text-5xl text-white  ${
-            windowWidth > 1100 ? 'textShadow3' : 'followShadowMobile'
-          }`}
+          className={`text-5xl text-white custom:text-shadow-3 text-shadow-6`}
         >
           Follow Me!
         </h1>
@@ -74,7 +70,7 @@ export default function Footer({ windowWidth }: FooterProps) {
         </a>
       </div>
       <p
-        className="text-white text-xl tracking-wide textShadow underline cursor-copy py-2 z-30"
+        className="text-white text-xl tracking-wide text-shadow-1 underline cursor-copy py-2 z-30"
         onClick={() => copyToClipboard('engelmaikichi@gmail.com')}
       >
         engelmaikichi@gmail.com

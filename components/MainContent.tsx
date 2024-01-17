@@ -1,12 +1,10 @@
+'use client'
+
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
-interface MainContentProps {
-  windowWidth: number
-}
-
-export default function MainContent({ windowWidth }: MainContentProps) {
+export default function MainContent() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   })
@@ -35,22 +33,29 @@ export default function MainContent({ windowWidth }: MainContentProps) {
       />
 
       <h2
-        className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 ${
-          windowWidth > 1100 ? 'textShadow3' : 'textShadow3Mobile'
-        } `}
+        className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2`}
       >
         <p
-          className={`${area === 'ueno' && 'opacity-50'} cursor-pointer transition-all duration-150 ease-in-out`}
+          className={`${
+            area === 'ueno' && 'opacity-50'
+          } cursor-pointer transition-all duration-150 ease-in-out`}
           onClick={() => setArea('asakusa')}
         >
+          {area === 'asakusa' ? (<i className="fa-solid fa-heart text-pink-200"></i>) : (<i className="fa-regular fa-heart"></i>)}
+          
           Asakusa
-        </p>
+        </p> 
+          
         ~
+        
         <p
-          className={`${area === 'asakusa' && 'opacity-50'} cursor-pointer transition-all duration-150 ease-in-out`}
+          className={`${
+            area === 'asakusa' && 'opacity-50'
+          } cursor-pointer transition-all duration-150 ease-in-out`}
           onClick={() => setArea('ueno')}
         >
           Ueno
+          {area === 'ueno' ? (<i className="fa-solid fa-heart text-pink-200"></i>) : (<i className="fa-regular fa-heart"></i>)}
         </p>
       </h2>
 
@@ -141,15 +146,6 @@ export default function MainContent({ windowWidth }: MainContentProps) {
                   adventure! ✨{' '}
                 </p>
               )}
-
-              {windowWidth > 1100 ? (
-                <span>
-                  <br />
-                  <br />
-                </span>
-              ) : (
-                ''
-              )}
             </div>
 
             <Image
@@ -172,7 +168,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           <Image
             ref={ref3}
             src={area === 'asakusa' ? '/karaoke-crop.jpg' : '/shrine.webp'}
-            width={windowWidth > 1100 ? 280 : 260}
+            width={280}
             height={500}
             alt="karaoke image"
             className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
@@ -196,9 +192,9 @@ export default function MainContent({ windowWidth }: MainContentProps) {
             ) : (
               <p>
                 Step into the enchanting Ueno Toushogu Shrine and immerse
-                yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel at
-                the intricate gold fortune papers that add a touch of magic to
-                your spiritual journey!
+                yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel
+                at the intricate gold fortune papers that add a touch of magic
+                to your spiritual journey!
                 <br />
                 <br />
                 Experience the allure of Kiyomizu Kannondo, a stage hall
@@ -227,8 +223,8 @@ export default function MainContent({ windowWidth }: MainContentProps) {
               <p>
                 Indulge in the ultimate relaxation with our footbath cafe
                 experience. Savor tea time while pampering your feet, complete
-                with a blissful 5-minute massage and a refreshing drink. It&apos;s a
-                treat for your senses!
+                with a blissful 5-minute massage and a refreshing drink.
+                It&apos;s a treat for your senses!
                 <br />
                 <br />
                 Embark on a culinary adventure with my favorite ramen – the

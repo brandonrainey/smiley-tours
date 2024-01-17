@@ -1,10 +1,6 @@
 import React from 'react'
 
-interface InfoSidebarProps {
-  windowWidth: number
-}
-
-export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
+export default function InfoSidebar() {
   return (
     <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
       <img
@@ -14,9 +10,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       />
 
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne  ${
-          windowWidth > 1100 ? 'textShadow3' : 'textShadowMainHeaderMobile'
-        } `}
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4 `}
       >
         Events
       </h1>
@@ -24,9 +18,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       {/*  */}
       <div className="text-center font-semibold flex flex-col items-center mt-8">
         <h2
-          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 ${
-            windowWidth > 1100 ? 'textShadow' : 'textShadowHeaderMobile'
-          } py-1 mb-4`}
+          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
         >
           Miley&apos;s Bar
         </h2>
@@ -39,9 +31,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white ${
-              windowWidth > 1100 ? 'textShadow' : 'textShadowHeaderMobile'
-            }   mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
           >
             <p>Open :18:00- 23:00</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
@@ -56,9 +46,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
       {/*  */}
       <div className="text-center font-semibold mt-8 flex flex-col items-center">
         <h2
-          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 ${
-            windowWidth > 1100 ? 'textShadow' : 'textShadowHeaderMobile'
-          }  py-1 mb-4`}
+          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
         >
           Idol Concert
         </h2>
@@ -71,9 +59,7 @@ export default function InfoSidebar({ windowWidth }: InfoSidebarProps) {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white ${
-              windowWidth > 1100 ? 'textShadow' : 'textShadowHeaderMobile'
-            } mt-2 newShadow`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 newShadow`}
           >
             <p>March 11th</p>
             <p>Akihabara</p>
