@@ -44,7 +44,7 @@ export default function MainContent({ windowWidth }: MainContentProps) {
           onClick={() => setArea('asakusa')}
         >
           Asakusa
-        </p>{' '}
+        </p>
         ~
         <p
           className={`${area === 'asakusa' && 'opacity-50'} cursor-pointer transition-all duration-150 ease-in-out`}
