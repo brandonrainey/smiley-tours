@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
@@ -29,6 +30,13 @@ export default function InfoSidebar() {
             className="rounded max-w-[300px] w-full"
             alt="ninja bar"
           />
+          {/* <Image
+            src="/bar.webp"
+            width={300}
+            height={288}
+            alt="ninja bar image"
+            className="rounded "
+          /> */}
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}

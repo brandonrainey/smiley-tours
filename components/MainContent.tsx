@@ -27,7 +27,7 @@ export default function MainContent() {
     <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-pink-400 custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
       <img
         src="/hearts-shrink-small.webp"
-        loading="lazy"
+        // loading="lazy"
         alt="background hearts"
         className="absolute custom:object-fill object-cover w-full h-full opacity-50 left-0 "
       />

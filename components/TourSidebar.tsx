@@ -111,6 +111,7 @@ export default function TourSidebar() {
                 priority={true}
                 width={288}
                 height={288}
+                quality={80}
                 className="rounded tourShadow"
               />
 
