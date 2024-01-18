@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const tours = [
   {
@@ -97,11 +98,20 @@ export default function TourSidebar() {
             className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
-              <img
+              {/* <img
                 src={tour.tourImage}
                 alt={`${tour.tourName} image `}
                 className="rounded tourShadow max-w-[400px] w-[200px] h-[200px]"
                 style={{ width: '100%', height: 'auto' }}
+              /> */}
+              <Image
+                src={tour.tourImage}
+                alt={tour.tourName}
+                sizes="(max-width: 1100px) 100vw, 288px"
+                priority={true}
+                width={288}
+                height={288}
+                className="rounded tourShadow"
               />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">
