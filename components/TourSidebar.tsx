@@ -100,7 +100,8 @@ export default function TourSidebar() {
               <img
                 src={tour.tourImage}
                 alt={`${tour.tourName} image `}
-                className="rounded tourShadow max-w-[400px] w-full"
+                className="rounded tourShadow max-w-[400px] w-[200px] h-[200px]"
+                style={{ width: '100%', height: 'auto' }}
               />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">

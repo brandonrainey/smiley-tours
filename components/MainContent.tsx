@@ -67,7 +67,12 @@ export default function MainContent() {
       <div className="flex flex-col gap-10 custom:items-center relative">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] ">
-            <Image
+            <img src="/asakusa-2.webp" alt="asakusa" ref={ref} className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] max-h-[407px]  ${
+                inView
+                  ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}/>
+            {/* <Image
               ref={ref}
               src="/asakusa-2.webp"
               alt="asakusa image"
@@ -78,7 +83,7 @@ export default function MainContent() {
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
               }`}
-            />
+            /> */}
           </div>
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
