@@ -1,11 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
+import tourJan19 from '../public/tour-jan19-small.webp'
+import tourJan26 from '../public/tour-jan26-small.webp'
+import tourJan29 from '../public/tour-jan29-small.webp'
+import tourFeb2 from '../public/tour-feb2.webp'
+import tourFeb9 from '../public/tour-feb9.webp'
+import tourFeb16 from '../public/tour-feb16.webp'
+import tourFeb27 from '../public/tour-feb27.webp'
+import tourPrivate from '../public/private-tour.webp'
+
 
 const tours = [
   {
     tourName: 'jan 19 tour',
     tourDescription: 'Tour on janurary 19th',
-    tourImage: '/tour-jan19-small.webp',
+    tourImage: tourJan19,
     tourId: 1,
     tourPrice: 20000,
     tourSpots: 0,
@@ -14,7 +23,7 @@ const tours = [
   {
     tourName: 'jan 26 tour',
     tourDescription: 'Tour on janurary 26th',
-    tourImage: '/tour-jan26-small.webp',
+    tourImage: tourJan26,
     tourId: 2,
     tourPrice: 20000,
     tourSpots: 4,
@@ -23,7 +32,7 @@ const tours = [
   {
     tourName: 'jan 29 tour',
     tourDescription: 'Tour on janurary 29th',
-    tourImage: '/tour-jan29-small.webp',
+    tourImage: tourJan29,
     tourId: 3,
     tourPrice: 30000,
     tourSpots: 4,
@@ -32,7 +41,7 @@ const tours = [
   {
     tourName: 'feb 2 tour',
     tourDescription: 'Tour on febuary 2th',
-    tourImage: '/tour-feb2.webp',
+    tourImage: tourFeb2,
     tourId: 4,
     tourPrice: 20000,
     tourSpots: 4,
@@ -41,7 +50,7 @@ const tours = [
   {
     tourName: 'feb 9 tour',
     tourDescription: 'Tour on febuary 9th',
-    tourImage: '/tour-feb9.webp',
+    tourImage: tourFeb9,
     tourId: 5,
     tourPrice: 20000,
     tourSpots: 4,
@@ -50,7 +59,7 @@ const tours = [
   {
     tourName: 'feb 16 tour',
     tourDescription: 'Tour on febuary 16th',
-    tourImage: '/tour-feb16.webp',
+    tourImage: tourFeb16,
     tourId: 6,
     tourPrice: 20000,
     tourSpots: 4,
@@ -59,7 +68,7 @@ const tours = [
   {
     tourName: 'feb 27 tour',
     tourDescription: 'Tour on febuary 27th',
-    tourImage: '/tour-feb27.webp',
+    tourImage: tourFeb27,
     tourId: 7,
     tourPrice: 20000,
     tourSpots: 4,
@@ -68,7 +77,7 @@ const tours = [
   {
     tourName: 'Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
-    tourImage: '/private-tour.webp',
+    tourImage: tourPrivate,
     tourId: 8,
     tourPrice: 'TBD',
     tourSpots: 'TBD',
@@ -112,6 +121,7 @@ export default function TourSidebar() {
                 width={288}
                 height={288}
                 quality={80}
+                placeholder='blur'
                 className="rounded tourShadow"
               />
 
