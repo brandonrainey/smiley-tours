@@ -20,6 +20,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="og:title" content='Smiley Tours - Asakusa Tokyo Tour Guide' />
         <meta name="og:description" content='Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan.' />
+        <meta name="google-site-verification" content="fi5b-1hLu-5vtrSRc4guyfwYlJmu9TH5CtgFXxYz1PQ" />
       </Head>
       <body className={`font-Varela bg-pink-200 bgImage`}>{children}</body>
     </html>
