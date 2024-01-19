@@ -9,7 +9,6 @@ import tourFeb16 from '../public/tour-feb16.webp'
 import tourFeb27 from '../public/tour-feb27.webp'
 import tourPrivate from '../public/private-tour.webp'
 
-
 const tours = [
   {
     tourName: 'jan 19 tour',
@@ -87,7 +86,7 @@ const tours = [
 
 export default function TourSidebar() {
   return (
-    <section className=" bg-pink-200 h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4">
+    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 ">
       <img
         src="/bulma.webp"
         alt="bulma image"
@@ -121,7 +120,7 @@ export default function TourSidebar() {
                 width={288}
                 height={288}
                 quality={80}
-                placeholder='blur'
+                placeholder="blur"
                 className="rounded tourShadow"
               />
 

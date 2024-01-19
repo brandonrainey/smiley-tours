@@ -21,12 +21,12 @@ export default function Footer() {
     <footer
       className={`bg-pink-200 min-h-[250px] w-full flex flex-col justify-around items-center  relative`}
     >
-      <div className="sm:w-full h-[250px]">
+      <div className="sm:w-full ">
         <Image
           src="/background-banner.webp"
           fill
-          alt="bulma image"
-          className="absolute z-0 border-t-2 border-pink-400/50 object-cover opacity-70"
+          alt="background pattern"
+          className="absolute z-0 border-t-2 border-pink-400/50 object-cover opacity-50"
         />
       </div>
 

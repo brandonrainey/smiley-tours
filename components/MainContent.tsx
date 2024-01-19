@@ -24,14 +24,7 @@ export default function MainContent() {
   const [area, setArea] = useState('asakusa')
 
   return (
-    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-pink-400 custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative ">
-      <img
-        src="/hearts-shrink-small.webp"
-        // loading="lazy"
-        alt="background hearts"
-        className="absolute custom:object-fill object-cover w-full h-full opacity-50 left-0 "
-      />
-
+    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage">
       <h2
         className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2`}
       >
@@ -41,13 +34,19 @@ export default function MainContent() {
           } cursor-pointer transition-all duration-150 ease-in-out`}
           onClick={() => setArea('asakusa')}
         >
-          {area === 'asakusa' ? (<i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>) : (<i className="fa-regular fa-heart"></i>)}
-          
+          {area === 'asakusa' ? (
+            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+          ) : (
+            <i className="fa-regular fa-heart"></i>
+          )}
           Asakusa
-        </p> 
-          {area === 'asakusa' ? (<i className={`fa-solid fa-arrow-right `}></i>) : (<i className="fa-solid fa-arrow-left"></i>)}
-        
-        
+        </p>
+        {area === 'asakusa' ? (
+          <i className={`fa-solid fa-arrow-right `}></i>
+        ) : (
+          <i className="fa-solid fa-arrow-left"></i>
+        )}
+
         <p
           className={`${
             area === 'asakusa' && 'opacity-50'
@@ -55,7 +54,11 @@ export default function MainContent() {
           onClick={() => setArea('ueno')}
         >
           Ueno
-          {area === 'ueno' ? (<i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>) : (<i className="fa-regular fa-heart"></i>)}
+          {area === 'ueno' ? (
+            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+          ) : (
+            <i className="fa-regular fa-heart"></i>
+          )}
         </p>
       </h2>
 
@@ -67,11 +70,16 @@ export default function MainContent() {
       <div className="flex flex-col gap-10 custom:items-center relative">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
           <div className="flex w-full max-w-[1000px] ">
-            <img src="/asakusa-2.webp" alt="asakusa" ref={ref} className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] max-h-[407px]  ${
+            <img
+              src="/asakusa-2.webp"
+              alt="asakusa"
+              ref={ref}
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] max-h-[407px]  ${
                 inView
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
-              }`}/>
+              }`}
+            />
             {/* <Image
               ref={ref}
               src="/asakusa-2.webp"

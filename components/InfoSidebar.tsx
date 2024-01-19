@@ -1,9 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 
 export default function InfoSidebar() {
   return (
-    <section className="bg-pink-200 h-auto basis-1/4 p-4 font-Varela  relative ">
+    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela  relative ">
       <img
         src="/ganko.webp"
         alt="ganko"
