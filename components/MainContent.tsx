@@ -181,7 +181,7 @@ export default function MainContent() {
           <Image
             ref={ref3}
             src={area === 'asakusa' ? '/karaoke-crop.jpg' : '/shrine.webp'}
-            width={280}
+            width={330}
             height={500}
             alt="karaoke image"
             className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
@@ -252,7 +252,7 @@ export default function MainContent() {
             ref={ref4}
             src={area === 'asakusa' ? '/monja-food.webp' : '/ramen.webp'}
             alt="monja image"
-            width={340}
+            width={330}
             height={500}
             className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView4

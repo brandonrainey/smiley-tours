@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import tourJan19 from '../public/tour-jan19-small.webp'
 import tourJan26 from '../public/tour-jan26-small.webp'
 import tourJan29 from '../public/tour-jan29-small.webp'
 import tourFeb2 from '../public/tour-feb2.webp'
@@ -10,15 +9,6 @@ import tourFeb27 from '../public/tour-feb27.webp'
 import tourPrivate from '../public/private-tour.webp'
 
 const tours = [
-  {
-    tourName: 'jan 19 tour',
-    tourDescription: 'Tour on janurary 19th',
-    tourImage: tourJan19,
-    tourId: 1,
-    tourPrice: 20000,
-    tourSpots: 0,
-    tourLink: 'https://smileytour.stores.jp/items/658aa16827d5b205f1c153d6',
-  },
   {
     tourName: 'jan 26 tour',
     tourDescription: 'Tour on janurary 26th',
