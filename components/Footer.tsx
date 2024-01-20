@@ -25,6 +25,7 @@ export default function Footer() {
         <Image
           src="/background-banner.webp"
           fill
+          loading='lazy'
           alt="background pattern"
           className="absolute z-0 border-t-2 border-pink-400/50 object-cover opacity-50"
         />
@@ -40,6 +41,7 @@ export default function Footer() {
           src="/miley.webp"
           width={100}
           height={72}
+          loading='lazy'
           alt="miley image"
           className=""
         />

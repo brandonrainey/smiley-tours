@@ -183,6 +183,7 @@ export default function MainContent() {
             src={area === 'asakusa' ? '/karaoke-crop.jpg' : '/shrine.webp'}
             width={330}
             height={500}
+            loading='lazy'
             alt="karaoke image"
             className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView3
@@ -254,6 +255,7 @@ export default function MainContent() {
             alt="monja image"
             width={330}
             height={500}
+            loading='lazy'
             className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
               inView4
                 ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'

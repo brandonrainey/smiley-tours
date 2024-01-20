@@ -10,7 +10,7 @@ import tourPrivate from '../public/private-tour.webp'
 
 const tours = [
   {
-    tourName: 'jan 26 tour',
+    tourName: 'Asakusa, Tokyo Tour January 26th',
     tourDescription: 'Tour on janurary 26th',
     tourImage: tourJan26,
     tourId: 2,
@@ -19,7 +19,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
   },
   {
-    tourName: 'jan 29 tour',
+    tourName: 'Asakusa, Tokyo Tour January 29th',
     tourDescription: 'Tour on janurary 29th',
     tourImage: tourJan29,
     tourId: 3,
@@ -28,7 +28,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
   },
   {
-    tourName: 'feb 2 tour',
+    tourName: 'Ueno, Tokyo Tour Febuary 2nd',
     tourDescription: 'Tour on febuary 2th',
     tourImage: tourFeb2,
     tourId: 4,
@@ -37,7 +37,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/65a5456f1ebb490ecf2b9360',
   },
   {
-    tourName: 'feb 9 tour',
+    tourName: 'Ueno, Tokyo Tour Febuary 9th',
     tourDescription: 'Tour on febuary 9th',
     tourImage: tourFeb9,
     tourId: 5,
@@ -46,7 +46,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/65a54780b14f58002a4d0b96',
   },
   {
-    tourName: 'feb 16 tour',
+    tourName: 'Ueno, Tokyo Tour Febuary 16th',
     tourDescription: 'Tour on febuary 16th',
     tourImage: tourFeb16,
     tourId: 6,
@@ -55,7 +55,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/65a5498776f1c9002ada2c26',
   },
   {
-    tourName: 'feb 27 tour',
+    tourName: 'Ueno, Tokyo Tour Febuary 27th',
     tourDescription: 'Tour on febuary 27th',
     tourImage: tourFeb27,
     tourId: 7,
@@ -64,7 +64,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/65a549d5e2dc7a00301255b3',
   },
   {
-    tourName: 'Private Tour',
+    tourName: 'Tokyo Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: tourPrivate,
     tourId: 8,
