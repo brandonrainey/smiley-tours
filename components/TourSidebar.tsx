@@ -76,15 +76,15 @@ const tours = [
 
 export default function TourSidebar() {
   return (
-    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 ">
+    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2" id='tour'>
       <img
         src="/bulma.webp"
         alt="bulma image"
-        className={`absolute custom:-top-12 custom:-left-10 -top-8 right-10 custom:w-[100px] w-[70px] h-auto`}
+        className={`absolute custom:inline-block hidden custom:-top-12 custom:-left-10 -top-1 right-10 custom:w-[100px] w-[70px] h-auto`}
       />
 
       <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4`}
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4 `}
       >
         Upcoming Tours
       </h1>

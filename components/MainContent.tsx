@@ -24,14 +24,14 @@ export default function MainContent() {
   const [area, setArea] = useState('asakusa')
 
   return (
-    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage">
+    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage custom:order-2 order-1" id='about'>
       <h2
         className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2`}
       >
         <p
           className={`${
             area === 'ueno' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out`}
+          } cursor-pointer transition-all duration-150 ease-in-out `}
           onClick={() => setArea('asakusa')}
         >
           {area === 'asakusa' ? (
@@ -39,7 +39,10 @@ export default function MainContent() {
           ) : (
             <i className="fa-regular fa-heart"></i>
           )}
-          Asakusa
+          <span className={`${
+            area !== 'ueno' && 'textGradient textShadowNone'
+          } `}
+          >Asakusa</span>
         </p>
         {area === 'asakusa' ? (
           <i className={`fa-solid fa-arrow-right `}></i>
@@ -53,7 +56,9 @@ export default function MainContent() {
           } cursor-pointer transition-all duration-150 ease-in-out`}
           onClick={() => setArea('ueno')}
         >
-          Ueno
+          <span className={`${
+            area !== 'asakusa' && 'textGradient textShadowNone'
+          } `}>Ueno</span>
           {area === 'ueno' ? (
             <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
           ) : (
@@ -62,7 +67,7 @@ export default function MainContent() {
         </p>
       </h2>
 
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  mb-10">
+      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
         Tokyo Tour Guide
       </h1>
 

@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function InfoSidebar() {
   return (
-    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela  relative ">
+    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3" id='events'>
       <img
         src="/ganko.webp"
         alt="ganko"
-        className="absolute custom:-top-14 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
+        className="absolute hidden custom:inline-block custom:-top-14 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
       />
 
       <h1
