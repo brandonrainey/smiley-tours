@@ -73,7 +73,7 @@ export default function MainContent() {
 
       {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">
-        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 ">
+        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 items-center">
           <div className="flex w-full max-w-[1000px] ">
             <img
               src="/asakusa-2.webp"
