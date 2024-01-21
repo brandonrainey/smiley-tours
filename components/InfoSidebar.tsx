@@ -1,8 +1,14 @@
+'use client'
+
 import React from 'react'
 
-export default function InfoSidebar() {
+interface InfoSidebarProps {
+  eventsRef: any
+}
+
+export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
   return (
-    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3" id='events'>
+    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3" id='events' ref={eventsRef}>
       <img
         src="/ganko.webp"
         alt="ganko"

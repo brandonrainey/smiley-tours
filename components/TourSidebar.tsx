@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import tourJan26 from '../public/tour-jan26-small.webp'
@@ -74,9 +76,14 @@ const tours = [
   },
 ]
 
-export default function TourSidebar() {
+interface TourSidebarProps {
+  tourRef: any
+  
+}
+
+export default function TourSidebar({ tourRef }: TourSidebarProps) {
   return (
-    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2" id='tour'>
+    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2" id='tour' ref={tourRef}>
       <img
         src="/bulma.webp"
         alt="bulma image"
