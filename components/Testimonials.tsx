@@ -7,7 +7,7 @@ export default function Testimonials() {
     >
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl newShadow max-w-[520px] relative">
 
-        <figure className="max-w-screen-md p-2 rounded-xl">
+        <figure className="max-w-screen-md p-2 rounded-xl bgImage3">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-600 "
             viewBox="0 0 24 27"
@@ -20,7 +20,7 @@ export default function Testimonials() {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white text-shadow-1 ">
+            <p className="text-xl font-semibold text-pink-600 textShadowWhite ">
               &quot;I had a wonderful time at the Tour and will definitely be
               back in tokyo again next year. Hopefully we&apos;ll meet again
               soon. Cheers!😊&quot;
@@ -31,7 +31,7 @@ export default function Testimonials() {
       </div>
 
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl newShadow max-w-[520px] relative">
-        <figure className="max-w-screen-md p-2 rounded-xl">
+        <figure className="max-w-screen-md p-2 rounded-xl bgImage3" >
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-600"
             viewBox="0 0 24 27"
@@ -44,7 +44,7 @@ export default function Testimonials() {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white text-shadow-1">
+            <p className="text-xl font-semibold text-pink-600 textShadowWhite">
               &quot;The Karaoke segment is so wonderful because it allows Miley
               to include HER top-notch professional Japanese singing and dancing
               performance within her tour. Her singing, alone, is worth the
@@ -56,7 +56,7 @@ export default function Testimonials() {
       </div>
 
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl newShadow max-w-[520px] relative">
-        <figure className="max-w-screen-md p-2 rounded-xl">
+        <figure className="max-w-screen-md p-2 rounded-xl bgImage3">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-600"
             viewBox="0 0 24 27"
@@ -69,7 +69,7 @@ export default function Testimonials() {
             />
           </svg>
           <blockquote>
-            <p className="text-xl font-medium text-white text-shadow-1">
+            <p className="text-xl font-semibold text-pink-600 textShadowWhite">
               &quot;Experiencing Smiley&apos;s tour around Asakusa and Akihabara
               was a true highlight! Miley&apos;s positive energy and the
               delightful moments captured made the tour an absolute pleasure.

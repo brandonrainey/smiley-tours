@@ -11,8 +11,9 @@ import MobileNav from '@/components/MobileNav'
 
 export default function Home() {
 
-  const tourRef = useRef();
-const eventsRef = useRef();
+  const tourRef = useRef()
+  
+  const eventsRef = useRef()
   
   return (
     <div className="  w-full h-full flex flex-col relative">
