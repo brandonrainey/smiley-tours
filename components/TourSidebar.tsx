@@ -17,7 +17,7 @@ const tours = [
     tourImage: tourJan26,
     tourId: 2,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
   },
   {
@@ -35,7 +35,7 @@ const tours = [
     tourImage: tourFeb2,
     tourId: 4,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileytour.stores.jp/items/65a5456f1ebb490ecf2b9360',
   },
   {
