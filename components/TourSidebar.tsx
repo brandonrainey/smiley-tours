@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import tourJan26 from '../public/tour-jan26-small.webp'
 import tourJan29 from '../public/tour-jan29-small.webp'
+import tourFeb1 from '../public/tour-feb1.webp'
 import tourFeb2 from '../public/tour-feb2.webp'
 import tourFeb9 from '../public/tour-feb9.webp'
 import tourFeb16 from '../public/tour-feb16.webp'
@@ -28,6 +29,15 @@ const tours = [
     tourPrice: 30000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour Febuary 1st',
+    tourDescription: 'Tour on febuary 1st',
+    tourImage: tourFeb1,
+    tourId: 4,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65b0a17feb6dbe054d23ecf2',
   },
   {
     tourName: 'Ueno, Tokyo Tour Febuary 2nd',
