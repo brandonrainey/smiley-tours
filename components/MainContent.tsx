@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
@@ -23,57 +23,26 @@ export default function MainContent() {
 
   const [area, setArea] = useState('asakusa')
 
+  const [prevArea, setPrevArea] = useState(area)
+
+  useEffect(() => {
+    setPrevArea(area)
+  }, [area])
+
+  console.log(area, prevArea)
+
   return (
-    <main className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage custom:order-2 order-1" id='about'>
-      <h2
-        className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2`}
-      >
-        <p
-          className={`${
-            area === 'ueno' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out `}
-          onClick={() => setArea('asakusa')}
-        >
-          {area === 'asakusa' ? (
-            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
-          ) : (
-            <i className="fa-regular fa-heart"></i>
-          )}
-          <span className={`${
-            area !== 'ueno' && 'textGradient textShadowNone'
-          } `}
-          >Asakusa</span>
-        </p>
-        {area === 'asakusa' ? (
-          <i className={`fa-solid fa-arrow-right `}></i>
-        ) : (
-          <i className="fa-solid fa-arrow-left"></i>
-        )}
-
-        <p
-          className={`${
-            area === 'asakusa' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out`}
-          onClick={() => setArea('ueno')}
-        >
-          <span className={`${
-            area !== 'asakusa' && 'textGradient textShadowNone'
-          } `}>Ueno</span>
-          {area === 'ueno' ? (
-            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
-          ) : (
-            <i className="fa-regular fa-heart"></i>
-          )}
-        </p>
-      </h2>
-
+    <main
+      className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage custom:order-2 order-1"
+      id="about"
+    >
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
         Tokyo Tour Guide
       </h1>
 
       {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">
-        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 custom:items-baseline items-center">
+        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 custom:items-baseline items-center ">
           <div className="flex w-full max-w-[1000px] ">
             <img
               src="/asakusa-2.webp"
@@ -85,19 +54,9 @@ export default function MainContent() {
                   : ''
               }`}
             />
-            {/* <Image
-              ref={ref}
-              src="/asakusa-2.webp"
-              alt="asakusa image"
-              width={330}
-              height={500}
-              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] custom:max-h-[407px] ${
-                inView
-                  ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
-                  : ''
-              }`}
-            /> */}
           </div>
+
+          {/* ${area !== prevArea ? '' : 'animate-fade animate-ease-in-out animate-delay-150'} */}
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
             Hi I&apos;m{' '}
@@ -129,12 +88,70 @@ export default function MainContent() {
           </p>
         </div>
 
+        <h2
+          className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2`}
+        >
+          <p
+            className={`${
+              area === 'ueno' && 'opacity-50'
+            } cursor-pointer transition-all duration-150 ease-in-out `}
+            onClick={() => setArea('asakusa')}
+          >
+            {area === 'asakusa' ? (
+              <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+            ) : (
+              <i className="fa-regular fa-heart"></i>
+            )}
+            <span
+              className={`${area !== 'ueno' && 'textGradient textShadowNone'} `}
+            >
+              Asakusa
+            </span>
+          </p>
+          {area === 'asakusa' ? (
+            <i className={`fa-solid fa-arrow-right `}></i>
+          ) : (
+            <i className="fa-solid fa-arrow-left"></i>
+          )}
+
+          <p
+            className={`${
+              area === 'asakusa' && 'opacity-50'
+            } cursor-pointer transition-all duration-150 ease-in-out`}
+            onClick={() => setArea('ueno')}
+          >
+            <span
+              className={`${
+                area !== 'asakusa' && 'textGradient textShadowNone'
+              } `}
+            >
+              Ueno
+            </span>
+            {area === 'ueno' ? (
+              <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+            ) : (
+              <i className="fa-regular fa-heart"></i>
+            )}
+          </p>
+        </h2>
+
         {/* Asakusa/Ueno */}
-        <div className="flex flex-col custom:items-center">
-          <div className="custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10">
-            <div className="text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 ">
+        <div className="flex flex-col custom:items-center ">
+          <div
+            className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse short-border custom:max-w-[1000px] pt-10  `}
+          >
+            <div
+              className={`text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 `}
+            >
               {area === 'asakusa' ? (
-                <p>
+                <p
+                  className={`${
+                    area !== prevArea
+                      ? ''
+                      : 'animate-fade animate-ease-in-out animate-delay-150'
+                  }`}
+                  key="asakusa"
+                >
                   Embark on a delightful journey along the Sumida River and
                   Komagata Street. Exploring the ancient roots of Asakusa dating
                   back to the year 628, where history unfolds like a captivating
@@ -150,7 +167,14 @@ export default function MainContent() {
                   the concept of Japanese festivals! 🎡🎢🎠
                 </p>
               ) : (
-                <p>
+                <p
+                  className={`${
+                    area !== prevArea
+                      ? ''
+                      : 'animate-fade animate-ease-in-out animate-delay-150'
+                  }`}
+                  key="ueno"
+                >
                   Embark on a whimsical journey to the National Museum of Nature
                   and Science! 🌿
                   <br />
@@ -166,39 +190,82 @@ export default function MainContent() {
               )}
             </div>
 
-            <Image
-              ref={ref2}
-              src={area === 'asakusa' ? '/asakusa.webp' : '/museum.webp'}
-              alt="asakusa image"
-              width={420}
-              height={300}
-              className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
-                inView2
-                  ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
-                  : ''
-              }`}
-            />
+            {area === 'asakusa' ? (
+              <Image
+                ref={ref2}
+                src={'/asakusa.webp'}
+                alt="asakusa image"
+                key={'asakusa1'}
+                width={420}
+                height={300}
+                className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+                  inView2 || area !== prevArea
+                    ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                    : ''
+                } `}
+              />
+            ) : (
+              <Image
+                ref={ref2}
+                src={'/museum.webp'}
+                alt="museum image"
+                key={'ueno1'}
+                width={420}
+                height={300}
+                className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+                  inView2 || area !== prevArea
+                    ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                    : ''
+                } `}
+              />
+            )}
           </div>
         </div>
 
         {/* Karaoke/Shrine */}
         <div className="flex flex-col custom:flex-row custom:py-4 py-0 short-border custom:max-w-[1000px]   pt-10">
-          <Image
-            ref={ref3}
-            src={area === 'asakusa' ? '/karaoke-crop.jpg' : '/shrine.webp'}
-            width={330}
-            height={500}
-            loading='lazy'
-            alt="karaoke image"
-            className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
-              inView3
-                ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
-                : ''
-            }`}
-          />
+          {area === 'asakusa' ? (
+            <Image
+              ref={ref3}
+              src={'/karaoke-crop.jpg'}
+              width={330}
+              height={500}
+              key={'karaoke1'}
+              loading="lazy"
+              alt="karaoke image"
+              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+                inView3 || area !== prevArea
+                  ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}
+            />
+          ) : (
+            <Image
+              ref={ref3}
+              src={'/shrine.webp'}
+              width={330}
+              height={500}
+              key={'shrine1'}
+              loading="lazy"
+              alt="shrine image"
+              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+                inView3 || area !== prevArea
+                  ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}
+            />
+          )}
+
           <div className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto custom:px-8">
             {area === 'asakusa' ? (
-              <p>
+              <p
+                className={`${
+                  area !== prevArea
+                    ? ''
+                    : 'animate-fade animate-ease-in-out animate-delay-150'
+                }`}
+                key={'karaoke2'}
+              >
                 ❤️ Dive into the ultimate karaoke experience in the birthplace
                 of this musical phenomenon, Japan!
                 <br />
@@ -209,7 +276,14 @@ export default function MainContent() {
                 with a refreshing twist! 🎤🎶
               </p>
             ) : (
-              <p>
+              <p
+                className={`${
+                  area !== prevArea
+                    ? ''
+                    : 'animate-fade animate-ease-in-out animate-delay-150'
+                }`}
+                key={'shrine2'}
+              >
                 Step into the enchanting Ueno Toushogu Shrine and immerse
                 yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel
                 at the intricate gold fortune papers that add a touch of magic
@@ -229,17 +303,34 @@ export default function MainContent() {
         <div className="flex custom:flex-row flex-col-reverse w-full gap-6 short-border custom:py-4 custom:max-w-[1000px] pt-10">
           <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
             {area === 'asakusa' ? (
-              <p>
-                ❤️ Monja is a very unique food born in Asakusa! It looks like
-                vomit, but it tastes so delicious!
+              <p
+                className={`${
+                  area !== prevArea
+                    ? ''
+                    : 'animate-fade animate-ease-in-out animate-delay-150'
+                }`}
+                key={'monja1'}
+              >
+                ❤️ Monja, a delightfully unique dish born in the heart of
+                Asakusa, may resemble a playful mess, but its taste is an
+                absolute delight!
                 <br />
                 <br />
-                ⭐️I&apos;ll teach you how to make monja, turning this quirky
-                culinary experience into a flavorful adventure! 🍲✨
+                I&apos;ll show you the ropes of making monja, turning this
+                quirky culinary experience into a flavorful adventure. Get ready
+                for a delicious journey as we explore the unconventional side of
+                Asakusa&apos;s culinary treasures! 🍲✨
                 <br />
               </p>
             ) : (
-              <p>
+              <p
+                className={`${
+                  area !== prevArea
+                    ? ''
+                    : 'animate-fade animate-ease-in-out animate-delay-150'
+                }`}
+                key={'ramen1'}
+              >
                 Indulge in the ultimate relaxation with our footbath cafe
                 experience. Savor tea time while pampering your feet, complete
                 with a blissful 5-minute massage and a refreshing drink.
@@ -254,19 +345,37 @@ export default function MainContent() {
             )}
           </div>
 
-          <Image
-            ref={ref4}
-            src={area === 'asakusa' ? '/monja-food.webp' : '/ramen.webp'}
-            alt="monja image"
-            width={330}
-            height={500}
-            loading='lazy'
-            className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
-              inView4
-                ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
-                : ''
-            }`}
-          />
+          {area === 'asakusa' ? (
+            <Image
+              ref={ref4}
+              src={'/monja-food.webp'}
+              alt="monja image"
+              width={330}
+              height={500}
+              key={'monja2'}
+              loading="lazy"
+              className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+                inView4 || area !== prevArea
+                  ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}
+            />
+          ) : (
+            <Image
+              ref={ref4}
+              src={'/ramen.webp'}
+              alt="monja image"
+              width={330}
+              height={500}
+              key={'ramen2'}
+              loading="lazy"
+              className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+                inView4 || area !== prevArea
+                  ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}
+            />
+          )}
         </div>
       </div>
     </main>
