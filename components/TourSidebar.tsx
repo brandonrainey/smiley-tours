@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Image from 'next/image'
-import tourJan26 from '../public/tour-jan26-small.webp'
 import tourJan29 from '../public/tour-jan29-small.webp'
 import tourFeb1 from '../public/tour-feb1.webp'
 import tourFeb2 from '../public/tour-feb2.webp'
@@ -12,15 +11,6 @@ import tourFeb27 from '../public/tour-feb27.webp'
 import tourPrivate from '../public/private-tour.webp'
 
 const tours = [
-  {
-    tourName: 'Asakusa, Tokyo Tour January 26th',
-    tourDescription: 'Tour on janurary 26th',
-    tourImage: tourJan26,
-    tourId: 2,
-    tourPrice: 20000,
-    tourSpots: 0,
-    tourLink: 'https://smileytour.stores.jp/items/658aa1b73cc7cf07c428e031',
-  },
   {
     tourName: 'Asakusa, Tokyo Tour January 29th',
     tourDescription: 'Tour on janurary 29th',
@@ -88,12 +78,15 @@ const tours = [
 
 interface TourSidebarProps {
   tourRef: any
-  
 }
 
 export default function TourSidebar({ tourRef }: TourSidebarProps) {
   return (
-    <section className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2" id='tour' ref={tourRef}>
+    <section
+      className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2"
+      id="tour"
+      ref={tourRef}
+    >
       <img
         src="/bulma.webp"
         alt="bulma image"
@@ -126,8 +119,7 @@ export default function TourSidebar({ tourRef }: TourSidebarProps) {
                 priority={true}
                 width={288}
                 height={288}
-                quality={80}
-                placeholder="blur"
+                quality={100}
                 className="rounded tourShadow"
               />
 

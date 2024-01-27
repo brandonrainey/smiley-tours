@@ -33,7 +33,7 @@ export default function MainContent() {
 
   return (
     <main
-      className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-4 custom:justify-normal  justify-center relative bgImage custom:order-2 order-1"
+      className="custom:h-fit h-auto pb-12 custom:pb-0  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-2 custom:border-y-4 custom:justify-normal  justify-center relative bgImage custom:order-2 order-1"
       id="about"
     >
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
@@ -46,17 +46,15 @@ export default function MainContent() {
           <div className="flex w-full max-w-[1000px] ">
             <img
               src="/asakusa-2.webp"
-              alt="asakusa"
+              alt="miley image"
               ref={ref}
-              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[330px] max-h-[407px]  ${
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
                 inView
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
               }`}
             />
           </div>
-
-          {/* ${area !== prevArea ? '' : 'animate-fade animate-ease-in-out animate-delay-150'} */}
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
             Hi I&apos;m{' '}
@@ -231,9 +229,8 @@ export default function MainContent() {
               width={330}
               height={500}
               key={'karaoke1'}
-              loading="lazy"
               alt="karaoke image"
-              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView3 || area !== prevArea
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -246,7 +243,6 @@ export default function MainContent() {
               width={330}
               height={500}
               key={'shrine1'}
-              loading="lazy"
               alt="shrine image"
               className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView3 || area !== prevArea
@@ -353,7 +349,6 @@ export default function MainContent() {
               width={330}
               height={500}
               key={'monja2'}
-              loading="lazy"
               className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView4 || area !== prevArea
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'

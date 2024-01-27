@@ -41,7 +41,7 @@ export default function Footer() {
         <a
           href="https://www.youtube.com/@smileytime"
           aria-label="youtube link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl newShadow border-4 border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow  border-pink-300/50"
         >
           <i className="fab fa-youtube sm:fa-5x fa-3x text-red-500 hover:scale-110 duration-150 "></i>
         </a>
@@ -49,14 +49,14 @@ export default function Footer() {
         <a
           href="https://www.instagram.com/mairie0828/"
           aria-label="instagram link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-xl newShadow border-4 border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-xl socialsShadow border-pink-300/50"
         >
           <i className="fab fa-instagram sm:fa-5x fa-3x text-pink-500 hover:scale-110 duration-150"></i>
         </a>
         <a
           href="https://twitter.com/mairie0828"
           aria-label="twitter link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl newShadow border-4 border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow border-pink-300/50"
         >
           <i className="fab fa-twitter sm:fa-5x fa-3x text-blue-500 hover:scale-110 duration-150"></i>
         </a>
