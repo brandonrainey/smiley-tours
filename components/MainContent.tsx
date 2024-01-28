@@ -191,7 +191,7 @@ export default function MainContent() {
             {area === 'asakusa' ? (
               <Image
                 ref={ref2}
-                src={'/asakusa.webp'}
+                src={'/asakusa-crop.webp'}
                 alt="asakusa image"
                 key={'asakusa1'}
                 width={420}

@@ -28,7 +28,7 @@ export default function RootLayout({
           name="og:description"
           content="Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan."
         />
-        <meta property="og:image" content="/miley.webp" />
+        <meta property="og:image" content="https://smileytour.guide/miley2.webp" />
 
         <meta property="og:url" content="https://www.smileytour.guide" />
         <meta name="twitter:card" content="summary_large_image" />
