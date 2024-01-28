@@ -116,10 +116,9 @@ export default function TourSidebar({ tourRef }: TourSidebarProps) {
                 src={tour.tourImage}
                 alt={tour.tourName}
                 sizes="(max-width: 1100px) 100vw, 288px"
-                priority={true}
                 width={288}
                 height={288}
-                quality={100}
+                placeholder='blur'
                 className="rounded tourShadow"
               />
 
