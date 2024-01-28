@@ -46,7 +46,7 @@ export default function MainContent() {
           <div className="flex w-full max-w-[1000px] ">
             <img
               src="/asakusa-2.webp"
-              alt="miley image"
+              alt="featured miley image"
               ref={ref}
               className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
                 inView
