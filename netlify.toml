@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://smileytour.netlify.app"
+  to = "https://smileytour.guide"
+  status = 301
+  force = true

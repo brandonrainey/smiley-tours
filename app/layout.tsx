@@ -32,6 +32,7 @@ export default function RootLayout({
 
         <meta property="og:url" content="https://www.smileytour.guide" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@mairie0828" />
         <meta name="twitter:site" content="@mairie0828" />
         <meta name="twitter:title" content="Tokyo Tour Guide" />
         <meta
@@ -40,7 +41,7 @@ export default function RootLayout({
         />
         <meta name="twitter:image" content="URL to an image" />
         <meta name="author" content="Brandon Rainey" />
-
+        <meta name="theme-color" content="#fbcfe8" />
         <meta
           name="google-site-verification"
           content="fi5b-1hLu-5vtrSRc4guyfwYlJmu9TH5CtgFXxYz1PQ"

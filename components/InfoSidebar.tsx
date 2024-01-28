@@ -8,7 +8,11 @@ interface InfoSidebarProps {
 
 export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
   return (
-    <section className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3" id='events' ref={eventsRef}>
+    <section
+      className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3"
+      id="events"
+      ref={eventsRef}
+    >
       <img
         src="/ganko.webp"
         alt="ganko"
@@ -35,13 +39,6 @@ export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
             className="rounded max-w-[300px] w-full"
             alt="ninja bar"
           />
-          {/* <Image
-            src="/bar.webp"
-            width={300}
-            height={288}
-            alt="ninja bar image"
-            className="rounded "
-          /> */}
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
@@ -51,6 +48,32 @@ export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
               <p className="hover:text-pink-800">
                 2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032
               </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="text-center font-semibold flex flex-col items-center mt-8">
+        <h2
+          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
+        >
+          Idol Concert + Tap Dance Show
+        </h2>
+
+        <div className="flex flex-col items-center ">
+          <img
+            src="/tap-concert.webp"
+            className="rounded max-w-[300px] w-full"
+            alt="tap concert promo image"
+          />
+
+          <div
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow w-full`}
+          >
+            <p>February 25th</p>
+            <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
+              <p className="hover:text-pink-800">Asakusa - Free to View!</p>
             </a>
           </div>
         </div>
