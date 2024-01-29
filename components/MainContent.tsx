@@ -3,6 +3,12 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
+import AsakusaImage from '../public/asakusa-crop.webp'
+import MusuemImage from '../public/museum.webp'
+import KaraokeImage from '../public/karaoke-crop.jpg'
+import ShrineImage from '../public/shrine.webp'
+import MonjaImage from '../public/monja-food.webp'
+import RamenImage from '../public/ramen.webp'
 
 export default function MainContent() {
   const [ref, inView] = useInView({
@@ -189,11 +195,12 @@ export default function MainContent() {
             {area === 'asakusa' ? (
               <Image
                 ref={ref2}
-                src={'/asakusa-crop.webp'}
+                src={AsakusaImage}
                 alt="asakusa image"
                 key={'asakusa1'}
                 width={420}
                 height={300}
+                placeholder='blur'
                 className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                   inView2 || area !== prevArea
                     ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -203,11 +210,12 @@ export default function MainContent() {
             ) : (
               <Image
                 ref={ref2}
-                src={'/museum.webp'}
+                src={MusuemImage}
                 alt="museum image"
                 key={'ueno1'}
                 width={420}
                 height={300}
+                placeholder='blur'
                 className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                   inView2 || area !== prevArea
                     ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -223,12 +231,13 @@ export default function MainContent() {
           {area === 'asakusa' ? (
             <Image
               ref={ref3}
-              src={'/karaoke-crop.jpg'}
+              src={KaraokeImage}
               width={330}
               height={500}
               key={'karaoke1'}
               alt="karaoke image"
-              className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              placeholder='blur'
+              className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                 inView3 || area !== prevArea
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -237,12 +246,13 @@ export default function MainContent() {
           ) : (
             <Image
               ref={ref3}
-              src={'/shrine.webp'}
+              src={ShrineImage}
               width={330}
               height={500}
               key={'shrine1'}
               alt="shrine image"
-              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+              placeholder='blur'
+              className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                 inView3 || area !== prevArea
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
                   : ''
@@ -342,11 +352,12 @@ export default function MainContent() {
           {area === 'asakusa' ? (
             <Image
               ref={ref4}
-              src={'/monja-food.webp'}
+              src={MonjaImage}
               alt="monja image"
               width={330}
               height={500}
               key={'monja2'}
+              placeholder='blur'
               className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView4 || area !== prevArea
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -356,12 +367,12 @@ export default function MainContent() {
           ) : (
             <Image
               ref={ref4}
-              src={'/ramen.webp'}
+              src={RamenImage}
               alt="monja image"
               width={330}
               height={500}
               key={'ramen2'}
-              loading="lazy"
+              placeholder='blur'
               className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView4 || area !== prevArea
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
