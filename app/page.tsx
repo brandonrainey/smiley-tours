@@ -52,7 +52,7 @@ export default function Home() {
       <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
         <InfoSidebar eventsRef={eventsRef} />
 
-        <div className="flex flex-col items-center custom:order-2 order-1 gap-8">
+        <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
           <MainContent ref5={ref5} inView={inView} />
 
           <AreaSelector area={area} setArea={setArea} />
@@ -75,7 +75,7 @@ export default function Home() {
             ref4={ref4}
             inView4={inView4}
           />
-        </div>
+        </main>
 
         <TourSidebar tourRef={tourRef} />
       </div>

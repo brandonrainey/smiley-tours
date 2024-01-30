@@ -8,10 +8,10 @@ interface AreaSelectorProps {
 
 export default function AreaSelector({ area, setArea }: AreaSelectorProps) {
   return (
-    <h1
+    <nav
       className={`flex items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2 bg-[#f382bc] rounded-xl w-fit p-2 border-4`}
     >
-      <p
+      <h2
         className={`${
           area === 'ueno' && 'opacity-50'
         } cursor-pointer transition-all duration-150 ease-in-out `}
@@ -27,14 +27,14 @@ export default function AreaSelector({ area, setArea }: AreaSelectorProps) {
         >
           Asakusa
         </span>
-      </p>
+      </h2>
       {area === 'asakusa' ? (
         <i className={`fa-solid fa-arrow-right `}></i>
       ) : (
         <i className="fa-solid fa-arrow-left"></i>
       )}
 
-      <p
+      <h2
         className={`${
           area === 'asakusa' && 'opacity-50'
         } cursor-pointer transition-all duration-150 ease-in-out`}
@@ -50,7 +50,7 @@ export default function AreaSelector({ area, setArea }: AreaSelectorProps) {
         ) : (
           <i className="fa-regular fa-heart"></i>
         )}
-      </p>
-    </h1>
+      </h2>
+    </nav>
   )
 }

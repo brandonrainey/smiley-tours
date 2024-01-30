@@ -17,7 +17,7 @@ export default function ContentSectionThree({
   inView4,
 }: ContentSectionThreeProps) {
   return (
-    <div className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <section className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
         {area === 'asakusa' ? (
           <p
@@ -29,14 +29,13 @@ export default function ContentSectionThree({
             key={'monja1'}
           >
             Monja, a delightfully unique dish born in the heart of Asakusa, may
-            resemble a playful mess, but its taste is an absolute delight! 🍲✨
+            resemble a playful mess, but its taste is an absolute delight!
             <br />
             <br />
-            I&apos;ll guide you through the art of making monja, turning this
-            quirky culinary experience into a flavorful adventure. Get ready for
-            a delicious journey as we explore the unconventional side of
-            Asakusa&apos;s culinary treasures!
-            <br />
+            I&apos;ll show you the ropes of making monja, turning this quirky
+            culinary experience into a flavorful adventure. Get ready for a
+            delicious journey as we explore the unconventional side of
+            Asakusa&apos;s culinary treasures! 🍲✨
           </p>
         ) : (
           <p
@@ -50,7 +49,7 @@ export default function ContentSectionThree({
             Indulge in the ultimate relaxation with our footbath cafe
             experience. Savor tea time while pampering your feet, complete with
             a blissful 5-minute massage and a refreshing drink. It&apos;s a
-            treat for your senses! 🍵👣
+            treat for your senses!
             <br />
             <br />
             Embark on a culinary adventure with my favorite ramen – the
@@ -92,6 +91,6 @@ export default function ContentSectionThree({
           }`}
         />
       )}
-    </div>
+    </section>
   )
 }

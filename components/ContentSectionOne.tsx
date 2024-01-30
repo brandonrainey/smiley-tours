@@ -17,7 +17,7 @@ export default function ContentSectionOne({
   inView2,
 }: ContentSectionOneProps) {
   return (
-    <div className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <section className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       <div
         className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-10  `}
       >
@@ -33,20 +33,18 @@ export default function ContentSectionOne({
               }`}
               key="asakusa"
             >
-              Embark on a delightful journey along the scenic Sumida River and
-              charming Komagata Street. Immerse yourself in the rich history of
-              Asakusa, tracing back to the year 628, where every corner unveils
-              a captivating tale! 🚢🌸
+              Embark on a delightful journey along the Sumida River and Komagata
+              Street. Exploring the ancient roots of Asakusa dating back to the
+              year 628, where history unfolds like a captivating tale! 🚢🌸
               <br />
               <br />
-              ❤️ Explore the heart of Asakusa through two must-visit gems: the
-              iconic Kaminarimon Gate and the revered Senso-ji Temple. Uncover
-              the allure of these historic sites and the lively Asakusa Yokocho.
+              ❤️ Discover the story behind Asakusa through two must-visit spots:
+              Kaminarimon Gate and Senso-ji Temple.
               <br />
               <br />
-              Seize memorable moments with stunning photos at a theme park, a
-              joyful ode to Japanese festivals, boasting a Ferris wheel, roller
-              coasters, and carousel rides. 🎡🎢🎠
+              Dive into the charm of these historical places and the Asakusa
+              Yokocho, and take photogenic photos at a theme park based on the
+              concept of Japanese festivals! 🎡🎢🎠
             </p>
           ) : (
             <p
@@ -57,17 +55,17 @@ export default function ContentSectionOne({
               }`}
               key="ueno"
             >
-              Embark on a whimsical journey to the enchanting National Museum of
-              Nature and Science! 🌿
+              Embark on a whimsical journey to the National Museum of Nature and
+              Science! 🌿
               <br />
               <br />
-              Uncover the fascinating secrets of the natural world and
-              don&apos;t miss the chance to catch a glimpse of the legendary
-              Hachiko, the loyal pup who touched hearts worldwide. 🐾
+              Unveil the secrets of the natural world and be sure to catch a
+              glimpse of the legendary Hachiko, the loyal pup who touched hearts
+              worldwide. 🐾
               <br />
               <br />
-              Let curiosity be your compass, and let smiles illuminate your
-              delightful adventure! ✨{' '}
+              Let curiosity guide your steps and smiles brighten your adventure!
+              ✨{' '}
             </p>
           )}
         </div>
@@ -104,6 +102,6 @@ export default function ContentSectionOne({
           />
         )}
       </div>
-    </div>
+    </section>
   )
 }

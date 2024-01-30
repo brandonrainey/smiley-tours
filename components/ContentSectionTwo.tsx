@@ -17,7 +17,7 @@ export default function ContentSectionTwo({
   inView3,
 }: ContentSectionTwoProps) {
   return (
-    <div className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <section className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       {area === 'asakusa' ? (
         <Image
           ref={ref3}
@@ -60,12 +60,12 @@ export default function ContentSectionTwo({
             }`}
             key={'karaoke2'}
           >
-            Immerse yourself in the ultimate karaoke experience in the
-            birthplace of this musical phenomenon, Japan!
+            Dive into the ultimate karaoke experience in the birthplace of this
+            musical phenomenon, Japan!
             <br />
             <br />
-            Belt out your favorite tunes in top-notch karaoke rooms, and as the
-            notes soar, savor the added delight of a complimentary drink
+            Belt out your favorite tunes in high-quality karaoke rooms, and as
+            the notes soar, relish the added joy of a complimentary drink
             bar—because in Japan, every karaoke session is a symphony of fun
             with a refreshing twist! 🎤🎶
           </p>
@@ -81,7 +81,7 @@ export default function ContentSectionTwo({
             Step into the enchanting Ueno Toushogu Shrine and immerse yourself
             in the grandeur of the Shogun&apos;s sanctuary. Marvel at the
             intricate gold fortune papers that add a touch of magic to your
-            spiritual journey! 🌟
+            spiritual journey!
             <br />
             <br />
             Experience the allure of Kiyomizu Kannondo, a stage hall inspired by
@@ -91,6 +91,6 @@ export default function ContentSectionTwo({
           </p>
         )}
       </div>
-    </div>
+    </section>
   )
 }
