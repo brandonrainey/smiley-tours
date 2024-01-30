@@ -10,15 +10,6 @@ import tourPrivate from '../public/private-tour.webp'
 
 const tours = [
   {
-    tourName: 'Asakusa, Tokyo Tour January 29th',
-    tourDescription: 'Tour on janurary 29th',
-    tourImage: tourJan29,
-    tourId: 3,
-    tourPrice: 30000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/658aa2d13cc7cf071d28e048',
-  },
-  {
     tourName: 'Ueno, Tokyo Tour Febuary 1st',
     tourDescription: 'Tour on febuary 1st',
     tourImage: tourFeb1,
@@ -53,15 +44,6 @@ const tours = [
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65a5498776f1c9002ada2c26',
-  },
-  {
-    tourName: 'Ueno, Tokyo Tour Febuary 27th',
-    tourDescription: 'Tour on febuary 27th',
-    tourImage: tourFeb27,
-    tourId: 7,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65a549d5e2dc7a00301255b3',
   },
   {
     tourName: 'Tokyo Private Tour',
