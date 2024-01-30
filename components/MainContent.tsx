@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 interface MainContentProps {
   ref5: any
@@ -19,9 +20,14 @@ export default function MainContent({ ref5, inView }: MainContentProps) {
       <div className="flex flex-col gap-10 custom:items-center relative">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 custom:items-baseline items-center ">
           <div className="flex w-full max-w-[1000px] ">
-            <img
-              src="/asakusa-2.webp"
+            
+            
+            <Image
+              src="/miley-main.webp"
               alt="featured miley image"
+              width={350}
+              height={432}
+              priority={true}
               ref={ref5}
               className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
                 inView
@@ -29,6 +35,18 @@ export default function MainContent({ ref5, inView }: MainContentProps) {
                   : ''
               }`}
             />
+
+
+            {/* <img
+              src="/miley-main.webp"
+              alt="featured miley image"
+              ref={ref5}
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
+                inView
+                  ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
+                  : ''
+              }`}
+            /> */}
           </div>
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">

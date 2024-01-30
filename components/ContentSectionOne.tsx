@@ -96,7 +96,7 @@ export default function ContentSectionOne({
             width={420}
             height={300}
             placeholder="blur"
-            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[340px] ${
               inView2 || area !== prevArea
                 ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
                 : ''

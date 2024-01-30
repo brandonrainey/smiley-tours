@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import KaraokeImage from '../public/karaoke-crop.jpg'
-import ShrineImage from '../public/shrine.webp'
+import ShrineImage from '../public/shrine-small.webp'
 
 interface ContentSectionTwoProps {
   area: string

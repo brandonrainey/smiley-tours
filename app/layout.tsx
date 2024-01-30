@@ -16,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/smiley-banner-transparent.webp" as="image" />
-        <link rel="preload" href="/asakusa-2.webp" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="robots" content="index, follow" />
         <meta
