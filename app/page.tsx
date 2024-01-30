@@ -10,27 +10,22 @@ import Testimonials from '@/components/Testimonials'
 import MobileNav from '@/components/MobileNav'
 
 export default function Home() {
+  const tourRef = useRef(null)
 
-  const tourRef = useRef()
-  
-  const eventsRef = useRef()
-  
+  const eventsRef = useRef(null)
+
   return (
     <div className="  w-full h-full flex flex-col relative">
-      
       <Header />
 
-      <MobileNav tourRef={tourRef} eventsRef={eventsRef}/>
+      <MobileNav tourRef={tourRef} eventsRef={eventsRef} />
 
-      <div
-        className='flex flex-col custom:flex-row w-full justify-between flex-grow'  
-      >
-        <InfoSidebar eventsRef={eventsRef}/>
+      <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
+        <InfoSidebar eventsRef={eventsRef} />
 
         <MainContent />
 
-        <TourSidebar tourRef={tourRef}/>
-
+        <TourSidebar tourRef={tourRef} />
       </div>
 
       <Testimonials />

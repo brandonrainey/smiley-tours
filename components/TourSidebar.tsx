@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import Image from 'next/image'
 import tourJan29 from '../public/tour-jan29-small.webp'
@@ -77,7 +75,7 @@ const tours = [
 ]
 
 interface TourSidebarProps {
-  tourRef: any
+  tourRef: React.RefObject<HTMLElement>
 }
 
 export default function TourSidebar({ tourRef }: TourSidebarProps) {
@@ -118,7 +116,7 @@ export default function TourSidebar({ tourRef }: TourSidebarProps) {
                 sizes="(max-width: 1100px) 100vw, 288px"
                 width={288}
                 height={288}
-                placeholder='blur'
+                placeholder="blur"
                 className="rounded tourShadow"
               />
 

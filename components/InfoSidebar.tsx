@@ -1,9 +1,7 @@
-'use client'
-
 import React from 'react'
 
 interface InfoSidebarProps {
-  eventsRef: any
+  eventsRef: React.RefObject<HTMLElement> 
 }
 
 export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {

@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import Image from 'next/image'
 
@@ -7,13 +5,15 @@ export default function Footer() {
   const [copySuccess, setCopySuccess] = useState('')
 
   const copyToClipboard = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text)
-      setCopySuccess('Copied!')
-      setTimeout(() => setCopySuccess(''), 1500)
-    } catch (err) {
-      setCopySuccess('Failed to copy text')
-      setTimeout(() => setCopySuccess(''), 1500)
+    if (typeof window !== 'undefined') {
+      try {
+        await navigator.clipboard.writeText(text)
+        setCopySuccess('Copied!')
+        setTimeout(() => setCopySuccess(''), 1500)
+      } catch (err) {
+        setCopySuccess('Failed to copy text')
+        setTimeout(() => setCopySuccess(''), 1500)
+      }
     }
   }
 

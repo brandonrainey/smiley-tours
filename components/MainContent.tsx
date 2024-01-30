@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
@@ -154,19 +152,21 @@ export default function MainContent() {
                   }`}
                   key="asakusa"
                 >
-                  Embark on a delightful journey along the Sumida River and
-                  Komagata Street. Exploring the ancient roots of Asakusa dating
-                  back to the year 628, where history unfolds like a captivating
-                  tale! 🚢🌸
+                  Embark on a delightful journey along the scenic Sumida River
+                  and charming Komagata Street. Immerse yourself in the rich
+                  history of Asakusa, tracing back to the year 628, where every
+                  corner unveils a captivating tale! 🚢🌸
                   <br />
                   <br />
-                  ❤️ Discover the story behind Asakusa through two must-visit
-                  spots: Kaminarimon Gate and Senso-ji Temple.
+                  ❤️ Explore the heart of Asakusa through two must-visit gems:
+                  the iconic Kaminarimon Gate and the revered Senso-ji Temple.
+                  Uncover the allure of these historic sites and the lively
+                  Asakusa Yokocho.
                   <br />
                   <br />
-                  Dive into the charm of these historical places and the Asakusa
-                  Yokocho, and take photogenic photos at a theme park based on
-                  the concept of Japanese festivals! 🎡🎢🎠
+                  Seize memorable moments with stunning photos at a theme park,
+                  a joyful ode to Japanese festivals, boasting a Ferris wheel,
+                  roller coasters, and carousel rides. 🎡🎢🎠
                 </p>
               ) : (
                 <p
@@ -177,17 +177,17 @@ export default function MainContent() {
                   }`}
                   key="ueno"
                 >
-                  Embark on a whimsical journey to the National Museum of Nature
-                  and Science! 🌿
+                  Embark on a whimsical journey to the enchanting National
+                  Museum of Nature and Science! 🌿
                   <br />
                   <br />
-                  Unveil the secrets of the natural world and be sure to catch a
-                  glimpse of the legendary Hachiko, the loyal pup who touched
-                  hearts worldwide. 🐾
+                  Uncover the fascinating secrets of the natural world and don&apos;t
+                  miss the chance to catch a glimpse of the legendary Hachiko,
+                  the loyal pup who touched hearts worldwide. 🐾
                   <br />
                   <br />
-                  Let curiosity guide your steps and smiles brighten your
-                  adventure! ✨{' '}
+                  Let curiosity be your compass, and let smiles illuminate your
+                  delightful adventure! ✨{' '}
                 </p>
               )}
             </div>
@@ -200,7 +200,7 @@ export default function MainContent() {
                 key={'asakusa1'}
                 width={420}
                 height={300}
-                placeholder='blur'
+                placeholder="blur"
                 className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                   inView2 || area !== prevArea
                     ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -215,7 +215,7 @@ export default function MainContent() {
                 key={'ueno1'}
                 width={420}
                 height={300}
-                placeholder='blur'
+                placeholder="blur"
                 className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                   inView2 || area !== prevArea
                     ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -236,7 +236,7 @@ export default function MainContent() {
               height={500}
               key={'karaoke1'}
               alt="karaoke image"
-              placeholder='blur'
+              placeholder="blur"
               className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                 inView3 || area !== prevArea
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -251,7 +251,7 @@ export default function MainContent() {
               height={500}
               key={'shrine1'}
               alt="shrine image"
-              placeholder='blur'
+              placeholder="blur"
               className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
                 inView3 || area !== prevArea
                   ? 'animate-fade-right animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -270,12 +270,12 @@ export default function MainContent() {
                 }`}
                 key={'karaoke2'}
               >
-                ❤️ Dive into the ultimate karaoke experience in the birthplace
-                of this musical phenomenon, Japan!
+                Immerse yourself in the ultimate karaoke experience in the
+                birthplace of this musical phenomenon, Japan!
                 <br />
                 <br />
-                Belt out your favorite tunes in high-quality karaoke rooms, and
-                as the notes soar, relish the added joy of a complimentary drink
+                Belt out your favorite tunes in top-notch karaoke rooms, and as
+                the notes soar, savor the added delight of a complimentary drink
                 bar—because in Japan, every karaoke session is a symphony of fun
                 with a refreshing twist! 🎤🎶
               </p>
@@ -289,9 +289,9 @@ export default function MainContent() {
                 key={'shrine2'}
               >
                 Step into the enchanting Ueno Toushogu Shrine and immerse
-                yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel
-                at the intricate gold fortune papers that add a touch of magic
-                to your spiritual journey!
+                yourself in the grandeur of the Shogun&apos;s sanctuary. Marvel at
+                the intricate gold fortune papers that add a touch of magic to
+                your spiritual journey! 🌟
                 <br />
                 <br />
                 Experience the allure of Kiyomizu Kannondo, a stage hall
@@ -315,15 +315,15 @@ export default function MainContent() {
                 }`}
                 key={'monja1'}
               >
-                ❤️ Monja, a delightfully unique dish born in the heart of
-                Asakusa, may resemble a playful mess, but its taste is an
-                absolute delight!
+                Monja, a delightfully unique dish born in the heart of Asakusa,
+                may resemble a playful mess, but its taste is an absolute
+                delight! 🍲✨
                 <br />
                 <br />
-                I&apos;ll show you the ropes of making monja, turning this
+                I&apos;ll guide you through the art of making monja, turning this
                 quirky culinary experience into a flavorful adventure. Get ready
                 for a delicious journey as we explore the unconventional side of
-                Asakusa&apos;s culinary treasures! 🍲✨
+                Asakusa&apos;s culinary treasures!
                 <br />
               </p>
             ) : (
@@ -337,8 +337,8 @@ export default function MainContent() {
               >
                 Indulge in the ultimate relaxation with our footbath cafe
                 experience. Savor tea time while pampering your feet, complete
-                with a blissful 5-minute massage and a refreshing drink.
-                It&apos;s a treat for your senses!
+                with a blissful 5-minute massage and a refreshing drink. It&apos;s a
+                treat for your senses! 🍵👣
                 <br />
                 <br />
                 Embark on a culinary adventure with my favorite ramen – the
@@ -357,7 +357,7 @@ export default function MainContent() {
               width={330}
               height={500}
               key={'monja2'}
-              placeholder='blur'
+              placeholder="blur"
               className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView4 || area !== prevArea
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
@@ -372,7 +372,7 @@ export default function MainContent() {
               width={330}
               height={500}
               key={'ramen2'}
-              placeholder='blur'
+              placeholder="blur"
               className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
                 inView4 || area !== prevArea
                   ? 'animate-fade-left animate-duration-[1200ms] animate-ease-in-out opacity-100'
