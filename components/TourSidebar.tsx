@@ -133,7 +133,7 @@ export default function TourSidebar({ tourRef }: TourSidebarProps) {
                 ) : (
                   <div className="flex items-center gap-2 ">
                     <i className="fas fa-heart fa-sm text-pink-500 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all ease-in-out"></i>
-                    <p className="custom:text-lg">Book Now!</p>
+                    <p className="custom:text-lg">Learn More!</p>
                     <i className="fas fa-heart fa-sm text-pink-500 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all ease-in-out"></i>
                   </div>
                 )}

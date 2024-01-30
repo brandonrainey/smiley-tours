@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface InfoSidebarProps {
-  eventsRef: React.RefObject<HTMLElement> 
+  eventsRef: React.RefObject<HTMLElement>
 }
 
 export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
@@ -39,7 +39,7 @@ export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] border-2 border-pink-500`}
           >
             <p>Open :18:00- 23:00</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
@@ -67,7 +67,7 @@ export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] newShadow w-full`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px]  w-full border-2 border-pink-500`}
           >
             <p>February 25th</p>
             <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
@@ -93,7 +93,7 @@ export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 newShadow`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 border-2 border-pink-500`}
           >
             <p>March 11th</p>
             <p>Akihabara</p>
