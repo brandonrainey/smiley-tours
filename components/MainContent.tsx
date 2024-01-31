@@ -39,32 +39,29 @@ export default function MainContent() {
           </div>
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
-            Hi I&apos;m{' '}
-            <span className="font-semibold textShadowNone textGradient ">
+            Hey there! I&apos;m{' '}
+            <span className="font-semibold textShadowNone textGradient">
               Miley
             </span>
-            , I am a ninja apprentice! Former Japanese idol and voice actress.
-            I&apos;ve been working in the entertainment industry for over 10
-            years, but my work suddenly decreased due to corona.
+            , a ninja apprentice, former Japanese idol, and voice actress with
+            over 10 years of experience in the entertainment industry. The
+            pandemic hit my work hard, prompting a change in direction. Two
+            years ago, I dove into the vibrant community of Asakusa, drawn by a
+            local&apos;s tale.
             <br />
             <br />
-            So just two years ago, I started working in{' '}
             <span className="font-semibold textShadowNone textGradient">
               Asakusa
             </span>
-            . I heard a story from a local person while getting to know various
-            people in the area. Asakusa is a popular tourist destination, but
-            the guides are aging and there are no young guides. So I decided to
-            become a guide.
+            , a beloved tourist spot, lacked young guides, and with the aging
+            guide population, I saw an opportunity. Leveraging my background in
+            stage shows, I aim to blend guiding skills with entertainment flair,
+            introducing a fresh tour experience.
             <br />
-            <br />I have been doing stage shows for a long time, so I would like
-            to offer a new type of tour that combines the skill of a guide with
-            the skill of entertainment.{' '}
-            <span className="font-semibold textShadowNone textGradient ">
-              My dream
-            </span>{' '}
-            is to make guides a popular profession and increase the number of
-            young guides. I hope it can help realize sustainable tourism!
+            <br />
+            My vision is to make guiding a sought-after profession, inspiring
+            more young guides and contributing to sustainable tourism. Let&apos;s
+            embark on this exciting journey together!
           </p>
         </div>
       </div>
