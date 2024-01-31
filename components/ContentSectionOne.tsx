@@ -17,7 +17,7 @@ export default function ContentSectionOne({
   inView2,
 }: ContentSectionOneProps) {
   return (
-    <section className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       <div
         className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-10  `}
       >
@@ -102,6 +102,6 @@ export default function ContentSectionOne({
           />
         )}
       </div>
-    </section>
+    </article>
   )
 }

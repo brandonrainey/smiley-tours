@@ -17,7 +17,7 @@ export default function ContentSectionTwo({
   inView3,
 }: ContentSectionTwoProps) {
   return (
-    <section className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       {area === 'asakusa' ? (
         <Image
           ref={ref3}
@@ -91,6 +91,6 @@ export default function ContentSectionTwo({
           </p>
         )}
       </div>
-    </section>
+    </article>
   )
 }

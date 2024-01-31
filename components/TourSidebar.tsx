@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import tourJan29 from '../public/tour-jan29-small.webp'
+
 import tourFeb1 from '../public/tour-feb1.webp'
 import tourFeb2 from '../public/tour-feb2.webp'
 import tourFeb9 from '../public/tour-feb9.webp'
 import tourFeb16 from '../public/tour-feb16.webp'
-import tourFeb27 from '../public/tour-feb27.webp'
+
 import tourPrivate from '../public/private-tour.webp'
 
 const tours = [

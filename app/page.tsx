@@ -19,9 +19,9 @@ export default function Home() {
 
   const eventsRef = useRef(null)
 
-  const [ref5, inView] = useInView({
-    triggerOnce: true,
-  })
+  // const [ref5, inView] = useInView({
+  //   triggerOnce: true,
+  // })
 
   const [ref2, inView2] = useInView({
     triggerOnce: true,
@@ -53,7 +53,7 @@ export default function Home() {
         <InfoSidebar eventsRef={eventsRef} />
 
         <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
-          <MainContent ref5={ref5} inView={inView} />
+          <MainContent />
 
           <AreaSelector area={area} setArea={setArea} />
 

@@ -1,12 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import MileyImage from '../public/miley-main.webp'
 
-interface MainContentProps {
-  ref5: any
-  inView: boolean
-}
-
-export default function MainContent({ ref5, inView }: MainContentProps) {
+export default function MainContent() {
   return (
     <section
       className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-2 custom:border-y-4 custom:justify-normal  justify-center relative bgImage "
@@ -20,22 +16,15 @@ export default function MainContent({ ref5, inView }: MainContentProps) {
       <div className="flex flex-col gap-10 custom:items-center relative">
         <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 custom:items-baseline items-center ">
           <div className="flex w-full max-w-[1000px] ">
-            
-            
             <Image
-              src="/miley-main.webp"
+              src={MileyImage}
               alt="featured miley image"
               width={350}
               height={432}
               priority={true}
-              ref={ref5}
-              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
-                inView
-                  ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
-                  : ''
-              }`}
+              placeholder="blur"
+              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 custom:min-w-[350px] max-h-[432px]  `}
             />
-
 
             {/* <img
               src="/miley-main.webp"
