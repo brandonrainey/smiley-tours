@@ -66,7 +66,7 @@ export default function ContentSectionThree({
           src={MonjaImage}
           alt="monja image"
           width={330}
-          height={500}
+          height={330}
           key={'monja2'}
           placeholder="blur"
           className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
@@ -80,8 +80,8 @@ export default function ContentSectionThree({
           ref={ref4}
           src={RamenImage}
           alt="monja image"
-          width={330}
-          height={500}
+          width={312}
+          height={408}
           key={'ramen2'}
           placeholder="blur"
           className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${

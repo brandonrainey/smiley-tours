@@ -77,7 +77,7 @@ export default function ContentSectionOne({
             alt="asakusa image"
             key={'asakusa1'}
             width={420}
-            height={300}
+            height={572}
             placeholder="blur"
             className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
               inView2 || area !== prevArea
@@ -92,7 +92,7 @@ export default function ContentSectionOne({
             alt="museum image"
             key={'ueno1'}
             width={420}
-            height={300}
+            height={340}
             placeholder="blur"
             className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[340px] ${
               inView2 || area !== prevArea

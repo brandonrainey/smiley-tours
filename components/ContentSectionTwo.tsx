@@ -22,8 +22,8 @@ export default function ContentSectionTwo({
         <Image
           ref={ref3}
           src={KaraokeImage}
-          width={330}
-          height={500}
+          width={312}
+          height={383}
           key={'karaoke1'}
           alt="karaoke image"
           placeholder="blur"
@@ -37,8 +37,8 @@ export default function ContentSectionTwo({
         <Image
           ref={ref3}
           src={ShrineImage}
-          width={330}
-          height={500}
+          width={312}
+          height={408}
           key={'shrine1'}
           alt="shrine image"
           placeholder="blur"
