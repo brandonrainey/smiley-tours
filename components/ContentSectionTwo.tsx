@@ -1,21 +1,22 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import KaraokeImage from '../public/karaoke-crop.jpg'
 import ShrineImage from '../public/shrine-small.webp'
+import { useAreaStore } from '@/store/areas'
+import { useInView } from 'react-intersection-observer'
 
-interface ContentSectionTwoProps {
-  area: string
-  prevArea: string
-  ref3: any
-  inView3: boolean
-}
 
-export default function ContentSectionTwo({
-  area,
-  prevArea,
-  ref3,
-  inView3,
-}: ContentSectionTwoProps) {
+
+export default function ContentSectionTwo() {
+
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+  })
+
+  const { area, prevArea } = useAreaStore()
+
   return (
     <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       {area === 'asakusa' ? (

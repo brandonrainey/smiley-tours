@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -7,6 +9,7 @@ import tourFeb9 from '../public/tour-feb9.webp'
 import tourFeb16 from '../public/tour-feb16.webp'
 
 import tourPrivate from '../public/private-tour.webp'
+import { useAreaStore } from '@/store/areas'
 
 const tours = [
   {
@@ -56,11 +59,11 @@ const tours = [
   },
 ]
 
-interface TourSidebarProps {
-  tourRef: React.RefObject<HTMLElement>
-}
 
-export default function TourSidebar({ tourRef }: TourSidebarProps) {
+
+export default function TourSidebar() {
+
+  const { tourRef } = useAreaStore()
   return (
     <section
       className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2"

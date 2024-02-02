@@ -1,21 +1,20 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import AsakusaImage from '../public/asakusa-crop.webp'
 import MusuemImage from '../public/museum.webp'
+import { useAreaStore } from '@/store/areas'
+import { useInView } from 'react-intersection-observer'
 
-interface ContentSectionOneProps {
-  area: string
-  prevArea: string
-  ref2: any
-  inView2: boolean
-}
 
-export default function ContentSectionOne({
-  area,
-  prevArea,
-  ref2,
-  inView2,
-}: ContentSectionOneProps) {
+export default function ContentSectionOne() {
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+  })
+
+  const { area, prevArea } = useAreaStore()
   return (
     <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       <div

@@ -1,21 +1,22 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import MonjaImage from '../public/monja-food.webp'
 import RamenImage from '../public/ramen-small.webp'
+import { useAreaStore } from '@/store/areas'
+import { useInView } from 'react-intersection-observer'
 
-interface ContentSectionThreeProps {
-  area: string
-  prevArea: string
-  ref4: any
-  inView4: boolean
-}
 
-export default function ContentSectionThree({
-  area,
-  prevArea,
-  ref4,
-  inView4,
-}: ContentSectionThreeProps) {
+
+export default function ContentSectionThree() {
+
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+  })
+
+  const { area, prevArea } = useAreaStore()
+
   return (
     <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">

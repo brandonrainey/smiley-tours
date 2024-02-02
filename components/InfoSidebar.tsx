@@ -1,10 +1,13 @@
+'use client'
+
 import React from 'react'
+import { useAreaStore } from '@/store/areas'
 
-interface InfoSidebarProps {
-  eventsRef: React.RefObject<HTMLElement>
-}
 
-export default function InfoSidebar({ eventsRef }: InfoSidebarProps) {
+
+export default function InfoSidebar() {
+
+  const { eventsRef } = useAreaStore()
   return (
     <section
       className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3"
