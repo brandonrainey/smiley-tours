@@ -2,25 +2,13 @@
 
 import React from 'react'
 import Image from 'next/image'
-
-import tourFeb1 from '../public/tour-feb1.webp'
 import tourFeb2 from '../public/tour-feb2.webp'
 import tourFeb9 from '../public/tour-feb9.webp'
 import tourFeb16 from '../public/tour-feb16.webp'
-
 import tourPrivate from '../public/private-tour.webp'
 import { useAreaStore } from '@/store/areas'
 
 const tours = [
-  {
-    tourName: 'Ueno, Tokyo Tour Febuary 1st',
-    tourDescription: 'Tour on febuary 1st',
-    tourImage: tourFeb1,
-    tourId: 4,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65b0a17feb6dbe054d23ecf2',
-  },
   {
     tourName: 'Ueno, Tokyo Tour Febuary 2nd',
     tourDescription: 'Tour on febuary 2th',
@@ -59,11 +47,10 @@ const tours = [
   },
 ]
 
-
-
 export default function TourSidebar() {
 
   const { tourRef } = useAreaStore()
+
   return (
     <section
       className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2"
