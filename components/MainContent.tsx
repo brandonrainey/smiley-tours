@@ -8,7 +8,8 @@ export default function MainContent() {
   return (
     <section
       className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4  mb-4 bg-[#f382bc] custom:rounded-b-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 custom:border-t-0 border-y-2 custom:border-y-4 custom:justify-normal  justify-center relative bgImage "
-      id="about"
+      id="main-content"
+      data-testid="main-content"
     >
       <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
         Tokyo Tour Guide
