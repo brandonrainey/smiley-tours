@@ -20,9 +20,9 @@ export default function MobileNav() {
       <ul className="flex justify-around custom:hidden bg-pink-300 p-0 text-white font-semibold text-2xl w-full z-30">
         <li className="hover:text-pink-700 text-shadow-7 flex items-center">
           <img src="/ganko.webp" alt="ganko image" className="h-[4rem]" />
-          <a onClick={() => scrollToRef(tourRef)} className="cursor-pointer">
+          <p onClick={() => scrollToRef(tourRef)} className="cursor-pointer">
             Tours
-          </a>
+          </p>
         </li>
         <li className="hover:text-pink-700 text-shadow-7 flex items-center">
           <p onClick={() => scrollToRef(eventsRef)} className="cursor-pointer">

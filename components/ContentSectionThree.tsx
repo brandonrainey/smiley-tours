@@ -18,7 +18,7 @@ export default function ContentSectionThree() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow overflow-y-auto custom:max-h-[440px]">
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
         {area === 'asakusa' ? (
           <p
@@ -70,7 +70,7 @@ export default function ContentSectionThree() {
           height={330}
           key={'monja2'}
           placeholder="blur"
-          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[330px] ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -85,7 +85,7 @@ export default function ContentSectionThree() {
           height={408}
           key={'ramen2'}
           placeholder="blur"
-          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 ${
+          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

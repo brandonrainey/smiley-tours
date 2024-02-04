@@ -18,7 +18,7 @@ export default function ContentSectionTwo() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow custom:max-h-[440px] overflow-y-auto">
       {area === 'asakusa' ? (
         <Image
           ref={ref3}
@@ -28,7 +28,7 @@ export default function ContentSectionTwo() {
           key={'karaoke1'}
           alt="karaoke image"
           placeholder="blur"
-          className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+          className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[383px] ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -43,7 +43,7 @@ export default function ContentSectionTwo() {
           key={'shrine1'}
           alt="shrine image"
           placeholder="blur"
-          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

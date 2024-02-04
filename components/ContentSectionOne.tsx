@@ -16,7 +16,7 @@ export default function ContentSectionOne() {
 
   const { area, prevArea } = useAreaStore()
   return (
-    <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow">
+    <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow custom:max-h-[624px] overflow-auto">
       <div
         className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-10  `}
       >
@@ -78,7 +78,7 @@ export default function ContentSectionOne() {
             width={420}
             height={572}
             placeholder="blur"
-            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0  ${
+            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[572px] ${
               inView2 || area !== prevArea
                 ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
                 : ''
