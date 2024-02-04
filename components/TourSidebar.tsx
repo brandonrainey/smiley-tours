@@ -53,7 +53,7 @@ export default function TourSidebar() {
 
   return (
     <section
-      className="  h-auto relative custom:p-4 py-4 font-Varela custom:basis-1/4 custom:order-3 order-2"
+      className="  h-auto relative custom:p-4 py-4  custom:basis-1/4 custom:order-3 order-2"
       id="tour"
       ref={tourRef}
     >
@@ -64,7 +64,7 @@ export default function TourSidebar() {
       />
 
       <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4 `}
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-carter custom:text-shadow-3 text-shadow-4 `}
       >
         Upcoming Tours
       </h1>

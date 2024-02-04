@@ -10,7 +10,7 @@ export default function InfoSidebar() {
   const { eventsRef } = useAreaStore()
   return (
     <section
-      className="bg-transparent h-auto basis-1/4 p-4 font-Varela custom:before:border-none short-border relative custom:order-1 order-3"
+      className="bg-transparent h-auto basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3"
       id="events"
       ref={eventsRef}
     >
@@ -21,7 +21,7 @@ export default function InfoSidebar() {
       />
 
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-CarterOne custom:text-shadow-3 text-shadow-4 `}
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-carter custom:text-shadow-3 text-shadow-4 `}
       >
         Events
       </h1>

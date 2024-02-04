@@ -1,11 +1,26 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Varela_Round, Carter_One } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Smiley Tours - Asakusa Tokyo Tour Guide',
   description:
     'Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan.',
 }
+
+const varelaRound = Varela_Round({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-varelaround',
+  weight: '400'
+})
+
+const carterOne = Carter_One({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-carterone',
+  weight: '400'  
+})
 
 export default function RootLayout({
   children,
@@ -16,7 +31,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/smiley-banner-transparent.webp" as="image" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="robots" content="index, follow" />
         <meta
           name="og:title"
@@ -26,7 +40,10 @@ export default function RootLayout({
           name="og:description"
           content="Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan."
         />
-        <meta property="og:image" content="https://smileytour.guide/miley2.webp" />
+        <meta
+          property="og:image"
+          content="https://smileytour.guide/miley2.webp"
+        />
 
         <meta property="og:url" content="https://www.smileytour.guide" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +64,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.smileytour.guide" />
       </head>
 
-      <body className={`font-Varela bg-pink-200 bgImage`}>{children}</body>
+      <body className={`font-varela ${varelaRound.variable} ${carterOne.variable} bg-pink-200 bgImage`}>{children}</body>
     </html>
   )
 }

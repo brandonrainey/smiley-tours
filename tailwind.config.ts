@@ -13,6 +13,8 @@ const config: Config = {
         Varela: ['Varela Round', 'sans-serif'],
         CarterOne: ['Carter One', 'sans-serif'],
         Acme: ['Acme', 'sans-serif'],
+        varela: ["var(--font-varelaround)"],
+        carter: ["var(--font-carterone)"],
       },
       screens: {
         custom: '1100px',

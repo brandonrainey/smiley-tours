@@ -11,7 +11,7 @@ export default function MainContent() {
       id="main-content"
       data-testid="main-content"
     >
-      <h1 className="text-5xl font-Varela text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
+      <h1 className="text-5xl  text-center p-4 font-semibold tracking-wider  z-20 textGradient  custom:mb-10">
         Tokyo Tour Guide
       </h1>
 

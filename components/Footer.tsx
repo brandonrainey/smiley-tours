@@ -23,7 +23,7 @@ export default function Footer() {
     <footer
       className={` min-h-[250px] w-full flex flex-col justify-around items-center  relative `}
     >
-      <div className="flex items-center gap-2 z-10 font-bold font-CarterOne  ">
+      <div className="flex items-center gap-2 z-10 font-bold font-carter  ">
         <h1
           className={`text-5xl text-white custom:text-shadow-3 text-shadow-6`}
         >
