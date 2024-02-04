@@ -22,7 +22,7 @@ export default function Home() {
 
       <MobileNav />
 
-      <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
+      <div className="flex flex-col custom:flex-row w-full justify-between flex-grow" >
         <InfoSidebar />
 
         <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
