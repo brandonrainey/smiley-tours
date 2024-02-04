@@ -2,7 +2,10 @@
 
 import React from 'react'
 import { useAreaStore } from '@/store/areas'
-
+import Image from 'next/image'
+import BarImage from '../public/bar.webp'
+import TapImage from '../public/tap-concert.webp'
+import IdolImage from '../public/idol-concert.webp'
 
 
 export default function InfoSidebar() {
@@ -35,8 +38,12 @@ export default function InfoSidebar() {
         </h2>
 
         <div className="flex flex-col items-center ">
-          <img
-            src="/bar-small.webp"
+          <Image
+            src={BarImage}
+            sizes='(max-width: 300px) 100vw, 300px'
+            width={300}
+            height={200}
+            placeholder='blur'
             className="rounded max-w-[300px] w-full"
             alt="ninja bar"
           />
@@ -62,9 +69,13 @@ export default function InfoSidebar() {
           Idol Concert + Tap Dance Show
         </h2>
 
-        <div className="flex flex-col items-center ">
-          <img
-            src="/tap-concert.webp"
+        <div className="flex flex-col items-center w-full">
+          <Image
+            src={TapImage}
+            sizes='(max-width: 300px) 100vw, 300px'
+            width={300}
+            height={300}
+            placeholder='blur'
             className="rounded max-w-[300px] w-full"
             alt="tap concert promo image"
           />
@@ -89,8 +100,12 @@ export default function InfoSidebar() {
         </h2>
 
         <div>
-          <img
-            src="/idol-concert-small.webp"
+          <Image
+            src={IdolImage}
+            sizes='(max-width: 300px) 100vw, 300px'
+            width={300}
+            height={200}
+            placeholder='blur'
             className="rounded max-w-[300px] w-full"
             alt="idol concert"
           />
