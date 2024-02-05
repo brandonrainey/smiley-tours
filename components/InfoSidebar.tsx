@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import { useAreaStore } from '@/store/areas'
 import Image from 'next/image'
 import BarImage from '../public/bar.webp'

@@ -1,9 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
 import { useAreaStore } from '@/store/areas'
-
-
 
 export default function MobileNav() {
 

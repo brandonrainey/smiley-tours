@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import Image from 'next/image'
 import tourFeb2 from '../public/tour-feb2.webp'
 import tourFeb9 from '../public/tour-feb9.webp'

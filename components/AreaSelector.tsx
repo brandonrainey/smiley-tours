@@ -1,9 +1,11 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useAreaStore } from '@/store/areas'
-
-
+import HeartSolid from './icons/HeartSolid'
+import HeartOutline from './icons/HeartOutline'
+import ArrowRight from './icons/ArrowRight'
+import ArrowLeft from './icons/ArrowLeft'
 
 export default function AreaSelector() {
 
@@ -23,13 +25,14 @@ export default function AreaSelector() {
         <h2
           className={`${
             area === 'ueno' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out `}
+          } cursor-pointer transition-all duration-150 ease-in-out flex gap-1`}
           onClick={() => setArea('asakusa')}
         >
           {area === 'asakusa' ? (
-            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+            <HeartSolid />
+            
           ) : (
-            <i className="fa-regular fa-heart"></i>
+            <HeartOutline />
           )}
           <span
             className={`${area !== 'ueno' && 'textGradient textShadowNone'} `}
@@ -38,15 +41,15 @@ export default function AreaSelector() {
           </span>
         </h2>
         {area === 'asakusa' ? (
-          <i className={`fa-solid fa-arrow-right `}></i>
+          <ArrowRight />
         ) : (
-          <i className="fa-solid fa-arrow-left"></i>
+          <ArrowLeft />
         )}
 
         <h2
           className={`${
             area === 'asakusa' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out`}
+          } cursor-pointer transition-all duration-150 ease-in-out flex gap-1`}
           onClick={() => setArea('ueno')}
         >
           <span
@@ -57,9 +60,9 @@ export default function AreaSelector() {
             Ueno
           </span>
           {area === 'ueno' ? (
-            <i className="fa-solid fa-heart text-pink-200 animate-wiggle-more"></i>
+            <HeartSolid />
           ) : (
-            <i className="fa-regular fa-heart"></i>
+            <HeartOutline />
           )}
         </h2>
       </div>
