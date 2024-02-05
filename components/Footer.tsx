@@ -2,6 +2,9 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import YoutubeIcon from './icons/YoutubeIcon'
+import InstagramIcon from './icons/InstagramIcon'
+import TwitterIcon from './icons/TwitterIcon'
 
 export default function Footer() {
   const [copySuccess, setCopySuccess] = useState('')
@@ -45,7 +48,8 @@ export default function Footer() {
           aria-label="youtube link"
           className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow  border-pink-300/50"
         >
-          <i className="fab fa-youtube sm:fa-5x fa-3x text-red-500 hover:scale-110 duration-150 "></i>
+          <YoutubeIcon />
+          
         </a>
 
         <a
@@ -53,14 +57,14 @@ export default function Footer() {
           aria-label="instagram link"
           className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-xl socialsShadow border-pink-300/50"
         >
-          <i className="fab fa-instagram sm:fa-5x fa-3x text-pink-500 hover:scale-110 duration-150"></i>
+          <InstagramIcon />
         </a>
         <a
           href="https://twitter.com/mairie0828"
           aria-label="twitter link"
           className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow border-pink-300/50"
         >
-          <i className="fab fa-twitter sm:fa-5x fa-3x text-blue-500 hover:scale-110 duration-150"></i>
+          <TwitterIcon />
         </a>
       </div>
       <p
