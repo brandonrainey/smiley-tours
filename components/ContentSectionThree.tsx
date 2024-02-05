@@ -17,7 +17,7 @@ export default function ContentSectionThree() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow overflow-y-auto custom:max-h-[440px]">
+    <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow ">
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
         {area === 'asakusa' ? (
           <p
