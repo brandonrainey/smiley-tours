@@ -43,7 +43,7 @@ export default function InfoSidebar() {
             width={300}
             height={200}
             placeholder="blur"
-            className="rounded max-w-[300px] custom:w-full "
+            className="rounded max-w-[300px] custom:w-full w-[300px] "
             alt="ninja bar"
           />
 
