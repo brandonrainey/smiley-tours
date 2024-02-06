@@ -11,6 +11,7 @@ const tours = [
   {
     tourName: 'Ueno, Tokyo Tour Febuary 2nd',
     tourDescription: 'Tour on febuary 2th',
+    tourDate: 'February 2nd',
     tourImage: tourFeb2,
     tourId: 9,
     tourPrice: 20000,
@@ -20,6 +21,7 @@ const tours = [
   {
     tourName: 'Ueno, Tokyo Tour Febuary 9th',
     tourDescription: 'Tour on febuary 9th',
+    tourDate: 'February 9th',
     tourImage: tourFeb9,
     tourId: 5,
     tourPrice: 20000,
@@ -29,6 +31,7 @@ const tours = [
   {
     tourName: 'Ueno, Tokyo Tour Febuary 16th',
     tourDescription: 'Tour on febuary 16th',
+    tourDate: 'February 16th',
     tourImage: tourFeb16,
     tourId: 6,
     tourPrice: 20000,
@@ -47,7 +50,6 @@ const tours = [
 ]
 
 export default function TourSidebar() {
-
   const { tourRef } = useAreaStore()
 
   return (
@@ -72,7 +74,7 @@ export default function TourSidebar() {
         {tours.map((tour) => (
           <li
             key={tour.tourId}
-            className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group"
+            className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group self-start"
           >
             <a href={tour.tourLink} className="flex flex-col items-center">
               {/* <img
@@ -91,7 +93,14 @@ export default function TourSidebar() {
                 className="rounded tourShadow"
               />
 
-              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite">
+              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center">
+                <span
+                  className={`text-white custom:text-shadow-1 text-shadow-2 ${
+                    tour.tourName === 'Tokyo Private Tour' && 'hidden'
+                  }`}
+                >
+                  {tour.tourDate} -
+                </span>{' '}
                 ¥{tour.tourPrice}
               </h2>
               <h3

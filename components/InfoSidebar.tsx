@@ -5,10 +5,9 @@ import Image from 'next/image'
 import BarImage from '../public/bar.webp'
 import TapImage from '../public/tap-concert.webp'
 import IdolImage from '../public/idol-concert.webp'
-
+import LocationDot from './icons/LocationDot'
 
 export default function InfoSidebar() {
-
   const { eventsRef } = useAreaStore()
   return (
     <section
@@ -36,26 +35,30 @@ export default function InfoSidebar() {
           Miley&apos;s Bar
         </h2>
 
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center">
+          {/* mobile safari sizing issue */}
           <Image
             src={BarImage}
-            sizes='(max-width: 300px) 100vw, 300px'
+            sizes="(max-width: 300px) 100vw, 300px"
             width={300}
             height={200}
-            placeholder='blur'
-            className="rounded max-w-[300px] w-full"
+            placeholder="blur"
+            className="rounded max-w-[300px] custom:w-full "
             alt="ninja bar"
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px] border-2 border-pink-500`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2  max-w-[300px] border-2 border-pink-500 p-1 w-full flex flex-col items-center`}
           >
-            <p>Open :18:00- 23:00</p>
-            <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
-              <p className="hover:text-pink-800">
-                2 Chome-4-3 Asakusa, Taito City, Tokyo 111-0032
-              </p>
-            </a>
+            <div className="flex gap-2 items-center">
+              <p>Open :18:00- 23:00</p>
+              <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
+                <LocationDot />
+              </a>
+            </div>
+
+            <p>🌟Charge ¥500/1h</p>
+            <p>🌟Drinks ¥800〜</p>
           </div>
         </div>
       </div>
@@ -71,21 +74,21 @@ export default function InfoSidebar() {
         <div className="flex flex-col items-center w-full">
           <Image
             src={TapImage}
-            sizes='(max-width: 300px) 100vw, 300px'
+            sizes="(max-width: 300px) 100vw, 300px"
             width={300}
             height={300}
-            placeholder='blur'
+            placeholder="blur"
             className="rounded max-w-[300px] w-full"
             alt="tap concert promo image"
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 custom:max-w-[288px] max-w-[300px]  w-full border-2 border-pink-500`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 max-w-[300px]  w-full border-2 border-pink-500 p-1`}
           >
-            <p>February 25th</p>
-            <a href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46">
-              <p className="hover:text-pink-800">Asakusa - Free to View!</p>
-            </a>
+            <p>Idol / Tap Dance Show</p>
+            <p>February 25th - Free to View!</p>
+
+            <p>Location: Asakusa - TBA</p>
           </div>
         </div>
       </div>
@@ -101,10 +104,10 @@ export default function InfoSidebar() {
         <div>
           <Image
             src={IdolImage}
-            sizes='(max-width: 300px) 100vw, 300px'
+            sizes="(max-width: 300px) 100vw, 300px"
             width={300}
             height={200}
-            placeholder='blur'
+            placeholder="blur"
             className="rounded max-w-[300px] w-full"
             alt="idol concert"
           />
