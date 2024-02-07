@@ -1,15 +1,9 @@
 
-
-// import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import InfoSidebar from '@/components/InfoSidebar'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
-// import Testimonials from '@/components/Testimonials'
 import MobileNav from '@/components/MobileNav'
-// import ContentSectionOne from '@/components/ContentSectionOne'
-// import ContentSectionTwo from '@/components/ContentSectionTwo'
-// import ContentSectionThree from '@/components/ContentSectionThree'
 import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 
@@ -35,7 +29,6 @@ const Footer = dynamic(() => import('@/components/Footer'), {
 
 export default function Home() {
   
-
   return (
     <div className="  w-full h-full flex flex-col relative">
       <Header />
@@ -51,7 +44,9 @@ export default function Home() {
           <AreaSelector />
 
           <ContentSectionOne />
+
           <ContentSectionTwo />
+          
           <ContentSectionThree />
         </main>
 
