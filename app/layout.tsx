@@ -12,14 +12,16 @@ const varelaRound = Varela_Round({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-varelaround',
-  weight: '400'
+  weight: '400',
+  preload: true,
 })
 
 const carterOne = Carter_One({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-carterone',
-  weight: '400'  
+  weight: '400',
+  preload: true,  
 })
 
 export default function RootLayout({

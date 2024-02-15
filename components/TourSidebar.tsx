@@ -1,33 +1,15 @@
 'use client'
 
 import Image from 'next/image'
-import tourFeb2 from '../public/tour-feb2.webp'
-import tourFeb9 from '../public/tour-feb9.webp'
 import tourFeb16 from '../public/tour-feb16.webp'
+import tourMarch1 from '../public/tour-march1.webp'
+import tourMarch8 from '../public/tour-march8.webp'
+import tourMarch22 from '../public/tour-march22.webp'
+import tourMarch29 from '../public/tour-march29.webp'
 import tourPrivate from '../public/private-tour.webp'
 import { useAreaStore } from '@/store/areas'
 
 const tours = [
-  {
-    tourName: 'Ueno, Tokyo Tour Febuary 2nd',
-    tourDescription: 'Tour on febuary 2th',
-    tourDate: 'February 2nd',
-    tourImage: tourFeb2,
-    tourId: 9,
-    tourPrice: 20000,
-    tourSpots: 0,
-    tourLink: 'https://smileytour.stores.jp/items/65a5456f1ebb490ecf2b9360',
-  },
-  {
-    tourName: 'Ueno, Tokyo Tour Febuary 9th',
-    tourDescription: 'Tour on febuary 9th',
-    tourDate: 'February 9th',
-    tourImage: tourFeb9,
-    tourId: 5,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65a54780b14f58002a4d0b96',
-  },
   {
     tourName: 'Ueno, Tokyo Tour Febuary 16th',
     tourDescription: 'Tour on febuary 16th',
@@ -37,6 +19,46 @@ const tours = [
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65a5498776f1c9002ada2c26',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour March 1st',
+    tourDescription: 'Tour on March 1st',
+    tourDate: 'March 1st',
+    tourImage: tourMarch1,
+    tourId: 7,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65cd6940ce75b20483af0911',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour March 8th',
+    tourDescription: 'Tour on March 8th',
+    tourDate: 'March 8th',
+    tourImage: tourMarch8,
+    tourId: 12,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65cd69bf3cea4a0b47b323cb',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour March 22nd',
+    tourDescription: 'Tour on March 22nd',
+    tourDate: 'March 22nd',
+    tourImage: tourMarch22,
+    tourId: 10,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65cd6ad1e37c5b051e133e62',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour March 29th',
+    tourDescription: 'Tour on March 29th',
+    tourDate: 'March 29th',
+    tourImage: tourMarch29,
+    tourId: 11,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/65cd77eb24fa03002c0f0024',
   },
   {
     tourName: 'Tokyo Private Tour',
@@ -54,7 +76,7 @@ export default function TourSidebar() {
 
   return (
     <section
-      className="  h-auto relative custom:p-4 py-4  custom:basis-1/4 custom:order-3 order-2"
+      className="  h-auto relative custom:p-4 py-4  custom:basis-1/4 custom:order-3 order-2 "
       id="tour"
       ref={tourRef}
     >
@@ -90,10 +112,10 @@ export default function TourSidebar() {
                 width={288}
                 height={288}
                 placeholder="blur"
-                className="rounded tourShadow"
+                className="rounded tourShadow aspect-square"
               />
 
-              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center">
+              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center ">
                 <span
                   className={`text-white custom:text-shadow-1 text-shadow-2 ${
                     tour.tourName === 'Tokyo Private Tour' && 'hidden'
