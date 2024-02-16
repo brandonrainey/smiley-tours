@@ -15,7 +15,7 @@ const tours = [
     tourDescription: 'Tour on febuary 16th',
     tourDate: 'February 16th',
     tourImage: tourFeb16,
-    tourId: 6,
+    tourId: 1,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65a5498776f1c9002ada2c26',
@@ -25,7 +25,7 @@ const tours = [
     tourDescription: 'Tour on March 1st',
     tourDate: 'March 1st',
     tourImage: tourMarch1,
-    tourId: 7,
+    tourId: 2,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65cd6940ce75b20483af0911',
@@ -35,7 +35,7 @@ const tours = [
     tourDescription: 'Tour on March 8th',
     tourDate: 'March 8th',
     tourImage: tourMarch8,
-    tourId: 12,
+    tourId: 3,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65cd69bf3cea4a0b47b323cb',
@@ -45,7 +45,7 @@ const tours = [
     tourDescription: 'Tour on March 22nd',
     tourDate: 'March 22nd',
     tourImage: tourMarch22,
-    tourId: 10,
+    tourId: 4,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65cd6ad1e37c5b051e133e62',
@@ -55,7 +55,7 @@ const tours = [
     tourDescription: 'Tour on March 29th',
     tourDate: 'March 29th',
     tourImage: tourMarch29,
-    tourId: 11,
+    tourId: 5,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65cd77eb24fa03002c0f0024',
@@ -64,7 +64,7 @@ const tours = [
     tourName: 'Tokyo Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: tourPrivate,
-    tourId: 8,
+    tourId: 6,
     tourPrice: 'TBD',
     tourSpots: 'TBD',
     tourLink: 'https://smileytour.stores.jp/items/649e31d385e3630037cff96e',
@@ -72,6 +72,7 @@ const tours = [
 ]
 
 export default function TourSidebar() {
+  
   const { tourRef } = useAreaStore()
 
   return (
@@ -98,13 +99,7 @@ export default function TourSidebar() {
             key={tour.tourId}
             className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group self-start"
           >
-            <a href={tour.tourLink} className="flex flex-col items-center">
-              {/* <img
-                src={tour.tourImage}
-                alt={`${tour.tourName} image `}
-                className="rounded tourShadow max-w-[400px] w-[200px] h-[200px]"
-                style={{ width: '100%', height: 'auto' }}
-              /> */}
+            <a href={tour.tourLink} className="flex flex-col items-center" role="link">
               <Image
                 src={tour.tourImage}
                 alt={tour.tourName}

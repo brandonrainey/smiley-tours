@@ -3,15 +3,12 @@
 import { useAreaStore } from '@/store/areas'
 
 export default function MobileNav() {
-
   const { tourRef, eventsRef } = useAreaStore()
-
 
   const scrollToRef = (ref: any) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
- 
   return (
     <nav>
       <ul className="flex justify-around custom:hidden bg-pink-300 p-0 text-white font-semibold text-2xl w-full z-30">

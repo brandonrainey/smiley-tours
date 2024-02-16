@@ -28,17 +28,6 @@ export default function MainContent() {
               placeholder="blur"
               className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 custom:min-w-[350px] max-h-[432px]  `}
             />
-
-            {/* <img
-              src="/miley-main.webp"
-              alt="featured miley image"
-              ref={ref5}
-              className={`rounded custom:mr-auto custom:mx-0 mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 custom:min-w-[350px] max-h-[432px]  ${
-                inView
-                  ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
-                  : ''
-              }`}
-            /> */}
           </div>
 
           <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">

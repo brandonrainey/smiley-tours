@@ -14,5 +14,20 @@ describe('MainContent', () => {
     expect(title).toBeInTheDocument();
   });
 
+  test('renders image', () => {
+    render(<MainContent />);
+    const image = screen.getByAltText('featured miley image');
+    expect(image).toBeInTheDocument();
+  })
+
+  test('renders text', () => {
+    render(<MainContent />);
+    const text = screen.getByText(/Hey there!/i);
+    expect(text).toBeInTheDocument();
+  })
+
   
+
+  
+
 });

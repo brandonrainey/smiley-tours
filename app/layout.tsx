@@ -33,6 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/smiley-banner-transparent.webp" as="image" />
+        <link rel="preload" href="/bulma.webp" as="image" />
+        <link rel="preload" href="/ganko.webp" as="image" />
         <meta name="robots" content="index, follow" />
         <meta
           name="og:title"
