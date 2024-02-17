@@ -49,7 +49,6 @@ export default function Footer() {
           className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow  border-pink-300/50"
         >
           <YoutubeIcon />
-          
         </a>
 
         <a

@@ -6,10 +6,7 @@ import ShrineImage from '../public/shrine-small.webp'
 import { useAreaStore } from '@/store/areas'
 import { useInView } from 'react-intersection-observer'
 
-
-
 export default function ContentSectionTwo() {
-
   const [ref3, inView3] = useInView({
     triggerOnce: true,
   })

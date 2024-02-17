@@ -72,7 +72,6 @@ const tours = [
 ]
 
 export default function TourSidebar() {
-  
   const { tourRef } = useAreaStore()
 
   return (
@@ -99,7 +98,11 @@ export default function TourSidebar() {
             key={tour.tourId}
             className="custom:w-full w-1/2  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group self-start"
           >
-            <a href={tour.tourLink} className="flex flex-col items-center" role="link">
+            <a
+              href={tour.tourLink}
+              className="flex flex-col items-center"
+              role="link"
+            >
               <Image
                 src={tour.tourImage}
                 alt={tour.tourName}

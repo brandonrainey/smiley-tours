@@ -6,10 +6,7 @@ import RamenImage from '../public/ramen-small.webp'
 import { useAreaStore } from '@/store/areas'
 import { useInView } from 'react-intersection-observer'
 
-
-
 export default function ContentSectionThree() {
-
   const [ref4, inView4] = useInView({
     triggerOnce: true,
   })

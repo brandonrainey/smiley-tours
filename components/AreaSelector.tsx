@@ -8,7 +8,6 @@ import ArrowRight from './icons/ArrowRight'
 import ArrowLeft from './icons/ArrowLeft'
 
 export default function AreaSelector() {
-
   const { area, setArea, setPrevArea } = useAreaStore()
 
   useEffect(() => {
@@ -28,23 +27,14 @@ export default function AreaSelector() {
           } cursor-pointer transition-all duration-150 ease-in-out flex gap-1`}
           onClick={() => setArea('asakusa')}
         >
-          {area === 'asakusa' ? (
-            <HeartSolid />
-            
-          ) : (
-            <HeartOutline />
-          )}
+          {area === 'asakusa' ? <HeartSolid /> : <HeartOutline />}
           <span
             className={`${area !== 'ueno' && 'textGradient textShadowNone'} `}
           >
             Asakusa
           </span>
         </h2>
-        {area === 'asakusa' ? (
-          <ArrowRight />
-        ) : (
-          <ArrowLeft />
-        )}
+        {area === 'asakusa' ? <ArrowRight /> : <ArrowLeft />}
 
         <h2
           className={`${
@@ -59,11 +49,7 @@ export default function AreaSelector() {
           >
             Ueno
           </span>
-          {area === 'ueno' ? (
-            <HeartSolid />
-          ) : (
-            <HeartOutline />
-          )}
+          {area === 'ueno' ? <HeartSolid /> : <HeartOutline />}
         </h2>
       </div>
     </nav>

@@ -1,5 +1,3 @@
-
-
 export default function Header() {
   return (
     <header className="w-full flex justify-center border-b-2 border-pink-600 relative bg-pink-400 ">

@@ -6,9 +6,7 @@ import MusuemImage from '../public/museum.webp'
 import { useAreaStore } from '@/store/areas'
 import { useInView } from 'react-intersection-observer'
 
-
 export default function ContentSectionOne() {
-
   const [ref2, inView2] = useInView({
     triggerOnce: true,
   })

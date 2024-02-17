@@ -21,7 +21,7 @@ const carterOne = Carter_One({
   display: 'swap',
   variable: '--font-carterone',
   weight: '400',
-  preload: true,  
+  preload: true,
 })
 
 export default function RootLayout({
@@ -68,7 +68,11 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.smileytour.guide" />
       </head>
 
-      <body className={`font-varela ${varelaRound.variable} ${carterOne.variable} bg-pink-200 bgImage`}>{children}</body>
+      <body
+        className={`font-varela ${varelaRound.variable} ${carterOne.variable} bg-pink-200 bgImage`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
