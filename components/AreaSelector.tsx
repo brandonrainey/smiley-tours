@@ -3,12 +3,17 @@
 import { useEffect } from 'react'
 import { useAreaStore } from '@/store/areas'
 import HeartSolid from './icons/HeartSolid'
-import HeartOutline from './icons/HeartOutline'
-import ArrowRight from './icons/ArrowRight'
-import ArrowLeft from './icons/ArrowLeft'
+import HeartSolid2 from './icons/HeartSolid2'
 
 export default function AreaSelector() {
-  const { area, setArea, setPrevArea } = useAreaStore()
+  const { area, setArea, setPrevArea, isOpen, setIsOpen } = useAreaStore()
+
+  const handleAreaChange = (value: string) => {
+    setArea(value)
+    setIsOpen(false)
+  }
+
+  const toggleDropdown = () => setIsOpen(!isOpen)
 
   useEffect(() => {
     setPrevArea(area)
@@ -21,6 +26,41 @@ export default function AreaSelector() {
       <h1>Tour Activites</h1>
 
       <div className="flex gap-2">
+        <h2 className={`transition-all duration-150 ease-in-out flex gap-1`}>
+          <HeartSolid key={`${area} 1`} />
+        </h2>
+
+        <div className="dropdown relative">
+          <button
+            onClick={toggleDropdown}
+            className="dropdownShadow rounded px-2 w-[150px]"
+          >
+            {area.charAt(0).toUpperCase() + area.slice(1)}
+          </button>
+          {isOpen && (
+            <div className="absolute top-12  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone">
+              <div
+                className="cursor-pointer hover:bg-pink-300 px-2 rounded-lg"
+                onClick={() => handleAreaChange('ueno')}
+              >
+                Ueno
+              </div>
+              <div
+                className="cursor-pointer hover:bg-pink-300 px-2 rounded-lg"
+                onClick={() => handleAreaChange('asakusa')}
+              >
+                Asakusa
+              </div>
+            </div>
+          )}
+        </div>
+
+        <h2 className={`transition-all duration-150 ease-in-out flex gap-1`}>
+          <HeartSolid2 key={`${area} 2`} />
+        </h2>
+      </div>
+
+      {/* <div className="flex gap-2">
         <h2
           className={`${
             area === 'ueno' && 'opacity-50'
@@ -51,7 +91,7 @@ export default function AreaSelector() {
           </span>
           {area === 'ueno' ? <HeartSolid /> : <HeartOutline />}
         </h2>
-      </div>
+      </div> */}
     </nav>
   )
 }

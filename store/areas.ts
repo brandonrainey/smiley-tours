@@ -10,6 +10,8 @@ type State = {
   setPrevArea: (prevArea: string) => void;
   setTourRef: (tourRef: MutableRefObject<HTMLElement | null>) => void;
   setEventsRef: (eventsRef: MutableRefObject<HTMLElement | null>) => void;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 };
 
 export const useAreaStore = create<State>((set) => ({
@@ -21,4 +23,6 @@ export const useAreaStore = create<State>((set) => ({
     setPrevArea: (prevArea) => set((state) => ({ ...state, prevArea })),
     setTourRef: (tourRef) => set((state) => ({ ...state, tourRef })),
     setEventsRef: (eventsRef) => set((state) => ({ ...state, eventsRef })),
+    isOpen: false,
+    setIsOpen: (isOpen) => set((state) => ({ ...state, isOpen })),
   }));
