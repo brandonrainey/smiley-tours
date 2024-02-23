@@ -54,7 +54,7 @@ export default function InfoSidebar() {
             <a
               href="https://maps.app.goo.gl/FuSffVj5Ny425N6t5"
               aria-label="concert location"
-              className="flex gap-2 items-center"
+              className="flex gap-2 items-center justify-center"
             >
               Location: Asakusa Toyokan <LocationDot />
             </a>
