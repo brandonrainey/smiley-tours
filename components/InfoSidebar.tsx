@@ -88,7 +88,7 @@ export default function InfoSidebar() {
             <div className="flex gap-2 items-center">
               <p>Open :18:00- 23:00</p>
               <a
-                href="https://maps.app.goo.gl/1eivcwBZiR1D2ok46"
+                href="https://maps.app.goo.gl/PJndiVJPRv4bTWQSA"
                 aria-label="Miley bar location"
               >
                 <LocationDot />
