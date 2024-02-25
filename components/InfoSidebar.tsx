@@ -27,41 +27,6 @@ export default function InfoSidebar() {
         Events
       </h1>
 
-      <div className="text-center font-semibold flex flex-col items-center mt-8">
-        <h2
-          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
-        >
-          Idol Concert + Tap Dance Show
-        </h2>
-
-        <div className="flex flex-col items-center w-full">
-          <Image
-            src={TapImage}
-            sizes="(max-width: 300px) 100vw, 300px"
-            width={300}
-            height={300}
-            placeholder="blur"
-            className="rounded max-w-[300px] w-full"
-            alt="tap concert promo image"
-          />
-
-          <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 max-w-[300px]  w-full border-2 border-pink-500 p-1`}
-          >
-            <p>February 25th - Free to View!</p>
-            <p>Performance time : 19:40〜</p>
-
-            <a
-              href="https://maps.app.goo.gl/FuSffVj5Ny425N6t5"
-              aria-label="concert location"
-              className="flex gap-2 items-center justify-center"
-            >
-              Location: Asakusa Toyokan <LocationDot />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/*  */}
       <div className="text-center font-semibold flex flex-col items-center mt-8">
         <h2
@@ -123,10 +88,21 @@ export default function InfoSidebar() {
           />
 
           <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2 border-2 border-pink-500`}
+            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 p-1 mt-2 border-2 border-pink-500`}
           >
-            <p>March 11th</p>
-            <p>Akihabara</p>
+            <p>March 11th - Doors open 18:30</p>
+
+            <div className="flex gap-2 items-center justify-center">
+              <p>Akihabara Club GOODMAN </p>
+              <a
+                href="https://maps.app.goo.gl/bNuPCV7ysmmc4WdV8"
+                aria-label="concert location"
+              >
+                <LocationDot />
+              </a>
+            </div>
+
+            <p>2,900 yen + 1D (600 yen)</p>
           </div>
         </div>
       </div>
