@@ -3,7 +3,6 @@
 import { useAreaStore } from '@/store/areas'
 import Image from 'next/image'
 import BarImage from '../public/bar.webp'
-import TapImage from '../public/tap-concert.webp'
 import IdolImage from '../public/idol-concert.webp'
 import LocationDot from './icons/LocationDot'
 
@@ -36,7 +35,6 @@ export default function InfoSidebar() {
         </h2>
 
         <div className="flex flex-col items-center">
-          {/* mobile safari sizing issue */}
           <Image
             src={BarImage}
             sizes="(max-width: 300px) 100vw, 300px"

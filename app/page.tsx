@@ -9,30 +9,30 @@ import dynamic from 'next/dynamic'
 const ContentSectionOne = dynamic(
   () => import('@/components/ContentSectionOne'),
   {
-    ssr: false,
+    ssr: true,
   }
 )
 
 const ContentSectionTwo = dynamic(
   () => import('@/components/ContentSectionTwo'),
   {
-    ssr: false,
+    ssr: true,
   }
 )
 
 const ContentSectionThree = dynamic(
   () => import('@/components/ContentSectionThree'),
   {
-    ssr: false,
+    ssr: true,
   }
 )
 
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
-  ssr: false,
+  ssr: true,
 })
 
 const Footer = dynamic(() => import('@/components/Footer'), {
-  ssr: false,
+  ssr: true,
 })
 
 export default function Home() {
