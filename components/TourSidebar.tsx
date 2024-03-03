@@ -1,8 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import tourFeb16 from '../public/tour-feb16.webp'
-import tourMarch1 from '../public/tour-march1.webp'
 import tourMarch8 from '../public/tour-march8.webp'
 import tourMarch22 from '../public/tour-march22.webp'
 import tourMarch29 from '../public/tour-march29.webp'
@@ -10,16 +8,6 @@ import tourPrivate from '../public/private-tour.webp'
 import { useAreaStore } from '@/store/areas'
 
 const tours = [
-  {
-    tourName: 'Ueno, Tokyo Tour March 1st',
-    tourDescription: 'Tour on March 1st',
-    tourDate: 'March 1st',
-    tourImage: tourMarch1,
-    tourId: 2,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65cd6940ce75b20483af0911',
-  },
   {
     tourName: 'Ueno, Tokyo Tour March 8th',
     tourDescription: 'Tour on March 8th',
