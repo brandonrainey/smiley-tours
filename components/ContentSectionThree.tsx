@@ -58,35 +58,37 @@ export default function ContentSectionThree() {
       </div>
 
       {area === 'asakusa' ? (
-        <Image
-          ref={ref4}
-          src={MonjaImage}
-          alt="monja image"
-          width={330}
-          height={330}
-          key={'monja2'}
-          placeholder="blur"
-          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[330px] ${
-            inView4 || area !== prevArea
-              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-              : ''
-          }`}
-        />
+        // <Image
+        //   ref={ref4}
+        //   src={MonjaImage}
+        //   alt="monja image"
+        //   width={330}
+        //   height={330}
+        //   key={'monja2'}
+        //   placeholder="blur"
+        //   className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[330px] ${
+        //     inView4 || area !== prevArea
+        //       ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+        //       : ''
+        //   }`}
+        // />
+        <img ref={ref4} src="/monja-food.webp" alt="monja image" width={330} height={330} key={'monja2'} className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[330px] ${inView4 || area !== prevArea ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100' : ''}`} loading='lazy'/>
       ) : (
-        <Image
-          ref={ref4}
-          src={RamenImage}
-          alt="monja image"
-          width={312}
-          height={408}
-          key={'ramen2'}
-          placeholder="blur"
-          className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
-            inView4 || area !== prevArea
-              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-              : ''
-          }`}
-        />
+        // <Image
+        //   ref={ref4}
+        //   src={RamenImage}
+        //   alt="monja image"
+        //   width={312}
+        //   height={408}
+        //   key={'ramen2'}
+        //   placeholder="blur"
+        //   className={`custom:mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
+        //     inView4 || area !== prevArea
+        //       ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+        //       : ''
+        //   }`}
+        // />
+        <img ref={ref4} src="/ramen-small.webp" alt="monja image" width={312} height={408} key={'ramen2'} className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${inView4 || area !== prevArea ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100' : ''}`} loading='lazy'/>
       )}
     </article>
   )

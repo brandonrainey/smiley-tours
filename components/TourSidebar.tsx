@@ -12,7 +12,7 @@ const tours = [
     tourName: 'Ueno, Tokyo Tour March 8th',
     tourDescription: 'Tour on March 8th',
     tourDate: 'March 8th',
-    tourImage: tourMarch8,
+    tourImage: '/tour-march8.webp',
     tourId: 3,
     tourPrice: 20000,
     tourSpots: 4,
@@ -22,7 +22,7 @@ const tours = [
     tourName: 'Ueno, Tokyo Tour March 22nd',
     tourDescription: 'Tour on March 22nd',
     tourDate: 'March 22nd',
-    tourImage: tourMarch22,
+    tourImage: '/tour-march22.webp',
     tourId: 4,
     tourPrice: 20000,
     tourSpots: 4,
@@ -32,7 +32,7 @@ const tours = [
     tourName: 'Ueno, Tokyo Tour March 29th',
     tourDescription: 'Tour on March 29th',
     tourDate: 'March 29th',
-    tourImage: tourMarch29,
+    tourImage: '/tour-march29.webp',
     tourId: 5,
     tourPrice: 20000,
     tourSpots: 4,
@@ -41,7 +41,7 @@ const tours = [
   {
     tourName: 'Tokyo Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
-    tourImage: tourPrivate,
+    tourImage: '/private-tour.webp',
     tourId: 6,
     tourPrice: 'TBD',
     tourSpots: 'TBD',
@@ -81,7 +81,7 @@ export default function TourSidebar() {
               className="flex flex-col items-center"
               role="link"
             >
-              <Image
+              {/* <Image
                 src={tour.tourImage}
                 alt={tour.tourName}
                 sizes="(max-width: 1100px) 100vw, 288px"
@@ -89,7 +89,8 @@ export default function TourSidebar() {
                 height={288}
                 placeholder="blur"
                 className="rounded tourShadow aspect-square"
-              />
+              /> */}
+              <img src={tour.tourImage} alt={tour.tourName} className="rounded tourShadow aspect-square max-w-[288px]" />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center ">
                 <span

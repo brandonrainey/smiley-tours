@@ -35,7 +35,7 @@ export default function InfoSidebar() {
         </h2>
 
         <div className="flex flex-col items-center">
-          <Image
+          {/* <Image
             src={BarImage}
             sizes="(max-width: 300px) 100vw, 300px"
             width={300}
@@ -43,7 +43,8 @@ export default function InfoSidebar() {
             placeholder="blur"
             className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
             alt="ninja bar"
-          />
+          /> */}
+          <img src="/bar.webp" alt="ninja bar" className='rounded max-w-[300px] custom:w-full w-[300px] tourShadow'/>
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2  max-w-[300px] border-2 border-pink-500 p-1 w-full flex flex-col items-center`}
@@ -75,7 +76,7 @@ export default function InfoSidebar() {
         </h2>
 
         <div>
-          <Image
+          {/* <Image
             src={IdolImage}
             sizes="(max-width: 300px) 100vw, 300px"
             width={300}
@@ -83,7 +84,8 @@ export default function InfoSidebar() {
             placeholder="blur"
             className="rounded max-w-[300px] w-full tourShadow"
             alt="idol concert"
-          />
+          /> */}
+          <img src="/idol-concert.webp" alt="idol concert" className='rounded max-w-[300px] w-full tourShadow'/>
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 p-1 mt-2 border-2 border-pink-500`}

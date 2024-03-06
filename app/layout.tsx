@@ -33,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/smiley-banner-transparent.webp" as="image" />
+        <link rel="preload" href="/miley-main.webp" as="image" />
         <link rel="preload" href="/bulma.webp" as="image" />
         <link rel="preload" href="/ganko.webp" as="image" />
         <meta name="robots" content="index, follow" />
@@ -42,7 +43,7 @@ export default function RootLayout({
         />
         <meta
           name="og:description"
-          content="Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan."
+          content="Explore Tokyo with an English-speaking Tour Guide, led by a former Japanese Idol! Discover the history and unique experiences awaiting in iconic districts such as Asakusa, Ueno, and Akihabara, renowned destinations in Japan."
         />
         <meta
           property="og:image"
@@ -56,7 +57,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Tokyo Tour Guide" />
         <meta
           name="twitter:description"
-          content="Asakusa Tokyo Tour Guide by a former Japanese Idol! Learn about the history of Asakusa and experience activities famous and unique to Japan."
+          content="Explore Tokyo with an English-speaking Tour Guide, led by a former Japanese Idol! Discover the history and unique experiences awaiting in iconic districts such as Asakusa, Ueno, and Akihabara, renowned destinations in Japan."
         />
         <meta name="twitter:image" content="URL to an image" />
         <meta name="author" content="Brandon Rainey" />
