@@ -90,7 +90,7 @@ export default function TourSidebar() {
                 placeholder="blur"
                 className="rounded tourShadow aspect-square"
               /> */}
-              <img src={tour.tourImage} alt={tour.tourName} className="rounded tourShadow aspect-square max-w-[288px]" />
+              <img src={tour.tourImage} alt={tour.tourName} className="rounded tourShadow aspect-square max-w-[288px] w-full" />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center ">
                 <span
