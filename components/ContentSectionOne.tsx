@@ -1,8 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import AsakusaImage from '../public/asakusa-crop.webp'
-import MusuemImage from '../public/museum.webp'
 import { useAreaStore } from '@/store/areas'
 import { useInView } from 'react-intersection-observer'
 
@@ -67,22 +64,8 @@ export default function ContentSectionOne() {
         </div>
 
         {area === 'asakusa' ? (
-          // <Image
-          //   ref={ref2}
-          //   src={AsakusaImage}
-          //   alt="asakusa image"
-          //   key={'asakusa1'}
-          //   width={420}
-          //   height={572}
-          //   placeholder="blur"
-          //   className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[572px] ${
-          //     inView2 || area !== prevArea
-          //       ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-          //       : ''
-          //   } `}
-          // />
           <img
-            ref={ref2}  
+            ref={ref2}
             src="/asakusa-crop.webp"
             alt="asakusa image"
             key={'asakusa1'}
@@ -90,23 +73,10 @@ export default function ContentSectionOne() {
               inView2 || area !== prevArea
                 ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
                 : ''
-            } `} loading='lazy'
+            } `}
+            loading="lazy"
           />
         ) : (
-          // <Image
-          //   ref={ref2}
-          //   src={MusuemImage}
-          //   alt="museum image"
-          //   key={'ueno1'}
-          //   width={420}
-          //   height={340}
-          //   placeholder="blur"
-          //   className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[340px] ${
-          //     inView2 || area !== prevArea
-          //       ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-          //       : ''
-          //   } `}
-          // />
           <img
             ref={ref2}
             src="/museum.webp"
@@ -116,7 +86,8 @@ export default function ContentSectionOne() {
               inView2 || area !== prevArea
                 ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
                 : ''
-            } `} loading='lazy'
+            } `}
+            loading="lazy"
           />
         )}
       </div>

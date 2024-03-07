@@ -1,8 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import KaraokeImage from '../public/karaoke-crop.jpg'
-import ShrineImage from '../public/shrine-small.webp'
 import { useAreaStore } from '@/store/areas'
 import { useInView } from 'react-intersection-observer'
 
@@ -16,37 +13,35 @@ export default function ContentSectionTwo() {
   return (
     <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow  ">
       {area === 'asakusa' ? (
-        // <Image
-        //   ref={ref3}
-        //   src={KaraokeImage}
-        //   width={312}
-        //   height={383}
-        //   key={'karaoke1'}
-        //   alt="karaoke image"
-        //   placeholder="blur"
-        //   className={`rounded  mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[383px] ${
-        //     inView3 || area !== prevArea
-        //       ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
-        //       : ''
-        //   }`}
-        // />
-        <img ref={ref3} src="/karaoke-crop.jpg" width={312} height={383} key={'karaoke1'} alt="karaoke image" className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[383px] ${inView3 || area !== prevArea ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100' : ''}`} loading='lazy'/>
+        <img
+          ref={ref3}
+          src="/karaoke-crop.jpg"
+          width={312}
+          height={383}
+          key={'karaoke1'}
+          alt="karaoke image"
+          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[383px] ${
+            inView3 || area !== prevArea
+              ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          }`}
+          loading="lazy"
+        />
       ) : (
-        // <Image
-        //   ref={ref3}
-        //   src={ShrineImage}
-        //   width={312}
-        //   height={408}
-        //   key={'shrine1'}
-        //   alt="shrine image"
-        //   placeholder="blur"
-        //   className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
-        //     inView3 || area !== prevArea
-        //       ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
-        //       : ''
-        //   }`}
-        // />
-        <img ref={ref3} src="/shrine-small.webp" width={312} height={408} key={'shrine1'} alt="shrine image" className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${inView3 || area !== prevArea ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100' : ''}`} loading='lazy'/>
+        <img
+          ref={ref3}
+          src="/shrine-small.webp"
+          width={312}
+          height={408}
+          key={'shrine1'}
+          alt="shrine image"
+          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
+            inView3 || area !== prevArea
+              ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          }`}
+          loading="lazy"
+        />
       )}
 
       <div className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto custom:px-8">

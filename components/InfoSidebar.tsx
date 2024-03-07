@@ -1,9 +1,6 @@
 'use client'
 
 import { useAreaStore } from '@/store/areas'
-import Image from 'next/image'
-import BarImage from '../public/bar.webp'
-import IdolImage from '../public/idol-concert.webp'
 import LocationDot from './icons/LocationDot'
 
 export default function InfoSidebar() {
@@ -35,16 +32,11 @@ export default function InfoSidebar() {
         </h2>
 
         <div className="flex flex-col items-center">
-          {/* <Image
-            src={BarImage}
-            sizes="(max-width: 300px) 100vw, 300px"
-            width={300}
-            height={200}
-            placeholder="blur"
-            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
+          <img
+            src="/bar.webp"
             alt="ninja bar"
-          /> */}
-          <img src="/bar.webp" alt="ninja bar" className='rounded max-w-[300px] custom:w-full w-[300px] tourShadow'/>
+            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
+          />
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2  max-w-[300px] border-2 border-pink-500 p-1 w-full flex flex-col items-center`}
@@ -76,16 +68,11 @@ export default function InfoSidebar() {
         </h2>
 
         <div>
-          {/* <Image
-            src={IdolImage}
-            sizes="(max-width: 300px) 100vw, 300px"
-            width={300}
-            height={200}
-            placeholder="blur"
-            className="rounded max-w-[300px] w-full tourShadow"
+          <img
+            src="/idol-concert.webp"
             alt="idol concert"
-          /> */}
-          <img src="/idol-concert.webp" alt="idol concert" className='rounded max-w-[300px] w-full tourShadow'/>
+            className="rounded max-w-[300px] w-full tourShadow"
+          />
 
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 p-1 mt-2 border-2 border-pink-500`}

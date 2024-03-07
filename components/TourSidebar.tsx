@@ -1,10 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import tourMarch8 from '../public/tour-march8.webp'
-import tourMarch22 from '../public/tour-march22.webp'
-import tourMarch29 from '../public/tour-march29.webp'
-import tourPrivate from '../public/private-tour.webp'
 import { useAreaStore } from '@/store/areas'
 
 const tours = [
@@ -81,16 +76,11 @@ export default function TourSidebar() {
               className="flex flex-col items-center"
               role="link"
             >
-              {/* <Image
+              <img
                 src={tour.tourImage}
                 alt={tour.tourName}
-                sizes="(max-width: 1100px) 100vw, 288px"
-                width={288}
-                height={288}
-                placeholder="blur"
-                className="rounded tourShadow aspect-square"
-              /> */}
-              <img src={tour.tourImage} alt={tour.tourName} className="rounded tourShadow aspect-square max-w-[288px] w-full" />
+                className="rounded tourShadow aspect-square max-w-[288px] w-full"
+              />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center ">
                 <span
