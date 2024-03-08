@@ -10,8 +10,9 @@ export default function ContentSectionOne() {
 
   const { area, prevArea } = useAreaStore()
   return (
-    <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow  ">
-      <div
+
+    <article className="flex flex-col custom:items-center bg-[#f382bc] p-2 rounded-xl contentSectionShadow realtive">
+        <div
         className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-10  `}
       >
         <div
@@ -91,6 +92,7 @@ export default function ContentSectionOne() {
           />
         )}
       </div>
+      
     </article>
   )
 }

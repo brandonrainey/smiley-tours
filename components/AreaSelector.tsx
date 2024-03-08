@@ -42,7 +42,7 @@ export default function AreaSelector() {
             </button>
             {isOpen && (
               <div
-                className={`absolute top-16  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone ${
+                className={`absolute top-16  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone border-4 border-pink-500 ${
                   isOpen ? 'animate-fade-down animate-duration-100' : ''
                 }`}
               >
@@ -71,39 +71,6 @@ export default function AreaSelector() {
 
         <div className={``}>{isOpen ? <CaretUp /> : <CaretDown />}</div>
       </div>
-
-      {/* <div className="flex gap-2">
-        <h2
-          className={`${
-            area === 'ueno' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out flex gap-1`}
-          onClick={() => setArea('asakusa')}
-        >
-          {area === 'asakusa' ? <HeartSolid /> : <HeartOutline />}
-          <span
-            className={`${area !== 'ueno' && 'textGradient textShadowNone'} `}
-          >
-            Asakusa
-          </span>
-        </h2>
-        {area === 'asakusa' ? <ArrowRight /> : <ArrowLeft />}
-
-        <h2
-          className={`${
-            area === 'asakusa' && 'opacity-50'
-          } cursor-pointer transition-all duration-150 ease-in-out flex gap-1`}
-          onClick={() => setArea('ueno')}
-        >
-          <span
-            className={`${
-              area !== 'asakusa' && 'textGradient textShadowNone'
-            } `}
-          >
-            Ueno
-          </span>
-          {area === 'ueno' ? <HeartSolid /> : <HeartOutline />}
-        </h2>
-      </div> */}
     </nav>
   )
 }
