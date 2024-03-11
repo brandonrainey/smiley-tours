@@ -14,13 +14,13 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/65cd69bf3cea4a0b47b323cb',
   },
   {
-    tourName: 'Ueno, Tokyo Tour March 22nd',
+    tourName: 'Akihbara, Tokyo Tour March 22nd',
     tourDescription: 'Tour on March 22nd',
     tourDate: 'March 22nd',
     tourImage: '/tour-march22.webp',
     tourId: 4,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileytour.stores.jp/items/65cd6ad1e37c5b051e133e62',
   },
   {
