@@ -10,8 +10,8 @@ export default function MobileNav() {
   }
 
   return (
-    <nav>
-      <ul className="flex justify-around custom:hidden bg-pink-300 p-0 text-white font-semibold text-2xl w-full z-30">
+    <nav className='m-4 rounded-xl'>
+      <ul className="flex justify-around custom:hidden bg-pink-300 p-0 text-white font-semibold text-2xl w-full z-30 rounded-xl">
         <li className="hover:text-pink-700 text-shadow-7 flex items-center">
           <img src="/ganko.webp" alt="ganko image" className="h-[4rem]" />
           <p onClick={() => scrollToRef(tourRef)} className="cursor-pointer">

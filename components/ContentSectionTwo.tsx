@@ -11,7 +11,7 @@ export default function ContentSectionTwo() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow  ">
+    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 custom:p-4 rounded-xl contentSectionShadow  ">
       {area === 'asakusa' ? (
         <img
           ref={ref3}

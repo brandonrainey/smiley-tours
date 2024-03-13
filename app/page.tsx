@@ -5,6 +5,7 @@ import TourSidebar from '@/components/TourSidebar'
 import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
+import SectionCarousel from '@/components/SectionCarousel'
 
 const ContentSectionOne = dynamic(
   () => import('@/components/ContentSectionOne'),
@@ -50,11 +51,13 @@ export default function Home() {
 
           <AreaSelector />
 
+          <SectionCarousel />
+{/* 
           <ContentSectionOne />
 
           <ContentSectionTwo />
 
-          <ContentSectionThree />
+          <ContentSectionThree /> */}
         </main>
 
         <TourSidebar />

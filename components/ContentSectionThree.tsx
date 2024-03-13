@@ -62,7 +62,7 @@ export default function ContentSectionThree() {
           width={330}
           height={330}
           key={'monja2'}
-          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[330px] ${
+          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 custom:p-4 opacity-0 max-h-[330px] ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

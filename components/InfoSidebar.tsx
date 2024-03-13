@@ -7,14 +7,14 @@ export default function InfoSidebar() {
   const { eventsRef } = useAreaStore()
   return (
     <section
-      className="bg-transparent h-auto basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3"
+      className="bg-transparent h-auto basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3 flex flex-col items-center"
       id="events"
       ref={eventsRef}
     >
       <img
         src="/ganko.webp"
         alt="ganko"
-        className="absolute hidden custom:inline-block custom:-top-14 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
+        className="absolute hidden custom:inline-block custom:-top-20 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
       />
 
       <h1
@@ -60,7 +60,7 @@ export default function InfoSidebar() {
       {/*  */}
 
       {/*  */}
-      <div className="text-center font-semibold mt-8 flex flex-col items-center">
+      {/* <div className="text-center font-semibold mt-8 flex flex-col items-center">
         <h2
           className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
         >
@@ -92,7 +92,9 @@ export default function InfoSidebar() {
             <p>2,900 yen + 1D (600 yen)</p>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      
     </section>
   )
 }

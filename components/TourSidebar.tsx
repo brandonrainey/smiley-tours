@@ -4,16 +4,6 @@ import { useAreaStore } from '@/store/areas'
 
 const tours = [
   {
-    tourName: 'Ueno, Tokyo Tour March 8th',
-    tourDescription: 'Tour on March 8th',
-    tourDate: 'March 8th',
-    tourImage: '/tour-march8.webp',
-    tourId: 3,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65cd69bf3cea4a0b47b323cb',
-  },
-  {
     tourName: 'Akihbara, Tokyo Tour March 22nd',
     tourDescription: 'Tour on March 22nd',
     tourDate: 'March 22nd',
@@ -56,7 +46,7 @@ export default function TourSidebar() {
       <img
         src="/bulma.webp"
         alt="bulma image"
-        className={`absolute custom:inline-block hidden custom:-top-12 custom:-left-10 -top-1 right-10 custom:w-[100px] w-[70px] h-auto`}
+        className={`absolute custom:inline-block hidden custom:-top-16 custom:-left-10 -top-1 right-10 custom:w-[100px] w-[70px] h-auto`}
       />
 
       <h1

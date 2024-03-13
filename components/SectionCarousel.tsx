@@ -1,0 +1,78 @@
+'use client'
+
+import ContentSectionOne from './ContentSectionOne'
+import ContentSectionTwo from './ContentSectionTwo'
+import ContentSectionThree from './ContentSectionThree'
+import ArrowLeft from './icons/ArrowLeft'
+import ArrowRight from './icons/ArrowRight'
+import { useAreaStore } from '@/store/areas'
+import { useRef, useEffect } from 'react'
+
+export default function SectionCarousel() {
+    const { activeSection, setActiveSection, handleNext, handlePrev } = useAreaStore()
+
+    const sectionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (sectionRef.current) {
+          sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, [activeSection]);
+
+  return (
+    <div className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]">
+      <div className="flex items-center">
+        <button
+          className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center "
+          onClick={handlePrev}
+        >
+          <ArrowLeft />
+        </button>
+
+        <div ref={sectionRef}>
+          {activeSection === 1 && <ContentSectionOne />}
+          {activeSection === 2 && <ContentSectionTwo />}
+          {activeSection === 3 && <ContentSectionThree />}
+        </div>
+
+        <button
+          className="rounded-full  w-[5rem] h-[3.5rem] text-white custom:flex hidden items-center justify-center"
+          onClick={handleNext}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+      <div className="flex items-center gap-4 mt-4">
+        <button
+          className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white flex custom:hidden items-center justify-center "
+          onClick={handlePrev}
+        >
+          <ArrowLeft />
+        </button>
+        <div
+          className={`rounded-full border-2 border-pink-400 w-[0.75rem] h-[0.75rem] ${
+            activeSection === 1 && 'bg-white'
+          }`}
+        ></div>
+        <div
+          className={`rounded-full border-2 border-pink-400 w-[0.75rem] h-[0.75rem] ${
+            activeSection === 2 && 'bg-white'
+          }`}
+        ></div>
+        <div
+          className={`rounded-full border-2 border-pink-400 w-[0.75rem] h-[0.75rem] ${
+            activeSection === 3 && 'bg-white'
+          }`}
+        ></div>
+        <button
+          className="rounded-full  w-[5rem] h-[3.5rem] text-white flex custom:hidden items-center justify-center"
+          onClick={handleNext}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+    </div>
+  )
+}
+
+

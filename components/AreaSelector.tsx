@@ -8,10 +8,11 @@ import CaretDown from './icons/CaretDown'
 import CaretUp from './icons/CaretUp'
 
 export default function AreaSelector() {
-  const { area, setArea, setPrevArea, isOpen, setIsOpen } = useAreaStore()
+  const { area, setArea, setPrevArea, isOpen, setIsOpen, setActiveSection } = useAreaStore()
 
   const handleAreaChange = (value: string) => {
     setArea(value)
+    setActiveSection(1)
     setIsOpen(false)
   }
 
@@ -23,7 +24,7 @@ export default function AreaSelector() {
 
   return (
     <nav
-      className={`flex flex-col items-center justify-center text-center  text-3xl font-semibold tracking-wider text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2 bg-[#f382bc] rounded-xl w-fit p-2 pb-0 border-4 border-pink-500`}
+      className={`flex flex-col items-center justify-center text-center  text-3xl font-semibold tracking-normal text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2 bg-[#f382bc] rounded-xl w-fit p-2 pb-0 border-4 border-pink-500`}
     >
       <h1>Tour Activites</h1>
 
