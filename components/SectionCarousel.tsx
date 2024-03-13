@@ -6,15 +6,19 @@ import ContentSectionThree from './ContentSectionThree'
 import ArrowLeft from './icons/ArrowLeft'
 import ArrowRight from './icons/ArrowRight'
 import { useAreaStore } from '@/store/areas'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
 export default function SectionCarousel() {
     const { activeSection, setActiveSection, handleNext, handlePrev } = useAreaStore()
 
     const sectionRef = useRef<HTMLDivElement>(null);
 
+    const [firstLoad, setFirstLoad] = useState(true);
+
     useEffect(() => {
-        if (sectionRef.current) {
+        if (firstLoad) {
+          setFirstLoad(false);
+        } else if (sectionRef.current) {
           sectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
       }, [activeSection]);
