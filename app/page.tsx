@@ -5,28 +5,10 @@ import TourSidebar from '@/components/TourSidebar'
 import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
-import SectionCarousel from '@/components/SectionCarousel'
 
-const ContentSectionOne = dynamic(
-  () => import('@/components/ContentSectionOne'),
-  {
-    ssr: true,
-  }
-)
-
-const ContentSectionTwo = dynamic(
-  () => import('@/components/ContentSectionTwo'),
-  {
-    ssr: true,
-  }
-)
-
-const ContentSectionThree = dynamic(
-  () => import('@/components/ContentSectionThree'),
-  {
-    ssr: true,
-  }
-)
+const SectionCarousel = dynamic(() => import('@/components/SectionCarousel'), {
+  ssr: true,
+})
 
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
   ssr: true,
@@ -52,12 +34,7 @@ export default function Home() {
           <AreaSelector />
 
           <SectionCarousel />
-{/* 
-          <ContentSectionOne />
 
-          <ContentSectionTwo />
-
-          <ContentSectionThree /> */}
         </main>
 
         <TourSidebar />

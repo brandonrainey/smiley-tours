@@ -11,7 +11,7 @@ export default function ContentSectionThree() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 rounded-xl contentSectionShadow ">
+    <article className="flex items-center custom:flex-row flex-col-reverse w-full gap-6 custom:py-4 custom:max-w-[1000px] custom:h-[640px] pt-10 bg-[#f177b6] p-2 rounded-xl contentSectionShadow ">
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto">
         {area === 'asakusa' ? (
           <p
@@ -59,10 +59,10 @@ export default function ContentSectionThree() {
           ref={ref4}
           src="/monja-food.webp"
           alt="monja image"
-          width={330}
+          width={450}
           height={330}
           key={'monja2'}
-          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 custom:p-4 opacity-0 max-h-[330px] ${
+          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 custom:p-4 opacity-0 max-h-[450px] ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -72,12 +72,12 @@ export default function ContentSectionThree() {
       ) : (
         <img
           ref={ref4}
-          src="/ramen-small.webp"
+          src="/ramen-small2.webp"
           alt="monja image"
-          width={312}
-          height={408}
+          width={400}
+          height={500}
           key={'ramen2'}
-          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
+          className={`mr-auto mx-auto rounded border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[500px] ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

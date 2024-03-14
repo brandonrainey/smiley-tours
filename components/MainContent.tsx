@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
     <section
-      className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4 custom:mt-8 mb-4 bg-[#f382bc] custom:rounded-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 border-y-2 custom:border-y-2 custom:justify-normal  justify-center relative"
+      className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4 custom:mt-8 mb-4 bg-[#f177b6] custom:rounded-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 border-y-2 custom:border-y-2 custom:justify-normal  justify-center relative"
       id="main-content"
       data-testid="main-content"
     >

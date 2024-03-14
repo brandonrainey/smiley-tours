@@ -24,7 +24,7 @@ export default function SectionCarousel() {
       }, [activeSection]);
 
   return (
-    <div className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]">
+    <div className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]" ref={sectionRef}>
       <div className="flex items-center">
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center "
@@ -33,7 +33,7 @@ export default function SectionCarousel() {
           <ArrowLeft />
         </button>
 
-        <div ref={sectionRef}>
+        <div >
           {activeSection === 1 && <ContentSectionOne />}
           {activeSection === 2 && <ContentSectionTwo />}
           {activeSection === 3 && <ContentSectionThree />}

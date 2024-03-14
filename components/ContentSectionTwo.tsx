@@ -11,16 +11,16 @@ export default function ContentSectionTwo() {
   const { area, prevArea } = useAreaStore()
 
   return (
-    <article className="flex flex-col custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] pt-10 bg-[#f382bc] p-2 custom:p-4 rounded-xl contentSectionShadow  ">
+    <article className="flex flex-col items-center custom:flex-row custom:py-4 py-0 custom:max-w-[1000px] custom:h-[640px] pt-10 bg-[#f177b6] p-2 custom:p-4 rounded-xl contentSectionShadow  ">
       {area === 'asakusa' ? (
         <img
           ref={ref3}
           src="/karaoke-crop.jpg"
-          width={312}
-          height={383}
+          width={380}
+          height={500}
           key={'karaoke1'}
           alt="karaoke image"
-          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[383px] ${
+          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[500px] ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -30,12 +30,12 @@ export default function ContentSectionTwo() {
       ) : (
         <img
           ref={ref3}
-          src="/shrine-small.webp"
-          width={312}
-          height={408}
+          src="/shrine-small2.webp"
+          width={400}
+          height={560}
           key={'shrine1'}
           alt="shrine image"
-          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[408px] ${
+          className={`rounded mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[560px] ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
