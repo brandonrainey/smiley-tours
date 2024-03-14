@@ -4,11 +4,8 @@ import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
+import SectionCarousel from '@/components/SectionCarousel'
 import dynamic from 'next/dynamic'
-
-const SectionCarousel = dynamic(() => import('@/components/SectionCarousel'), {
-  ssr: false,
-})
 
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
   ssr: true,
