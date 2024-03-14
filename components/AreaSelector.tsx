@@ -38,6 +38,7 @@ export default function AreaSelector() {
             <button
               onClick={toggleDropdown}
               className="dropdownShadow rounded px-2 w-[150px] border-pink-200 border-2"
+              aria-label='area selector'
             >
               {area.charAt(0).toUpperCase() + area.slice(1)}
             </button>

@@ -31,6 +31,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center "
           onClick={handlePrev}
+          aria-label='previous section'
         >
           <ArrowLeft />
         </button>
@@ -44,6 +45,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] text-white custom:flex hidden items-center justify-center"
           onClick={handleNext}
+          aria-label='next section'
         >
           <ArrowRight />
         </button>
@@ -52,6 +54,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white flex custom:hidden items-center justify-center "
           onClick={handlePrev}
+          aria-label='previous section'
         >
           <ArrowLeft />
         </button>
@@ -73,6 +76,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] text-white flex custom:hidden items-center justify-center"
           onClick={handleNext}
+          aria-label='next section'
         >
           <ArrowRight />
         </button>
