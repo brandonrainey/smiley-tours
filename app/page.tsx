@@ -7,7 +7,7 @@ import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 
 const SectionCarousel = dynamic(() => import('@/components/SectionCarousel'), {
-  ssr: true,
+  ssr: false,
 })
 
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
