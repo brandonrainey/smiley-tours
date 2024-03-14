@@ -4,11 +4,11 @@ import ArrowLeft from './icons/ArrowLeft'
 import ArrowRight from './icons/ArrowRight'
 import { useAreaStore } from '@/store/areas'
 import { useRef, useEffect, useState } from 'react'
-import dynamic from 'next/dynamic'
+import ContentSectionOne from './ContentSectionOne'
+import ContentSectionTwo from './ContentSectionTwo'
+import ContentSectionThree from './ContentSectionThree'
 
-const ContentSectionOne = dynamic(() => import('./ContentSectionOne'), { ssr: true})
-const ContentSectionTwo = dynamic(() => import('./ContentSectionTwo'), { ssr: true})
-const ContentSectionThree = dynamic(() => import('./ContentSectionThree'), { ssr: true})
+
 
 export default function SectionCarousel() {
     const { activeSection, setActiveSection, handleNext, handlePrev } = useAreaStore()
