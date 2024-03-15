@@ -5,6 +5,7 @@ import LocationDot from './icons/LocationDot'
 
 export default function InfoSidebar() {
   const { eventsRef } = useAreaStore()
+
   return (
     <section
       className="bg-transparent h-auto basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3 flex flex-col items-center"
@@ -30,14 +31,12 @@ export default function InfoSidebar() {
         >
           Miley&apos;s Bar
         </h2>
-
         <div className="flex flex-col items-center">
           <img
             src="/bar.webp"
             alt="ninja bar"
             className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
           />
-
           <div
             className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2  max-w-[300px] border-2 border-pink-500 p-1 w-full flex flex-col items-center`}
           >
@@ -50,51 +49,11 @@ export default function InfoSidebar() {
                 <LocationDot />
               </a>
             </div>
-
             <p>🌟Charge ¥500/1h</p>
             <p>🌟Drinks ¥800〜</p>
           </div>
         </div>
-      </div>
-
-      {/*  */}
-
-      {/*  */}
-      {/* <div className="text-center font-semibold mt-8 flex flex-col items-center">
-        <h2
-          className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
-        >
-          Idol Concert
-        </h2>
-
-        <div>
-          <img
-            src="/idol-concert.webp"
-            alt="idol concert"
-            className="rounded max-w-[300px] w-full tourShadow"
-          />
-
-          <div
-            className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 p-1 mt-2 border-2 border-pink-500`}
-          >
-            <p>March 11th - Doors open 18:30</p>
-
-            <div className="flex gap-2 items-center justify-center">
-              <p>Akihabara Club GOODMAN </p>
-              <a
-                href="https://maps.app.goo.gl/bNuPCV7ysmmc4WdV8"
-                aria-label="concert location"
-              >
-                <LocationDot />
-              </a>
-            </div>
-
-            <p>2,900 yen + 1D (600 yen)</p>
-          </div>
-        </div>
-      </div> */}
-
-      
+      </div> 
     </section>
   )
 }

@@ -8,10 +8,8 @@ import ContentSectionOne from './ContentSectionOne'
 import ContentSectionTwo from './ContentSectionTwo'
 import ContentSectionThree from './ContentSectionThree'
 
-
-
 export default function SectionCarousel() {
-    const { activeSection, setActiveSection, handleNext, handlePrev } = useAreaStore()
+    const { activeSection, handleNext, handlePrev } = useAreaStore()
 
     const sectionRef = useRef<HTMLDivElement>(null);
 

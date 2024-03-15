@@ -36,9 +36,7 @@ export default function Footer() {
           src="/miley.webp"
           width={100}
           height={72}
-          loading="lazy"
           alt="miley image"
-          className=""
         />
       </div>
 
