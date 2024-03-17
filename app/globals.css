@@ -142,3 +142,9 @@ body {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.postBackground {
+  background: rgb(255,173,246);
+background: linear-gradient(0deg, rgba(255,173,246,0.7875525210084033) 0%, rgba(255,255,255,0.48783263305322133) 51%, rgba(255,255,255,0) 100%);
+
+}
+

@@ -8,7 +8,8 @@ import CaretDown from './icons/CaretDown'
 import CaretUp from './icons/CaretUp'
 
 export default function AreaSelector() {
-  const { area, setArea, setPrevArea, isOpen, setIsOpen, setActiveSection } = useAreaStore()
+  const { area, setArea, setPrevArea, isOpen, setIsOpen, setActiveSection } =
+    useAreaStore()
 
   const handleAreaChange = (value: string) => {
     setArea(value)
@@ -38,7 +39,7 @@ export default function AreaSelector() {
             <button
               onClick={toggleDropdown}
               className="dropdownShadow rounded px-2 w-[150px] border-pink-200 border-2"
-              aria-label='area selector'
+              aria-label="area selector"
             >
               {area.charAt(0).toUpperCase() + area.slice(1)}
             </button>

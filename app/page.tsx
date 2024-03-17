@@ -6,6 +6,7 @@ import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
 import SectionCarousel from '@/components/SectionCarousel'
 import dynamic from 'next/dynamic'
+import { fetchCommunityPostMetadata, fetchCommunityPostContent } from './action'
 
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
   ssr: true,
@@ -15,7 +16,13 @@ const Footer = dynamic(() => import('@/components/Footer'), {
   ssr: true,
 })
 
-export default function Home() {
+export default async function Home() {
+
+const postMetadata = await fetchCommunityPostMetadata()
+
+const postContent = await fetchCommunityPostContent()
+ 
+
   return (
     <div className="  w-full h-full flex flex-col relative">
       <Header />
@@ -23,7 +30,7 @@ export default function Home() {
       <MobileNav />
 
       <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
-        <InfoSidebar />
+        <InfoSidebar postMetadata={postMetadata} postContent={postContent}/>
 
         <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
           <MainContent />
