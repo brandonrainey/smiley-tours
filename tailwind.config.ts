@@ -12,7 +12,7 @@ const config: Config = {
       fontFamily: {
         Acme: ['Acme', 'sans-serif'],
         varela: ["var(--font-varelaround)"],
-        carter: ["var(--font-carterone)"],
+        hammersmithone: ["var(--font-hammersmithone)"],
       },
       screens: {
         custom: '1100px',

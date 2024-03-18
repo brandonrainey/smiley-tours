@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Varela_Round, Carter_One } from 'next/font/google'
+import { Varela_Round, Hammersmith_One } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Smiley Tour - Asakusa Tokyo Tour Guide',
@@ -16,10 +16,10 @@ const varelaRound = Varela_Round({
   preload: true,
 })
 
-const carterOne = Carter_One({
+const hammersmithOne = Hammersmith_One({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-carterone',
+  variable: '--font-hammersmithone',
   weight: '400',
   preload: true,
 })
@@ -70,7 +70,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`font-varela ${varelaRound.variable} ${carterOne.variable} bg-pink-200 bgImage`}
+        className={`font-varela ${varelaRound.variable} ${hammersmithOne.variable} bg-pink-200 bgImage`}
       >
         {children}
       </body>

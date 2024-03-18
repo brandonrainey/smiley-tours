@@ -27,7 +27,7 @@ export default function SectionCarousel() {
     <div className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]" ref={sectionRef}>
       <div className="flex items-center">
         <button
-          className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center "
+          className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center"
           onClick={handlePrev}
           aria-label='previous section'
         >

@@ -24,14 +24,10 @@ export default function Footer() {
 
   return (
     <footer
-      className={` min-h-[250px] w-full flex flex-col justify-around items-center  relative `}
+      className={` min-h-[250px] w-full flex flex-col justify-center items-center  relative `}
     >
-      <div className="flex items-center gap-2 z-10 font-bold font-carter  ">
-        <h1
-          className={`text-5xl text-white custom:text-shadow-3 text-shadow-6`}
-        >
-          Follow Me!
-        </h1>
+      <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
+        <img  src="/smileytime-sharp.png" width={250} height={72} alt="miley image" className='custom:w-[300px]'/>
         <Image
           src="/miley.webp"
           width={100}
@@ -44,7 +40,7 @@ export default function Footer() {
         <a
           href="https://www.youtube.com/@smileytime"
           aria-label="youtube link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow  border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow border-2 border-yellow-300/50"
         >
           <YoutubeIcon />
         </a>
@@ -52,14 +48,14 @@ export default function Footer() {
         <a
           href="https://www.instagram.com/mairie0828/"
           aria-label="instagram link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-xl socialsShadow border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-xl socialsShadow border-2 border-yellow-300/50"
         >
           <InstagramIcon />
         </a>
         <a
           href="https://twitter.com/mairie0828"
           aria-label="twitter link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow border-pink-300/50"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-xl socialsShadow border-2 border-yellow-300/50"
         >
           <TwitterIcon />
         </a>

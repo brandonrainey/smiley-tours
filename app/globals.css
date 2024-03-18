@@ -1,8 +1,15 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/Goffik-S.ttf') format('truetype');
+}
+
+.newFont {
+  font-family: 'MyCustomFont', sans-serif;
+}
 
 html {
   height: 100%;
@@ -67,7 +74,8 @@ body {
 }
 
 .dropdownShadow {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .tourShadow {
@@ -131,20 +139,40 @@ body {
 }
 
 .testimonialShadow {
-  box-shadow: rgba(240, 46, 170, 0.3) -5px 5px, rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -15px 15px, rgba(240, 46, 170, 0.05) -20px 20px;
+  box-shadow: rgba(240, 46, 170, 0.3) -5px 5px,
+    rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -15px 15px,
+    rgba(240, 46, 170, 0.05) -20px 20px;
 }
 
 .socialsShadow {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .contentSectionShadow {
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.postBackground {
-  background: rgb(255,173,246);
-background: linear-gradient(0deg, rgba(255,173,246,0.7875525210084033) 0%, rgba(255,255,255,0.48783263305322133) 51%, rgba(255,255,255,0) 100%);
-
+.postWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: rgb(255, 173, 246);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 208, 244, 0.788) 0%,
+    rgba(250, 208, 244, 0.433) 51%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: blur(6px);
+  pointer-events: none; 
 }
 
+.backdropFilterBlur {
+  backdrop-filter: blur(10px);
+  
+}
