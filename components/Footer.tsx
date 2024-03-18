@@ -27,7 +27,7 @@ export default function Footer() {
       className={` min-h-[250px] w-full flex flex-col justify-center items-center  relative `}
     >
       <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
-        <img  src="/smileytime-sharp.png" width={250} height={72} alt="miley image" className='custom:w-[300px]'/>
+        <img  src="/smileytime-sharp.webp" width={250} height={72} alt="miley image" className='custom:w-[300px]'/>
         <Image
           src="/miley.webp"
           width={100}
