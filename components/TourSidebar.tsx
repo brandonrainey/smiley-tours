@@ -69,7 +69,7 @@ export default function TourSidebar() {
 
   return (
     <section
-      className="  h-auto relative custom:p-4 py-4  custom:basis-1/4 custom:order-3 order-2 "
+      className=" h-auto relative custom:p-4 py-4  custom:basis-1/4 custom:order-3 order-2 "
       id="tour"
       ref={tourRef}
     >

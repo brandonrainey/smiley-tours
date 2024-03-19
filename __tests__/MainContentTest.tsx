@@ -26,8 +26,4 @@ describe('MainContent', () => {
     expect(text).toBeInTheDocument();
   })
 
-  
-
-  
-
 });

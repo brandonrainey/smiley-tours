@@ -49,7 +49,6 @@ export default function RootLayout({
           property="og:image"
           content="https://smileytour.guide/miley2.webp"
         />
-
         <meta property="og:url" content="https://www.smileytour.guide" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@mairie0828" />
@@ -68,7 +67,6 @@ export default function RootLayout({
         />
         <link rel="canonical" href="https://www.smileytour.guide" />
       </head>
-
       <body
         className={`font-varela ${varelaRound.variable} ${hammersmithOne.variable} bg-pink-200 bgImage`}
       >

@@ -4,7 +4,6 @@ import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
-// import SectionCarousel from '@/components/SectionCarousel'
 import dynamic from 'next/dynamic'
 import { fetchCommunityPostContent } from './action'
 

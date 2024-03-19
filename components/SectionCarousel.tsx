@@ -52,7 +52,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white flex custom:hidden items-center justify-center "
           onClick={handlePrev}
-          aria-label='previous section'
+          aria-label='previous section mobile'
         >
           <ArrowLeft />
         </button>
@@ -74,7 +74,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] text-white flex custom:hidden items-center justify-center"
           onClick={handleNext}
-          aria-label='next section'
+          aria-label='next section mobile'
         >
           <ArrowRight />
         </button>

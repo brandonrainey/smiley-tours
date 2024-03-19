@@ -10,10 +10,9 @@ interface InfoSidebarProps {
 export default function InfoSidebar({ postContent }: InfoSidebarProps) {
   const { eventsRef } = useAreaStore()
 
-  console.log(postContent)
   return (
     <section
-      className="bg-transparent h-auto basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3 flex flex-col items-center"
+      className="bg-transparent h-auto  basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3 flex flex-col items-center"
       id="events"
       ref={eventsRef}
     >
