@@ -33,7 +33,7 @@ const postContent = await fetchCommunityPostContent()
       <MobileNav />
 
       <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
-        <InfoSidebar postContent={postContent}/>
+        <InfoSidebar postContent={postContent} />
 
         <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
           <MainContent />
@@ -53,3 +53,5 @@ const postContent = await fetchCommunityPostContent()
     </div>
   )
 }
+
+
