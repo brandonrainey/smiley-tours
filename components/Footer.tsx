@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import YoutubeIcon from './icons/YoutubeIcon'
 import InstagramIcon from './icons/InstagramIcon'
 import TwitterIcon from './icons/TwitterIcon'
@@ -24,16 +23,17 @@ export default function Footer() {
 
   return (
     <footer
-      className={` min-h-[250px] w-full flex flex-col justify-center items-center  relative `}
+      className={` min-h-[250px] w-full flex flex-col justify-center items-center relative`}
     >
       <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
-        <img  src="/smileytime-sharp.webp" width={250} height={72} alt="miley image" className='custom:w-[300px]'/>
-        <Image
-          src="/miley.webp"
-          width={100}
+        <img
+          src="/smileytime-sharp.webp"
+          width={250}
           height={72}
           alt="miley image"
+          className="custom:w-[300px]"
         />
+        <img src="/miley.webp" width={100} height={72} alt="miley image" />
       </div>
 
       <div className="flex sm:gap-24 gap-8 z-10">
@@ -44,7 +44,6 @@ export default function Footer() {
         >
           <YoutubeIcon />
         </a>
-
         <a
           href="https://www.instagram.com/mairie0828/"
           aria-label="instagram link"

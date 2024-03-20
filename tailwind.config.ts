@@ -10,7 +10,6 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        Acme: ['Acme', 'sans-serif'],
         varela: ["var(--font-varelaround)"],
         hammersmithone: ["var(--font-hammersmithone)"],
       },

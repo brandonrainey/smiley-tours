@@ -2,6 +2,8 @@
 
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
+// import { useEffect, useState } from 'react'
+// import { fetchCommunityPostContent } from '@/app/action'
 
 interface InfoSidebarProps {
   postContent: any
@@ -10,6 +12,18 @@ interface InfoSidebarProps {
 export default function InfoSidebar({ postContent }: InfoSidebarProps) {
   const { eventsRef } = useAreaStore()
 
+  // const [post, setPost] = useState<any>()
+
+  // useEffect(() => {
+  //   const fetchPost = async () => {
+  //     const result = await fetchCommunityPostContent();
+  //     setPost(result);
+  //   };
+
+  //   fetchPost();
+  // }, [])
+
+  // console.log(post)
   return (
     <section
       className="bg-transparent h-auto  basis-1/4 p-4  custom:before:border-none short-border relative custom:order-1 order-3 flex flex-col items-center"
@@ -28,10 +42,10 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
         Events
       </h1>
 
-      {/*  */}
+      {/* Community Post */}
       <div className="flex flex-col items-center">
         <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-x-2 border-pink-400 w-fit px-2 mb-2 rounded backdropFilterBlur relative">
-          Community Post
+          Recent Community Post
         </h2>
         <a
           href="https://www.youtube.com/@smileytime/community"
@@ -55,7 +69,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
         </a>
       </div>
 
-      {/*  */}
+      {/* Miley's Bar */}
       <div className="text-center font-semibold flex flex-col items-center mt-8">
         <h2
           className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
