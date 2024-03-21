@@ -17,7 +17,7 @@ export default function MainContent() {
             <img
               src="/miley-main.webp"
               alt="featured miley image"
-              className="rounded mr-auto mx-auto border-dashed border-4 border-pink-200 p-2 min-w-[350px] max-h-[432px]  "
+              className="rounded mr-auto mx-auto border-dashed border-4 border-pink-200 p-2 min-w-[350px] w-[350px] h-[432px]  "
             />
           </div>
 
