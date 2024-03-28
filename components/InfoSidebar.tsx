@@ -45,14 +45,11 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
   useEffect(() => {
     const fetchCurrentPost = async () => {
       const newPostContent = await fetchCommunityPostContent()
-      
       deepEqual(postContent, newPostContent) ? null : setData(newPostContent)
     }
     fetchCurrentPost()
 
-  }, [])
-
-  
+  }, [postContent])
 
   return (
     <section
