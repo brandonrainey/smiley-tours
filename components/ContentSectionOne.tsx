@@ -32,7 +32,7 @@ export default function ContentSectionOne() {
               year 628, where history unfolds like a captivating tale! 🚢🌸
               <br />
               <br />
-              ❤️ Discover the story behind Asakusa through two must-visit spots:
+              Discover the story behind Asakusa through two must-visit spots:
               Kaminarimon Gate and Senso-ji Temple.
               <br />
               <br />
