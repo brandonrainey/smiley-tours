@@ -25,7 +25,7 @@ const Footer = dynamic(() => import('@/components/Footer'), {
 export default async function Home() {
 
 const postContent = await fetchCommunityPostContent()
- 
+
   return (
     <div className="  w-full h-full flex flex-col relative">
       <Header />

@@ -2,54 +2,13 @@
 
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
-import { fetchCommunityPostContent } from '@/app/action'
-import { useEffect, useState } from 'react'
+
 interface InfoSidebarProps {
   postContent: any
 }
 
-function deepEqual(object1: any, object2: any) {
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-
-  for (let key of keys1) {
-    const val1 = object1[key];
-    const val2 = object2[key];
-    const areObjects = isObject(val1) && isObject(val2);
-    if (
-      areObjects && !deepEqual(val1, val2) ||
-      !areObjects && val1 !== val2
-    ) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-function isObject(object: any) {
-  return object != null && typeof object === 'object';
-}
-
-
-
 export default function InfoSidebar({ postContent }: InfoSidebarProps) {
   const { eventsRef } = useAreaStore()
-
-  const [data, setData] = useState<any>(null)
-
-  useEffect(() => {
-    const fetchCurrentPost = async () => {
-      const newPostContent = await fetchCommunityPostContent()
-      deepEqual(postContent, newPostContent) ? null : setData(newPostContent)
-    }
-    fetchCurrentPost()
-
-  }, [postContent])
 
   return (
     <section
@@ -80,10 +39,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
         >
           <div className="postWrapper relative max-w-[300px]">
             <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
-              {data ? data.items[0].community[0].contentText[0].text.substring(
-                0,
-                90
-              ) : postContent.items[0].community[0].contentText[0].text.substring(
+              {postContent.items[0].community[0].contentText[0].text.substring(
                 0,
                 90
               )}
@@ -92,7 +48,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
           </div>
 
           <img
-            src={data ? data.items[0].community[0].images[0].thumbnails[2].url : postContent.items[0].community[0].images[0].thumbnails[2].url}
+            src={postContent.items[0].community[0].images[0].thumbnails[2].url}
             alt="community post image"
             className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
           />
