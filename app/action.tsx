@@ -1,13 +1,11 @@
 'use server'
 
-import { revalidateTag } from "next/cache";
-
 export const fetchCommunityPostContent = async () => {
   try {
     const response = await fetch(
       `https://yt.lemnoslife.com/channels?part=community&id=UC_baaXG7DrT5_eC6lvIqPug`,
       {
-        next: { tags: ['post-data'] }
+         next: { revalidate: 3600}
       }
     );
 
@@ -16,8 +14,6 @@ export const fetchCommunityPostContent = async () => {
     }
 
     const data = await response.json()
-
-    revalidateTag('post-data')
 
     return data
 
