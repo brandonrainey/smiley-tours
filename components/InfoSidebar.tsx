@@ -39,7 +39,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
         >
           <div className="postWrapper relative max-w-[300px]">
             <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
-              {postContent.items[0].community[0].contentText[0].text.substring(
+              {postContent?.items[0].community[0].contentText[0].text.substring(
                 0,
                 90
               )}
@@ -48,7 +48,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
           </div>
 
           <img
-            src={postContent.items[0].community[0].images[0].thumbnails[2].url}
+            src={postContent?.items[0].community[0].images[0].thumbnails[2].url}
             alt="community post image"
             className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
           />
