@@ -11,13 +11,15 @@ export default function MobileMenu() {
   } = useAreaStore()
 
   const scrollToRef = (ref: any) => {
-    const offsetTop = ref.current ? ref.current.offsetTop : 0
-    const offset = offsetTop - 100 // adjust this value to the offset you want
+    setTimeout(() => {
+      const offsetTop = ref.current ? ref.current.offsetTop : 0
+      const offset = offsetTop - 100 
 
-    window.scrollTo({
-      top: offset,
-      behavior: 'smooth',
-    })
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      })
+    }, 0)
   }
 
   function enableScroll() {
@@ -26,6 +28,7 @@ export default function MobileMenu() {
 
   function handleTourClick() {
     setIsMobileMenuOpen(false)
+
     enableScroll()
     scrollToRef(tourRef)
   }
@@ -43,10 +46,13 @@ export default function MobileMenu() {
   }
 
   return (
-    <nav
-      className={`w-[77.5%] h-[100vh] fixed z-40 top-0 right-0 bg-pink-300 flex flex-col items-center justify-center ${
+
+    <div className='flex'>
+      <div className='w-[23.5%] bg-white/50 h-full fixed top-0 left-0 z-40'></div>
+      <nav
+      className={`w-[77.5%] h-[100vh] fixed z-40 top-0 right-0 bg-pink-300 flex flex-col items-center justify-center animate-duration-200 ${
         isMobileMenuOpen ? 'animate-fade-left' : 'animate-fade-right'
-      } animate-duration-200`}
+      }`}
     >
       <div className="flex justify-center items-center gap-16">
         <img src="/ganko.webp" alt="ganko image" className="h-[5rem]" />
@@ -89,5 +95,7 @@ export default function MobileMenu() {
         </li>
       </ul>
     </nav>
+    </div>
+    
   )
 }

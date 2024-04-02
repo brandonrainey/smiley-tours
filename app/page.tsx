@@ -6,6 +6,7 @@ import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 import { fetchCommunityPostContent } from './action'
 
+
 const SectionCarousel = dynamic(() => import('@/components/SectionCarousel'), {
   ssr: true,
   loading: () => <p>Loading...</p>,

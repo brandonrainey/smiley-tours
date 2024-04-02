@@ -75,7 +75,6 @@ export default function ContentSectionOne() {
                 ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
                 : ''
             } `}
-            loading="lazy"
           />
         ) : (
           <img
