@@ -4,8 +4,11 @@ import { useState } from 'react'
 import YoutubeIcon from './icons/YoutubeIcon'
 import InstagramIcon from './icons/InstagramIcon'
 import TwitterIcon from './icons/TwitterIcon'
+import { useAreaStore } from '@/store/areas'
 
 export default function Footer() {
+  const { socialsRef } = useAreaStore()
+
   const [copySuccess, setCopySuccess] = useState('')
 
   const copyToClipboard = async (text: string) => {
@@ -24,6 +27,7 @@ export default function Footer() {
   return (
     <footer
       className={` min-h-[250px] w-full flex flex-col justify-center items-center relative`}
+      ref={socialsRef}
     >
       <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
         <img

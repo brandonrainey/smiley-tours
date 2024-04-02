@@ -16,6 +16,9 @@ type State = {
   setActiveSection: (activeSection: number) => void;
   handleNext: () => void;
   handlePrev: () => void;
+  isMobileMenuOpen: boolean;
+  setIsMobileMenuOpen: (isMobileMenuOpen: boolean) => void;
+  socialsRef: MutableRefObject<HTMLElement | null>;
 };
 
 export const useAreaStore = create<State>((set) => ({
@@ -33,4 +36,7 @@ export const useAreaStore = create<State>((set) => ({
     setActiveSection: (activeSection) => set((state) => ({ ...state, activeSection })),
     handleNext: () => set((state) => ({ ...state, activeSection: state.activeSection === 3 ? 1 : state.activeSection + 1 })),
     handlePrev: () => set((state) => ({ ...state, activeSection: state.activeSection === 1 ? 3 : state.activeSection - 1 })),
+    isMobileMenuOpen: false,
+    setIsMobileMenuOpen: (isMobileMenuOpen) => set((state) => ({ ...state, isMobileMenuOpen })),
+    socialsRef: { current: null },
   }));

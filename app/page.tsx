@@ -2,7 +2,6 @@ import Header from '@/components/Header'
 import InfoSidebar from '@/components/InfoSidebar'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
-import MobileNav from '@/components/MobileNav'
 import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 import { fetchCommunityPostContent } from './action'
@@ -28,9 +27,8 @@ const postContent = await fetchCommunityPostContent()
 
   return (
     <div className="  w-full h-full flex flex-col relative">
+      
       <Header />
-
-      <MobileNav />
 
       <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
         <InfoSidebar postContent={postContent} />
