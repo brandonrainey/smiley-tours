@@ -48,7 +48,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
           </div>
 
           <img
-            src={postContent?.items[0].community[0].images[0]?.thumbnails[2].url ? postContent?.items[0].community[0].images[0]?.thumbnails[2].url : '/smileytime-sharp.webp'}
+            src={postContent?.items[0].community[0].images[0]?.thumbnails[2].url ? postContent?.items[0].community[0].images[0]?.thumbnails[2].url : '/smiley-yt-enhanced.jpg'}
             alt="community post image"
             className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
           />
