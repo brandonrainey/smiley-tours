@@ -32,6 +32,7 @@ export default function HamburgerButton() {
         <button
           className="absolute right-0 cursor-pointer z-40 mr-2 mt-1"
           onClick={() => handleOpenMenu()}
+          aria-label='open menu'
         >
           <Hamburger />
         </button>
@@ -39,6 +40,7 @@ export default function HamburgerButton() {
         <button
           className="absolute right-0 mr-2 z-40"
           onClick={() => handleCloseMenu()}
+          aria-label='close menu'
         >
           <XIcon />
         </button>

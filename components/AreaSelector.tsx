@@ -2,8 +2,6 @@
 
 import { useEffect } from 'react'
 import { useAreaStore } from '@/store/areas'
-import HeartSolid from './icons/HeartSolid'
-import HeartSolid2 from './icons/HeartSolid2'
 import CaretDown from './icons/CaretDown'
 import CaretUp from './icons/CaretUp'
 

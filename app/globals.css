@@ -109,16 +109,4 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* In your global.css file */
-.mobileNav {
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  transform: translateX(100%);
-  opacity: 0;
-  visibility: hidden;
-}
 
-.mobileNav.open {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-}
