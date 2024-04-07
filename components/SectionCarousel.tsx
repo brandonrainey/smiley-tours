@@ -9,32 +9,41 @@ import ContentSectionTwo from './ContentSectionTwo'
 import ContentSectionThree from './ContentSectionThree'
 
 export default function SectionCarousel() {
-    const { activeSection, handleNext, handlePrev } = useAreaStore()
+  const { activeSection, handleNext, handlePrev } = useAreaStore()
 
-    const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null)
 
-    const [firstLoad, setFirstLoad] = useState(true);
+  const [firstLoad, setFirstLoad] = useState(true)
 
-    useEffect(() => {
-        if (firstLoad) {
-          setFirstLoad(false);
-        } else if (sectionRef.current) {
-          sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, [activeSection]);
+  useEffect(() => {
+    if (firstLoad) {
+      setFirstLoad(false)
+    } else if (sectionRef.current) {
+      const offsetTop = sectionRef.current ? sectionRef.current.offsetTop : 0
+      const offset = offsetTop - 100
+
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      })
+    }
+  }, [activeSection])
 
   return (
-    <div className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]" ref={sectionRef}>
+    <div
+      className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px]"
+      ref={sectionRef}
+    >
       <div className="flex items-center">
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center"
           onClick={handlePrev}
-          aria-label='previous section'
+          aria-label="previous section"
         >
           <ArrowLeft />
         </button>
 
-        <div >
+        <div>
           {activeSection === 1 && <ContentSectionOne />}
           {activeSection === 2 && <ContentSectionTwo />}
           {activeSection === 3 && <ContentSectionThree />}
@@ -43,7 +52,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] text-white custom:flex hidden items-center justify-center"
           onClick={handleNext}
-          aria-label='next section'
+          aria-label="next section"
         >
           <ArrowRight />
         </button>
@@ -52,7 +61,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white flex custom:hidden items-center justify-center "
           onClick={handlePrev}
-          aria-label='previous section mobile'
+          aria-label="previous section mobile"
         >
           <ArrowLeft />
         </button>
@@ -74,7 +83,7 @@ export default function SectionCarousel() {
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] text-white flex custom:hidden items-center justify-center"
           onClick={handleNext}
-          aria-label='next section mobile'
+          aria-label="next section mobile"
         >
           <ArrowRight />
         </button>
@@ -82,5 +91,3 @@ export default function SectionCarousel() {
     </div>
   )
 }
-
-
