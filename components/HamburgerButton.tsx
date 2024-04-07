@@ -27,24 +27,33 @@ export default function HamburgerButton() {
   }
 
   return (
-    <div className="custom:hidden">
-      {!isMobileMenuOpen ? (
-        <button
-          className="absolute right-0 cursor-pointer z-40 mr-2 mt-1"
-          onClick={() => handleOpenMenu()}
-          aria-label='open menu'
-        >
-          <Hamburger />
-        </button>
-      ) : (
-        <button
-          className="absolute right-0 mr-2 z-40"
-          onClick={() => handleCloseMenu()}
-          aria-label='close menu'
-        >
-          <XIcon />
-        </button>
-      )}
+    <div className="custom:hidden absolute top-0 right-0 z-50 mr-1">
+      <button
+        className="text-white w-10 h-10 relative focus:outline-none cursor-pointer"
+        onClick={isMobileMenuOpen ? handleCloseMenu : handleOpenMenu}
+      >
+        <span className="sr-only">Open main menu</span>
+        <div className="flex w-full h-full justify-center items-center">
+          <span
+            aria-hidden="true"
+            className={`block absolute h-[3px] w-[25px] bg-current transform transition duration-300 ease-in-out ${
+              isMobileMenuOpen ? 'rotate-45' : '-translate-y-1.5'
+            }`}
+          ></span>
+          <span
+            aria-hidden="true"
+            className={`block absolute h-[3px] w-[25px] bg-current transform transition duration-300 ease-in-out ${
+              isMobileMenuOpen ? 'opacity-0' : ''
+            }`}
+          ></span>
+          <span
+            aria-hidden="true"
+            className={`block absolute h-[3px] w-[25px] bg-current transform transition duration-300 ease-in-out ${
+              isMobileMenuOpen ? '-rotate-45' : 'translate-y-1.5'
+            }`}
+          ></span>
+        </div>
+      </button>
     </div>
   )
 }

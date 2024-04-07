@@ -1,18 +1,15 @@
-
 export default function MainContent() {
   return (
     <section
-      className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4 custom:mt-8 mb-4 bg-[#f177b6] custom:rounded-xl  custom:border-x-2 custom:border-pink-500 border-pink-500/50 custom:border-b-2 border-y-2 custom:border-y-2 custom:justify-normal  justify-center relative"
+      className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative mainContent"
       id="main-content"
       data-testid="main-content"
     >
       <div className="flex justify-center items-center">
- 
-      <h1 className="text-5xl  text-center p-4 font-semibold tracking-wider  z-20 textGradient  ">
-        Tokyo Tour Guide
-      </h1>
+        <h1 className="text-5xl  text-center p-4 font-semibold tracking-wider  z-20 textGradient  ">
+          Tokyo Tour Guide
+        </h1>
       </div>
-     
 
       {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">

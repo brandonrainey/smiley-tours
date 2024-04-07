@@ -10,9 +10,11 @@ export default function ContentSectionOne() {
 
   const { area, prevArea } = useAreaStore()
   return (
-
-    <article className="flex flex-col items-center justify-center custom:h-[640px] custom:items-center bg-[#f177b6] p-2 custom:p-4 rounded-xl contentSectionShadow realtive" data-testid='content-section-one'>
-        <div
+    <article
+      className="flex flex-col items-center justify-center custom:h-[640px] custom:items-center bg-[#f086bd] p-2 custom:p-4 rounded-xl contentSectionShadow realtive"
+      data-testid="content-section-one"
+    >
+      <div
         className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-4  `}
       >
         <div
@@ -91,7 +93,6 @@ export default function ContentSectionOne() {
           />
         )}
       </div>
-      
     </article>
   )
 }

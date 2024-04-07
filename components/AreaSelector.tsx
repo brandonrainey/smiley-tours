@@ -23,28 +23,30 @@ export default function AreaSelector() {
 
   return (
     <nav
-      className={`flex flex-col items-center justify-center text-center  text-3xl font-semibold tracking-normal text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2 bg-[#f382bc] rounded-xl w-fit p-2 pb-0 border-4 border-pink-500`}
+      className={`flex flex-col items-center justify-center text-center  text-3xl font-semibold tracking-normal text-white z-30 mt-2 custom:text-shadow-3 text-shadow-7 gap-2  rounded-xl w-fit p-2 pb-0 `}
     >
-      <h1>Tour Activites</h1>
-
       <div className="flex flex-col items-center">
         <div className="flex gap-2">
           <h2 className={`transition-all duration-150 ease-in-out flex gap-1`}>
-          <img src='/heart-icon.png' alt="heart icon" className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg" key={`${area} 1`}/>
-            
+            <img
+              src="/heart-icon.png"
+              alt="heart icon"
+              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg"
+              key={`${area} 1`}
+            />
           </h2>
 
           <div className="dropdown relative flex">
             <button
               onClick={toggleDropdown}
-              className="dropdownShadow rounded-3xl px-2 w-[150px] border-pink-200 border-2"
+              className="dropdownShadow rounded-3xl px-2 w-[150px] border-pink-200 border-2 bg-[#f382bc]"
               aria-label="area selector"
             >
               {area.charAt(0).toUpperCase() + area.slice(1)}
             </button>
             {isOpen && (
               <div
-                className={`absolute top-[76px]  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone border-4 border-pink-500 ${
+                className={`absolute top-[76px]  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone border-2 border-pink-500 ${
                   isOpen ? 'animate-fade-down animate-duration-100' : ''
                 }`}
               >
@@ -67,7 +69,12 @@ export default function AreaSelector() {
           </div>
 
           <h2 className={`transition-all duration-150 ease-in-out flex gap-1`}>
-          <img src='/heart-icon.png' alt="heart icon" className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg" key={`${area} 2`}/>
+            <img
+              src="/heart-icon.png"
+              alt="heart icon"
+              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg"
+              key={`${area} 2`}
+            />
           </h2>
         </div>
 

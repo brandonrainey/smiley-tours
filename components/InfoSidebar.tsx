@@ -16,11 +16,11 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
       id="events"
       ref={eventsRef}
     >
-      <img
+      {/* <img
         src="/ganko.webp"
         alt="ganko"
         className="absolute hidden custom:inline-block custom:-top-20 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
-      />
+      /> */}
 
       <h1
         className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone italic custom:text-shadow-3 text-shadow-4 custom:tracking-wide border-dotted border-2 backdropFilterBlur`}
@@ -39,16 +39,26 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
         >
           <div className="postWrapper relative max-w-[300px]">
             <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
-              {postContent?.items[0].community[0].contentText[0].text.substring(
-                0,
-                90
-              )}
+              {postContent.error
+                ? 'Error loading post'
+                : postContent?.items[0].community[0].contentText[0].text.substring(
+                    0,
+                    90
+                  )}
               ...
             </h3>
           </div>
 
           <img
-            src={postContent?.items[0].community[0].images[0]?.thumbnails[2].url ? postContent?.items[0].community[0].images[0]?.thumbnails[2].url : '/smiley-yt-enhanced.jpg'}
+            src={
+              postContent.error
+                ? '/smiley-yt-enhanced.jpg'
+                : postContent?.items[0].community[0].images[0]?.thumbnails[2]
+                    .url
+                ? postContent?.items[0].community[0].images[0]?.thumbnails[2]
+                    .url
+                : '/smiley-yt-enhanced.jpg'
+            }
             alt="community post image"
             className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
           />

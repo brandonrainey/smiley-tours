@@ -36,6 +36,7 @@ const postContent = await fetchCommunityPostContent()
 
         <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
           <MainContent />
+          
 
           <AreaSelector />
 
