@@ -15,6 +15,7 @@ const config: Config = {
       },
       screens: {
         custom: '1100px',
+        custom2: '1400px',
       },
       textShadow: { 
         '1': '1px 1px 3px rgb(186, 6, 102)',

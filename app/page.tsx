@@ -34,7 +34,7 @@ const postContent = await fetchCommunityPostContent()
       <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
         <InfoSidebar postContent={postContent} />
 
-        <main className="flex flex-col items-center custom:order-2 order-1 gap-8">
+        <main className="flex flex-col items-center custom:order-2 order-1 gap-8 custom:max-w-[700px] custom2:max-w-[1000px]">
           <MainContent />
           
 

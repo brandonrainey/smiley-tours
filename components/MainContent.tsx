@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
     <section
-      className="custom:h-fit h-auto pb-12 custom:pb-4  w-full flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative mainContent"
+      className=" h-auto w-full pb-12 custom:pb-4  flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative mainContent"
       id="main-content"
       data-testid="main-content"
     >
@@ -13,7 +13,7 @@ export default function MainContent() {
 
       {/* About Me/ Intro */}
       <div className="flex flex-col gap-10 custom:items-center relative">
-        <div className="flex custom:flex-row flex-col w-full custom:max-w-[1000px] gap-6 custom:pb-0 custom:items-baseline items-center ">
+        <div className="flex custom:flex-col custom2:flex-row  flex-col custom:max-w-[1000px]  gap-6 custom:pb-0 custom:items-baseline items-center ">
           <div className="flex w-full max-w-[1000px] ">
             <img
               src="/miley-main.webp"
@@ -22,7 +22,7 @@ export default function MainContent() {
             />
           </div>
 
-          <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30">
+          <p className="text-white  max-w-[600px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30 text-wrap ">
             Hey there! I&apos;m{' '}
             <span className="font-semibold textShadowNone textGradient">
               Miley

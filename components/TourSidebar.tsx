@@ -63,11 +63,6 @@ export default function TourSidebar() {
       id="tour"
       ref={tourRef}
     >
-      {/* <img
-        src="/bulma.webp"
-        alt="bulma image"
-        className={`absolute custom:inline-block hidden custom:-top-16 custom:-left-10 -top-1 right-10 custom:w-[100px] w-[70px] h-auto`}
-      /> */}
 
       <h1
         className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone italic custom:text-shadow-3 text-shadow-4 custom:tracking-wide border-dotted border-2 backdropFilterBlur`}

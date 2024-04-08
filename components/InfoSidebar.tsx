@@ -16,11 +16,6 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
       id="events"
       ref={eventsRef}
     >
-      {/* <img
-        src="/ganko.webp"
-        alt="ganko"
-        className="absolute hidden custom:inline-block custom:-top-20 custom:-right-10 -top-16 right-26 z-30 w-[76px]"
-      /> */}
 
       <h1
         className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone italic custom:text-shadow-3 text-shadow-4 custom:tracking-wide border-dotted border-2 backdropFilterBlur`}

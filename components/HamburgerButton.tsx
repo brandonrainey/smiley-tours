@@ -1,8 +1,6 @@
 'use client'
 
-import Hamburger from './icons/Hamburger'
 import { useAreaStore } from '@/store/areas'
-import XIcon from './icons/XIcon'
 
 export default function HamburgerButton() {
   const { isMobileMenuOpen, setIsMobileMenuOpen } = useAreaStore()

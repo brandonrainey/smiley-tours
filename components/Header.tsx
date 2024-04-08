@@ -2,13 +2,17 @@
 
 import { useAreaStore } from '@/store/areas'
 import MobileMenu from './MobileMenu'
-import HamburgerButton from './HamburgerButton'
+import dynamic from 'next/dynamic'
+
+const HamburgerButton = dynamic(() => import('./HamburgerButton'), {
+  ssr: true,
+})
 
 export default function Header() {
   const { isMobileMenuOpen } = useAreaStore()
 
   return (
-    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-400 sticky top-0 custom:z-0 z-50 custom:mb-[30px]">
+    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 sticky top-0 custom:z-0 z-50 custom:mb-[30px]">
       {isMobileMenuOpen && <MobileMenu />}
 
       <HamburgerButton />
