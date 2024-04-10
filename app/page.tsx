@@ -5,6 +5,7 @@ import TourSidebar from '@/components/TourSidebar'
 import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 import { fetchCommunityPostContent } from './action'
+import CurvedBackground from '@/components/CurvedBackground'
 
 
 const SectionCarousel = dynamic(() => import('@/components/SectionCarousel'), {
@@ -30,11 +31,15 @@ const postContent = await fetchCommunityPostContent()
     <div className="  w-full h-full flex flex-col relative">
       
       <Header />
+      
 
-      <div className="flex flex-col custom:flex-row w-full justify-between flex-grow">
+      <div className="flex flex-col custom:flex-row w-full justify-between flex-grow relative">
+        {/* <CurvedBackground /> */}
+
         <InfoSidebar postContent={postContent} />
 
-        <main className="flex flex-col items-center custom:order-2 order-1 gap-8 custom:max-w-[700px] custom2:max-w-[1000px]">
+        <main className="flex flex-col items-center custom:order-2 order-1 gap-8 custom:max-w-[700px] custom2:max-w-[1000px] ">
+          
           <MainContent />
           
 
