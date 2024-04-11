@@ -122,15 +122,22 @@ body {
   filter: blur(10px);
   pointer-events: none;
   border-radius: 20px;
+  border-bottom: none;
 }
 
-.custom-shape-divider-top-1712720133 {
+.curvedBackground::after {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  
+  height: 100%;
+  background-color: #f472b6b3;
+  z-index: -1;
+  filter: blur(10px);
+  pointer-events: none;
+  border-radius: 20px;
 }
+
 

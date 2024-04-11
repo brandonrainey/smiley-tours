@@ -7,6 +7,7 @@ import { useRef, useEffect, useState } from 'react'
 import ContentSectionOne from './ContentSectionOne'
 import ContentSectionTwo from './ContentSectionTwo'
 import ContentSectionThree from './ContentSectionThree'
+import CurvedBackground from './CurvedBackground'
 
 export default function SectionCarousel() {
   const { activeSection, handleNext, handlePrev } = useAreaStore()
@@ -20,7 +21,7 @@ export default function SectionCarousel() {
       setFirstLoad(false)
     } else if (sectionRef.current) {
       const offsetTop = sectionRef.current ? sectionRef.current.offsetTop : 0
-      const offset = offsetTop - 100
+      const offset = offsetTop - 20
 
       window.scrollTo({
         top: offset,
@@ -31,9 +32,10 @@ export default function SectionCarousel() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px] z-30 custom:scale-[0.75] custom2:scale-100"
+      className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px] z-20 custom:scale-[0.75] custom2:scale-100"
       ref={sectionRef}
     >
+      {/* <CurvedBackground /> */}
       <div className="flex items-center">
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center"
@@ -43,10 +45,11 @@ export default function SectionCarousel() {
           <ArrowLeft />
         </button>
 
-        <div>
+        <div className="relative">
           {activeSection === 1 && <ContentSectionOne />}
           {activeSection === 2 && <ContentSectionTwo />}
           {activeSection === 3 && <ContentSectionThree />}
+          <CurvedBackground />
         </div>
 
         <button
