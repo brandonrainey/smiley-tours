@@ -18,14 +18,14 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
     >
 
       <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone italic custom:text-shadow-3 text-shadow-4 custom:tracking-wide border-dotted border-2 backdropFilterBlur`}
+        className={`text-center text-4xl font-bold mb-6 mt-4 text-white rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone custom:text-shadow-3 text-shadow-4 custom:tracking-wide backdropFilterBlur`}
       >
         Events
       </h1>
 
       {/* Community Post */}
       <div className="flex flex-col items-center">
-        <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-x-2 border-pink-400 w-fit px-2 mb-2 rounded backdropFilterBlur relative">
+        <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-b-2 border-pink-300 w-fit px-2 mb-2 backdropFilterBlur relative">
           Recent Community Post
         </h2>
         <a

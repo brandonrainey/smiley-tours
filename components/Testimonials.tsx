@@ -4,7 +4,7 @@ export default function Testimonials() {
       className={`w-full lg:min-h-[400px] flex lg:flex-row flex-col items-center justify-around gap-8 px-4 lg:my-0 my-4 custom:pt-0 custom:before:border-none short-border pt-10 `}
     >
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl testimonialShadow max-w-[520px] relative ">
-        <figure className="max-w-screen-md p-2 rounded-xl bg-[#f177b6]">
+        <figure className="max-w-screen-md p-2 rounded-xl bg-[#ef80b9]">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-200 "
             viewBox="0 0 24 27"
@@ -28,7 +28,7 @@ export default function Testimonials() {
       </div>
 
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl testimonialShadow max-w-[520px] relative">
-        <figure className="max-w-screen-md p-2 rounded-xl bg-[#f177b6]">
+        <figure className="max-w-screen-md p-2 rounded-xl bg-[#ef80b9]">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-200"
             viewBox="0 0 24 27"
@@ -53,7 +53,7 @@ export default function Testimonials() {
       </div>
 
       <div className=" text-center basis-1/3 bg-[#f382bc] rounded-xl testimonialShadow  max-w-[520px] relative">
-        <figure className="max-w-screen-md p-2 rounded-xl bg-[#f177b6]">
+        <figure className="max-w-screen-md p-2 rounded-xl bg-[#ef80b9]">
           <svg
             className="h-8 pl-10 mr-auto mb-3 text-pink-200"
             viewBox="0 0 24 27"

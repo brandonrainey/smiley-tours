@@ -3,7 +3,7 @@
 export default function MainContent() {
   return (
     <section
-      className=" h-auto w-full pb-12 custom:pb-4  flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-t-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative mainContent"
+      className=" h-auto w-full pb-12 custom:pb-4  flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative mainContent"
       id="main-content"
       data-testid="main-content"
     >

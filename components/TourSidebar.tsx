@@ -55,7 +55,7 @@ export default function TourSidebar() {
     >
 
       <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20 bg-pink-400/40 rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone italic custom:text-shadow-3 text-shadow-4 custom:tracking-wide border-dotted border-2 backdropFilterBlur`}
+        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20  rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone  custom:text-shadow-3 text-shadow-4 custom:tracking-wide  backdropFilterBlur`}
       >
         Upcoming Tours
       </h1>
