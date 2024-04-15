@@ -4,16 +4,6 @@ import { useAreaStore } from '@/store/areas'
 
 const tours = [
   {
-    tourName: 'Ueno, Tokyo Tour April 12th',
-    tourDescription: 'Tour on April 12th',
-    tourDate: 'April 12th',
-    tourImage: '/tour-april12.webp',
-    tourId: 7,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/65cd6ad1e37c5b051e133e62',
-  },
-  {
     tourName: 'Ueno, Tokyo Tour April 16th',
     tourDescription: 'Tour on April 16th',
     tourDate: 'April 16th',
