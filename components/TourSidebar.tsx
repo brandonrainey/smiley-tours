@@ -4,30 +4,60 @@ import { useAreaStore } from '@/store/areas'
 
 const tours = [
   {
-    tourName: 'Ueno, Tokyo Tour April 16th',
-    tourDescription: 'Tour on April 16th',
-    tourDate: 'April 16th',
-    tourImage: '/tour-april16.webp',
-    tourId: 8,
-    tourPrice: 20000,
-    tourSpots: 0,
-    tourLink: 'https://smileytour.stores.jp/items/65cd6940ce75b20483af0911',
-  },
-  {
     tourName: 'Ueno, Tokyo Tour April 26th',
     tourDescription: 'Tour on April 26th',
     tourDate: 'April 26th',
     tourImage: '/tour-april26.webp',
-    tourId: 9,
+    tourId: 1,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileytour.stores.jp/items/65f85efb9353251e3a43fbc7',
   },
   {
+    tourName: 'Ueno, Tokyo Tour May 8th',
+    tourDescription: 'Tour on May 8th',
+    tourDate: 'May 8th',
+    tourImage: '/tour-may8.webp',
+    tourId: 2,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/661fe65607e3670f1f4b71af',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour May 17th',
+    tourDescription: 'Tour on May 17th',
+    tourDate: 'May 17th',
+    tourImage: '/tour-may17.webp',
+    tourId: 3,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/661fe6e0d1f923006d85f735',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour May 23rd',
+    tourDescription: 'Tour on May 23rd',
+    tourDate: 'May 23rd',
+    tourImage: '/tour-may23.webp',
+    tourId: 4,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/661fe71d62289b003da60726',
+  },
+  {
+    tourName: 'Ueno, Tokyo Tour May 31st',
+    tourDescription: 'Tour on May 31st',
+    tourDate: 'May 31st',
+    tourImage: '/tour-may31.webp',
+    tourId: 5,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileytour.stores.jp/items/661fe79adb4bc11114413c31',
+  },
+  {
     tourName: 'Tokyo Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: '/private-tour.webp',
-    tourId: 10,
+    tourId: 6,
     tourPrice: 'TBD',
     tourSpots: 'TBD',
     tourLink: 'https://smileytour.stores.jp/items/649e31d385e3630037cff96e',
@@ -43,11 +73,10 @@ export default function TourSidebar() {
       id="tour"
       ref={tourRef}
     >
-
-      <h1
-        className={`text-center text-4xl font-semibold mb-6 mt-4  text-white z-20  rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone  custom:text-shadow-3 text-shadow-4 custom:tracking-wide  backdropFilterBlur`}
-      >
-        Upcoming Tours
+      <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
+        <span className="relative top-0 w-full justify-center flex bg-gradient-to-r h-20 items-center from-pink-600 via-pink-400 to-pink-400/80 bg-clip-text text-4xl font-bold text-transparent">
+          Upcoming Tours
+        </span>
       </h1>
 
       <ul className="flex custom:flex-col flex-wrap items-center transition-all duration-150 ease-in-out">

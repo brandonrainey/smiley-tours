@@ -16,11 +16,10 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
       id="events"
       ref={eventsRef}
     >
-
-      <h1
-        className={`text-center text-4xl font-bold mb-6 mt-4 text-white rounded-xl w-fit px-2 py-1 mx-auto font-hammersmithone custom:text-shadow-3 text-shadow-4 custom:tracking-wide backdropFilterBlur`}
-      >
-        Events
+      <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
+        <span className="relative top-0 w-full justify-center flex bg-gradient-to-r h-20 items-center from-pink-600 via-pink-400 to-pink-200 bg-clip-text text-4xl font-bold text-transparent">
+          Events
+        </span>
       </h1>
 
       {/* Community Post */}
