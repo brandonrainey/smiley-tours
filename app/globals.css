@@ -34,7 +34,7 @@ body {
   top: 0;
   left: 10%;
   width: 80%;
-  border-top: 4px solid rgb(201, 68, 124);
+  border-top: 4px solid rgb(250, 125, 177);
   border-radius: 50%;
 }
 
@@ -109,7 +109,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.mainContent::after {
+.contentBackgroundBlur::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -152,5 +152,7 @@ body {
   color: blue;
   background-clip: text;
 }
+
+
 
 

@@ -32,10 +32,9 @@ export default function SectionCarousel() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1000px] z-20 custom:scale-[0.75] custom2:scale-100"
+      className="flex flex-col items-center justify-center custom:h-[700px] custom:w-[1600px] z-20 custom:scale-[0.75] custom2:scale-100"
       ref={sectionRef}
     >
-      {/* <CurvedBackground /> */}
       <div className="flex items-center">
         <button
           className="rounded-full  w-[5rem] h-[3.5rem] aspect-square text-white custom:flex hidden items-center justify-center"
@@ -49,7 +48,7 @@ export default function SectionCarousel() {
           {activeSection === 1 && <ContentSectionOne />}
           {activeSection === 2 && <ContentSectionTwo />}
           {activeSection === 3 && <ContentSectionThree />}
-          <CurvedBackground />
+          {/* <CurvedBackground /> */}
         </div>
 
         <button

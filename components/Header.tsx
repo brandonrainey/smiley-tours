@@ -4,17 +4,27 @@ import { useAreaStore } from '@/store/areas'
 import MobileMenu from './MobileMenu'
 import dynamic from 'next/dynamic'
 
-
 const HamburgerButton = dynamic(() => import('./HamburgerButton'), {
   ssr: true,
 })
 
 export default function Header() {
-  const { isMobileMenuOpen } = useAreaStore()
+  const { isMobileMenuOpen, eventsRef, tourRef } = useAreaStore()
+
+  const scrollToRef = (ref: any) => {
+    setTimeout(() => {
+      const offsetTop = ref.current ? ref.current.offsetTop : 0
+      const offset = offsetTop - 100
+
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      })
+    }, 0)
+  }
 
   return (
     <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 sticky top-0 custom:z-0 z-50 ">
-      
       {isMobileMenuOpen && <MobileMenu />}
 
       <HamburgerButton />
@@ -35,18 +45,32 @@ export default function Header() {
         className="z-30 max-h-[100px] w-auto hidden custom:inline-block mr-auto ml-8"
       />
 
-      <div className="items-center gap-12 mr-8 hidden custom:flex">
+      <div className="items-center gap-8 mr-8 hidden custom:flex">
         <img
           src="/ganko.webp"
           alt="ganko"
           className=" hidden custom:inline-block  z-30 w-[76px] h-[92px] "
         />
 
+        <p
+          className="text-3xl text-pink-500 font-semibold cursor-pointer"
+          onClick={() => scrollToRef(eventsRef)}
+        >
+          Events
+        </p>
+
         <img
           src="/bulma.webp"
           alt="bulma image"
           className={` custom:w-[100px] w-[70px] h-[71px] hidden custom:inline-block`}
         />
+
+        <p
+          className="text-3xl text-pink-500 font-semibold cursor-pointer"
+          onClick={() => scrollToRef(tourRef)}
+        >
+          Tours
+        </p>
       </div>
     </header>
   )
