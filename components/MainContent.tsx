@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
     <section
-      className=" h-auto w-full custom:max-w-[700px] custom2:max-w-[1600px] pb-12 flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative contentBackgroundBlur"
+      className=" h-auto w-full custom:max-w-[700px] custom2:max-w-[1500px] pb-12 flex flex-col custom:px-10 px-4 custom:mt-8 mb-4  custom:rounded-xl bg-pink-400/20  border-pink-500/50  border-b-2 custom:border-b-0 custom:justify-normal  justify-center relative contentBackgroundBlur"
       id="main-content"
       data-testid="main-content"
     >

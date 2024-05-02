@@ -1,9 +1,13 @@
 import Header from '@/components/Header'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
-import AreaSelector from '@/components/AreaSelector'
 import dynamic from 'next/dynamic'
 import { fetchCommunityPostContent } from './action'
+
+const AreaSelector = dynamic(() => import('@/components/AreaSelector'), {
+  ssr: true,
+  loading: () => <p>Loading...</p>,
+})
 
 const InfoSidebar = dynamic(() => import('@/components/InfoSidebar'), {
   ssr: true,
