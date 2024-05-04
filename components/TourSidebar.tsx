@@ -58,7 +58,7 @@ const tours = [
     tourName: 'Akihabara, Tokyo Tour June 14th',
     tourDescription: 'Tour on June 14th',
     tourDate: 'June 14th',
-    tourImage: '/tour-april12.webp',
+    tourImage: '/tour-june14.webp',
     tourId: 7,
     tourPrice: 20000,
     tourSpots: 4,
@@ -105,9 +105,10 @@ export default function TourSidebar() {
       ref={tourRef}
     >
       <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
-        <span className="relative top-0 w-full justify-center flex bg-gradient-to-r h-20 items-center from-pink-600 via-pink-400 to-pink-400/80 bg-clip-text text-[2.5rem] font-bold text-transparent">
+        <img src='/toursText.webp' alt='tour' className='w-[350px] custom:pb-0 pb-4'/>
+        {/* <span className="relative top-0 w-full justify-center flex bg-gradient-to-r h-20 items-center from-pink-600 via-pink-400 to-pink-400/80 bg-clip-text text-[2.5rem] font-bold text-transparent">
           Upcoming Tours
-        </span>
+        </span> */}
       </h1>
 
       <ul className="custom:flex custom:flex-wrap grid grid-cols-2 justify-center items-center transition-all duration-150 ease-in-out max-w-[1600px] custom:gap-x-16">
