@@ -3,11 +3,11 @@
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
 
-interface InfoSidebarProps {
+interface EventSidebarProps {
   postContent: any
 }
 
-export default function InfoSidebar({ postContent }: InfoSidebarProps) {
+export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
 
   return (
@@ -75,7 +75,7 @@ export default function InfoSidebar({ postContent }: InfoSidebarProps) {
               className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
             />
             <div
-              className={`bg-pink-400/60 rounded text-white custom:text-shadow-1 text-shadow-5 mt-2  max-w-[300px] border-2 border-pink-500 p-1 w-full flex flex-col items-center`}
+              className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
             >
               <div className="flex gap-2 items-center">
                 <p>Open :18:00- 23:00</p>

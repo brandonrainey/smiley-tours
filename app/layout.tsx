@@ -5,7 +5,7 @@ import { Varela_Round, Hammersmith_One } from 'next/font/google'
 export const metadata: Metadata = {
   title: 'Smiley Tour - Asakusa Tokyo Tour Guide',
   description:
-    'Asakusa Tokyo English-speaking Tour Guide by a former Japanese Idol! Learn about the history of Asakusa, Ueno, Akihabara and experience activities famous and unique to Japan.',
+    'Smiley Tour! Asakusa Tokyo English-speaking Tour Guide by a former Japanese Idol! Learn about the history of Asakusa, Ueno, Akihabara and experience activities famous and unique to Japan.',
 }
 
 const varelaRound = Varela_Round({

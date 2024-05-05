@@ -9,7 +9,7 @@ const AreaSelector = dynamic(() => import('@/components/AreaSelector'), {
   loading: () => <p>Loading...</p>,
 })
 
-const InfoSidebar = dynamic(() => import('@/components/InfoSidebar'), {
+const EventSidebar = dynamic(() => import('@/components/EventSidebar'), {
   ssr: true,
   loading: () => <p>Loading...</p>,
 })
@@ -37,7 +37,7 @@ export default async function Home() {
       <Header />
 
       <div className="flex flex-col w-full justify-between flex-grow relative">
-        <InfoSidebar postContent={postContent} />
+        <EventSidebar postContent={postContent} />
 
         <main className="flex flex-col items-center order-1 gap-8  w-full">
           <MainContent />
