@@ -18,9 +18,6 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
     >
       <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
         <img src='/eventsText.webp' alt='events' className='w-[170px] custom:pb-0 pb-4'/>
-        {/* <span className="relative top-0 w-full justify-center flex bg-gradient-to-r h-20 items-center from-pink-600 via-pink-400 to-pink-200 bg-clip-text text-[2.5rem] font-bold text-transparent">
-          Events
-        </span> */}
       </h1>
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
