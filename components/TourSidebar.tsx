@@ -11,7 +11,7 @@ const tours = [
     tourImage: '/tour-may17.webp',
     tourId: 3,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileytour.stores.jp/items/661fe6e0d1f923006d85f735',
   },
   {
