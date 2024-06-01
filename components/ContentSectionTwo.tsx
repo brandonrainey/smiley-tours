@@ -18,7 +18,7 @@ export default function ContentSectionTwo() {
       {area === 'asakusa' ? (
         <img
           ref={ref3}
-          src="/karaoke-crop.jpg"
+          src="/tourContents/karaoke-crop.jpg"
           width={380}
           height={500}
           key={'karaoke1'}
@@ -33,7 +33,7 @@ export default function ContentSectionTwo() {
       ) : (
         <img
           ref={ref3}
-          src="/shrine-small2.webp"
+          src="/tourContents/shrine-small2.webp"
           width={400}
           height={560}
           key={'shrine1'}

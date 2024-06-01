@@ -60,7 +60,7 @@ export default function ContentSectionThree() {
       {area === 'asakusa' ? (
         <img
           ref={ref4}
-          src="/monja-food.webp"
+          src="/tourContents/monja-food.webp"
           alt="monja image"
           width={450}
           height={330}
@@ -75,7 +75,7 @@ export default function ContentSectionThree() {
       ) : (
         <img
           ref={ref4}
-          src="/ramen-small2.webp"
+          src="/tourContents/ramen-small2.webp"
           alt="monja image"
           width={400}
           height={500}

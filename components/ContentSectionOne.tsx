@@ -69,7 +69,7 @@ export default function ContentSectionOne() {
         {area === 'asakusa' ? (
           <img
             ref={ref2}
-            src="/asakusa-crop.webp"
+            src="/tourContents/asakusa-crop.webp"
             alt="asakusa image"
             key={'asakusa1'}
             className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[572px]  ${
@@ -81,7 +81,7 @@ export default function ContentSectionOne() {
         ) : (
           <img
             ref={ref2}
-            src="/museum.webp"
+            src="/tourContents/museum.webp"
             alt="museum image"
             key={'ueno1'}
             className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[420px]  ${
