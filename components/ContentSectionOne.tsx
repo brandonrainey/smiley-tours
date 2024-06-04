@@ -11,7 +11,7 @@ export default function ContentSectionOne() {
   const { area, prevArea } = useAreaStore()
   return (
     <article
-      className="flex flex-col items-center custom:w-[1200px] justify-center custom:h-[640px] custom:items-center bg-[#f086bd50] p-2 custom:p-4 custom:rounded-xl  realtive contentBackgroundBlur"
+      className="flex flex-col items-center custom:w-[1000px] justify-center custom:h-[640px] custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl  realtive contentBackgroundBlur"
       data-testid="content-section-one"
     >
       <div

@@ -12,7 +12,7 @@ export default function ContentSectionThree() {
 
   return (
     <article
-      className="flex items-center custom:flex-row flex-col-reverse w-full gap-4 custom:py-4 custom:w-[1200px] custom:h-[640px] pt-10 bg-[#f086bd50] p-2 custom:rounded-xl contentBackgroundBlur"
+      className="flex items-center custom:flex-row flex-col-reverse w-full gap-4 custom:py-4 custom:w-[1000px] custom:h-[640px] pt-10 bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:rounded-xl contentBackgroundBlur"
       data-testid="content-section-three"
     >
       <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto custom:p-4">

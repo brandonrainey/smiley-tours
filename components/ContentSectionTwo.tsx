@@ -12,7 +12,7 @@ export default function ContentSectionTwo() {
 
   return (
     <article
-      className="flex flex-col items-center custom:flex-row custom:py-4 py-0 custom:w-[1200px] custom:h-[640px] pt-10 bg-[#f086bd50] p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur"
+      className="flex flex-col items-center custom:flex-row custom:py-4 py-0 custom:w-[1000px] custom:h-[640px] pt-10 bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur"
       data-testid="content-section-two"
     >
       {area === 'asakusa' ? (
