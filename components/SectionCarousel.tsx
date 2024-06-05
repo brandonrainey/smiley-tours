@@ -7,7 +7,6 @@ import { useRef, useEffect, useState } from 'react'
 import ContentSectionOne from './ContentSectionOne'
 import ContentSectionTwo from './ContentSectionTwo'
 import ContentSectionThree from './ContentSectionThree'
-import CurvedBackground from './CurvedBackground'
 
 export default function SectionCarousel() {
   const { activeSection, handleNext, handlePrev } = useAreaStore()
@@ -48,7 +47,6 @@ export default function SectionCarousel() {
           {activeSection === 1 && <ContentSectionOne />}
           {activeSection === 2 && <ContentSectionTwo />}
           {activeSection === 3 && <ContentSectionThree />}
-          {/* <CurvedBackground /> */}
         </div>
 
         <button
