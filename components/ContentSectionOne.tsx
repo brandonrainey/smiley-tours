@@ -10,12 +10,10 @@ export default function ContentSectionOne() {
 
   const { area, prevArea } = useAreaStore()
   return (
-    <article
-      className="flex flex-col items-center custom:w-[1000px] justify-center custom:h-[640px] custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl  realtive contentBackgroundBlur"
-      data-testid="content-section-one"
-    >
-      <div
-        className={`custom:py-4 py-0 flex custom:flex-row flex-col-reverse custom:max-w-[1000px] pt-4 relative custom:gap-8`}
+    <div className="flex custom:flex-row flex-col-reverse max-w-[1000px] gap-6  ">
+      <article
+        className="flex items-center  justify-center  custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur  relative"
+        data-testid="content-section-one"
       >
         <div
           className={`text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 `}
@@ -65,34 +63,34 @@ export default function ContentSectionOne() {
             </p>
           )}
         </div>
+      </article>
 
-        {area === 'asakusa' ? (
-          <img
-            ref={ref2}
-            src="/tourContents/asakusa-crop.webp"
-            alt="asakusa image"
-            key={'asakusa1'}
-            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[572px]  ${
-              inView2 || area !== prevArea
-                ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-                : ''
-            } `}
-          />
-        ) : (
-          <img
-            ref={ref2}
-            src="/tourContents/museum.webp"
-            alt="museum image"
-            key={'ueno1'}
-            className={`rounded custom:ml-auto mx-auto border-dashed border-4 border-pink-200 p-2 opacity-0 max-h-[420px]  ${
-              inView2 || area !== prevArea
-                ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
-                : ''
-            } `}
-            loading="lazy"
-          />
-        )}
-      </div>
-    </article>
+      {area === 'asakusa' ? (
+        <img
+          ref={ref2}
+          src="/tourContents/asakusa-crop.webp"
+          alt="asakusa image"
+          key={'asakusa1'}
+          className={`rounded-lg custom:ml-auto mx-auto shadow-lg  opacity-0 max-h-[572px]  ${
+            inView2 || area !== prevArea
+              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          } `}
+        />
+      ) : (
+        <img
+          ref={ref2}
+          src="/tourContents/museum.webp"
+          alt="museum image"
+          key={'ueno1'}
+          className={`rounded-lg custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
+            inView2 || area !== prevArea
+              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          } `}
+          loading="lazy"
+        />
+      )}
+    </div>
   )
 }
