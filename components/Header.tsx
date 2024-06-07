@@ -30,41 +30,39 @@ export default function Header() {
       <HamburgerButton />
 
       <div className="w-full h-full custom:h-[200px] absolute bg-white filter blur-2xl opacity-70 custom:-z-10"></div>
-      {/* mobile */}
 
-      <img
-        src="/smiley-banner-transparent-mobile.webp"
-        alt="banner image"
-        className="z-30 max-h-[200px] w-auto custom:hidden"
-      />
+      <div className="flex justify-center custom:justify-normal items-center z-30 w-screen custom:w-full custom:h-[100px] max-h-[200px] ">
+        <img
+          src="/miley.webp"
+          width={100}
+          height={72}
+          alt="miley image"
+          className="custom:max-h-[100px] max-h-[80px] w-auto"
+        />
+        <img
+          src="/smiley-title.webp"
+          alt="smiley tour title text"
+          className=" p-2 pt-4 sm:max-h-[100px] max-h-[75px]  "
+        />
+      </div>
 
-      {/* desktop */}
-      <img
-        src="/smiley-banner-transparent.webp"
-        alt="banner image"
-        className="z-30 max-h-[100px] w-auto hidden custom:inline-block mr-auto ml-8"
-      />
-
-      <div className="items-center gap-8 mr-8 hidden custom:flex">
+      <div className="items-center gap-8 hidden custom:flex w-full justify-end mr-8">
         <img
           src="/ganko.webp"
           alt="ganko"
           className=" hidden custom:inline-block  z-30 w-[76px] h-[92px] "
         />
-
         <p
           className="text-3xl text-pink-500 font-semibold cursor-pointer"
           onClick={() => scrollToRef(eventsRef)}
         >
           Events
         </p>
-
         <img
           src="/bulma.webp"
           alt="bulma image"
           className={` custom:w-[100px] w-[70px] h-[71px] hidden custom:inline-block`}
         />
-
         <p
           className="text-3xl text-pink-500 font-semibold cursor-pointer"
           onClick={() => scrollToRef(tourRef)}

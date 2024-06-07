@@ -37,13 +37,6 @@ export default function Footer() {
           alt="miley image"
           className="custom:w-[300px]"
         />
-        <img
-          src="/miley.webp"
-          width={100}
-          height={72}
-          alt="miley image"
-          className=""
-        />
       </div>
 
       <div className="flex sm:gap-24 gap-8 z-10">
