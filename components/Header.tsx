@@ -46,14 +46,14 @@ export default function Header() {
         />
       </div>
 
-      <div className="items-center gap-8 hidden custom:flex w-full justify-end mr-8">
+      <div className="items-center gap-4 hidden custom:flex w-full justify-end mr-6">
         <img
           src="/ganko.webp"
           alt="ganko"
-          className=" hidden custom:inline-block  z-30 w-[76px] h-[92px] "
+          className=" hidden custom:inline-block z-30 w-[64px]  "
         />
         <p
-          className="text-3xl text-pink-500 font-semibold cursor-pointer"
+          className="text-2xl text-pink-500 font-semibold cursor-pointer hover:bg-pink-200 hover:shadow p-1 rounded-xl"
           onClick={() => scrollToRef(eventsRef)}
         >
           Events
@@ -61,10 +61,10 @@ export default function Header() {
         <img
           src="/bulma.webp"
           alt="bulma image"
-          className={` custom:w-[100px] w-[70px] h-[71px] hidden custom:inline-block`}
+          className={` custom:w-[80px] w-[70px] hidden custom:inline-block`}
         />
         <p
-          className="text-3xl text-pink-500 font-semibold cursor-pointer"
+          className="text-2xl text-pink-500 font-semibold cursor-pointer hover:bg-pink-200 hover:shadow p-1 rounded-xl "
           onClick={() => scrollToRef(tourRef)}
         >
           Tours
