@@ -26,7 +26,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={` min-h-[250px] w-full flex flex-col justify-center items-center relative`}
+      className={` min-h-[250px] w-full flex flex-col justify-center items-center relative gap-2`}
       ref={socialsRef}
     >
       <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
