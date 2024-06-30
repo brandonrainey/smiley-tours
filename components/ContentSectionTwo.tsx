@@ -20,7 +20,7 @@ export default function ContentSectionTwo() {
           height={500}
           key={'karaoke1'}
           alt="karaoke image"
-          className={`rounded-lg mx-auto opacity-0 max-h-[500px] shadow-lg ${
+          className={`rounded-xl mx-auto opacity-0 max-h-[500px] shadow-lg ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -35,7 +35,7 @@ export default function ContentSectionTwo() {
           height={560}
           key={'shrine1'}
           alt="shrine image"
-          className={`rounded-lg mx-auto opacity-0 max-h-[560px] shadow-lg ${
+          className={`rounded-xl mx-auto opacity-0 max-h-[560px] shadow-lg ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

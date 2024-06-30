@@ -71,7 +71,7 @@ export default function ContentSectionOne() {
           src="/tourContents/asakusa-crop.webp"
           alt="asakusa image"
           key={'asakusa1'}
-          className={`rounded-lg custom:ml-auto mx-auto shadow-lg  opacity-0 max-h-[572px]  ${
+          className={`rounded-xl custom:ml-auto mx-auto shadow-lg  opacity-0 max-h-[572px]  ${
             inView2 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -83,7 +83,7 @@ export default function ContentSectionOne() {
           src="/tourContents/museum.webp"
           alt="museum image"
           key={'ueno1'}
-          className={`rounded-lg custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
+          className={`rounded-xl custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
             inView2 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

@@ -39,25 +39,25 @@ export default function AreaSelector() {
           <div className="dropdown relative flex">
             <button
               onClick={toggleDropdown}
-              className="dropdownShadow rounded-3xl px-2 w-[150px] border-pink-200 border-2 bg-[#f382bc]"
+              className="dropdownShadow rounded-3xl px-2 w-[150px] border-pink-200 border-2 bg-gradient-to-r to-[#f382bc] from-[#ed3996]"
               aria-label="area selector"
             >
               {area.charAt(0).toUpperCase() + area.slice(1)}
             </button>
             {isOpen && (
               <div
-                className={`absolute top-[76px]  bg-[#f382bc]  newShadow rounded-lg z-40 w-[150px] textShadowNone border-2 border-pink-500 ${
+                className={`absolute top-[76px]  bg-gradient-to-r from-[#f382bc] to-[#ed3996]  newShadow rounded-lg z-40 w-[150px] textShadowNone border-2 border-pink-500 ${
                   isOpen ? 'animate-fade-down animate-duration-100' : ''
                 }`}
               >
                 <div
-                  className="cursor-pointer hover:bg-pink-300 px-2 rounded-lg"
+                  className="cursor-pointer hover:bg-pink-600 px-2 rounded-lg"
                   onClick={() => handleAreaChange('ueno')}
                 >
                   Ueno
                 </div>
                 <div
-                  className={`cursor-pointer hover:bg-pink-300 px-2 rounded-lg ${
+                  className={`cursor-pointer hover:bg-pink-600 px-2 rounded-lg ${
                     area === 'asakusa' && ''
                   }`}
                   onClick={() => handleAreaChange('asakusa')}

@@ -66,7 +66,7 @@ export default function ContentSectionThree() {
           width={450}
           height={330}
           key={'monja2'}
-          className={`mr-auto mx-auto rounded-lg  opacity-0 max-h-[450px] shadow-lg ${
+          className={`mr-auto mx-auto rounded-xl  opacity-0 max-h-[450px] shadow-lg ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -81,7 +81,7 @@ export default function ContentSectionThree() {
           width={400}
           height={500}
           key={'ramen2'}
-          className={`mr-auto mx-auto rounded-lg opacity-0 max-h-[500px] shadow-lg ${
+          className={`mr-auto mx-auto rounded-xl opacity-0 max-h-[500px] shadow-lg ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
