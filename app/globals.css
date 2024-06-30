@@ -152,3 +152,7 @@ body {
   color: blue;
   background-clip: text;
 }
+
+.heartIcon {
+  rotate: 12deg;
+}

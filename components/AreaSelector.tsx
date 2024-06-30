@@ -31,7 +31,7 @@ export default function AreaSelector() {
             <img
               src="/heart-icon.png"
               alt="heart icon"
-              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg"
+              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg heartIcon "
               key={`${area} 1`}
             />
           </h2>
@@ -72,7 +72,7 @@ export default function AreaSelector() {
             <img
               src="/heart-icon.png"
               alt="heart icon"
-              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg"
+              className="w-[50px] h-[50px] animate-wiggle-more drop-shadow-lg heartIcon"
               key={`${area} 2`}
             />
           </h2>
