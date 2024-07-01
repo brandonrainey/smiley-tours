@@ -33,7 +33,7 @@ export default async function Home() {
   const postContent = await fetchCommunityPostContent()
 
   return (
-    <div className="  w-full h-full flex flex-col relative">
+    <div className="  w-full h-full flex flex-col relative overflow-x-hidden">
       <Header />
 
       <div className="flex flex-col w-full justify-between flex-grow relative">

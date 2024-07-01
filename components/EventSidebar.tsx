@@ -17,7 +17,11 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
       ref={eventsRef}
     >
       <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
-        <img src='/eventsText.webp' alt='events' className='w-[170px] custom:pb-0 pb-4'/>
+        <img
+          src="/eventsText.webp"
+          alt="events"
+          className="w-[170px] custom:pb-0 pb-4"
+        />
       </h1>
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
@@ -59,33 +63,34 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
         </div>
 
         {/* Miley's Bar */}
-        <div className="text-center font-semibold flex flex-col items-center mt-8">
+        <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
           <h2
             className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
           >
             Miley&apos;s Bar
           </h2>
-          <div className="flex flex-col items-center">
+
+          <div
+            className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
+          >
+            <div className="flex gap-2 items-center">
+              <p>Open :18:00- 23:00</p>
+              <a
+                href="https://maps.app.goo.gl/PJndiVJPRv4bTWQSA"
+                aria-label="Miley bar location"
+              >
+                <LocationDot />
+              </a>
+            </div>
+            <p>🌟Charge ¥500/1h</p>
+            <p>🌟Drinks ¥800〜</p>
+          </div>
+          <div className="flex flex-col items-center mt-auto">
             <img
               src="/bar.webp"
               alt="ninja bar"
               className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
             />
-            <div
-              className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
-            >
-              <div className="flex gap-2 items-center">
-                <p>Open :18:00- 23:00</p>
-                <a
-                  href="https://maps.app.goo.gl/PJndiVJPRv4bTWQSA"
-                  aria-label="Miley bar location"
-                >
-                  <LocationDot />
-                </a>
-              </div>
-              <p>🌟Charge ¥500/1h</p>
-              <p>🌟Drinks ¥800〜</p>
-            </div>
           </div>
         </div>
       </div>
