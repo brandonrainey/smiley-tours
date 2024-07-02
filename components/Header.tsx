@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 sticky top-0 custom:z-0 z-50 ">
+    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 fixed top-0 custom:z-0 z-50">
       {isMobileMenuOpen && <MobileMenu />}
 
       <HamburgerButton />

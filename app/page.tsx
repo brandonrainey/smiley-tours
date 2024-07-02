@@ -36,7 +36,7 @@ export default async function Home() {
     <div className="  w-full h-full flex flex-col relative overflow-x-hidden">
       <Header />
 
-      <div className="flex flex-col w-full justify-between flex-grow relative">
+      <div className="flex flex-col w-full justify-between flex-grow relative mt-[80px] sm:mt-[100px] custom:mt-0">
         <EventSidebar postContent={postContent} />
 
         <main className="flex flex-col items-center order-1 gap-8  w-full">
