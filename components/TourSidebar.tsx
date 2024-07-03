@@ -139,7 +139,7 @@ export default function TourSidebar() {
                 className="rounded tourShadow aspect-square max-w-[288px] w-full"
               />
 
-              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl textShadowMobileTourWhite flex flex-col items-center ">
+              <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl flex flex-col items-center ">
                 <span
                   className={`text-white custom:text-shadow-1 text-shadow-2 ${
                     tour.tourName === 'Tokyo Private Tour' && 'hidden'
