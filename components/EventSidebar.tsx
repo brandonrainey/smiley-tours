@@ -27,25 +27,14 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
         {/* Community Post */}
         <div className="flex flex-col items-center">
-          <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-b-2 border-pink-300 w-fit px-2 mb-2 backdropFilterBlur relative">
+          <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-y-2 border-pink-300 w-fit px-2 mb-2 backdropFilterBlur relative">
             Recent Community Post
           </h2>
+
           <a
             href="https://www.youtube.com/@smileytime/community"
             className="flex flex-col items-center justify-center text-center"
           >
-            <div className="postWrapper relative max-w-[300px]">
-              <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
-                {postContent.error
-                  ? 'Error loading post'
-                  : postContent?.items[0].community[0].contentText[0].text.substring(
-                      0,
-                      90
-                    )}
-                ...
-              </h3>
-            </div>
-
             <img
               src={
                 postContent.error
@@ -59,6 +48,18 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               alt="community post image"
               className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
             />
+
+            <div className="postWrapper relative max-w-[300px]">
+              <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
+                {postContent.error
+                  ? 'Error loading post'
+                  : postContent?.items[0].community[0].contentText[0].text.substring(
+                      0,
+                      90
+                    )}
+                ...
+              </h3>
+            </div>
           </a>
         </div>
 
@@ -69,6 +70,14 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           >
             Miley&apos;s Bar
           </h2>
+
+          <div className="flex flex-col items-center mt-auto">
+            <img
+              src="/bar.webp"
+              alt="ninja bar"
+              className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
+            />
+          </div>
 
           <div
             className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
@@ -84,13 +93,6 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             </div>
             <p>🌟Charge ¥500/1h</p>
             <p>🌟Drinks ¥800〜</p>
-          </div>
-          <div className="flex flex-col items-center mt-auto">
-            <img
-              src="/bar.webp"
-              alt="ninja bar"
-              className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
-            />
           </div>
         </div>
       </div>
