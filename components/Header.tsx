@@ -47,28 +47,33 @@ export default function Header() {
       </div>
 
       <div className="items-center gap-4 hidden custom:flex w-full justify-end mr-6">
-        <img
-          src="/ganko.webp"
-          alt="ganko"
-          className=" hidden custom:inline-block z-30 w-[64px]  "
-        />
-        <p
-          className="text-2xl text-pink-500 font-semibold cursor-pointer hover:bg-pink-200 hover:shadow p-1 rounded-xl"
-          onClick={() => scrollToRef(eventsRef)}
-        >
-          Events
-        </p>
-        <img
-          src="/bulma.webp"
-          alt="bulma image"
-          className={` custom:w-[80px] w-[70px] hidden custom:inline-block`}
-        />
-        <p
-          className="text-2xl text-pink-500 font-semibold cursor-pointer hover:bg-pink-200 hover:shadow p-1 rounded-xl "
-          onClick={() => scrollToRef(tourRef)}
-        >
-          Tours
-        </p>
+        <div className="flex flex-col items-center mt-auto">
+          <img
+            src="/ganko.webp"
+            alt="ganko"
+            className=" hidden custom:inline-block z-30 w-[64px]  "
+          />
+          <p
+            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl"
+            onClick={() => scrollToRef(eventsRef)}
+          >
+            Events
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center mt-auto">
+          <img
+            src="/bulma.webp"
+            alt="bulma image"
+            className={` custom:w-[80px] w-[70px] hidden custom:inline-block`}
+          />
+          <p
+            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl "
+            onClick={() => scrollToRef(tourRef)}
+          >
+            Tours
+          </p>
+        </div>
       </div>
     </header>
   )

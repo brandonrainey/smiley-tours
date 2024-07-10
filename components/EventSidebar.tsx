@@ -66,7 +66,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
           <h2
-            className={`text-center text-xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
+            className={`text-center text-2xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
           >
             Miley&apos;s Bar
           </h2>
