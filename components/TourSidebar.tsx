@@ -85,7 +85,7 @@ const tours = [
     tourLink: 'https://smileytour.stores.jp/items/66818081b14f581e253db220',
   },
   {
-    tourName: 'Tokyo Private Tour',
+    tourName: 'Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: '/tours/private-tour.webp',
     tourId: 14,
@@ -132,12 +132,13 @@ export default function TourSidebar() {
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl flex flex-col items-center ">
                 <span
                   className={`text-white custom:text-shadow-1 text-shadow-2 ${
-                    tour.tourName === 'Tokyo Private Tour' && 'hidden'
+                    tour.tourName === 'Private Tour' && 'hidden'
                   }`}
                 >
                   {tour.tourDate} -
                 </span>{' '}
-                ¥{tour.tourPrice}
+                {tour.tourName === 'Private Tour' ? 'Private Tour' : `¥${tour.tourPrice}`}
+                
               </h2>
               <h3
                 className={`font-semibold text-white pb-2 custom:pb-0  custom:text-shadow-1 text-shadow-2 `}
