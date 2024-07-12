@@ -5,16 +5,6 @@ import HeartSolid from './icons/HeartSolid'
 
 const tours = [
   {
-    tourName: 'Shinjuku, Tokyo Tour July 11th',
-    tourDescription: 'Tour on July 11th',
-    tourDate: 'July 11th',
-    tourImage: '/tours/tour-july11.webp',
-    tourId: 6,
-    tourPrice: 25000,
-    tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/665dcdff88afc109825fed71',
-  },
-  {
     tourName: 'Shinjuku, Tokyo Tour July 18th',
     tourDescription: 'Tour on July 18th',
     tourDate: 'July 18th',
@@ -22,7 +12,7 @@ const tours = [
     tourId: 7,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/665dce2f7f5a100873d31f8c',
+    tourLink: 'https://smileywalk.shop/items/665dce2f7f5a100873d31f8c',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour July 25th',
@@ -32,7 +22,7 @@ const tours = [
     tourId: 8,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/665dce534e11f108a867a852',
+    tourLink: 'https://smileywalk.shop/items/665dce534e11f108a867a852',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour August 1st',
@@ -42,7 +32,7 @@ const tours = [
     tourId: 9,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/66817ceab14f581dbe3db1fd',
+    tourLink: 'https://smileywalk.shop/items/66817ceab14f581dbe3db1fd',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour August 8th',
@@ -52,7 +42,7 @@ const tours = [
     tourId: 10,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/66817d7a845a631b55f96eee',
+    tourLink: 'https://smileywalk.shop/items/66817d7a845a631b55f96eee',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour August 15th',
@@ -62,7 +52,7 @@ const tours = [
     tourId: 11,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/66817e106d819c07148d8a07',
+    tourLink: 'https://smileywalk.shop/items/66817e106d819c07148d8a07',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour August 22nd',
@@ -72,7 +62,7 @@ const tours = [
     tourId: 12,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/66817e9eeb496f00b69cee00',
+    tourLink: 'https://smileywalk.shop/items/66817e9eeb496f00b69cee00',
   },
   {
     tourName: 'Shinjuku, Tokyo Tour August 29th',
@@ -82,7 +72,7 @@ const tours = [
     tourId: 13,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileytour.stores.jp/items/66818081b14f581e253db220',
+    tourLink: 'https://smileywalk.shop/items/66818081b14f581e253db220',
   },
   {
     tourName: 'Private Tour',
@@ -91,7 +81,7 @@ const tours = [
     tourId: 14,
     tourPrice: 'TBD',
     tourSpots: 'TBD',
-    tourLink: 'https://smileytour.stores.jp/items/649e31d385e3630037cff96e',
+    tourLink: 'https://smileywalk.shop/items/661fe71d62289b003da60726',
   },
 ]
 
@@ -126,7 +116,7 @@ export default function TourSidebar() {
               <img
                 src={tour.tourImage}
                 alt={tour.tourName}
-                className="rounded tourShadow aspect-square max-w-[288px] w-full"
+                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full"
               />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl flex flex-col items-center ">
