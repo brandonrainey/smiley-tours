@@ -79,7 +79,7 @@ const tours = [
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: '/tours/private-tour.webp',
     tourId: 14,
-    tourPrice: 'TBD',
+    tourPrice: '20000',
     tourSpots: 'TBD',
     tourLink: 'https://smileywalk.shop/items/661fe71d62289b003da60726',
   },
@@ -121,13 +121,11 @@ export default function TourSidebar() {
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl flex flex-col items-center ">
                 <span
-                  className={`text-white custom:text-shadow-1 text-shadow-2 ${
-                    tour.tourName === 'Private Tour' && 'hidden'
-                  }`}
+                  className={`text-white custom:text-shadow-1 text-shadow-2 `}
                 >
-                  {tour.tourDate} -
+                  {tour.tourName === 'Private Tour' ? tour.tourName : `${tour.tourDate}`}
                 </span>{' '}
-                {tour.tourName === 'Private Tour' ? 'Private Tour' : `¥${tour.tourPrice}`}
+                {`¥${tour.tourPrice}`}
                 
               </h2>
               <h3
