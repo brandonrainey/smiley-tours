@@ -24,14 +24,14 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 fixed top-0 custom:z-0 z-50">
+    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 fixed top-0 custom:z-0 z-50  custom:h-[100px] max-h-[200px]">
       {isMobileMenuOpen && <MobileMenu />}
 
       <HamburgerButton />
 
       <div className="w-full h-full custom:h-[200px] absolute bg-white filter blur-2xl opacity-70 custom:-z-10"></div>
 
-      <div className="flex justify-center custom:justify-normal items-center z-30 w-screen custom:w-full custom:h-[100px] max-h-[200px] ">
+      <div className="flex justify-center custom:justify-normal items-center z-30 w-screen custom:w-full  ml-2">
         <img
           src="/miley.webp"
           width={100}
@@ -51,7 +51,7 @@ export default function Header() {
           <img
             src="/ganko.webp"
             alt="ganko"
-            className=" hidden custom:inline-block z-30 w-[64px]  "
+            className=" hidden custom:inline-block z-30 w-[56px] pt-2 "
           />
           <p
             className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl"
@@ -65,7 +65,7 @@ export default function Header() {
           <img
             src="/bulma.webp"
             alt="bulma image"
-            className={` custom:w-[80px] w-[70px] hidden custom:inline-block`}
+            className={` custom:w-[72px] w-[70px] hidden custom:inline-block`}
           />
           <p
             className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl "

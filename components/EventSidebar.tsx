@@ -16,12 +16,8 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
       id="events"
       ref={eventsRef}
     >
-      <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
-        <img
-          src="/eventsText.webp"
-          alt="events"
-          className="w-[170px] custom:pb-0 pb-4"
-        />
+      <h1 className="flex  w-fit items-center justify-center font-hammersmithone tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4">
+        Events
       </h1>
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">

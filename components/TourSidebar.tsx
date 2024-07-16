@@ -94,12 +94,8 @@ export default function TourSidebar() {
       id="tour"
       ref={tourRef}
     >
-      <h1 className="flex  w-full items-center justify-center font-hammersmithone tracking-wide">
-        <img
-          src="/toursText.webp"
-          alt="tour"
-          className="w-[350px] custom:pb-0 pb-4"
-        />
+      <h1 className="flex  w-fit items-center justify-center font-hammersmithone tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4">
+        Upcoming Tours
       </h1>
 
       <ul className="custom:flex custom:flex-wrap grid grid-cols-2 justify-center items-center transition-all duration-150 ease-in-out max-w-[1600px] custom:gap-x-16">
