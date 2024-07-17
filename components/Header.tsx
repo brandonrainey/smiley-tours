@@ -54,7 +54,7 @@ export default function Header() {
             className=" hidden custom:inline-block z-30 w-[56px] pt-2 "
           />
           <p
-            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl"
+            className="text-2xl text-pink-500 font-semibold cursor-pointer  hover:underline px-1 pb-1 rounded-xl"
             onClick={() => scrollToRef(eventsRef)}
           >
             Events
@@ -68,7 +68,7 @@ export default function Header() {
             className={` custom:w-[72px] w-[70px] hidden custom:inline-block`}
           />
           <p
-            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:shadow hover:underline px-1 rounded-xl "
+            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:underline px-1 pb-1 rounded-xl "
             onClick={() => scrollToRef(tourRef)}
           >
             Tours

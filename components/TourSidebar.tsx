@@ -25,11 +25,21 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/665dce534e11f108a867a852',
   },
   {
+    tourName: 'Asakusa, Tokyo Tour July 26th',
+    tourDescription: 'Tour on July 26th',
+    tourDate: 'July 26th',
+    tourImage: '/tours/tour-july26.webp',
+    tourId: 9,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6693c228fbf9f71afa5ed739',
+  },
+  {
     tourName: 'Shinjuku, Tokyo Tour August 1st',
     tourDescription: 'Tour on August 1st',
     tourDate: 'August 1st',
     tourImage: '/tours/tour-aug1.webp',
-    tourId: 9,
+    tourId: 10,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66817ceab14f581dbe3db1fd',
@@ -39,7 +49,7 @@ const tours = [
     tourDescription: 'Tour on August 8th',
     tourDate: 'August 8th',
     tourImage: '/tours/tour-aug8.webp',
-    tourId: 10,
+    tourId: 11,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66817d7a845a631b55f96eee',
@@ -49,7 +59,7 @@ const tours = [
     tourDescription: 'Tour on August 15th',
     tourDate: 'August 15th',
     tourImage: '/tours/tour-aug15.webp',
-    tourId: 11,
+    tourId: 12,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66817e106d819c07148d8a07',
@@ -59,7 +69,7 @@ const tours = [
     tourDescription: 'Tour on August 22nd',
     tourDate: 'August 22nd',
     tourImage: '/tours/tour-aug22.webp',
-    tourId: 12,
+    tourId: 13,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66817e9eeb496f00b69cee00',
@@ -69,7 +79,7 @@ const tours = [
     tourDescription: 'Tour on August 29th',
     tourDate: 'August 29th',
     tourImage: '/tours/tour-aug29.webp',
-    tourId: 13,
+    tourId: 14,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66818081b14f581e253db220',
@@ -78,7 +88,7 @@ const tours = [
     tourName: 'Private Tour',
     tourDescription: 'Private Tour for at least 2 people',
     tourImage: '/tours/private-tour.webp',
-    tourId: 14,
+    tourId: 15,
     tourPrice: '20000',
     tourSpots: 'TBD',
     tourLink: 'https://smileywalk.shop/items/661fe71d62289b003da60726',
@@ -94,7 +104,7 @@ export default function TourSidebar() {
       id="tour"
       ref={tourRef}
     >
-      <h1 className="flex  w-fit items-center justify-center font-hammersmithone tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4">
+      <h1 className="flex  w-fit items-center justify-center font-hammersmithone tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r to-[#f382bc] from-[#ed3996] mb-4">
         Upcoming Tours
       </h1>
 
