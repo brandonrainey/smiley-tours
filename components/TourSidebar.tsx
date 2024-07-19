@@ -5,16 +5,6 @@ import HeartSolid from './icons/HeartSolid'
 
 const tours = [
   {
-    tourName: 'Shinjuku, Tokyo Tour July 18th',
-    tourDescription: 'Tour on July 18th',
-    tourDate: 'July 18th',
-    tourImage: '/tours/tour-july18.webp',
-    tourId: 7,
-    tourPrice: 25000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/665dce2f7f5a100873d31f8c',
-  },
-  {
     tourName: 'Shinjuku, Tokyo Tour July 25th',
     tourDescription: 'Tour on July 25th',
     tourDate: 'July 25th',
