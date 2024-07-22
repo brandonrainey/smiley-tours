@@ -40,9 +40,9 @@ export default function Header() {
           className="custom:max-h-[100px] max-h-[80px] w-auto"
         />
         <img
-          src="/smiley-title.webp"
+          src="/smiley-title-new.webp"
           alt="smiley tour title text"
-          className=" p-2 pt-4 sm:max-h-[100px] max-h-[75px]  "
+          className=" p-2 pt-4 sm:max-h-[100px] max-h-[80px]  "
         />
       </div>
 

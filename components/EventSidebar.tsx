@@ -35,9 +35,9 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               src={
                 postContent.error
                   ? '/smiley-yt-enhanced.jpg'
-                  : postContent?.items[0].community[0].images[0]?.thumbnails[2]
+                  : postContent?.items[0]?.community[0]?.images[0]?.thumbnails[2]
                       .url
-                  ? postContent?.items[0].community[0].images[0]?.thumbnails[2]
+                  ? postContent?.items[0]?.community[0]?.images[0]?.thumbnails[2]
                       .url
                   : '/smiley-yt-enhanced.jpg'
               }
@@ -49,7 +49,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
                 {postContent.error
                   ? 'Error loading post'
-                  : postContent?.items[0].community[0].contentText[0].text.substring(
+                  : postContent?.items[0].community[0]?.contentText[0].text.substring(
                       0,
                       90
                     )}

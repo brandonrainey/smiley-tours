@@ -5,8 +5,8 @@ export default function MainContent() {
       id="main-content"
       data-testid="main-content"
     >
-      <div className="flex justify-center items-center">
-        <h1 className="text-5xl  text-center p-4 font-semibold tracking-wider  z-20 textGradient  ">
+      <div className="flex justify-center items-center w-full">
+        <h1 className="sm:text-5xl text-4xl text-center p-4 font-extrabold tracking-wide text-[#ffffff] z-20  ">
           Tokyo Tour Guide
         </h1>
       </div>
@@ -18,11 +18,11 @@ export default function MainContent() {
             <img
               src="/miley-main.webp"
               alt="featured miley image"
-              className="rounded mr-auto mx-auto border-dashed border-4 border-pink-200 p-2 min-w-[350px] w-[350px] h-[432px]  "
+              className="rounded mr-auto mx-auto border-dashed border-4 border-[#96daf9] p-2 min-w-[350px] w-[350px] h-[432px]  "
             />
           </div>
 
-          <p className="text-white  max-w-[1400px] text-xl custom:text-2xl textShadow font-medium custom:my-auto z-30 text-wrap ">
+          <p className="text-white  max-w-[1400px] text-xl custom:text-2xl  font-medium custom:my-auto z-30 text-wrap ">
             Hey there! I&apos;m{' '}
             <span className="font-semibold textShadowNone textGradient">
               Miley

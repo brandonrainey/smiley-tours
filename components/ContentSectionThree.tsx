@@ -16,7 +16,7 @@ export default function ContentSectionThree() {
         className="flex items-center  justify-center  custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur  relative"
         data-testid="content-section-one"
       >
-        <div className="text-white custom:text-2xl text-xl textShadow font-medium custom:my-auto custom:p-4">
+        <div className="text-white custom:text-2xl text-xl font-medium custom:my-auto custom:p-4">
           {area === 'asakusa' ? (
             <p
               className={`${
@@ -66,7 +66,7 @@ export default function ContentSectionThree() {
           width={450}
           height={330}
           key={'monja2'}
-          className={`mr-auto mx-auto rounded-xl  opacity-0 max-h-[450px] shadow-lg ${
+          className={`mr-auto mx-auto sm:rounded-xl  opacity-0 max-h-[450px] shadow-lg ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -81,7 +81,7 @@ export default function ContentSectionThree() {
           width={400}
           height={500}
           key={'ramen2'}
-          className={`mr-auto mx-auto rounded-xl opacity-0 max-h-[500px] shadow-lg ${
+          className={`mr-auto mx-auto sm:rounded-xl opacity-0 max-h-[500px] shadow-lg ${
             inView4 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

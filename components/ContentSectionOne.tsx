@@ -16,7 +16,7 @@ export default function ContentSectionOne() {
         data-testid="content-section-one"
       >
         <div
-          className={`text-white custom:text-2xl text-xl textShadow font-medium my-auto custom:pt-0 pt-4 `}
+          className={`text-white custom:text-2xl text-xl  font-medium my-auto custom:pt-0 pt-4 `}
         >
           {area === 'asakusa' ? (
             <p
@@ -71,7 +71,7 @@ export default function ContentSectionOne() {
           src="/tourContents/asakusa-crop.webp"
           alt="asakusa image"
           key={'asakusa1'}
-          className={`rounded-xl custom:ml-auto mx-auto shadow-lg  opacity-0 max-h-[572px]  ${
+          className={`sm:rounded-xl custom:ml-auto mx-auto shadow-lg  opacity-0 max-h-[572px]  ${
             inView2 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -83,7 +83,7 @@ export default function ContentSectionOne() {
           src="/tourContents/museum.webp"
           alt="museum image"
           key={'ueno1'}
-          className={`rounded-xl custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
+          className={`sm:rounded-xl custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
             inView2 || area !== prevArea
               ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''

@@ -31,7 +31,7 @@ export default function SectionCarousel() {
 
   return (
     <div
-      className="flex flex-col items-center justify-start mt-4 custom:h-[700px] custom:w-[1600px] z-20 custom:scale-[0.75] custom2:scale-100"
+      className="flex flex-col items-center justify-center mt-4 custom:h-[640px] custom:w-[1600px] z-20 custom:scale-[0.75] custom2:scale-100"
       ref={sectionRef}
     >
       <div className="flex items-center">

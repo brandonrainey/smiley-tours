@@ -20,7 +20,7 @@ export default function ContentSectionTwo() {
           height={500}
           key={'karaoke1'}
           alt="karaoke image"
-          className={`rounded-xl mx-auto opacity-0 max-h-[500px] shadow-lg ${
+          className={`sm:rounded-xl mx-auto opacity-0 max-h-[500px] shadow-lg ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -35,7 +35,7 @@ export default function ContentSectionTwo() {
           height={560}
           key={'shrine1'}
           alt="shrine image"
-          className={`rounded-xl mx-auto opacity-0 max-h-[560px] shadow-lg ${
+          className={`sm:rounded-xl mx-auto opacity-0 max-h-[560px] shadow-lg ${
             inView3 || area !== prevArea
               ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
               : ''
@@ -48,7 +48,7 @@ export default function ContentSectionTwo() {
         className="flex items-center  justify-center  custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur  relative"
         data-testid="content-section-one"
       >
-        <div className="text-white custom:text-2xl text-xl textShadow font-medium p-2 my-auto custom:px-8">
+        <div className="text-white custom:text-2xl text-xl font-medium p-2 my-auto custom:px-8">
           {area === 'asakusa' ? (
             <p
               className={`${
