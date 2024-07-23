@@ -1,14 +1,59 @@
 'use client'
 
+import { useState } from 'react'
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
+import ArrowLeft from './icons/ArrowLeft'
+import ArrowRight from './icons/ArrowRight'
 
 interface EventSidebarProps {
   postContent: any
 }
 
+const barEventDetails = [
+  {
+    id: 1,
+    time: '18:00 - 18:45',
+    link: 'https://smileywalk.shop/items/669dc11ca3a20c00c2cc6c39',
+  },
+  {
+    id: 2,
+    time: '18:50 - 19:35',
+    link: 'https://smileywalk.shop/items/669dc175b71e150036233518',
+  },
+  {
+    id: 3,
+    time: '19:40 - 20:25',
+    link: 'https://smileywalk.shop/items/669dc1c7d5019800392945bf',
+  },
+  {
+    id: 4,
+    time: '20:30 - 21:15',
+    link: 'https://smileywalk.shop/items/669dc24a9d5f2b00ed699871',
+  },
+  {
+    id: 5,
+    time: '21:20 - 22:05',
+    link: 'https://smileywalk.shop/items/669dc2bb87fb3701561091ae',
+  },
+]
+
 export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
+
+  const [eventSelected, setEventSelected] = useState(1)
+
+  function handlePreviousEventTimeClick() {
+    if (eventSelected > 1) {
+      setEventSelected(eventSelected - 1)
+    }
+  }
+
+  function handleNextEventTimeClick() {
+    if (eventSelected < 5) {
+      setEventSelected(eventSelected + 1)
+    }
+  }
 
   return (
     <section
@@ -35,10 +80,10 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               src={
                 postContent.error
                   ? '/smiley-yt-enhanced.jpg'
-                  : postContent?.items[0]?.community[0]?.images[0]?.thumbnails[2]
-                      .url
-                  ? postContent?.items[0]?.community[0]?.images[0]?.thumbnails[2]
-                      .url
+                  : postContent?.items[0]?.community[0]?.images[0]
+                      ?.thumbnails[2].url
+                  ? postContent?.items[0]?.community[0]?.images[0]
+                      ?.thumbnails[2].url
                   : '/smiley-yt-enhanced.jpg'
               }
               alt="community post image"
@@ -57,6 +102,45 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               </h3>
             </div>
           </a>
+        </div>
+
+        <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
+          <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
+            Miley's Bar @ Belgian fries stand bintje.
+          </h2>
+          <img
+            src="/miley-bar-special.webp"
+            alt=""
+            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
+          />
+
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => handlePreviousEventTimeClick()}
+              className={`${eventSelected === 1 && 'opacity-50'}`}
+              disabled={eventSelected === 1}
+            >
+              <ArrowLeft />
+            </button>
+
+            <a
+              href={barEventDetails[eventSelected - 1].link}
+              className="text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1"
+            >
+              <span className=" border-2 border-white rounded-full px-1 mr-1">
+                {barEventDetails[eventSelected - 1].id}
+              </span>
+              {barEventDetails[eventSelected - 1].time}
+            </a>
+
+            <button
+              onClick={() => handleNextEventTimeClick()}
+              className={`${eventSelected === 5 && 'opacity-50'}`}
+              disabled={eventSelected === 5}
+            >
+              <ArrowRight />
+            </button>
+          </div>
         </div>
 
         {/* Miley's Bar */}
