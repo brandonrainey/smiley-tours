@@ -106,7 +106,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
 
         <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
           <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
-            Miley's Bar @ Belgian fries stand bintje.
+            Miley&apos;s Bar @ Belgian fries stand bintje.
           </h2>
           <img
             src="/miley-bar-special.webp"
