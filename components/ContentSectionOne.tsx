@@ -40,7 +40,9 @@ export default function ContentSectionOne() {
               Yokocho, and take photogenic photos at a theme park based on the
               concept of Japanese festivals! 🎡🎢🎠
             </p>
-          ) : (
+          ) : null}
+
+          {area === 'ueno' && (
             <p
               className={`${
                 area !== prevArea
@@ -62,6 +64,27 @@ export default function ContentSectionOne() {
               ✨{' '}
             </p>
           )}
+
+          {area === 'shinjuku' && (
+            <p
+              className={`${
+                area !== prevArea
+                  ? ''
+                  : 'animate-fade animate-ease-in-out animate-delay-150'
+              }`}
+              key="shinjuku"
+            >
+              Capture the perfect snapshot 📸 at the famous cat screen in Godzilla Street, Shinjuku!
+              <br />
+              <br />
+              
+               It&apos;s the ideal spot for a quirky photo op where Godzilla meets a giant digital kitty 🐱. Don&apos;t forget to strike your best pose and make some unforgettable memories!
+
+              <br />
+              <br />
+              
+            </p>
+          )}
         </div>
       </article>
 
@@ -77,7 +100,9 @@ export default function ContentSectionOne() {
               : ''
           } `}
         />
-      ) : (
+      ) : null}
+
+      {area === 'ueno' ? (
         <img
           ref={ref2}
           src="/tourContents/museum.webp"
@@ -90,7 +115,22 @@ export default function ContentSectionOne() {
           } `}
           loading="lazy"
         />
-      )}
+      ) : null}
+
+      {area === 'shinjuku' ? (
+        <img
+          ref={ref2}
+          src="/tourContents/godzilla.webp"
+          alt="shinjuku image"
+          key={'shinjuku1'}
+          className={`sm:rounded-xl custom:ml-auto mx-auto shadow-lg opacity-0 max-h-[420px]  ${
+            inView2 || area !== prevArea
+              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          } `}
+          loading="lazy"
+        />
+      ) : null}
     </div>
   )
 }

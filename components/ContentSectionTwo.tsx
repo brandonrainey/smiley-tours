@@ -27,7 +27,9 @@ export default function ContentSectionTwo() {
           }`}
           loading="lazy"
         />
-      ) : (
+      ) : null}
+
+      {area === 'ueno' ? (
         <img
           ref={ref3}
           src="/tourContents/shrine-small2.webp"
@@ -42,7 +44,24 @@ export default function ContentSectionTwo() {
           }`}
           loading="lazy"
         />
-      )}
+      ) : null}
+
+      {area === 'shinjuku' ? (
+        <img
+          ref={ref3}
+          src="/tourContents/izakaya.webp"
+          width={400}
+          height={560}
+          key={'izakaya1'}
+          alt="izakaya image"
+          className={`sm:rounded-xl mx-auto opacity-0 max-h-[560px] shadow-lg ${
+            inView3 || area !== prevArea
+              ? 'animate-fade-right animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          }`}
+          loading="lazy"
+        />
+      ) : null}
 
       <article
         className="flex items-center  justify-center  custom:items-center bg-[#f086bd50] custom:border-cyan-700/10 custom:border-2 p-2 custom:p-4 custom:rounded-xl contentBackgroundBlur  relative"
@@ -67,7 +86,9 @@ export default function ContentSectionTwo() {
               bar—because in Japan, every karaoke session is a symphony of fun
               with a refreshing twist! 🎤🎶
             </p>
-          ) : (
+          ) : null}
+
+          {area === 'ueno' && (
             <p
               className={`${
                 area !== prevArea
@@ -86,6 +107,27 @@ export default function ContentSectionTwo() {
               by the iconic Kiyomizu-dera Temple in Kyoto. Built in 1631, let
               the echoes of history accompany you as you explore this
               architectural masterpiece. 🏯✨
+            </p>
+          )}
+
+          {area === 'shinjuku' && (
+            <p
+              className={`${
+                area !== prevArea
+                  ? ''
+                  : 'animate-fade animate-ease-in-out animate-delay-150'
+              }`}
+              key={'izakaya2'}
+            >
+              Step back in time and savor unique Japanese food and drinks 🍻 at a restaurant themed like a vintage izakaya from over 50 years ago.
+              
+              <br />
+              <br />
+               Enjoy a drink with classic dishes like yakitori 🍢, oden 🍢, and yakisoba 🍜. For the adventurous, you can even try eating a frog 🐸! Cheers to an unforgettable culinary experience!
+              <br />
+              <br />
+              
+              
             </p>
           )}
         </div>

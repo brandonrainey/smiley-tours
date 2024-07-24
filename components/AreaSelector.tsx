@@ -64,6 +64,14 @@ export default function AreaSelector() {
                 >
                   Asakusa
                 </div>
+                <div
+                  className={`cursor-pointer hover:bg-pink-600 px-2 rounded-lg ${
+                    area === 'shinjuku' && ''
+                  }`}
+                  onClick={() => handleAreaChange('shinjuku')}
+                >
+                  Shinjuku
+                </div>
               </div>
             )}
           </div>

@@ -35,7 +35,9 @@ export default function ContentSectionThree() {
               delicious journey as we explore the unconventional side of
               Asakusa&apos;s culinary treasures! 🍲✨
             </p>
-          ) : (
+          ) : null}
+
+          {area === 'ueno' && (
             <p
               className={`${
                 area !== prevArea
@@ -56,6 +58,23 @@ export default function ContentSectionThree() {
               will leave your taste buds singing. 🍜🍅🧀
             </p>
           )}
+
+          {area === 'shinjuku' && (
+            <p
+              className={`${
+                area !== prevArea
+                  ? ''
+                  : 'animate-fade animate-ease-in-out animate-delay-150'
+              }`}
+              key={'girlsbar1'}
+            >
+              Join us for a walking tour 🚶‍♂️🚶‍♀️ of the girls&apos; bars featured on the Japan Explorer Channel!
+              <br />
+              <br />
+              
+              As we explore, Miley will share the fascinating history of Shinjuku 📜, making for an enlightening and entertaining journey.
+            </p>
+          )}
         </div>
       </article>
       {area === 'asakusa' ? (
@@ -73,7 +92,9 @@ export default function ContentSectionThree() {
           }`}
           loading="lazy"
         />
-      ) : (
+      ) : null}
+
+      {area === 'ueno' ? (
         <img
           ref={ref4}
           src="/tourContents/ramen-small2.webp"
@@ -88,7 +109,24 @@ export default function ContentSectionThree() {
           }`}
           loading="lazy"
         />
-      )}
+      ) : null}
+
+      {area === 'shinjuku' ? (
+        <img
+          ref={ref4}
+          src="/tourContents/girls-bar.webp"
+          alt="girls-bar image"
+          width={400}
+          height={500}
+          key={'girlsbar2'}
+          className={`mr-auto mx-auto sm:rounded-xl opacity-0 max-h-[500px] shadow-lg ${
+            inView4 || area !== prevArea
+              ? 'animate-fade-left animate-duration-[700ms] animate-ease-in-out opacity-100'
+              : ''
+          }`}
+          loading="lazy"
+        />
+      ) : null}
     </div>
   )
 }
