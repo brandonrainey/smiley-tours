@@ -61,7 +61,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
       id="events"
       ref={eventsRef}
     >
-      <h1 className="flex  w-fit items-center justify-center font-hammersmithone tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4">
+      <h1 className="flex  w-fit items-center justify-center tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4">
         Events
       </h1>
 
