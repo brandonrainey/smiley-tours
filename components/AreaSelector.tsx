@@ -36,7 +36,7 @@ export default function AreaSelector() {
             />
           </h2>
 
-          <div className="dropdown relative flex">
+          <div className="dropdown relative flex contentBackgroundBlur2">
             <button
               onClick={toggleDropdown}
               className="dropdownShadow rounded-3xl px-2 w-[150px] border-pink-200 border-2 bg-gradient-to-r to-[#f382bc] from-[#ed3996]"

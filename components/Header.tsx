@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-300 fixed top-0 custom:z-0 z-50  custom:h-[100px] max-h-[200px]">
+    <header className="w-full flex justify-center items-center border-b-2 border-pink-600 custom:relative bg-pink-200 fixed top-0 custom:z-0 z-50  custom:h-[100px] max-h-[200px]">
       {isMobileMenuOpen && <MobileMenu />}
 
       <HamburgerButton />
@@ -54,7 +54,7 @@ export default function Header() {
             className=" hidden custom:inline-block z-30 w-[56px] pt-2 "
           />
           <p
-            className="text-2xl text-pink-500 font-semibold cursor-pointer  hover:underline px-1 pb-1 rounded-xl"
+            className="text-2xl text-pink-400 hover:text-pink-500 font-semibold cursor-pointer  hover:underline px-1 pb-1 rounded-xl"
             onClick={() => scrollToRef(eventsRef)}
           >
             Events
@@ -68,7 +68,7 @@ export default function Header() {
             className={` custom:w-[72px] w-[70px] hidden custom:inline-block`}
           />
           <p
-            className="text-2xl text-pink-500 font-semibold cursor-pointer hover:underline px-1 pb-1 rounded-xl "
+            className="text-2xl text-pink-400 hover:text-pink-500 font-semibold cursor-pointer hover:underline px-1 pb-1 rounded-xl "
             onClick={() => scrollToRef(tourRef)}
           >
             Tours

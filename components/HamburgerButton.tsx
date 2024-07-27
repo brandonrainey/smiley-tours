@@ -27,7 +27,7 @@ export default function HamburgerButton() {
   return (
     <div className="custom:hidden absolute top-0 right-0 z-50 mr-1">
       <button
-        className="text-white w-10 h-10 relative focus:outline-none cursor-pointer"
+        className="text-pink-500 w-10 h-10 relative focus:outline-none cursor-pointer"
         onClick={isMobileMenuOpen ? handleCloseMenu : handleOpenMenu}
       >
         <span className="sr-only">Open main menu</span>
