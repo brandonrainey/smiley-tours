@@ -5,16 +5,6 @@ import HeartSolid from './icons/HeartSolid'
 
 const tours = [
   {
-    tourName: 'Asakusa, Tokyo Tour July 26th',
-    tourDescription: 'Tour on July 26th',
-    tourDate: 'July 26th',
-    tourImage: '/tours/tour-july26.webp',
-    tourId: 9,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6693c228fbf9f71afa5ed739',
-  },
-  {
     tourName: 'Shinjuku, Tokyo Tour August 1st',
     tourDescription: 'Tour on August 1st',
     tourDate: 'August 1st',
@@ -84,7 +74,7 @@ export default function TourSidebar() {
       id="tour"
       ref={tourRef}
     >
-      <h1 className="flex  w-fit items-center justify-center  tracking-wide shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4 relative contentBackgroundBlur2">
+      <h1 className="flex  w-fit items-center justify-center   shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4 relative contentBackgroundBlur2">
         Upcoming Tours
       </h1>
 
