@@ -15,26 +15,31 @@ const barEventDetails = [
     id: 1,
     time: '18:00 - 18:45',
     link: 'https://smileywalk.shop/items/669dc11ca3a20c00c2cc6c39',
+    soldOut: false
   },
   {
     id: 2,
     time: '18:50 - 19:35',
     link: 'https://smileywalk.shop/items/669dc175b71e150036233518',
+    soldOut: false
   },
   {
     id: 3,
     time: '19:40 - 20:25',
     link: 'https://smileywalk.shop/items/669dc1c7d5019800392945bf',
+    soldOut: true
   },
   {
     id: 4,
     time: '20:30 - 21:15',
     link: 'https://smileywalk.shop/items/669dc24a9d5f2b00ed699871',
+    soldOut: false
   },
   {
     id: 5,
     time: '21:20 - 22:05',
     link: 'https://smileywalk.shop/items/669dc2bb87fb3701561091ae',
+    soldOut: false
   },
 ]
 
@@ -125,7 +130,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
 
             <a
               href={barEventDetails[eventSelected - 1].link}
-              className="text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1"
+              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${barEventDetails[eventSelected - 1].soldOut && 'opacity-50 line-through'}`}
             >
               <span className=" border-2 border-white rounded-full px-1 mr-1">
                 {barEventDetails[eventSelected - 1].id}
