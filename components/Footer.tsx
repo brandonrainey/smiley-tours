@@ -43,21 +43,21 @@ export default function Footer() {
         <a
           href="https://www.youtube.com/@smileytime"
           aria-label="youtube link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-full shadow-lg border-2 border-yellow-300/20"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-transparent  rounded-full shadow-xl border-2 border-pink-400"
         >
           <YoutubeIcon />
         </a>
         <a
           href="https://www.instagram.com/mairie0828/"
           aria-label="instagram link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100  rounded-full shadow-lg border-2 border-yellow-300/20"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-transparent  rounded-full shadow-xl border-2 border-pink-400"
         >
           <InstagramIcon />
         </a>
         <a
           href="https://twitter.com/mairie0828"
           aria-label="twitter link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-100 rounded-full shadow-lg border-2 border-yellow-300/20"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-transparent rounded-full shadow-xl border-2 border-pink-400"
         >
           <TwitterIcon />
         </a>
