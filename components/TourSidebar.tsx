@@ -92,7 +92,7 @@ export default function TourSidebar() {
               <img
                 src={tour.tourImage}
                 alt={tour.tourName}
-                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full"
+                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:scale-[1.025] transition-all ease-in-out"
               />
 
               <h2 className="font-extrabold text-pink-500 pt-2  tracking-wide text-xl flex flex-col items-center ">

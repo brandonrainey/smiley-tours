@@ -29,7 +29,7 @@ export default function Footer() {
       className={` min-h-[250px] w-full flex flex-col justify-center items-center relative gap-2`}
       ref={socialsRef}
     >
-      <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
+      {/* <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
         <img
           src="/smileytime-sharp.webp"
           width={250}
@@ -37,7 +37,7 @@ export default function Footer() {
           alt="miley image"
           className="custom:w-[300px]"
         />
-      </div>
+      </div> */}
 
       <div className="flex sm:gap-24 gap-8 z-10">
         <a
@@ -64,9 +64,9 @@ export default function Footer() {
       </div>
       <p
         className="text-white text-xl tracking-wide text-shadow-1 underline cursor-copy py-2 z-30"
-        onClick={() => copyToClipboard('engelmaikichi@gmail.com')}
+        onClick={() => copyToClipboard('smileywalk1@gmail.com')}
       >
-        engelmaikichi@gmail.com
+        smileywalk1@gmail.com
       </p>
       {copySuccess && <div>{copySuccess}</div>}
     </footer>
