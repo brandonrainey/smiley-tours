@@ -33,7 +33,7 @@ const barEventDetails = [
     id: 4,
     time: '20:30 - 21:15',
     link: 'https://smileywalk.shop/items/669dc24a9d5f2b00ed699871',
-    soldOut: false
+    soldOut: true
   },
   {
     id: 5,
