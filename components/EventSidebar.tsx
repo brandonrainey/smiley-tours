@@ -43,10 +43,111 @@ const barEventDetails = [
   },
 ]
 
+const chatEventDetails = [
+  {
+    id: 1,
+    title: '5 min chat',
+    date: 'Aug 17th',
+    link: 'https://smileywalk.shop/items/66ba30a03b4938069dea0881',
+    image: '/events/chat-aug17-5m.webp',
+    soldOut: false
+  },
+  {
+    id: 2,
+    title: '10 min chat',
+    date: 'Aug 17th',
+    link: 'https://smileywalk.shop/items/66ba31761b56ba1d19bbdd29',
+    image: '/events/chat-aug17-10m.webp',
+    soldOut: false
+  },
+  {
+    id: 3,
+    title: '15 min chat',
+    date: 'Aug 17th',
+    link: 'https://smileywalk.shop/items/66ba31bd1b56ba1d2abbdcf8',
+    image: '/events/chat-aug17-15m.webp',
+    soldOut: false
+  },
+  {
+    id: 4,
+    title: '5 min chat',
+    date: 'Aug 18th',
+    link: 'https://smileywalk.shop/items/66ba32b77041a10422965288',
+    image: '/events/chat-aug18-5m.webp',
+    soldOut: false
+  },
+  {
+    id: 5,
+    title: '10 min chat',
+    date: 'Aug 18th',
+    link: 'https://smileywalk.shop/items/66ba33087041a103c49652ab',
+    image: '/events/chat-aug18-10m.webp',
+    soldOut: false
+  },
+  {
+    id: 6,
+    title: '15 min chat',
+    date: 'Aug 18th',
+    link: 'https://smileywalk.shop/items/66ba33401b56ba1d19bbddc0',
+    image: '/events/chat-aug18-15m.webp',
+    soldOut: false
+  },
+  {
+    id: 7,
+    title: '5 min chat',
+    date: 'Aug 24th',
+    link: 'https://smileywalk.shop/items/66ba340b3b493806b0ea08bb',
+    image: '/events/chat-aug24-5m.webp',
+    soldOut: false
+  },
+  {
+    id: 8,
+    title: '10 min chat',
+    date: 'Aug 24th',
+    link: 'https://smileywalk.shop/items/66ba34657041a103c49652fb',
+    image: '/events/chat-aug24-10m.webp',
+    soldOut: false
+  },
+  {
+    id: 9,
+    title: '15 min chat',
+    date: 'Aug 24th',
+    link: 'https://smileywalk.shop/items/66ba34b51b56ba1d19bbddef',
+    image: '/events/chat-aug24-15m.webp',
+    soldOut: false
+  },
+  {
+    id: 10,
+    title: '5 min chat',
+    date: 'Aug 25th',
+    link: 'https://smileywalk.shop/items/66bb2e928eae8000fcdc25ad',
+    image: '/events/chat-aug25-5m.webp',
+    soldOut: false
+  },
+  {
+    id: 11,
+    title: '10 min chat',
+    date: 'Aug 25th',
+    link: 'https://smileywalk.shop/items/66bb2f1d6e3db5003c5ef376',
+    image: '/events/chat-aug25-10m.webp',
+    soldOut: false
+  },
+  {
+    id: 12,
+    title: '15 min chat',
+    date: 'Aug 25th',
+    link: 'https://smileywalk.shop/items/66bb2f64af98d9009d1a7615',
+    image: '/events/chat-aug25-15m.webp',
+    soldOut: false
+  },
+]
+
 export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
 
   const [eventSelected, setEventSelected] = useState(1)
+
+  const [chatEventSelected, setChatEventSelected] = useState(1)
 
   function handlePreviousEventTimeClick() {
     if (eventSelected > 1) {
@@ -57,6 +158,18 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
   function handleNextEventTimeClick() {
     if (eventSelected < 5) {
       setEventSelected(eventSelected + 1)
+    }
+  }
+
+  function handlePreviousChatEventTimeClick() {
+    if (chatEventSelected > 1) {
+      setChatEventSelected(chatEventSelected - 1)
+    }
+  }
+
+  function handleNextChatEventTimeClick() {
+    if (chatEventSelected < 12) {
+      setChatEventSelected(chatEventSelected + 1)
     }
   }
 
@@ -147,6 +260,48 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             </button>
           </div>
         </div>
+
+
+        <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
+          <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
+            Chat directly with miley.
+          </h2>
+          <img
+            src={chatEventDetails[chatEventSelected - 1].image}
+            alt="chat with miley image"
+            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
+          />
+
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => handlePreviousChatEventTimeClick()}
+              className={`${chatEventSelected === 1 && 'opacity-50'}`}
+              disabled={chatEventSelected === 1}
+            >
+              <ArrowLeft />
+            </button>
+
+            <a
+              href={chatEventDetails[chatEventSelected - 1].link}
+              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${chatEventDetails[chatEventSelected - 1].soldOut && 'opacity-50 line-through'}`}
+            >
+              <span className=" border-2 border-white rounded-full px-1 mr-1">
+                {chatEventDetails[chatEventSelected - 1].id}
+              </span>
+              {chatEventDetails[chatEventSelected - 1].title}
+            </a>
+
+            <button
+              onClick={() => handleNextChatEventTimeClick()}
+              className={`${chatEventSelected === 12 && 'opacity-50'}`}
+              disabled={chatEventSelected === 12}
+            >
+              <ArrowRight />
+            </button>
+          </div>
+        </div>
+
+
 
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
