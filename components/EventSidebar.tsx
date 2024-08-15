@@ -15,7 +15,7 @@ const barEventDetails = [
     id: 1,
     time: '18:00 - 18:45',
     link: 'https://smileywalk.shop/items/669dc11ca3a20c00c2cc6c39',
-    soldOut: false
+    soldOut: true
   },
   {
     id: 2,
@@ -48,6 +48,7 @@ const chatEventDetails = [
     id: 1,
     title: '5 min chat',
     date: 'Aug 17th',
+    price: 20000,
     link: 'https://smileywalk.shop/items/66ba30a03b4938069dea0881',
     image: '/events/chat-aug17-5m.webp',
     soldOut: false
@@ -56,6 +57,7 @@ const chatEventDetails = [
     id: 2,
     title: '10 min chat',
     date: 'Aug 17th',
+    price: 40000,
     link: 'https://smileywalk.shop/items/66ba31761b56ba1d19bbdd29',
     image: '/events/chat-aug17-10m.webp',
     soldOut: false
@@ -64,6 +66,7 @@ const chatEventDetails = [
     id: 3,
     title: '15 min chat',
     date: 'Aug 17th',
+    price: 60000,
     link: 'https://smileywalk.shop/items/66ba31bd1b56ba1d2abbdcf8',
     image: '/events/chat-aug17-15m.webp',
     soldOut: false
@@ -72,6 +75,7 @@ const chatEventDetails = [
     id: 4,
     title: '5 min chat',
     date: 'Aug 18th',
+    price: 20000,
     link: 'https://smileywalk.shop/items/66ba32b77041a10422965288',
     image: '/events/chat-aug18-5m.webp',
     soldOut: false
@@ -80,6 +84,7 @@ const chatEventDetails = [
     id: 5,
     title: '10 min chat',
     date: 'Aug 18th',
+    price: 40000,
     link: 'https://smileywalk.shop/items/66ba33087041a103c49652ab',
     image: '/events/chat-aug18-10m.webp',
     soldOut: false
@@ -88,6 +93,7 @@ const chatEventDetails = [
     id: 6,
     title: '15 min chat',
     date: 'Aug 18th',
+    price: 60000,
     link: 'https://smileywalk.shop/items/66ba33401b56ba1d19bbddc0',
     image: '/events/chat-aug18-15m.webp',
     soldOut: false
@@ -96,6 +102,7 @@ const chatEventDetails = [
     id: 7,
     title: '5 min chat',
     date: 'Aug 24th',
+    price: 20000,
     link: 'https://smileywalk.shop/items/66ba340b3b493806b0ea08bb',
     image: '/events/chat-aug24-5m.webp',
     soldOut: false
@@ -104,6 +111,7 @@ const chatEventDetails = [
     id: 8,
     title: '10 min chat',
     date: 'Aug 24th',
+    price: 40000,
     link: 'https://smileywalk.shop/items/66ba34657041a103c49652fb',
     image: '/events/chat-aug24-10m.webp',
     soldOut: false
@@ -112,6 +120,7 @@ const chatEventDetails = [
     id: 9,
     title: '15 min chat',
     date: 'Aug 24th',
+    price: 60000,
     link: 'https://smileywalk.shop/items/66ba34b51b56ba1d19bbddef',
     image: '/events/chat-aug24-15m.webp',
     soldOut: false
@@ -120,6 +129,7 @@ const chatEventDetails = [
     id: 10,
     title: '5 min chat',
     date: 'Aug 25th',
+    price: 20000,
     link: 'https://smileywalk.shop/items/66bb2e928eae8000fcdc25ad',
     image: '/events/chat-aug25-5m.webp',
     soldOut: false
@@ -128,6 +138,7 @@ const chatEventDetails = [
     id: 11,
     title: '10 min chat',
     date: 'Aug 25th',
+    price: 40000,
     link: 'https://smileywalk.shop/items/66bb2f1d6e3db5003c5ef376',
     image: '/events/chat-aug25-10m.webp',
     soldOut: false
@@ -136,6 +147,7 @@ const chatEventDetails = [
     id: 12,
     title: '15 min chat',
     date: 'Aug 25th',
+    price: 60000,
     link: 'https://smileywalk.shop/items/66bb2f64af98d9009d1a7615',
     image: '/events/chat-aug25-15m.webp',
     soldOut: false
@@ -271,6 +283,8 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             alt="chat with miley image"
             className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
           />
+
+          <p className='text-pink-500 text-xl font-semibold '>¥{chatEventDetails[chatEventSelected - 1].price}</p>
 
           <div className="flex items-center gap-2">
             <button
