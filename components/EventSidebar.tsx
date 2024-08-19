@@ -47,60 +47,6 @@ const chatEventDetails = [
   {
     id: 1,
     title: '5 min chat',
-    date: 'Aug 17th',
-    price: 20000,
-    link: 'https://smileywalk.shop/items/66ba30a03b4938069dea0881',
-    image: '/events/chat-aug17-5m.webp',
-    soldOut: false
-  },
-  {
-    id: 2,
-    title: '10 min chat',
-    date: 'Aug 17th',
-    price: 40000,
-    link: 'https://smileywalk.shop/items/66ba31761b56ba1d19bbdd29',
-    image: '/events/chat-aug17-10m.webp',
-    soldOut: false
-  },
-  {
-    id: 3,
-    title: '15 min chat',
-    date: 'Aug 17th',
-    price: 60000,
-    link: 'https://smileywalk.shop/items/66ba31bd1b56ba1d2abbdcf8',
-    image: '/events/chat-aug17-15m.webp',
-    soldOut: false
-  },
-  {
-    id: 4,
-    title: '5 min chat',
-    date: 'Aug 18th',
-    price: 20000,
-    link: 'https://smileywalk.shop/items/66ba32b77041a10422965288',
-    image: '/events/chat-aug18-5m.webp',
-    soldOut: false
-  },
-  {
-    id: 5,
-    title: '10 min chat',
-    date: 'Aug 18th',
-    price: 40000,
-    link: 'https://smileywalk.shop/items/66ba33087041a103c49652ab',
-    image: '/events/chat-aug18-10m.webp',
-    soldOut: false
-  },
-  {
-    id: 6,
-    title: '15 min chat',
-    date: 'Aug 18th',
-    price: 60000,
-    link: 'https://smileywalk.shop/items/66ba33401b56ba1d19bbddc0',
-    image: '/events/chat-aug18-15m.webp',
-    soldOut: false
-  },
-  {
-    id: 7,
-    title: '5 min chat',
     date: 'Aug 24th',
     price: 20000,
     link: 'https://smileywalk.shop/items/66ba340b3b493806b0ea08bb',
@@ -108,7 +54,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 8,
+    id: 2,
     title: '10 min chat',
     date: 'Aug 24th',
     price: 40000,
@@ -117,7 +63,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 9,
+    id: 3,
     title: '15 min chat',
     date: 'Aug 24th',
     price: 60000,
@@ -126,7 +72,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 10,
+    id: 4,
     title: '5 min chat',
     date: 'Aug 25th',
     price: 20000,
@@ -135,7 +81,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 11,
+    id: 5,
     title: '10 min chat',
     date: 'Aug 25th',
     price: 40000,
@@ -144,7 +90,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 12,
+    id: 6,
     title: '15 min chat',
     date: 'Aug 25th',
     price: 60000,
