@@ -47,33 +47,6 @@ const chatEventDetails = [
   {
     id: 1,
     title: '5 min chat',
-    date: 'Aug 24th',
-    price: 20000,
-    link: 'https://smileywalk.shop/items/66ba340b3b493806b0ea08bb',
-    image: '/events/chat-aug24-5m.webp',
-    soldOut: false
-  },
-  {
-    id: 2,
-    title: '10 min chat',
-    date: 'Aug 24th',
-    price: 40000,
-    link: 'https://smileywalk.shop/items/66ba34657041a103c49652fb',
-    image: '/events/chat-aug24-10m.webp',
-    soldOut: false
-  },
-  {
-    id: 3,
-    title: '15 min chat',
-    date: 'Aug 24th',
-    price: 60000,
-    link: 'https://smileywalk.shop/items/66ba34b51b56ba1d19bbddef',
-    image: '/events/chat-aug24-15m.webp',
-    soldOut: false
-  },
-  {
-    id: 4,
-    title: '5 min chat',
     date: 'Aug 25th',
     price: 20000,
     link: 'https://smileywalk.shop/items/66bb2e928eae8000fcdc25ad',
@@ -81,7 +54,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 5,
+    id: 2,
     title: '10 min chat',
     date: 'Aug 25th',
     price: 40000,
@@ -90,7 +63,7 @@ const chatEventDetails = [
     soldOut: false
   },
   {
-    id: 6,
+    id: 3,
     title: '15 min chat',
     date: 'Aug 25th',
     price: 60000,
@@ -180,44 +153,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           </a>
         </div>
 
-        <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
-          <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
-            Miley&apos;s Bar @ Belgian fries stand bintje.
-          </h2>
-          <img
-            src="/miley-bar-special.webp"
-            alt=""
-            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
-          />
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => handlePreviousEventTimeClick()}
-              className={`${eventSelected === 1 && 'opacity-50'}`}
-              disabled={eventSelected === 1}
-            >
-              <ArrowLeft />
-            </button>
-
-            <a
-              href={barEventDetails[eventSelected - 1].link}
-              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${barEventDetails[eventSelected - 1].soldOut && 'opacity-50 line-through'}`}
-            >
-              <span className=" border-2 border-white rounded-full px-1 mr-1">
-                {barEventDetails[eventSelected - 1].id}
-              </span>
-              {barEventDetails[eventSelected - 1].time}
-            </a>
-
-            <button
-              onClick={() => handleNextEventTimeClick()}
-              className={`${eventSelected === 5 && 'opacity-50'}`}
-              disabled={eventSelected === 5}
-            >
-              <ArrowRight />
-            </button>
-          </div>
-        </div>
+        
 
 
         <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
