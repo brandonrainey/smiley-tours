@@ -15,7 +15,7 @@ export default function Header() {
   const [imgSrc, setImgSrc] = useState('/bulmaPng.png')
 
   function handleMouseIn() {
-    setImgSrc('/bulmaGif.gif')
+    setImgSrc('/bulmaGifNew.gif')
   }
 
   function handleMouseOut() {
