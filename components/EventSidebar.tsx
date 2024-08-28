@@ -10,39 +10,6 @@ interface EventSidebarProps {
   postContent: any
 }
 
-const barEventDetails = [
-  {
-    id: 1,
-    time: '18:00 - 18:45',
-    link: 'https://smileywalk.shop/items/669dc11ca3a20c00c2cc6c39',
-    soldOut: true
-  },
-  {
-    id: 2,
-    time: '18:50 - 19:35',
-    link: 'https://smileywalk.shop/items/669dc175b71e150036233518',
-    soldOut: true
-  },
-  {
-    id: 3,
-    time: '19:40 - 20:25',
-    link: 'https://smileywalk.shop/items/669dc1c7d5019800392945bf',
-    soldOut: true
-  },
-  {
-    id: 4,
-    time: '20:30 - 21:15',
-    link: 'https://smileywalk.shop/items/669dc24a9d5f2b00ed699871',
-    soldOut: true
-  },
-  {
-    id: 5,
-    time: '21:20 - 22:05',
-    link: 'https://smileywalk.shop/items/669dc2bb87fb3701561091ae',
-    soldOut: true
-  },
-]
-
 const chatEventDetails = [
   {
     id: 1,
@@ -51,7 +18,7 @@ const chatEventDetails = [
     price: 20000,
     link: 'https://smileywalk.shop/items/66bb2e928eae8000fcdc25ad',
     image: '/events/chat-aug25-5m.webp',
-    soldOut: false
+    soldOut: false,
   },
   {
     id: 2,
@@ -60,7 +27,7 @@ const chatEventDetails = [
     price: 40000,
     link: 'https://smileywalk.shop/items/66bb2f1d6e3db5003c5ef376',
     image: '/events/chat-aug25-10m.webp',
-    soldOut: false
+    soldOut: false,
   },
   {
     id: 3,
@@ -69,28 +36,14 @@ const chatEventDetails = [
     price: 60000,
     link: 'https://smileywalk.shop/items/66bb2f64af98d9009d1a7615',
     image: '/events/chat-aug25-15m.webp',
-    soldOut: false
+    soldOut: false,
   },
 ]
 
 export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
 
-  const [eventSelected, setEventSelected] = useState(1)
-
   const [chatEventSelected, setChatEventSelected] = useState(1)
-
-  function handlePreviousEventTimeClick() {
-    if (eventSelected > 1) {
-      setEventSelected(eventSelected - 1)
-    }
-  }
-
-  function handleNextEventTimeClick() {
-    if (eventSelected < 5) {
-      setEventSelected(eventSelected + 1)
-    }
-  }
 
   function handlePreviousChatEventTimeClick() {
     if (chatEventSelected > 1) {
@@ -153,9 +106,6 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           </a>
         </div>
 
-        
-
-
         <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
           <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
             Chat directly with miley.
@@ -166,7 +116,9 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
           />
 
-          <p className='text-pink-500 text-xl font-semibold '>¥{chatEventDetails[chatEventSelected - 1].price}</p>
+          <p className="text-pink-500 text-xl font-semibold ">
+            ¥{chatEventDetails[chatEventSelected - 1].price}
+          </p>
 
           <div className="flex items-center gap-2">
             <button
@@ -179,7 +131,10 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
 
             <a
               href={chatEventDetails[chatEventSelected - 1].link}
-              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${chatEventDetails[chatEventSelected - 1].soldOut && 'opacity-50 line-through'}`}
+              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${
+                chatEventDetails[chatEventSelected - 1].soldOut &&
+                'opacity-50 line-through'
+              }`}
             >
               <span className=" border-2 border-white rounded-full px-1 mr-1">
                 {chatEventDetails[chatEventSelected - 1].id}
@@ -196,8 +151,6 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             </button>
           </div>
         </div>
-
-
 
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
