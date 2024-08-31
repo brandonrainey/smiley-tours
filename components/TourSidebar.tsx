@@ -194,15 +194,6 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66ca7b812ead3704dd245144',
   },
-  {
-    tourName: 'Private Tour',
-    tourDescription: 'Private Tour for at least 2 people',
-    tourImage: '/tours/private-tour.webp',
-    tourId: 24,
-    tourPrice: '20000',
-    tourSpots: 'TBD',
-    tourLink: 'https://smileywalk.shop/items/661fe71d62289b003da60726',
-  },
 ]
 
 export default function TourSidebar() {
