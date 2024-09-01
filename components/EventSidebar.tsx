@@ -10,35 +10,6 @@ interface EventSidebarProps {
   postContent: any
 }
 
-const chatEventDetails = [
-  {
-    id: 1,
-    title: '5 min chat',
-    date: 'Aug 25th',
-    price: 20000,
-    link: 'https://smileywalk.shop/items/66bb2e928eae8000fcdc25ad',
-    image: '/events/chat-aug25-5m.webp',
-    soldOut: false,
-  },
-  {
-    id: 2,
-    title: '10 min chat',
-    date: 'Aug 25th',
-    price: 40000,
-    link: 'https://smileywalk.shop/items/66bb2f1d6e3db5003c5ef376',
-    image: '/events/chat-aug25-10m.webp',
-    soldOut: false,
-  },
-  {
-    id: 3,
-    title: '15 min chat',
-    date: 'Aug 25th',
-    price: 60000,
-    link: 'https://smileywalk.shop/items/66bb2f64af98d9009d1a7615',
-    image: '/events/chat-aug25-15m.webp',
-    soldOut: false,
-  },
-]
 
 export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
@@ -106,51 +77,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           </a>
         </div>
 
-        <div className="flex flex-col items-center justify-between max-w-[300px] h-[414px] mt-8 sm:mt-0">
-          <h2 className="text-white text-2xl border-y-2 border-pink-300 text-center custom:text-shadow-1 text-shadow-5 font-semibold">
-            Chat directly with miley.
-          </h2>
-          <img
-            src={chatEventDetails[chatEventSelected - 1].image}
-            alt="chat with miley image"
-            className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow"
-          />
-
-          <p className="text-pink-500 text-xl font-semibold ">
-            ¥{chatEventDetails[chatEventSelected - 1].price}
-          </p>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => handlePreviousChatEventTimeClick()}
-              className={`${chatEventSelected === 1 && 'opacity-50'}`}
-              disabled={chatEventSelected === 1}
-            >
-              <ArrowLeft />
-            </button>
-
-            <a
-              href={chatEventDetails[chatEventSelected - 1].link}
-              className={`text-white font-semibold bg-gradient-to-r from-[#f382bc] to-[#ed3996] rounded-lg p-1 ${
-                chatEventDetails[chatEventSelected - 1].soldOut &&
-                'opacity-50 line-through'
-              }`}
-            >
-              <span className=" border-2 border-white rounded-full px-1 mr-1">
-                {chatEventDetails[chatEventSelected - 1].id}
-              </span>
-              {chatEventDetails[chatEventSelected - 1].title}
-            </a>
-
-            <button
-              onClick={() => handleNextChatEventTimeClick()}
-              className={`${chatEventSelected === 12 && 'opacity-50'}`}
-              disabled={chatEventSelected === 12}
-            >
-              <ArrowRight />
-            </button>
-          </div>
-        </div>
+        
 
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
