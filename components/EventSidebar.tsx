@@ -3,30 +3,13 @@
 import { useState } from 'react'
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
-import ArrowLeft from './icons/ArrowLeft'
-import ArrowRight from './icons/ArrowRight'
 
 interface EventSidebarProps {
   postContent: any
 }
 
-
 export default function EventSidebar({ postContent }: EventSidebarProps) {
   const { eventsRef } = useAreaStore()
-
-  const [chatEventSelected, setChatEventSelected] = useState(1)
-
-  function handlePreviousChatEventTimeClick() {
-    if (chatEventSelected > 1) {
-      setChatEventSelected(chatEventSelected - 1)
-    }
-  }
-
-  function handleNextChatEventTimeClick() {
-    if (chatEventSelected < 12) {
-      setChatEventSelected(chatEventSelected + 1)
-    }
-  }
 
   return (
     <section
