@@ -2,7 +2,7 @@
 
 import { useAreaStore } from '@/store/areas'
 import HeartSolid from './icons/HeartSolid'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const tours = [
   {
@@ -401,21 +401,29 @@ const tours = [
 export default function TourSidebar() {
   const { tourRef } = useAreaStore()
 
-  const [page, setPage] = useState(1)
-
-  const newTours = tours.slice((page - 1), page + 15)
-
   const numberOfPages = Math.ceil(tours.length / 15)
 
-  const pages = Array.from({ length: numberOfPages }, (_, index) => index + 1);
+  const [page, setPage] = useState(1)
+
+  const [newTours, setNewTours] = useState(tours.slice(0, 16));
 
   function handlePageIncrease() {
-    setPage(page + 1)
+    setPage((prevPage) => prevPage + 1);
+  }
+  
+  function handlePageDecrease() {
+    setPage((prevPage) => Math.max(prevPage - 1, 1)); // Ensure page doesn't go below 1
   }
 
-  function handlePageDecrease() {
-    setPage(page - 1)
+  function handlePageClick(pageNumber: number) {
+    setPage(pageNumber);
   }
+  
+  useEffect(() => {
+    const startIndex = (page - 1) * 16;
+    const endIndex = startIndex + 16;
+    setNewTours(tours.slice(startIndex, endIndex));
+  }, [page, tours]); // Also depend on 'tours' in case the array changes
 
   return (
     <section
@@ -474,17 +482,17 @@ export default function TourSidebar() {
         ))}
       </ul>
 
-      <div className='flex gap-2'>
-        <button onClick={handlePageDecrease} disabled={page === 1} className={`${page === 1 ? 'opacity-50' : ''}`}>{'<'}</button>
+      <div className='flex gap-2 mb-4'>
+        <button onClick={handlePageDecrease} disabled={page === 1} className={`${page === 1 ? 'opacity-50' : ''} font-semibold text-xl`}>{'<'}</button>
         <div className='flex gap-2'>
-        {Array.from({ length: numberOfPages }, (_, index) => index + 1).map((page) => (
-          <div>
-            {page}
+        {Array.from({ length: numberOfPages }, (_, index) => index + 1).map((pageNumber) => (
+          <div key={pageNumber} className={`p-1 px-3 rounded-full cursor-pointer hover:bg-pink-500 hover:text-white font-semibold text-xl ${page === pageNumber ? 'underline-offset-2 underline' : ''}`} onClick={() => handlePageClick(pageNumber)}>
+            {pageNumber}
           </div>
         ))}
 
         </div>
-        <button onClick={handlePageIncrease} disabled={page === numberOfPages}>{'>'}</button>
+        <button onClick={handlePageIncrease} disabled={page === numberOfPages} className={`${page === numberOfPages ? 'opacity-50' : ''} font-semibold text-xl`}>{'>'}</button>
       </div>
     </section>
   )
