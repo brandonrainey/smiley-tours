@@ -2,6 +2,7 @@
 
 import { useAreaStore } from '@/store/areas'
 import HeartSolid from './icons/HeartSolid'
+import { useState } from 'react'
 
 const tours = [
   {
@@ -229,7 +230,7 @@ const tours = [
     tourDescription: 'Tour on November 19th',
     tourDate: 'November 19th',
     tourImage: '/tours/akihabaraTour.webp',
-    tourId: 17,
+    tourId: 23,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d41d5f9b4c1922909dad4e',
@@ -239,7 +240,7 @@ const tours = [
     tourDescription: 'Tour on November 21st',
     tourDate: 'November 21st',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 18,
+    tourId: 24,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66c317d070810903f0d7fc47',
@@ -249,7 +250,7 @@ const tours = [
     tourDescription: 'Tour on November 22nd',
     tourDate: 'November 22nd',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 18,
+    tourId: 25,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d411bb4b15c017959fac81',
@@ -259,7 +260,7 @@ const tours = [
     tourDescription: 'Tour on November 28th',
     tourDate: 'November 28th',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 19,
+    tourId: 26,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66c317fa3c173d03a903c598',
@@ -269,7 +270,7 @@ const tours = [
     tourDescription: 'Tour on November 29th',
     tourDate: 'November 29th',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 19,
+    tourId: 27,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d411ee888a2e1b95e14eac',
@@ -279,7 +280,7 @@ const tours = [
     tourDescription: 'Tour on December 3rd',
     tourDate: 'December 3rd',
     tourImage: '/tours/akihabaraTour.webp',
-    tourId: 20,
+    tourId: 28,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d41fa14b15c01b1f9fac3a',
@@ -289,7 +290,7 @@ const tours = [
     tourDescription: 'Tour on December 5th',
     tourDate: 'December 5th',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 20,
+    tourId: 29,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
@@ -299,7 +300,7 @@ const tours = [
     tourDescription: 'Tour on December 6th',
     tourDate: 'December 6th',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 20,
+    tourId: 30,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d4123c888a2e1b7be14f17',
@@ -309,7 +310,7 @@ const tours = [
     tourDescription: 'Tour on December 10th',
     tourDate: 'December 10th',
     tourImage: '/tours/akihabaraTour.webp',
-    tourId: 21,
+    tourId: 31,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d41fc09b4c1923449dad1f',
@@ -319,7 +320,7 @@ const tours = [
     tourDescription: 'Tour on December 12th',
     tourDate: 'December 12th',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 21,
+    tourId: 32,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66ca7b18b90fcc36d006f698',
@@ -329,7 +330,7 @@ const tours = [
     tourDescription: 'Tour on December 13th',
     tourDate: 'December 13th',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 21,
+    tourId: 33,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d4126c4b15c017b99faca7',
@@ -339,7 +340,7 @@ const tours = [
     tourDescription: 'Tour on December 17th',
     tourDate: 'December 17th',
     tourImage: '/tours/akihabaraTour.webp',
-    tourId: 21,
+    tourId: 34,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d41fe44b15c01abb9facac',
@@ -349,7 +350,7 @@ const tours = [
     tourDescription: 'Tour on December 19th',
     tourDate: 'December 19th',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 22,
+    tourId: 35,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66ca7b45b90fcc36d006f6b6',
@@ -359,7 +360,7 @@ const tours = [
     tourDescription: 'Tour on December 20th',
     tourDate: 'December 20th',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 22,
+    tourId: 36,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d412a25106c222ebd768ad',
@@ -369,7 +370,7 @@ const tours = [
     tourDescription: 'Tour on December 24th',
     tourDate: 'December 24th',
     tourImage: '/tours/akihabaraTour.webp',
-    tourId: 22,
+    tourId: 37,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d4240db363bc3bc06ff12c',
@@ -379,7 +380,7 @@ const tours = [
     tourDescription: 'Tour on December 26th',
     tourDate: 'December 26th',
     tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 23,
+    tourId: 38,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66ca7b812ead3704dd245144',
@@ -389,7 +390,7 @@ const tours = [
     tourDescription: 'Tour on December 27th',
     tourDate: 'December 27th',
     tourImage: '/tours/asakusaTour.webp',
-    tourId: 23,
+    tourId: 39,
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d412c74b15c017fd9fac41',
@@ -399,6 +400,22 @@ const tours = [
 
 export default function TourSidebar() {
   const { tourRef } = useAreaStore()
+
+  const [page, setPage] = useState(1)
+
+  const newTours = tours.slice((page - 1), page + 15)
+
+  const numberOfPages = Math.ceil(tours.length / 15)
+
+  const pages = Array.from({ length: numberOfPages }, (_, index) => index + 1);
+
+  function handlePageIncrease() {
+    setPage(page + 1)
+  }
+
+  function handlePageDecrease() {
+    setPage(page - 1)
+  }
 
   return (
     <section
@@ -411,7 +428,7 @@ export default function TourSidebar() {
       </h1>
 
       <ul className="custom:flex custom:flex-wrap grid grid-cols-2 justify-center items-center transition-all duration-150 ease-in-out max-w-[1600px] custom:gap-x-16">
-        {tours.map((tour) => (
+        {newTours.map((tour) => (
           <li
             key={tour.tourId}
             className="  flex flex-col items-center custom:py-4 mb-2 custom:px-0 px-2 group self-start"
@@ -456,6 +473,19 @@ export default function TourSidebar() {
           </li>
         ))}
       </ul>
+
+      <div className='flex gap-2'>
+        <button onClick={handlePageDecrease} disabled={page === 1} className={`${page === 1 ? 'opacity-50' : ''}`}>{'<'}</button>
+        <div className='flex gap-2'>
+        {Array.from({ length: numberOfPages }, (_, index) => index + 1).map((page) => (
+          <div>
+            {page}
+          </div>
+        ))}
+
+        </div>
+        <button onClick={handlePageIncrease} disabled={page === numberOfPages}>{'>'}</button>
+      </div>
     </section>
   )
 }
