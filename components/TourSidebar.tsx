@@ -397,7 +397,6 @@ const tours = [
   },
 ]
 
-
 export default function TourSidebar() {
   const { tourRef } = useAreaStore()
 
@@ -405,25 +404,25 @@ export default function TourSidebar() {
 
   const [page, setPage] = useState(1)
 
-  const [newTours, setNewTours] = useState(tours.slice(0, 16));
+  const [newTours, setNewTours] = useState(tours.slice(0, 16))
 
   function handlePageIncrease() {
-    setPage((prevPage) => prevPage + 1);
+    setPage((prevPage) => prevPage + 1)
   }
-  
+
   function handlePageDecrease() {
-    setPage((prevPage) => Math.max(prevPage - 1, 1)); // Ensure page doesn't go below 1
+    setPage((prevPage) => prevPage - 1)
   }
 
   function handlePageClick(pageNumber: number) {
-    setPage(pageNumber);
+    setPage(pageNumber)
   }
-  
+
   useEffect(() => {
-    const startIndex = (page - 1) * 16;
-    const endIndex = startIndex + 16;
-    setNewTours(tours.slice(startIndex, endIndex));
-  }, [page, tours]); // Also depend on 'tours' in case the array changes
+    const startIndex = (page - 1) * 16
+    const endIndex = startIndex + 16
+    setNewTours(tours.slice(startIndex, endIndex))
+  }, [page, tours])
 
   return (
     <section
@@ -452,16 +451,19 @@ export default function TourSidebar() {
                 className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:scale-[1.025] transition-all ease-in-out object-cover"
               />
 
-              <p className='font-extrabold text-white pt-2  tracking-wide text-xl custom:text-shadow-1 text-shadow-2'>{tour.tourArea}</p>
+              <p className="font-extrabold text-white pt-2  tracking-wide text-xl custom:text-shadow-1 text-shadow-2">
+                {tour.tourArea}
+              </p>
 
               <h2 className="font-extrabold text-pink-500 tracking-wide text-xl flex flex-col items-center ">
                 <span
                   className={`text-white custom:text-shadow-1 text-shadow-2 `}
                 >
-                  {tour.tourName === 'Private Tour' ? tour.tourName : `${tour.tourDate}`}
+                  {tour.tourName === 'Private Tour'
+                    ? tour.tourName
+                    : `${tour.tourDate}`}
                 </span>{' '}
                 {`¥${tour.tourPrice}`}
-                
               </h2>
               <h3
                 className={`font-semibold text-white pb-2 custom:pb-0  custom:text-shadow-1 text-shadow-2 `}
@@ -484,17 +486,38 @@ export default function TourSidebar() {
         ))}
       </ul>
 
-      <div className='flex gap-2 mb-4'>
-        <button onClick={handlePageDecrease} disabled={page === 1} className={`${page === 1 ? 'opacity-50' : ''} font-semibold text-xl`}>{'<'}</button>
-        <div className='flex gap-2'>
-        {Array.from({ length: numberOfPages }, (_, index) => index + 1).map((pageNumber) => (
-          <div key={pageNumber} className={`p-1 px-3 rounded-full cursor-pointer hover:bg-pink-500 hover:text-white font-semibold text-xl ${page === pageNumber ? 'underline-offset-2 underline' : ''}`} onClick={() => handlePageClick(pageNumber)}>
-            {pageNumber}
-          </div>
-        ))}
-
+      <div className="flex gap-2 mb-4">
+        <button
+          onClick={handlePageDecrease}
+          disabled={page === 1}
+          className={`${page === 1 ? 'opacity-50' : ''} font-semibold text-xl`}
+        >
+          {'<'}
+        </button>
+        <div className="flex gap-2">
+          {Array.from({ length: numberOfPages }, (_, index) => index + 1).map(
+            (pageNumber) => (
+              <div
+                key={pageNumber}
+                className={`p-1 px-3 rounded-full cursor-pointer hover:bg-pink-500 hover:text-white font-semibold text-xl ${
+                  page === pageNumber ? 'underline-offset-2 underline' : ''
+                }`}
+                onClick={() => handlePageClick(pageNumber)}
+              >
+                {pageNumber}
+              </div>
+            )
+          )}
         </div>
-        <button onClick={handlePageIncrease} disabled={page === numberOfPages} className={`${page === numberOfPages ? 'opacity-50' : ''} font-semibold text-xl`}>{'>'}</button>
+        <button
+          onClick={handlePageIncrease}
+          disabled={page === numberOfPages}
+          className={`${
+            page === numberOfPages ? 'opacity-50' : ''
+          } font-semibold text-xl`}
+        >
+          {'>'}
+        </button>
       </div>
     </section>
   )
