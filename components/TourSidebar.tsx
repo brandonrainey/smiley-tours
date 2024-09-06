@@ -6,16 +6,6 @@ import { useEffect, useState } from 'react'
 
 const tours = [
   {
-    tourName: 'Shinjuku, Tokyo Tour September 5th',
-    tourArea: 'Shinjuku',
-    tourDate: 'September 5th',
-    tourImage: '/tours/tour-sep5.webp',
-    tourId: 1,
-    tourPrice: 25000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66b426b33fd2e1078c3f9b68',
-  },
-  {
     tourName: 'Shinjuku, Tokyo Tour September 12th',
     tourArea: 'Shinjuku',
     tourDate: 'September 12th',
