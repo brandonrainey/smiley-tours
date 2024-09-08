@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
 
@@ -60,7 +59,6 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           </a>
         </div>
 
-        
         <div className="text-center font-semibold flex flex-col items-center justify-between mt-8 sm:mt-0 sm:h-[414px]">
           <h2
             className={`text-center text-2xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
@@ -68,7 +66,10 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
             Asakusa Kid Girls Tour
           </h2>
 
-          <a className="flex flex-col items-center " href='https://smileywalk.shop/items/66d40650e2dc7a63739b486b'>
+          <a
+            className="flex flex-col items-center "
+            href="https://smileywalk.shop/items/66d40650e2dc7a63739b486b"
+          >
             <img
               src="/events/tapConcert.webp"
               alt="ninja bar"
@@ -88,11 +89,9 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
                 <LocationDot />
               </a>
             </div>
-            <p className='text-pink-500 textShadowNone'>¥10000</p>
-            
+            <p className="text-pink-500 textShadowNone">¥10000</p>
           </div>
         </div>
-
 
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">

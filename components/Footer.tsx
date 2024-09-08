@@ -29,16 +29,6 @@ export default function Footer() {
       className={` min-h-[250px] w-full flex flex-col justify-center items-center relative gap-2`}
       ref={socialsRef}
     >
-      {/* <div className="flex items-center gap-2 z-10 font-bold font-hammersmithone  ">
-        <img
-          src="/smileytime-sharp.webp"
-          width={250}
-          height={72}
-          alt="miley image"
-          className="custom:w-[300px]"
-        />
-      </div> */}
-
       <div className="flex sm:gap-24 gap-8 z-10">
         <a
           href="https://www.youtube.com/@smileytime"
