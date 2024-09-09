@@ -476,11 +476,11 @@ export default function TourSidebar() {
         ))}
       </ul>
 
-      <div className="flex gap-2 mb-4">
+      <div className="flex gap-2 mb-4 text-pink-700">
         <button
           onClick={handlePageDecrease}
           disabled={page === 1}
-          className={`${page === 1 ? 'opacity-50' : ''} font-semibold text-xl`}
+          className={`${page === 1 ? 'opacity-30' : ''} font-semibold text-xl`}
         >
           {'<'}
         </button>
@@ -503,7 +503,7 @@ export default function TourSidebar() {
           onClick={handlePageIncrease}
           disabled={page === numberOfPages}
           className={`${
-            page === numberOfPages ? 'opacity-50' : ''
+            page === numberOfPages ? 'opacity-30' : ''
           } font-semibold text-xl`}
         >
           {'>'}

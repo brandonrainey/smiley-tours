@@ -55,7 +55,7 @@ export default function MobileMenu() {
       >
         <div className="flex justify-center items-center gap-16">
           <img src="/ganko.webp" alt="ganko image" className="h-[5rem]" />
-          <img src="/bulma.webp" alt="bulma image" className="h-[4rem]" />
+          <img src="/bulmaGifNew.gif" alt="bulma image" className="h-[4rem]" />
         </div>
 
         <ul className="flex flex-col justify-between text-white text-4xl h-[400px] mb-[150px] mt-[50px] font-bold ">
