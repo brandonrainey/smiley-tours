@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 
 const tours = [
   {
-    tourName: 'Shinjuku, Tokyo Tour September 12th',
     tourArea: 'Shinjuku',
     tourDate: 'September 12th',
     tourImage: '/tours/tour-sep12.webp',
@@ -16,7 +15,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66b427c770810906789b333f',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour September 13th',
     tourArea: 'Akihabara',
     tourDate: 'September 13th',
     tourImage: '/tours/tour-sep13.webp',
@@ -26,7 +24,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66b4318060053708b6294330',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour September 19th',
     tourArea: 'Shinjuku',
     tourDate: 'September 19th',
     tourImage: '/tours/tour-sep19.webp',
@@ -36,7 +33,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66b432a23130cc0a8dad6d62',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour September 20th',
     tourArea: 'Asakusa',
     tourDate: 'September 20th',
     tourImage: '/tours/tour-sep20.webp',
@@ -46,7 +42,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66b437cf6d1512002a12f99f',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour September 30th',
     tourArea: 'Asakusa',
     tourDate: 'September 30th',
     tourImage: '/tours/tour-sep20.webp',
@@ -56,7 +51,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66b438ae5c88a2002e8295ac',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour October 3rd',
     tourArea: 'Shinjuku',
     tourDate: 'October 3rd',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -66,7 +60,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c309cd9a7b2101b1b50b30',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour October 4th',
     tourArea: 'Asakusa',
     tourDate: 'October 4th',
     tourImage: '/tours/asakusaTour.webp',
@@ -76,7 +69,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d40b9f4b15c016039fac38',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour October 10th',
     tourArea: 'Shinjuku',
     tourDate: 'October 10th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -86,7 +78,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c309a11b56ba02a17d8313',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour October 11th',
     tourArea: 'Asakusa',
     tourDate: 'October 11th',
     tourImage: '/tours/asakusaTour.webp',
@@ -96,7 +87,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d40b62e2dc7a64ec9b4819',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour October 17th',
     tourArea: 'Shinjuku',
     tourDate: 'October 17th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -106,7 +96,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c30b95827c0203a8467283',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour October 18th',
     tourArea: 'Asakusa',
     tourDate: 'October 18th',
     tourImage: '/tours/asakusaTour.webp',
@@ -116,7 +105,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d40bda9b4c191e399dad59',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour October 24th',
     tourArea: 'Shinjuku',
     tourDate: 'October 24th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -126,7 +114,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c30bcb3fed3c029db7ce8c',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour October 25th',
     tourArea: 'Asakusa',
     tourDate: 'October 25th',
     tourImage: '/tours/asakusaTour.webp',
@@ -136,7 +123,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d410809b4c191fb09dad1d',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour October 31st',
     tourArea: 'Shinjuku',
     tourDate: 'October 31st',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -146,7 +132,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c30c00f0a6af02a564b867',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour November 1st',
     tourArea: 'Asakusa',
     tourDate: 'November 1st',
     tourImage: '/tours/asakusaTour.webp',
@@ -156,7 +141,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d410f95106c222bfd7685e',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour November 5th',
     tourArea: 'Akihabara',
     tourDate: 'November 5th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -166,7 +150,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66bef6c2f848b1051513923e',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour November 7th',
     tourArea: 'Shinjuku',
     tourDate: 'November 7th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -176,7 +159,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour November 8th',
     tourArea: 'Asakusa',
     tourDate: 'November 8th',
     tourImage: '/tours/asakusaTour.webp',
@@ -186,7 +168,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d411474b15c017959fac36',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour November 11th',
     tourArea: 'Akihabara',
     tourDate: 'November 11th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -196,7 +177,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour November 14th',
     tourArea: 'Shinjuku',
     tourDate: 'November 14th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -206,7 +186,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7a96c7ed9a02434b8fbf',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour November 15th',
     tourArea: 'Asakusa',
     tourDate: 'November 15th',
     tourImage: '/tours/asakusaTour.webp',
@@ -216,7 +195,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d41178c56f48302f6365f9',
   },
   {
-    tourName: 'Akihbara, Tokyo Tour November 19th',
     tourArea: 'Akihabara',
     tourDate: 'November 19th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -226,7 +204,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d41d5f9b4c1922909dad4e',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour November 21st',
     tourArea: 'Shinjuku',
     tourDate: 'November 21st',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -236,7 +213,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c317d070810903f0d7fc47',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour November 22nd',
     tourArea: 'Asakusa',
     tourDate: 'November 22nd',
     tourImage: '/tours/asakusaTour.webp',
@@ -246,7 +222,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d411bb4b15c017959fac81',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour November 28th',
     tourArea: 'Shinjuku',
     tourDate: 'November 28th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -256,7 +231,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66c317fa3c173d03a903c598',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour November 29th',
     tourArea: 'Asakusa',
     tourDate: 'November 29th',
     tourImage: '/tours/asakusaTour.webp',
@@ -266,7 +240,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d411ee888a2e1b95e14eac',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour December 3rd',
     tourArea: 'Akihabara',
     tourDate: 'December 3rd',
     tourImage: '/tours/akihabaraTour.webp',
@@ -276,7 +249,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d41fa14b15c01b1f9fac3a',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour December 5th',
     tourArea: 'Shinjuku',
     tourDate: 'December 5th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -286,7 +258,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour December 6th',
     tourArea: 'Asakusa',
     tourDate: 'December 6th',
     tourImage: '/tours/asakusaTour.webp',
@@ -296,7 +267,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d4123c888a2e1b7be14f17',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour December 10th',
     tourArea: 'Akihabara',
     tourDate: 'December 10th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -306,7 +276,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d41fc09b4c1923449dad1f',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour December 12th',
     tourArea: 'Shinjuku',
     tourDate: 'December 12th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -316,7 +285,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7b18b90fcc36d006f698',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour December 13th',
     tourArea: 'Asakusa',
     tourDate: 'December 13th',
     tourImage: '/tours/asakusaTour.webp',
@@ -326,7 +294,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d4126c4b15c017b99faca7',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour December 17th',
     tourArea: 'Akihabara',
     tourDate: 'December 17th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -336,7 +303,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d41fe44b15c01abb9facac',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour December 19th',
     tourArea: 'Shinjuku',
     tourDate: 'December 19th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -346,7 +312,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7b45b90fcc36d006f6b6',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour December 20th',
     tourArea: 'Asakusa',
     tourDate: 'December 20th',
     tourImage: '/tours/asakusaTour.webp',
@@ -356,7 +321,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d412a25106c222ebd768ad',
   },
   {
-    tourName: 'Akihabara, Tokyo Tour December 24th',
     tourArea: 'Akihabara',
     tourDate: 'December 24th',
     tourImage: '/tours/akihabaraTour.webp',
@@ -366,7 +330,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d4240db363bc3bc06ff12c',
   },
   {
-    tourName: 'Shinjuku, Tokyo Tour December 26th',
     tourArea: 'Shinjuku',
     tourDate: 'December 26th',
     tourImage: '/tours/shinjuku-tour.webp',
@@ -376,7 +339,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66ca7b812ead3704dd245144',
   },
   {
-    tourName: 'Asakusa, Tokyo Tour December 27th',
     tourArea: 'Asakusa',
     tourDate: 'December 27th',
     tourImage: '/tours/asakusaTour.webp',
@@ -437,7 +399,7 @@ export default function TourSidebar() {
             >
               <img
                 src={tour.tourImage}
-                alt={tour.tourName}
+                alt={`${tour.tourArea} ${tour.tourDate}`}
                 className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:scale-[1.025] transition-all ease-in-out object-cover"
               />
 
@@ -449,9 +411,7 @@ export default function TourSidebar() {
                 <span
                   className={`text-white custom:text-shadow-1 text-shadow-2 `}
                 >
-                  {tour.tourName === 'Private Tour'
-                    ? tour.tourName
-                    : `${tour.tourDate}`}
+                  {`${tour.tourDate}`}
                 </span>{' '}
                 {`¥${tour.tourPrice}`}
               </h2>
