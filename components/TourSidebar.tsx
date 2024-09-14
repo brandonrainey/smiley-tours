@@ -3,6 +3,7 @@
 import { useAreaStore } from '@/store/areas'
 import HeartSolid from './icons/HeartSolid'
 import { useEffect, useState } from 'react'
+import ArrowRight from './icons/ArrowRight'
 
 const tours = [
   {
@@ -391,7 +392,7 @@ export default function TourSidebar() {
               <img
                 src={tour.tourImage}
                 alt={`${tour.tourArea} ${tour.tourDate}`}
-                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:scale-[1.025] transition-all ease-in-out object-cover"
+                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:border-2  border-pink-500  object-cover"
               />
 
               <p className="font-extrabold text-white pt-2  tracking-wide text-xl custom:text-shadow-1 text-shadow-2">
@@ -417,7 +418,11 @@ export default function TourSidebar() {
                   <div className="flex items-center gap-2 ">
                     <HeartSolid />
 
-                    <p className="custom:text-lg">Learn More!</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="custom:text-lg">Learn More </p>
+                    <ArrowRight size={'w-[1.3rem]'}/>
+                  </div>
+                    
                     <HeartSolid />
                   </div>
                 )}

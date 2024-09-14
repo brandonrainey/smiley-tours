@@ -54,7 +54,7 @@ export default function SectionCarousel() {
           onClick={handleNext}
           aria-label="next section"
         >
-          <ArrowRight />
+          <ArrowRight size={'w-[1.7rem]'}/>
         </button>
       </div>
       <div className="flex items-center gap-4 mt-4">
@@ -85,7 +85,7 @@ export default function SectionCarousel() {
           onClick={handleNext}
           aria-label="next section mobile"
         >
-          <ArrowRight />
+          <ArrowRight size={'w-[1.7rem]'}/>
         </button>
       </div>
     </div>
