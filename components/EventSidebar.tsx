@@ -24,7 +24,7 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
         {/* Community Post */}
         <div className="flex flex-col items-center">
           <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-y-2 border-pink-300 w-fit px-2 mb-2 backdropFilterBlur relative">
-            Recent Community Post
+            Community Post
           </h2>
 
           <a
