@@ -93,6 +93,42 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
           </div>
         </div>
 
+
+
+
+        <div className="text-center font-semibold flex flex-col items-center justify-between mt-8 sm:mt-0 sm:h-[414px]">
+          <h2
+            className={`text-center text-2xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
+          >
+            Fishing Tour
+          </h2>
+
+          <a
+            className="flex flex-col items-center "
+            href="https://smileywalk.shop/items/66e636bf2bd35e43894a2d55"
+          >
+            <img
+              src="/tours/fishingTour.webp"
+              alt="fishing tour"
+              className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow object-cover aspect-square"
+            />
+          </a>
+
+          <div
+            className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
+          >
+            <div className="flex gap-2 items-center">
+              <p>October 21st</p>
+              
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
+
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px]">
           <h2
