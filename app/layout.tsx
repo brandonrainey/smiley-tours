@@ -44,7 +44,7 @@ export default function RootLayout({
         />
         <meta
           name="og:description"
-          content="Explore Tokyo with an English-speaking Tour Guide, led by a former Japanese Idol! Discover the history and unique experiences awaiting in iconic districts such as Asakusa, Ueno, Akihabara, and more renowned destinations in Japan."
+          content="Explore Tokyo with an English-speaking Tour Guide, led by a former Japanese Idol! Discover the history and unique experiences awaiting in iconic districts such as Asakusa, Shinjuku, Akihabara, and more renowned destinations in Japan."
         />
         <meta
           property="og:image"
