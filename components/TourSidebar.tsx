@@ -7,15 +7,6 @@ import ArrowRight from './icons/ArrowRight'
 
 const tours = [
   {
-    tourArea: 'Shinjuku',
-    tourDate: 'September 19th',
-    tourImage: '/tours/tour-sep19.webp',
-    tourId: 4,
-    tourPrice: 25000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66b432a23130cc0a8dad6d62',
-  },
-  {
     tourArea: 'Asakusa',
     tourDate: 'September 20th',
     tourImage: '/tours/tour-sep20.webp',
@@ -411,7 +402,7 @@ export default function TourSidebar() {
 
                   <div className='flex items-center gap-2'>
                     <p className="custom:text-lg">Learn More </p>
-                    <ArrowRight size={'w-[1.3rem]'}/>
+                    <ArrowRight size={`w-[1.2rem]`}/>
                   </div>
                     
                     <HeartSolid />
