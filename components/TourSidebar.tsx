@@ -400,8 +400,8 @@ export default function TourSidebar() {
                   <div className="flex items-center gap-2 ">
                     <HeartSolid />
 
-                  <div className='flex items-center gap-2'>
-                    <p className="custom:text-lg">Learn More </p>
+                  <div className='flex items-center custom:gap-2 gap-1'>
+                    <p className="custom:text-lg text-sm">Learn More </p>
                     <ArrowRight size={`w-[1.2rem]`}/>
                   </div>
                     
