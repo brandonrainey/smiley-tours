@@ -26,7 +26,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={` min-h-[250px] w-full flex flex-col justify-center items-center relative gap-2`}
+      className={` min-h-[250px] w-full flex flex-col justify-center items-center relative gap-2 mt-4`}
       ref={socialsRef}
     >
       <div className="flex sm:gap-24 gap-8 z-10 ">
@@ -52,13 +52,7 @@ export default function Footer() {
           <TwitterIcon />
         </a>
 
-        <a
-          href="https://smileywalk.shop/"
-          aria-label="smiley walk link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] sm:flex justify-center items-center bg-pink-400 rounded-full shadow-xl border-2 border-pink-400 hidden"
-        >
-          <img src='/smileyWalk.webp'/>
-        </a>
+        
       </div>
       <p
         className="text-white text-xl tracking-wide text-shadow-1 underline cursor-copy py-2 z-30"
@@ -67,6 +61,15 @@ export default function Footer() {
         smileywalk1@gmail.com
       </p>
       {copySuccess && <div>{copySuccess}</div>}
+
+
+      <a
+          href="https://smileywalk.shop/"
+          aria-label="smiley walk link"
+          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-400 rounded-full shadow-xl border-2 border-pink-400 mb-4"
+        >
+          <img src='/smileyWalk.webp'/>
+        </a>
     </footer>
   )
 }
