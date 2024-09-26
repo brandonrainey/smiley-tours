@@ -33,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/smiley-title-new.webp" as="image" />
+        <link rel="preload" href="/miley-main.webp" as="image" />
         <link rel="preload" href="/miley.webp" as="image" />
         <link rel="preload" href="/bulma.webp" as="image" />
         <link rel="preload" href="/ganko.webp" as="image" />
