@@ -9,7 +9,7 @@ const tours = [
   {
     tourArea: 'Asakusa',
     tourDate: 'September 30th',
-    tourImage: '/tours/tour-sep20.webp',
+    tourImage: '/tours/asakusaTour.webp',
     tourId: 6,
     tourPrice: 20000,
     tourSpots: 4,

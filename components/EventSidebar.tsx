@@ -22,8 +22,8 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
         {/* Community Post */}
-        <div className="flex flex-col items-center  sm:h-[414px]">
-          <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-y-2 border-pink-300 w-fit px-2 sm:mb-auto mb-4 backdropFilterBlur relative">
+        <div className="flex flex-col items-center justify-between sm:h-[414px]">
+          <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-y-2 border-pink-300 w-fit px-2  mb-4 backdropFilterBlur relative">
             Community Post
           </h2>
 
@@ -45,7 +45,11 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
               className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
             />
 
-            <div className="postWrapper relative max-w-[300px]">
+            
+          </a>
+
+
+<div className="postWrapper relative max-w-[300px]">
               <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
                 {postContent.error
                   ? 'Error loading post'
@@ -56,7 +60,8 @@ export default function EventSidebar({ postContent }: EventSidebarProps) {
                 ...
               </h3>
             </div>
-          </a>
+
+
         </div>
 
 
