@@ -51,15 +51,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d40b62e2dc7a64ec9b4819',
   },
-  {
-    tourArea: 'Tokyo',
-    tourDate: 'October 15th',
-    tourImage: '/tours/hiddenTour.webp',
-    tourId: 111,
-    tourPrice: 50000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66f413229b0fd5508c04a592',
-  },
+  
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 17th',
@@ -78,15 +70,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d40bda9b4c191e399dad59',
   },
-  {
-    tourArea: 'Tokyo',
-    tourDate: 'October 22nd',
-    tourImage: '/tours/hiddenTour.webp',
-    tourId: 131,
-    tourPrice: 50000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66f413a3f6dd213339ae106f',
-  },
+  
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 24th',
@@ -105,15 +89,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d410809b4c191fb09dad1d',
   },
-  {
-    tourArea: 'Tokyo',
-    tourDate: 'October 29th',
-    tourImage: '/tours/hiddenTour.webp',
-    tourId: 151,
-    tourPrice: 50000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66f41566f325fc0ce95849a1',
-  },
+  
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 31st',
