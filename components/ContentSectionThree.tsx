@@ -68,11 +68,12 @@ export default function ContentSectionThree() {
               }`}
               key={'girlsbar1'}
             >
-              Join us for a walking tour 🚶‍♂️🚶‍♀️ of the girls&apos; bars featured on the Japan Explorer Channel!
+              Join us for a walking tour 🚶‍♂️🚶‍♀️ of the girls&apos; bars featured
+              on the Japan Explorer Channel!
               <br />
               <br />
-              
-              As we explore, Miley will share the fascinating history of Shinjuku 📜, making for an enlightening and entertaining journey.
+              As we explore, Miley will share the fascinating history of
+              Shinjuku 📜, making for an enlightening and entertaining journey.
             </p>
           )}
         </div>

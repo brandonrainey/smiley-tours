@@ -51,8 +51,6 @@ export default function Footer() {
         >
           <TwitterIcon />
         </a>
-
-        
       </div>
       <p
         className="text-white text-xl tracking-wide text-shadow-1 underline cursor-copy py-2 z-30"
@@ -62,14 +60,13 @@ export default function Footer() {
       </p>
       {copySuccess && <div>{copySuccess}</div>}
 
-
       <a
-          href="https://smileywalk.shop/"
-          aria-label="smiley walk link"
-          className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-400 rounded-full shadow-xl border-2 border-pink-400 mb-4"
-        >
-          <img src='/smileyWalk.webp'/>
-        </a>
+        href="https://smileywalk.shop/"
+        aria-label="smiley walk link"
+        className="sm:w-[100px] w-[80px] sm:h-[100px] h-[80px] flex justify-center items-center bg-pink-400 rounded-full shadow-xl border-2 border-pink-400 mb-4"
+      >
+        <img src="/smileyWalk.webp" />
+      </a>
     </footer>
   )
 }

@@ -74,15 +74,15 @@ export default function ContentSectionOne() {
               }`}
               key="shinjuku"
             >
-              Capture the perfect snapshot 📸 at the famous cat screen in Godzilla Street, Shinjuku!
+              Capture the perfect snapshot 📸 at the famous cat screen in
+              Godzilla Street, Shinjuku!
               <br />
               <br />
-              
-               It&apos;s the ideal spot for a quirky photo op where Godzilla meets a giant digital kitty 🐱. Don&apos;t forget to strike your best pose and make some unforgettable memories!
-
+              It&apos;s the ideal spot for a quirky photo op where Godzilla
+              meets a giant digital kitty 🐱. Don&apos;t forget to strike your
+              best pose and make some unforgettable memories!
               <br />
               <br />
-              
             </p>
           )}
         </div>

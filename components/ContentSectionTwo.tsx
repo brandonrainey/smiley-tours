@@ -119,15 +119,15 @@ export default function ContentSectionTwo() {
               }`}
               key={'izakaya2'}
             >
-              Step back in time and savor unique Japanese food and drinks 🍻 at a restaurant themed like a vintage izakaya from over 50 years ago.
-              
+              Step back in time and savor unique Japanese food and drinks 🍻 at
+              a restaurant themed like a vintage izakaya from over 50 years ago.
               <br />
               <br />
-               Enjoy a drink with classic dishes like yakitori 🍢, oden 🍢, and yakisoba 🍜. For the adventurous, you can even try eating a frog 🐸! Cheers to an unforgettable culinary experience!
+              Enjoy a drink with classic dishes like yakitori 🍢, oden 🍢, and
+              yakisoba 🍜. For the adventurous, you can even try eating a frog
+              🐸! Cheers to an unforgettable culinary experience!
               <br />
               <br />
-              
-              
             </p>
           )}
         </div>

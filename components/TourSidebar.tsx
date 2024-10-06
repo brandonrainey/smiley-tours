@@ -24,7 +24,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d40b62e2dc7a64ec9b4819',
   },
-  
+
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 17th',
@@ -43,7 +43,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d40bda9b4c191e399dad59',
   },
-  
+
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 24th',
@@ -62,7 +62,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d410809b4c191fb09dad1d',
   },
-  
+
   {
     tourArea: 'Shinjuku',
     tourDate: 'October 31st',
@@ -324,7 +324,7 @@ export default function TourSidebar() {
       ref={tourRef}
     >
       <h1 className="flex  w-fit items-center justify-center   shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4 relative contentBackgroundBlur2">
-       Tours
+        Tours
       </h1>
 
       <ul className="custom:flex custom:flex-wrap grid grid-cols-2 justify-center items-center transition-all duration-150 ease-in-out max-w-[1600px] custom:gap-x-16">
@@ -367,11 +367,11 @@ export default function TourSidebar() {
                   <div className="flex items-center gap-2 ">
                     <HeartSolid />
 
-                  <div className='flex items-center custom:gap-2 gap-1'>
-                    <p className="custom:text-lg text-sm">Learn More </p>
-                    <ArrowRight size={`w-[1.2rem]`}/>
-                  </div>
-                    
+                    <div className="flex items-center custom:gap-2 gap-1">
+                      <p className="custom:text-lg text-sm">Learn More </p>
+                      <ArrowRight size={`w-[1.2rem]`} />
+                    </div>
+
                     <HeartSolid />
                   </div>
                 )}
