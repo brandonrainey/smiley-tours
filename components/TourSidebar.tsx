@@ -288,6 +288,15 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d412c74b15c017fd9fac41',
   },
+  {
+    tourArea: 'Asakusa',
+    tourDate: 'January 3rd',
+    tourImage: '/tours/asakusaTour.webp',
+    tourId: 391,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6703ca96c1e66b029975e073',
+  },
 ]
 
 export default function TourSidebar() {
