@@ -3,11 +3,8 @@
 import { useAreaStore } from '@/store/areas'
 import LocationDot from './icons/LocationDot'
 
-interface EventSidebarProps {
-  postContent: any
-}
 
-export default function EventSidebar({ postContent }: EventSidebarProps) {
+export default function EventSidebar() {
   const { eventsRef } = useAreaStore()
 
   return (
