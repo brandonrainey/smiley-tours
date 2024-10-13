@@ -21,7 +21,7 @@ const tours = [
     tourImage: '/tours/asakusaTour.webp',
     tourId: 12,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66d40bda9b4c191e399dad59',
   },
 
@@ -31,7 +31,7 @@ const tours = [
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 13,
     tourPrice: 25000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66c30bcb3fed3c029db7ce8c',
   },
   {
@@ -275,7 +275,7 @@ const tours = [
     tourImage: '/tours/asakusaTour.webp',
     tourId: 391,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/6703ca96c1e66b029975e073',
   },
   {
