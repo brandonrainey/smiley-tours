@@ -18,43 +18,6 @@ export default function EventSidebar() {
       </h1>
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
-        {/* Community Post */}
-        {/* <div className="flex flex-col items-center justify-between sm:h-[414px]">
-          <h2 className="text-2xl text-center text-white custom:text-shadow-1 text-shadow-5 font-semibold border-y-2 border-pink-300 w-fit px-2  mb-4 backdropFilterBlur relative">
-            Community Post
-          </h2>
-
-          <a
-            href="https://www.youtube.com/@smileytime/community"
-            className="flex flex-col items-center justify-center text-center"
-          >
-            <img
-              src={
-                postContent.error
-                  ? '/smiley-yt-enhanced.jpg'
-                  : postContent?.items[0]?.community[0]?.images[0]
-                      ?.thumbnails[2].url
-                  ? postContent?.items[0]?.community[0]?.images[0]
-                      ?.thumbnails[2].url
-                  : '/smiley-yt-enhanced.jpg'
-              }
-              alt="community post image"
-              className="rounded tourShadow max-w-[300px] custom:w-full w-[300px]"
-            />
-          </a>
-
-          <div className="postWrapper relative max-w-[300px]">
-            <h3 className="text-white custom:text-shadow-1 text-shadow-5 font-semibold">
-              {postContent.error
-                ? 'Error loading post'
-                : postContent?.items[0].community[0]?.contentText[0].text.substring(
-                    0,
-                    90
-                  )}
-              ...
-            </h3>
-          </div>
-        </div> */}
 
         <div className="text-center font-semibold flex flex-col items-center justify-between mt-8 sm:mt-0 sm:h-[414px]">
           <h2
