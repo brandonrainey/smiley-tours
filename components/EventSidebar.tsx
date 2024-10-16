@@ -13,7 +13,7 @@ export default function EventSidebar() {
       id="events"
       ref={eventsRef}
     >
-      <h1 className="flex  w-fit items-center justify-center  shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-4 relative contentBackgroundBlur2">
+      <h1 className="flex  w-fit items-center justify-center  shadow p-1 px-2 rounded-xl sm:text-4xl text-3xl text-white bg-gradient-to-r from-[#f382bc] to-[#ed3996] mb-6 custom:mt-2 relative contentBackgroundBlur2">
         Events
       </h1>
 
