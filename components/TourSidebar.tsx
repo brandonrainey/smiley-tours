@@ -46,11 +46,11 @@ const tours = [
 
   {
     tourArea: 'Shinjuku',
-    tourDate: 'October 31st',
+    tourDate: 'October 30th',
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 15,
     tourPrice: 25000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66c30c00f0a6af02a564b867',
   },
   {
