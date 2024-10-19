@@ -7,16 +7,6 @@ import ArrowRight from './icons/ArrowRight'
 
 const tours = [
   {
-    tourArea: 'Asakusa',
-    tourDate: 'October 18th',
-    tourImage: '/tours/asakusaTour.webp',
-    tourId: 12,
-    tourPrice: 20000,
-    tourSpots: 0,
-    tourLink: 'https://smileywalk.shop/items/66d40bda9b4c191e399dad59',
-  },
-
-  {
     tourArea: 'Shinjuku',
     tourDate: 'October 24th',
     tourImage: '/tours/shinjuku-tour.webp',
