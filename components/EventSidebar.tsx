@@ -102,8 +102,6 @@ export default function EventSidebar() {
                 <LocationDot />
               </a>
             </div>
-            <p>🌟Charge ¥500/1h</p>
-            <p>🌟Drinks ¥800〜</p>
           </div>
         </div>
       </div>
