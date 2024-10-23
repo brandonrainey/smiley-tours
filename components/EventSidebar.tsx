@@ -41,7 +41,7 @@ export default function EventSidebar() {
             className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
           >
             <div className="flex gap-2 items-center text-lg">
-              <p>October 22nd, 29th</p>
+              <p>October 29th</p>
             </div>
           </div>
         </div>
