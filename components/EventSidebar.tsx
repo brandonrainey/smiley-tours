@@ -122,7 +122,7 @@ export default function EventSidebar() {
             className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
           >
             <div className="flex gap-2 items-center text-lg">
-              <p>Open :18:00- 23:00</p>
+              <p>18:00- 23:00</p>
               <a
                 href="https://maps.app.goo.gl/PJndiVJPRv4bTWQSA"
                 aria-label="Miley bar location"
