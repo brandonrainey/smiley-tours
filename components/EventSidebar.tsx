@@ -19,32 +19,6 @@ export default function EventSidebar() {
 
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
 
-        <div className="text-center font-semibold flex flex-col items-center justify-between mt-8 sm:mt-0 sm:h-[414px]">
-          <h2
-            className={`text-center text-2xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
-          >
-            Hidden Gems Tours
-          </h2>
-
-          <a
-            className="flex flex-col items-center "
-            href="https://smileywalk.shop/?category_id=66c2fc737081090058d7fd19"
-          >
-            <img
-              src="/tours/hiddenTour.webp"
-              alt="hidden gems tour"
-              className="rounded max-w-[300px] custom:w-full w-[300px] tourShadow object-cover aspect-square"
-            />
-          </a>
-
-          <div
-            className={`font-semibold rounded text-white custom:text-shadow-1 text-shadow-2 mt-2  max-w-[300px]  p-1 w-full flex flex-col items-center`}
-          >
-            <div className="flex gap-2 items-center text-lg">
-              <p>October 29th</p>
-            </div>
-          </div>
-        </div>
 
 
 
