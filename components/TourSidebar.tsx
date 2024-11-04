@@ -7,22 +7,13 @@ import ArrowRight from './icons/ArrowRight'
 
 const tours = [
   {
-    tourArea: 'Akihabara',
-    tourDate: 'November 5th',
-    tourImage: '/tours/akihabaraTour.webp',
-    tourId: 17,
+    tourArea: 'Harajuku',
+    tourDate: 'November 7th',
+    tourImage: '/tours/harajukuTour.webp',
+    tourId: 18,
     tourPrice: 20000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66bef6c2f848b1051513923e',
-  },
-  {
-    tourArea: 'Shinjuku',
-    tourDate: 'November 7th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 18,
-    tourPrice: 25000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
+    tourLink: 'https://smileywalk.shop/items/663114d9689119141ff40764',
   },
   {
     tourArea: 'Asakusa',
@@ -32,15 +23,6 @@ const tours = [
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d411474b15c017959fac36',
-  },
-  {
-    tourArea: 'Akihabara',
-    tourDate: 'November 11th',
-    tourImage: '/tours/akihabaraTour.webp',
-    tourId: 20,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66ca7ace2ead37049e24510b',
   },
   {
     tourArea: 'Shinjuku',
@@ -59,15 +41,6 @@ const tours = [
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/66d41178c56f48302f6365f9',
-  },
-  {
-    tourArea: 'Akihabara',
-    tourDate: 'November 19th',
-    tourImage: '/tours/akihabaraTour.webp',
-    tourId: 23,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66d41d5f9b4c1922909dad4e',
   },
   {
     tourArea: 'Shinjuku',
@@ -143,21 +116,12 @@ const tours = [
   },
   {
     tourArea: 'Shinjuku',
-    tourDate: 'December 12th',
+    tourDate: 'December 11th',
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 32,
     tourPrice: 25000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66ca7b18b90fcc36d006f698',
-  },
-  {
-    tourArea: 'Asakusa',
-    tourDate: 'December 13th',
-    tourImage: '/tours/asakusaTour.webp',
-    tourId: 33,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66d4126c4b15c017b99faca7',
+    tourLink: 'https://smileywalk.shop/items/6705204d712e6e08026be349',
   },
   {
     tourArea: 'Akihabara',
@@ -242,15 +206,6 @@ const tours = [
   },
   {
     tourArea: 'Shinjuku',
-    tourDate: 'Febuary 11th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 3914,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6705204d712e6e08026be349',
-  },
-  {
-    tourArea: 'Shinjuku',
     tourDate: 'Febuary 18th',
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 3915,
@@ -278,7 +233,7 @@ const tours = [
   },
   {
     tourArea: 'Shinjuku',
-    tourDate: 'Febuary 18th',
+    tourDate: 'March 18th',
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 3918,
     tourPrice: 20000,
@@ -287,7 +242,7 @@ const tours = [
   },
   {
     tourArea: 'Shinjuku',
-    tourDate: 'Febuary 25th',
+    tourDate: 'March 25th',
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 3919,
     tourPrice: 20000,
