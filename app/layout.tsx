@@ -35,7 +35,7 @@ export default function RootLayout({
         <link rel="preload" href="/smiley-title-new.webp" as="image" />
         <link rel="preload" href="/miley-main.webp" as="image" />
         <link rel="preload" href="/miley.webp" as="image" />
-        <link rel="preload" href="/bulma.webp" as="image" />
+        <link rel="preload" href="/bulma.png" as="image" />
         <link rel="preload" href="/ganko.webp" as="image" />
         <meta name="thumbnail" content="/miley-main.webp" />
         <meta name="robots" content="index, follow" />
