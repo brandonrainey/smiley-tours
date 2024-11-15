@@ -39,7 +39,7 @@ const tours = [
     tourImage: '/tours/barTour.webp',
     tourId: 34,
     tourPrice: 30000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/673415c50662f22d55ead4d7',
   },
   {
@@ -48,7 +48,7 @@ const tours = [
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 4,
     tourPrice: 25000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66c317d070810903f0d7fc47',
   },
   {
