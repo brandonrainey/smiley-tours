@@ -61,15 +61,6 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/66d411ee888a2e1b95e14eac',
   },
   {
-    tourArea: 'Akihabara',
-    tourDate: 'December 3rd',
-    tourImage: '/tours/akihabaraTour.webp',
-    tourId: 8,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/66d41fa14b15c01b1f9fac3a',
-  },
-  {
     tourArea: 'Tokyo',
     tourDate: 'December 3rd',
     tourImage: '/tours/barTour.webp',
@@ -113,15 +104,6 @@ const tours = [
     tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/6705204d712e6e08026be349',
-  },
-  {
-    tourArea: 'Akihabara',
-    tourDate: 'December 17th',
-    tourImage: '/tours/akihabaraTour.webp',
-    tourId: 13,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6734ba9a24b8190210ece8f0',
   },
   {
     tourArea: 'Tokyo',
