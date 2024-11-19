@@ -48,7 +48,7 @@ const tours = [
     tourImage: '/tours/asakusaTour.webp',
     tourId: 7,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66d411ee888a2e1b95e14eac',
   },
   {
