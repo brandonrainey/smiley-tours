@@ -2,7 +2,6 @@ import Header from '@/components/Header'
 import MainContent from '@/components/MainContent'
 import TourSidebar from '@/components/TourSidebar'
 import dynamic from 'next/dynamic'
-import { fetchCommunityPostContent } from './action'
 
 const AreaSelector = dynamic(() => import('@/components/AreaSelector'), {
   ssr: true,
@@ -30,7 +29,6 @@ const Footer = dynamic(() => import('@/components/Footer'), {
 })
 
 export default async function Home() {
-  const postContent = await fetchCommunityPostContent()
 
   return (
     <div className="  w-full h-full flex flex-col relative overflow-x-hidden">

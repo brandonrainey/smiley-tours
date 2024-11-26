@@ -12,7 +12,7 @@ const tours = [
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 1,
     tourPrice: 25000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66c317fa3c173d03a903c598',
   },
   {
