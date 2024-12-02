@@ -40,7 +40,6 @@ export default function EventSidebar() {
           ></div>
         </div>
 
-
         {/* Miley's Bar */}
         <div className="text-center font-semibold flex flex-col items-center mt-8 sm:mt-0 sm:h-[414px] justify-between">
           <h2
