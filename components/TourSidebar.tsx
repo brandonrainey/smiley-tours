@@ -30,7 +30,7 @@ const tours = [
     tourImage: '/tours/harajukuTour.webp',
     tourId: 6,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/67277b144c3d4e1cf9fcbd38',
   },
   {
@@ -75,7 +75,7 @@ const tours = [
     tourImage: '/tours/christmasTour.webp',
     tourId: 11,
     tourPrice: 20000,
-    tourSpots: 4,
+    tourSpots: 0,
     tourLink: 'https://smileywalk.shop/items/66d4240db363bc3bc06ff12c',
   },
   {
