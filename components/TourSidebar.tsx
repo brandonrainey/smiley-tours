@@ -79,6 +79,15 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
   },
   {
+    tourArea: 'Shinjuku',
+    tourDate: 'January 15th',
+    tourImage: '/tours/shinjuku-tour.webp',
+    tourId: 10123,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6708f02b3626e40e9827f67f',
+  },
+  {
     tourArea: 'Asakusa',
     tourDate: 'January 17th',
     tourImage: '/tours/asakusaTour.webp',
@@ -86,6 +95,15 @@ const tours = [
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
+  },
+  {
+    tourArea: 'Shinjuku',
+    tourDate: 'January 22nd',
+    tourImage: '/tours/shinjuku-tour.webp',
+    tourId: 10443,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6751110882a50904ce548f6a',
   },
   {
     tourArea: 'Asakusa',
@@ -96,16 +114,7 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
   },
-  {
-    tourArea: 'Asakusa',
-    tourDate: 'January 31st',
-    tourImage: '/tours/asakusaTour.webp',
-    tourId: 1015,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
-  },
-  
+
   {
     tourArea: 'Shinjuku',
     tourDate: 'January 28th',
@@ -115,6 +124,16 @@ const tours = [
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/67051fdea7510904ceaa2cf7',
   },
+  {
+    tourArea: 'Asakusa',
+    tourDate: 'January 31st',
+    tourImage: '/tours/asakusaTour.webp',
+    tourId: 1015,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
+  },
+
   {
     tourArea: 'Shinjuku',
     tourDate: 'Feburary 4th',
