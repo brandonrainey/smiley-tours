@@ -153,6 +153,15 @@ const tours = [
     tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
   },
   {
+    tourArea: 'Shinjuku',
+    tourDate: 'Feburary 13th',
+    tourImage: '/tours/shinjuku-tour.webp',
+    tourId: 19991,
+    tourPrice: 20000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/6708f02b3626e40e9827f67f',
+  },
+  {
     tourArea: 'Asakusa',
     tourDate: 'Feburary 14th',
     tourImage: '/tours/asakusaTour.webp',
