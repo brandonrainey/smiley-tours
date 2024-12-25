@@ -21,7 +21,7 @@ export default function EventSidebar() {
           <h2
             className={`text-center text-2xl tracking-wide font-semibold text-white border-y-2 border-pink-300 custom:text-shadow-1 text-shadow-5 py-1 mb-4`}
           >
-            Japan&apos;s Heroic Journey Tour
+            Heroic Journey Tour
           </h2>
 
           <a
