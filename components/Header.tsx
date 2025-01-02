@@ -78,7 +78,7 @@ export default function Header() {
           onMouseLeave={handleMouseOut}
         >
           <img
-            src={imgSrc}
+            src="/bulmaPng.png'"
             alt="bulma image"
             className={` custom:w-[72px] w-[70px] hidden custom:inline-block `}
           />
