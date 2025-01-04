@@ -3,7 +3,6 @@
 import { useAreaStore } from '@/store/areas'
 import MobileMenu from './MobileMenu'
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
 
 const HamburgerButton = dynamic(() => import('./HamburgerButton'), {
   ssr: true,
@@ -11,16 +10,6 @@ const HamburgerButton = dynamic(() => import('./HamburgerButton'), {
 
 export default function Header() {
   const { isMobileMenuOpen, eventsRef, tourRef } = useAreaStore()
-
-  const [imgSrc, setImgSrc] = useState('/bulmaPng.png')
-
-  function handleMouseIn() {
-    setImgSrc('/bulmaGifNew.gif')
-  }
-
-  function handleMouseOut() {
-    setImgSrc('/bulmaPng.png')
-  }
 
   const scrollToRef = (ref: any) => {
     setTimeout(() => {
@@ -74,11 +63,9 @@ export default function Header() {
 
         <div
           className="flex flex-col items-center mt-auto"
-          onMouseEnter={handleMouseIn}
-          onMouseLeave={handleMouseOut}
         >
           <img
-            src="/bulmaPng.png'"
+            src="/bulmaPng.png"
             alt="bulma image"
             className={` custom:w-[72px] w-[70px] hidden custom:inline-block `}
           />
