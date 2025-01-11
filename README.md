@@ -10,7 +10,7 @@
 
 ## Demo
 
-https://smileytour.guide
+https://smileytour.netlify.app
 
 
 ![Logo](https://i.imgur.com/ePO3g0n.png)
