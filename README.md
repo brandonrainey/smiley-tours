@@ -1,11 +1,11 @@
 
 # Smiley Tour
 
-- Single page website for tours in Asakusa, Tokyo by a former Japanese Idol
+- Single page website for tours in Tokyo by a former Japanese Idol.
 
 - Displays content relevent to client desires, with SEO focuses.
 
-- Created using Next.js, Typescript and styled with Tailwind CSS
+- Created using Next.js, Typescript and styled with Tailwind CSS.
 
 
 ## Demo
