@@ -15,7 +15,7 @@ export default function Footer() {
     if (typeof window !== 'undefined') {
       try {
         await navigator.clipboard.writeText(text)
-        setCopySuccess('Copied!')
+        setCopySuccess('Copied')
         setTimeout(() => setCopySuccess(''), 1500)
       } catch (err) {
         setCopySuccess('Failed to copy text')
