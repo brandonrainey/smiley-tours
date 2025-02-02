@@ -16,6 +16,7 @@ export default function EventSidebar() {
         Events
       </h1>
 
+      {/* Heroic Journey Tour */}
       <div className="flex flex-col custom:flex-row w-full max-w-[1400px] custom:gap-24 justify-center items-center">
         <div className="text-center font-semibold flex flex-col items-center justify-between mt-8 sm:mt-0 sm:h-[414px]">
           <h2
