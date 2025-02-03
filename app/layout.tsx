@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta
           name="og:title"
-          content="Smiley Tours - Asakusa Tokyo Tour Guide"
+          content="Smiley Tours - Tokyo Tour Guide"
         />
         <meta
           name="og:description"
