@@ -8,93 +8,38 @@ import ArrowRight from './icons/ArrowRight'
 const tours = [
   {
     tourArea: 'Asakusa',
-    tourDate: 'Feburary 7th',
     tourImage: '/tours/asakusaTour.webp',
     tourId: 1,
     tourPrice: 20000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
+    tourLink: 'https://smileywalk.shop/items/676cf1cd1a112f05c58a22cd',
   },
   {
     tourArea: 'Shinjuku',
-    tourDate: 'Feburary 13th',
+
     tourImage: '/tours/shinjuku-tour.webp',
     tourId: 2,
     tourPrice: 20000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f02b3626e40e9827f67f',
+    tourLink: 'https://smileywalk.shop/items/676ccb818168c301584176fb',
   },
   {
-    tourArea: 'Asakusa',
-    tourDate: 'Feburary 14th',
-    tourImage: '/tours/asakusaTour.webp',
+    tourArea: 'Akihabara',
+
+    tourImage: '/tours/akihabaraTour.webp',
     tourId: 3,
     tourPrice: 20000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
+    tourLink: 'https://smileywalk.shop/items/67712e11fc29e877b59c6ca6',
   },
   {
-    tourArea: 'Shinjuku',
-    tourDate: 'Febuary 18th',
-    tourImage: '/tours/shinjuku-tour.webp',
+    tourArea: 'Girls Bar Hopping',
+
+    tourImage: '/tours/barhoppingTour.webp',
     tourId: 4,
     tourPrice: 20000,
     tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6705206d712e6e08356be2cb',
-  },
-  {
-    tourArea: 'Asakusa',
-    tourDate: 'Feburary 21st',
-    tourImage: '/tours/asakusaTour.webp',
-    tourId: 5,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
-  },
-  {
-    tourArea: 'Shinjuku',
-    tourDate: 'Febuary 25th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 6,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6705295f712e6e09f76be2d8',
-  },
-  {
-    tourArea: 'Asakusa',
-    tourDate: 'Feburary 28th',
-    tourImage: '/tours/asakusaTour.webp',
-    tourId: 7,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/6708f08e3626e40e9827f6e2',
-  },
-  {
-    tourArea: 'Shinjuku',
-    tourDate: 'March 11th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 8,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/670520c2bfa2870cda703d87',
-  },
-  {
-    tourArea: 'Shinjuku',
-    tourDate: 'March 18th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 9,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/670520dd835a670c6b38031f',
-  },
-  {
-    tourArea: 'Shinjuku',
-    tourDate: 'March 25th',
-    tourImage: '/tours/shinjuku-tour.webp',
-    tourId: 10,
-    tourPrice: 20000,
-    tourSpots: 4,
-    tourLink: 'https://smileywalk.shop/items/670520fbbfa2870cda703d9f',
+    tourLink: 'https://smileywalk.shop/items/676ce9beb9d16e030d836c70',
   },
 ]
 
@@ -148,7 +93,7 @@ export default function TourSidebar() {
             >
               <img
                 src={tour.tourImage}
-                alt={`${tour.tourArea} ${tour.tourDate}`}
+                alt={`${tour.tourArea}`}
                 className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:border-2  border-pink-500  object-cover"
               />
 
@@ -157,11 +102,7 @@ export default function TourSidebar() {
               </p>
 
               <h2 className="font-extrabold text-pink-500 tracking-wide text-xl flex flex-col items-center ">
-                <span
-                  className={`text-white custom:text-shadow-1 text-shadow-2 `}
-                >
-                  {`${tour.tourDate}`}
-                </span>{' '}
+                {' '}
                 {`¥${tour.tourPrice}`}
               </h2>
               <h3
