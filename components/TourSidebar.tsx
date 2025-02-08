@@ -17,9 +17,9 @@ const tours = [
   {
     tourArea: 'Shinjuku',
 
-    tourImage: '/tours/shinjuku-tour.webp',
+    tourImage: '/tours/shinjukuTour.webp',
     tourId: 2,
-    tourPrice: 20000,
+    tourPrice: 25000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/676ccb818168c301584176fb',
   },
@@ -37,7 +37,7 @@ const tours = [
 
     tourImage: '/tours/barhoppingTour.webp',
     tourId: 4,
-    tourPrice: 20000,
+    tourPrice: 30000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/676ce9beb9d16e030d836c70',
   },
@@ -103,7 +103,7 @@ export default function TourSidebar() {
               <img
                 src={tour.tourImage}
                 alt={`${tour.tourArea}`}
-                className="rounded-lg tourShadow aspect-square max-w-[288px] w-full group-hover:border-2  border-pink-500  object-cover"
+                className="rounded-lg tourShadow  max-w-[288px] w-full group-hover:scale-105 transition-all  border-pink-500  object-cover"
               />
 
               <p className="font-extrabold text-white pt-2  tracking-wide text-xl custom:text-shadow-1 text-shadow-2">
@@ -139,39 +139,43 @@ export default function TourSidebar() {
         ))}
       </ul>
 
-      <div className="flex gap-2 mb-4 text-pink-700">
-        <button
-          onClick={handlePageDecrease}
-          disabled={page === 1}
-          className={`${page === 1 ? 'opacity-30' : ''} font-semibold text-xl`}
-        >
-          {'<'}
-        </button>
-        <div className="flex gap-2">
-          {Array.from({ length: numberOfPages }, (_, index) => index + 1).map(
-            (pageNumber) => (
-              <div
-                key={pageNumber}
-                className={`p-1 px-3 rounded-full cursor-pointer hover:bg-pink-500 hover:text-white font-semibold text-xl ${
-                  page === pageNumber ? 'underline-offset-2 underline' : ''
-                }`}
-                onClick={() => handlePageClick(pageNumber)}
-              >
-                {pageNumber}
-              </div>
-            )
-          )}
+      {numberOfPages > 1 && (
+        <div className="flex gap-2 mb-4 text-pink-700">
+          <button
+            onClick={handlePageDecrease}
+            disabled={page === 1}
+            className={`${
+              page === 1 ? 'opacity-30' : ''
+            } font-semibold text-xl`}
+          >
+            {'<'}
+          </button>
+          <div className="flex gap-2">
+            {Array.from({ length: numberOfPages }, (_, index) => index + 1).map(
+              (pageNumber) => (
+                <div
+                  key={pageNumber}
+                  className={`p-1 px-3 rounded-full cursor-pointer hover:bg-pink-500 hover:text-white font-semibold text-xl ${
+                    page === pageNumber ? 'underline-offset-2 underline' : ''
+                  }`}
+                  onClick={() => handlePageClick(pageNumber)}
+                >
+                  {pageNumber}
+                </div>
+              )
+            )}
+          </div>
+          <button
+            onClick={handlePageIncrease}
+            disabled={page === numberOfPages}
+            className={`${
+              page === numberOfPages ? 'opacity-30' : ''
+            } font-semibold text-xl`}
+          >
+            {'>'}
+          </button>
         </div>
-        <button
-          onClick={handlePageIncrease}
-          disabled={page === numberOfPages}
-          className={`${
-            page === numberOfPages ? 'opacity-30' : ''
-          } font-semibold text-xl`}
-        >
-          {'>'}
-        </button>
-      </div>
+      )}
     </section>
   )
 }
