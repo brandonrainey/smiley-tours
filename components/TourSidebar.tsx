@@ -16,7 +16,6 @@ const tours = [
   },
   {
     tourArea: 'Shinjuku',
-
     tourImage: '/tours/shinjukuTour.webp',
     tourId: 2,
     tourPrice: 25000,
@@ -25,7 +24,6 @@ const tours = [
   },
   {
     tourArea: 'Akihabara',
-
     tourImage: '/tours/akihabaraTour.webp',
     tourId: 3,
     tourPrice: 20000,
@@ -34,7 +32,6 @@ const tours = [
   },
   {
     tourArea: 'Girls Bar Hopping',
-
     tourImage: '/tours/barhoppingTour.webp',
     tourId: 4,
     tourPrice: 30000,
@@ -43,7 +40,6 @@ const tours = [
   },
   {
     tourArea: 'Ueno Tour',
-
     tourImage: '/tours/uenoTour.webp',
     tourId: 4,
     tourPrice: 20000,
