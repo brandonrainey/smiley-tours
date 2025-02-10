@@ -41,10 +41,18 @@ const tours = [
   {
     tourArea: 'Ueno Tour',
     tourImage: '/tours/uenoTour.webp',
-    tourId: 4,
+    tourId: 5,
     tourPrice: 20000,
     tourSpots: 4,
     tourLink: 'https://smileywalk.shop/items/6771315cfc29e878929c6cae',
+  },
+  {
+    tourArea: 'Virtual Day Tour',
+    tourImage: '/tours/virtualDayTour.webp',
+    tourId: 6,
+    tourPrice: 5000,
+    tourSpots: 4,
+    tourLink: 'https://smileywalk.shop/items/678cb3a49ecae61e3df2e08f',
   },
 ]
 
